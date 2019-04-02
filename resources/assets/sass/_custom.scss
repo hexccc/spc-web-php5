@@ -1,0 +1,63 @@
+body {
+  margin-top: 60px;
+}
+#footer{
+  font-size: 12px;
+  bottom: 0px;
+  margin-top: 0;
+  padding: 20px;
+  color: #fff;
+  background: #3490DC;
+  text-decoration: none;
+}
+
+#title{
+  background: #3490DC;
+}
+//navbar
+.navbar{
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  // font-weight: bold;
+  background: #3490DC;
+  position: absolute;
+}
+.nav-link{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+//Header
+.text-white{
+  background: #3490DC;
+}
+
+.btn{
+  color: #ffffff;
+}
+
+
+.buttonf{
+  position: absolute;
+  right: 0px;
+  padding: 5px;
+}
+
+a{
+  color: inherit;
+}
+
+#brgy_officials{
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+.active-pink-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-pink input[type=text] {
+    border-bottom: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
+}
