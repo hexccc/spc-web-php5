@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Local Officials')
 
 <div class="mx-auto col-md-10 offset-md-1 pt-4" style="width:100%">
     <h3 class="bg-primary text-white p-2 mt-4">
@@ -18,7 +18,7 @@
           </span>
       </div>
     </div>
-      <div class="col-md-8" data-spy="scroll">
+      <div class="col-md-8" >
         <ul>
             <li class="media float-right border border-primary rounded mt-2 p-2">
               <img class="align-self-start mr-3 " src="{{URL::asset('image/2x2.jpg')}}" alt="Generic placeholder image" height="100px">

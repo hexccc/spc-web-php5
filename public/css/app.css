@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Helvetica);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -10656,7 +10656,7 @@ a.text-dark:focus {
 }
 
 body {
-  margin-top: 60px;
+  margin-top: 65px;
 }
 
 #footer {
@@ -10665,20 +10665,19 @@ body {
   margin-top: 0;
   padding: 20px;
   color: #fff;
-  background: #3490DC;
+  background: #2f6ea6;
   text-decoration: none;
 }
 
 #title {
-  background: #3490DC;
+  background: #2f6ea6;
 }
 
 .navbar {
   font-size: 18px;
   text-decoration: none;
   color: #ffffff;
-  background: #3490DC;
-  position: absolute;
+  background: #2f6ea6;
 }
 
 .nav-link {
@@ -10686,8 +10685,13 @@ body {
   color: #ffffff;
 }
 
+.carousel {
+  position: relative;
+  z-index: 0;
+}
+
 .text-white {
-  background: #3490DC;
+  background: #2f6ea6;
 }
 
 .btn {
@@ -10709,13 +10713,35 @@ a {
   border-radius: 5px;
 }
 
-.active-pink-2 input[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid #f48fb1;
-  box-shadow: 0 1px 0 0 #f48fb1;
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.active-pink input[type=text] {
-  border-bottom: 1px solid #f48fb1;
-  box-shadow: 0 1px 0 0 #f48fb1;
+#bords {
+  border-bottom: 100px solid #025cab;
+  border-left: 80px solid transparent;
+  height: 0;
+  width: 800px;
+  opacity: 0.8;
+  -o-object-position: right;
+     object-position: right;
+  right: 0px;
+  position: relative;
+  z-index: 2;
+}
+
+.mycontent-left {
+  border-right: 1px dashed #333;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
