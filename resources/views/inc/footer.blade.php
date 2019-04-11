@@ -1,5 +1,4 @@
 <footer id="footer" class="text-center">
-  <div class="">
     <p>The Integrated Government Philippines (iGovPhil) is a joint program of the<br>
     Department of Information and Communications Technology (DICT) and the<br>
   Advanced Science and Technology Institute of the Department of Science and Technology (DOST-ASTI)</p>
@@ -8,7 +7,6 @@
       <img src="{{URL::asset('image/asti.png')}}" alt="Logo" height="80x">
     </div>
 </footer>
-  </div>
   <footer class="page-footer font-small blue pt-4">
   <div class="container-fluid text-center text-md-left">
     <div class="row">

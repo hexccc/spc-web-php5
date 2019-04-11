@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="mx-auto bg-warning" style="width:100%">
-    <h1 class="bg-primary text-white shadow-lg p-4 mb-4">Gallery</h1>
+    <h1 class="text-white shadow-lg p-4 mb-4">Gallery</h1>
   </div>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

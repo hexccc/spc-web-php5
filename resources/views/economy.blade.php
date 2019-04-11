@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="mx-auto bg-warning" style="width:100%">
-    <h1 class="bg-primary text-white shadow-lg p-4 mb-4">Economy</h1>
+    <h1 class="text-white shadow-lg p-4 mb-4">Economy</h1>
   </div>
   <p>San Pablo has a cool climate owing to its location. It is nestled in the foothills of three mountains: Mount Banahaw, Mount Makiling and the Sierra Madre Mountains. These mountains do not only provide attractions for the tourism industry (such as waterfalls) and sources of many forest-based products, but also serve as stewards for the clean air.
 
