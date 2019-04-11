@@ -14,9 +14,12 @@ class BarangayList extends Migration
     public function up()
     {
         Schema::create('brgys', function(Blueprint $table) {
-					$table->increments('brgys_id');
+					$table->increments('brgy_id');
 					$table->string('brgy_name');
+					$table->string('brgy_district');
+					$table->string('brgy_code');
 					$table->string('brgy_chairman');
+					$table->string('brgy_contact');
 					$table->string('brgy_population');
 					$table->string('brgy_area');
 				});
