@@ -2,24 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>San Pablo City | Official Website</title>
-    <link rel="icon" href="{!! asset('image/spc-logo.png') !!}"/>
+    <title>San Pablo City | @yield('title')</title>
+    <link rel="icon" href="{!! asset('image/spc-logo.png')!!}"/>
     <link rel="stylesheet" href="/css/app.css">
 		<script src="/js/app.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
   </head>
+    @include('inc.navbar')
   <body>
     <div>
-      @include('inc.navbar')
-    </div>
-    <div>
-
     </div>
     <div class="container-fluid">
     @if (Request::is('form'))
       @include('inc.showcase')
     @endif
-<br>
+    <br>
       <div class="row">
         <div class="">
         @yield('content')
@@ -45,3 +43,4 @@
         </div>
       </div>
     </div>
+  </div>

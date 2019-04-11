@@ -20,10 +20,6 @@ Route::get('/form', function () {
     return view('form');
 });
 
-Route::get('/mission', function () {
-    return view('mission');
-});
-
 Route::get('/gov', function () {
     return view('gov');
 });
@@ -32,8 +28,8 @@ Route::get('/economy', function () {
     return view('economy');
 });
 
-Route::get('/spablenos', function () {
-    return view('spablenos');
+Route::get('/barangay', function () {
+    return view('barangay');
 });
 
 Route::get('/tourism', function () {
@@ -52,7 +48,6 @@ Route::get('/location', function () {
     return view('location');
 });
 
-
 Route::get('/local_off', function () {
     return view('local_off');
 });
@@ -65,7 +60,37 @@ Route::get('/modals', function () {
     return view('modals');
 });
 
+Route::get('/sanpablenos', function () {
+    return view('sanpablenos');
+});
 
+Route::get('/hymn', function () {
+    return view('hymn');
+});
+
+Route::get('/ela', function () {
+    return view('ela');
+});
+
+Route::get('/landmarks', function () {
+    return view('landmarks');
+});
+
+Route::get('/officemap', function () {
+    return view('officemap');
+});
+
+Route::get('/ordinances', function () {
+    return view('ordinances');
+});
+
+Route::get('/org_chart', function () {
+    return view('org_chart');
+});
+
+Route::get('/sanpablenos2', function () {
+    return view('sanpablenos2');
+});
 
 
 Route::post('register', array('uses' => 'Register@store'));
