@@ -6,8 +6,8 @@
           City Government Website
       </p>
   </div>
-</div>
   {{-- <div class='collapse navbar-collapse' id='collapseNav'> --}}
+  <div>
     <ul class="navbar-nav ml-3">
       <li class="nav-item">
         <a class="btn btn-outline-info nav-link mx-2" href="/">
@@ -20,6 +20,7 @@
           </a>
             <ul class="dropdown-menu">
               <div class="dropdown-item"><li><a href="location" class="text-body">Location & Topology</a></li></div>
+              <div class="dropdown-item"><li><a href="history">History</a></li></div>
               <div class="dropdown-item"><li><a href="sanpablenos">San Pableños</a></li></div>
               <div class="dropdown-item"><li><a href="barangay">Barangays</a></li></div>
               <div class="dropdown-item"><li><a href="hymn">Hymn</a></li></div>
@@ -34,11 +35,10 @@
           <ul class="dropdown-menu">
             <div class="dropdown-item"><li><a href="local_off">Local Officials</a></li></div>
             <div class="dropdown-item"><li><a href="departments">Departments</a></li></div>
+            <div class="dropdown-item"><li><a href="ordinances">Standing Commitees</a></li></div>
             <div class="dropdown-item"><li><a href="ordinances">Ordinances</a></li></div>
-            <div class="dropdown-item"><li><a href="programs">Programs</a></li></div>
             <div class="dropdown-item"><li><a href="ela">ELA</a></li></div>
             <div class="dropdown-item"><li><a href="office_map">Office Vicinity Map</a></li></div>
-            <div class="dropdown-item"><li><a href="org_chart">Organizational Chart</a></li></div>
             <div class="dropdown-item"><li><a href="economy">Economy</a></li></div>
           </ul>
         </li>

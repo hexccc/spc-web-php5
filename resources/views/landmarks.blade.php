@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Ordinances')
   <div class="col-md-10 offset-md-1 pt-4">
-    <h3 class="bg-primary text-white p-2 mt-4">
+    <h3 class="text-white p-2 mt-4">
       Ordinances
     </h3>
       <p class="card-text mb-xl-5">
