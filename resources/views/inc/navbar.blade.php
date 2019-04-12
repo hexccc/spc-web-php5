@@ -33,13 +33,25 @@
           Government<span class="caret"></span>
         </a>
           <ul class="dropdown-menu">
-            <div class="dropdown-item"><li><a href="local_off">Local Officials</a></li></div>
+            <div class="dropdown-item"><li><a href="#">Local Officials</a></li></div>
             <div class="dropdown-item"><li><a href="departments">Departments</a></li></div>
             <div class="dropdown-item"><li><a href="ordinances">Standing Commitees</a></li></div>
             <div class="dropdown-item"><li><a href="ordinances">Ordinances</a></li></div>
             <div class="dropdown-item"><li><a href="ela">ELA</a></li></div>
             <div class="dropdown-item"><li><a href="office_map">Office Vicinity Map</a></li></div>
             <div class="dropdown-item"><li><a href="economy">Economy</a></li></div>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="btn btn-outline-info nav-link dropdown-toggle mx-2" data-toggle="dropdown">
+            Economy<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <div class="dropdown-item"><li><a href="festival">Investments</a></li></div>
+            <div class="dropdown-item"><li><a href="gallery">Trade and Relation</a></li></div>
+            <div class="dropdown-item"><li><a href="landmarks">Banks and Institutions</a></li></div>
+            <div class="dropdown-item"><li><a href="landmarks">Revenue Code</a></li></div>
           </ul>
         </li>
 

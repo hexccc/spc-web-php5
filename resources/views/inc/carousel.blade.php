@@ -41,7 +41,7 @@
     </div>
 
     <div class="carousel-item">
-      <img src="{{URL::asset('image/slake3.jpg')}}" alt="Sampaloc Lake" height="600" width="100%">
+      <img src="{{URL::asset('image/cathedral_2.jpeg')}}" alt="Sampaloc Lake" height="600" width="100%">
       <div class="carousel-caption">
         <div id="bords" class="float-right" style="text-align: right;">
           <div class="mx-3 mt-3">
