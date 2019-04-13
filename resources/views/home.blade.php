@@ -41,9 +41,9 @@
           </div>
           <div class="col-6">
             <div class="card border-primary mb-3" style="height: 21rem;">
-              <h2 class="text-white card-title p-2 text-center mb-0">
+              <h3 class="text-white card-title p-2 text-center mb-0">
                 Sevices
-              </h2>
+              </h3>
                 <div class="card-body text-primary">
                   <button type="button" class="btn btn-light btn-block text-dark" data-toggle="modal" data-target="#bploForm">
                     BPLO Fill Up Forms
@@ -59,6 +59,47 @@
           <h2 class="text-white card-title p-2 text-center mb-0">
             Hotlines
           </h2>
+            <div class="card-body text-primary">
+              <p class="card-text text-dark">
+                000
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-9">
+        <div class="row">
+          <div class="col-6">
+            <div class="card border-primary mb-3" style="height: 24rem;">
+              <h2 class="text-white card-title p-2 text-center mb-0">
+                PESO
+              </h2>
+                <div class="card-body text-primary">
+                  <p class="card-text text-dark">...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card border-primary mb-3" style="height: 24rem;">
+              <h3 class="text-white card-title p-2 text-center mb-0">
+                Services Offer
+              </h3>
+                <div class="card-body text-primary">
+                  <p class="card-text text-dark">...</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card border-primary mb-1" style="height: 24rem;">
+          <h4 class="text-white card-title p-2 text-center mb-0">
+            Featured Links
+          </h4>
             <div class="card-body text-primary">
               <p class="card-text text-dark">
                 000

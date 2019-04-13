@@ -8,61 +8,73 @@
   </div>
   {{-- <div class='collapse navbar-collapse' id='collapseNav'> --}}
   <div>
-    <ul class="navbar-nav ml-3">
+    <ul class="navbar-nav nav-justified ml-3">
       <li class="nav-item">
-        <a class="btn btn-outline-info nav-link mx-2" href="/">
+        <a class="btn nav-link mx-2" href="/">
           Home
         </a>
 
         <li class="nav-item dropdown">
-          <a class="btn btn-outline-info nav-link dropdown-toggle mx-2" data-toggle="dropdown" href="gov">
+          <a class="btn nav-link dropdown-toggle mx-2 " data-toggle="dropdown" href="#">
             The City<span class="caret"></span>
           </a>
             <ul class="dropdown-menu">
-              <div class="dropdown-item"><li><a href="location" class="text-body">Location & Topology</a></li></div>
-              <div class="dropdown-item"><li><a href="history">History</a></li></div>
-              <div class="dropdown-item"><li><a href="sanpablenos">San Pableños</a></li></div>
-              <div class="dropdown-item"><li><a href="barangay">Barangays</a></li></div>
-              <div class="dropdown-item"><li><a href="hymn">Hymn</a></li></div>
+              <div class="dropdown-item ">
+                <li>
+                  <a class="text-body btn-block"href="location">
+                    Location & Topology
+                  </a>
+                </li>
+              </div>
+              <div class="dropdown-item">
+                <li>
+                  <a class="text-body btn-block" href="history">
+                    History
+                  </a>
+                </li>
+              </div>
+              <div class="dropdown-item"><li><a class="text-body btn-block" href="sanpablenos">San Pableños</a></li></div>
+              <div class="dropdown-item"><li><a class="text-body btn-block" href="barangay">Barangays</a></li></div>
+              <div class="dropdown-item"><li><a class="text-body btn-block" href="hymn">Hymn</a></li></div>
             </ul>
         </li>
 
       </li>
       <li class="nav-item dropdown">
-        <a class="btn btn-outline-info nav-link dropdown-toggle mx-2" data-toggle="dropdown" href="gov">
+        <a class="btn nav-link dropdown-toggle mx-2" data-toggle="dropdown" href="#">
           Government<span class="caret"></span>
         </a>
           <ul class="dropdown-menu">
-            <div class="dropdown-item"><li><a href="#">Local Officials</a></li></div>
-            <div class="dropdown-item"><li><a href="departments">Departments</a></li></div>
-            <div class="dropdown-item"><li><a href="ordinances">Standing Commitees</a></li></div>
-            <div class="dropdown-item"><li><a href="ordinances">Ordinances</a></li></div>
-            <div class="dropdown-item"><li><a href="ela">ELA</a></li></div>
-            <div class="dropdown-item"><li><a href="office_map">Office Vicinity Map</a></li></div>
-            <div class="dropdown-item"><li><a href="economy">Economy</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="#">Local Officials</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="departments">Departments</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="ordinances">Standing Commitees</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="ordinances">Ordinances</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="ela">ELA</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="office_map">Office Vicinity Map</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="economy">Economy</a></li></div>
           </ul>
         </li>
 
         <li class="nav-item dropdown">
-          <a class="btn btn-outline-info nav-link dropdown-toggle mx-2" data-toggle="dropdown">
+          <a class="btn nav-link active dropdown-toggle mx-2" data-toggle="dropdown" href="#">
             Economy<span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <div class="dropdown-item"><li><a href="festival">Investments</a></li></div>
-            <div class="dropdown-item"><li><a href="gallery">Trade and Relation</a></li></div>
-            <div class="dropdown-item"><li><a href="landmarks">Banks and Institutions</a></li></div>
-            <div class="dropdown-item"><li><a href="landmarks">Revenue Code</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="festival">Investments</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="gallery">Trade and Relation</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="landmarks">Banks and Institutions</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="landmarks">Revenue Code</a></li></div>
           </ul>
         </li>
 
         <li class="nav-item dropdown">
-          <a class="btn btn-outline-info nav-link dropdown-toggle mx-2" data-toggle="dropdown" href="tourism">
+          <a class="btn nav-link dropdown-toggle mx-2" data-toggle="dropdown" href="#">
             Tourism<span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <div class="dropdown-item"><li><a href="festival">Festival</a></li></div>
-            <div class="dropdown-item"><li><a href="gallery">Gallery</a></li></div>
-            <div class="dropdown-item"><li><a href="landmarks">Landmarks</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="festival">Festival</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="gallery">Gallery</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="landmarks">Landmarks</a></li></div>
           </ul>
         </li>
 

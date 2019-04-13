@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Location')
 
-  <div class="mx-auto col-md-10 offset-md-1 pt-4" style="width:100%">
+  <div class="mx-auto col-md-10 offset-md-1 pt-4" class="tab-pane fade show active" id="pills-location" aria-labelledby="pills-home-tab" style="width:100%">
       <h3 class="bg-primary text-white p-2 mt-4">
     Location and Topology
       </h3>
