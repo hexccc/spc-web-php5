@@ -6,7 +6,7 @@
           City Government Website
       </p>
   </div>
-  {{-- <div class='collapse navbar-collapse' id='collapseNav'> --}}
+  <div class='collapse navbar-collapse' id='collapseNav'>
   <div>
     <ul class="navbar-nav nav-justified ml-3">
       <li class="nav-item">
@@ -114,4 +114,5 @@
         </li> --}}
       </ul>
     </div>
+  </div>
 </nav>

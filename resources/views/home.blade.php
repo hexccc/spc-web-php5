@@ -32,7 +32,7 @@
                 Events and Announcements
               </h3>
                 <div class="card-body d-flex justify-content-center">
-                  <img src="{{URL::asset('image/event1.jpg')}}" alt="Event 1" class="" style="height: 15vw; object-fit: cover;">
+                  <img src="{{URL::asset('image/event2.jpg')}}" alt="Event 1" class="" style="height: 15vw; object-fit: cover;">
                 </div>
                 <div class="align-baseline">
                   <a href="#" class="float-right font-weight-bold font-italic p-2 text-primary" data-toggle="modal" data-target="#exampleModalLong">See All Events>></a>
@@ -49,6 +49,16 @@
                     BPLO Fill Up Forms
                   </button>
                   <a href="https://epaymentportal.landbank.com/index.php?code=VHQxcGVETU5EOWZiZXVIQnRWQ3NodmtCL2dKMG1HRjBsJTJCZ2k5dlIvclcwPQ&fbclid=IwAR1nOclEeFYG6lARtlcj5bKGAK3bRaeAXdihUBF1BdvmHzbdT5uPukxYku4" class="btn btn-light btn-block text-dark" aria-disabled="true" target="_blank">Land Bank Payment System</a>
+                  <button type="button" class="btn btn-light btn-block text-dark">
+                    Real Property Tax
+                  </button>
+                  <button type="button" class="btn btn-light btn-block text-dark">
+                    Market Online Payment
+                  </button>
+                  <button type="button" class="btn btn-light btn-block text-dark">
+                    Online BIR Registration
+                  </button>
+                  <a href="#" class="float-right font-weight-bold font-italic p-2 text-primary" data-toggle="modal" data-target="#exampleModalLong">See All Services>></a>
                 </div>
             </div>
           </div>
@@ -59,10 +69,23 @@
           <h2 class="text-white card-title p-2 text-center mb-0">
             Hotlines
           </h2>
-            <div class="card-body text-primary">
-              <p class="card-text text-dark">
-                000
-              </p>
+            <div class="card-body text-dark">
+              <dl>
+                <dt>San Pablo City Government Offices:</dt>
+                <dd>564-3212</dd>
+                <dt>San Pablo City Police (PNP): </dt>
+                <dd>564-3212</dd>
+                <dt>San Pablo City Fire Department:</dt>
+                <dd>564-3212</dd>
+                <dt>San Pablo City Rescue Unit:</dt>
+                <dd>564-3212</dd>
+                <dt>San Pablo City Emergency Hospital:</dt>
+                <dd>564-3212</dd>
+                <dt>San Pablo Medical Center:</dt>
+                <dd>564-3212</dd>
+                <dt>Philippine Red Cross - San Pablo City Chapter:</dt>
+                <dd>564-3212</dd>
+              </dl>
           </div>
         </div>
       </div>
@@ -72,7 +95,7 @@
       <div class="col-9">
         <div class="row">
           <div class="col-6">
-            <div class="card border-primary mb-3" style="height: 24rem;">
+            <div class="card border-primary mb-3" style="height: 15rem;">
               <h2 class="text-white card-title p-2 text-center mb-0">
                 PESO
               </h2>
@@ -82,7 +105,7 @@
             </div>
           </div>
           <div class="col-6">
-            <div class="card border-primary mb-3" style="height: 24rem;">
+            <div class="card border-primary mb-3" style="height: 15rem;">
               <h3 class="text-white card-title p-2 text-center mb-0">
                 Services Offer
               </h3>
@@ -96,15 +119,27 @@
         </div>
       </div>
       <div class="col-3">
-        <div class="card border-primary mb-1" style="height: 24rem;">
+        <div class="card border-primary mb-1" style="height: 15rem;">
           <h4 class="text-white card-title p-2 text-center mb-0">
             Featured Links
           </h4>
-            <div class="card-body text-primary">
-              <p class="card-text text-dark">
-                000
-              </p>
-          </div>
+            <div class="card-body">
+              <dl class="text-center">
+                <dd>
+                  <a href="https://www.facebook.com/Sanpablocity">San Pablo City Facebook Page</a>
+                </dd>
+                <dd>
+                  <a href="https://www.facebook.com/cio.sanpablo">CIO Facebook Link</a>
+                </dd>
+                <dd>
+                  <a href="https://www.youtube.com/user/mysanpablo/featured">San Pablo City Youtube Channel</a>
+                </dd>
+                <dd>
+                  <a href="https://twitter.com/sanpablocity">San Pablo City Twitter</a>
+                </dd>
+              </dl>
+            </div>
+
         </div>
       </div>
     </div>

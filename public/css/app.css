@@ -10762,3 +10762,8 @@ hr {
   pointer-events: none;
 }
 
+.dt {
+  text-decoration: none;
+  font-size: 20px;
+}
+

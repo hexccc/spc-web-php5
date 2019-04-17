@@ -1,13 +1,13 @@
-<footer id="footer" class="text-center">
-    <p>The Integrated Government Philippines (iGovPhil) is a joint program of the<br>
+<footer id="footer" class="text-center" style="height:2px;">
+    {{-- <p>The Integrated Government Philippines (iGovPhil) is a joint program of the<br>
     Department of Information and Communications Technology (DICT) and the<br>
   Advanced Science and Technology Institute of the Department of Science and Technology (DOST-ASTI)</p>
     <div class=" form-groupcol-md-4">
       <img style="padding-right:100px"src="{{URL::asset('image/dict.png')}}" alt="Logo" height="80px">
       <img src="{{URL::asset('image/asti.png')}}" alt="Logo" height="80x">
-    </div>
+    </div> --}}
 </footer>
-  <footer class="page-footer font-small blue pt-4">
+  <footer class="page-footer font-small blue pt-2">
   <div class="container-fluid text-center text-md-left">
     <div class="row">
       <div class="col-md-3 mt-md-0 mt-3">
@@ -79,14 +79,25 @@
   </div>
   </footer>
 
-  <footer class="container-fluid text-center text-md-left">
-    <div class="text-center">
-      <img src="{{URL::asset('image/spc-logo.png')}}" alt="Logo" height="50px" width="50px">
-      &copy;
-      <script type="text/javascript">
-        document.write(new Date().getFullYear());
-      </script> San Pablo City Government</p>
+  <footer class="container-fluid text-md-left">
+    <div class="d-flex justify-content-around">
+      <div class="p-2">
+        <p style="font-size: 8px; "> Powered by </p>
+      </div>
+      <div class="p-2">
+        <img src="{{URL::asset('image/spc-logo.png')}}" alt="Logo" height="50px" width="50px">
+        &copy;
+        <script type="text/javascript">
+          document.write(new Date().getFullYear());
+        </script> San Pablo City Government</p>
+      </div>
+      <div class="p-2">
+        <pre class="align-middle"style="font-size: 10px; ">
+        Developed by
+          Hendrixson Cordez</pre>
+      </div>
     </div>
+
   </footer>
 
 </div>
