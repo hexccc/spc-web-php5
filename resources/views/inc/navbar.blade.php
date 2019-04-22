@@ -1,9 +1,10 @@
 <nav class="navbar navbar-expand-sm fixed-top" style="height:65px;">
   <img src="{{URL::asset('image/spc-logo.png')}}" alt="Logo" height="50px" width="50px" >
-  <div class="navbar-brand text-center" href='#' >
-    San Pablo City</br>
-      <p class="h6 text-nowrap" style="font-size:12px;">
-          City Government Website
+  <div class="navbar-brand text-center px-3" href='#' >
+    San Pablo City
+      <p class="h6 text-nowrap" style="font-size:9px;">
+          Official Website of the City
+          Government of San Pablo
       </p>
   </div>
   <div class='collapse navbar-collapse' id='collapseNav'>
@@ -19,6 +20,13 @@
             The City<span class="caret"></span>
           </a>
             <ul class="dropdown-menu">
+              <div class="dropdown-item ">
+                <li>
+                  <a class="text-body btn-block"href="mission">
+                    MIssion & Vision
+                  </a>
+                </li>
+              </div>
               <div class="dropdown-item ">
                 <li>
                   <a class="text-body btn-block"href="location">
@@ -60,10 +68,10 @@
             Economy<span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="festival">Investments</a></li></div>
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="gallery">Trade and Relation</a></li></div>
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="landmarks">Banks and Institutions</a></li></div>
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="landmarks">Revenue Code</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="festival">Comprehensive Land Use Program</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="gallery">Comprehensive Development Plan</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="landmarks">SPC Ecological Profile</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="landmarks">CDP Annexes</a></li></div>
           </ul>
         </li>
 
@@ -72,9 +80,10 @@
             Tourism<span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="festival">Festival</a></li></div>
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="gallery">Gallery</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="tourism_master">Tourism Masterpiece</a></li></div>
+
             <div class="dropdown-item"><li><a class="text-body btn-block" href="landmarks">Landmarks</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="gallery">Gallery</a></li></div>
           </ul>
         </li>
 
