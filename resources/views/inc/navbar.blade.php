@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-sm fixed-top" style="height:65px;">
   <img src="{{URL::asset('image/spc-logo.png')}}" alt="Logo" height="50px" width="50px" >
-  <div class="navbar-brand text-center px-3" href='#' >
+  <div class="text-center px-3">
     San Pablo City
-      <p class="h6 text-nowrap" style="font-size:9px;">
+      <p class="h6 text-nowrap" style="font-size:8px;">
           Official Website of the City
           Government of San Pablo
       </p>
@@ -80,7 +80,7 @@
             Tourism<span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="tourism_master">Tourism Masterpiece</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="{{URL::asset('docs/SP TMP.pdf')}}" target="_blank">Tourism Masterplan</a></li></div>
 
             <div class="dropdown-item"><li><a class="text-body btn-block" href="landmarks">Landmarks</a></li></div>
             <div class="dropdown-item"><li><a class="text-body btn-block" href="gallery">Gallery</a></li></div>
