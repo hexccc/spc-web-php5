@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 class GetBrgyLs extends Controller
 {
     function getList() {
-			$ls = DB::select("CALL get_brgys_ls()");
+			$ls = DB::select("CALL get_brgy_ls()");
 			return ["brgys" => $ls];
 		}
 }
