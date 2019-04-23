@@ -14,7 +14,7 @@
      <hr/>
      <div class="col-6 mt-2">
 
-       <h3 class="mt-0 font-weight-bold" style="color:3490DC;">VISSION</h3>
+       <h3 class="mt-0 font-weight-bold" style="color:3490DC;">VISION</h3>
          <p>
            San Pablo, the City of Seven lakes-premier tourist destination,
            light industrial and education hub inCALABARZON, commited
@@ -69,7 +69,7 @@
           13.An information and hotline service is available 24/7 for anyone who has queries.
           </p>
           <p>
-          14.No noon-break policy is followed and we are to serve beyond oce hours if need.
+          14.No noon-break policy is followed and we are to serve beyond office hours if need.
           </p>
           <p>
           15. A satised client is our happiness in the goverment service.
@@ -99,7 +99,7 @@
       <h3 class="mt-0 font-weight-bold" style="color:3490DC;">
         Strategic Directions</h3>
         <p>
-        These directions can be realized by strictly following
+        These directions can be realized by strictly following:
         </p>
         <p>
         1. Existing policies of the city/ agency have to be reviewed and revisited by the implementing offce.

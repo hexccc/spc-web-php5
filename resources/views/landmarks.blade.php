@@ -1,11 +1,81 @@
 @extends('layouts.app')
-@section('title', 'Ordinances')
-  <div class="col-md-10 offset-md-1 pt-4">
-    <h3 class="text-white p-2 mt-4">
-      Ordinances
+@section('title', 'Landmarks')
+
+<div class="mx-auto col-md-10 offset-md-1 pt-4" style="width:100%">
+    <h3 class=" text-white p-2 mt-4">
+      San Pablo Ciy Famous Landmarks
     </h3>
-      <p class="card-text mb-xl-5">
-        The earliest historical record of the City of San Pablo dates back to pre-Spanish times when four(4) big barrios bounded by Mt. Banahaw and Mt. Makiling composed Sampaloc.
-        In 1521, Sampaloc was changed to San Pablo De Los Montes, which became a parish in 1556 and then a municipality in 1647.  In 1899, a Municipal Government was established with Inocente Martinez as Municipal President in 1902 when the Civil Government was granted independence from the Province of Laguna.  On May 7, 1940, the charter bill sponsored by Congressman Tomas Dizon was approved.
-      </p>
+<div class="row px-2">
+    <div class="media float-right mt-2 p-2">
+      <img src="{{URL::asset('image/cathedral.jpg')}}" alt="SPC" height="150px" class="float-right mr-2">
+      <div class="media-body">
+        <h5 class="mt-0 font-weight-bold" style="color:3490DC;">SAN PABLO CITY CATHEDRAL</h5>
+          <p>
+            Construction of the bricks and stones church started in 1680 and finished in 1721.
+            The detailed affluent, ecclesiastical ornamentation were made by artist Juan de los
+            Santos under Father Hernando Cabrera’s direction (1618-1629) who mandated that all
+            payments and tributes to the church be made in the form of gold, silver and other metals.
+            It was used as prison /garrison during the second world war by the invading Japanese forces
+            between 1941-1945.
+          </p>
+      </div>
+    </div>
+  <br>
+    <div class="media float-right mt-2 p-2 py-2">
+      <div class="media-body text-right pr-2">
+        <h5 class="mt-0 font-weight-bold" style="color:3490DC;">FARCON RESIDENCE</h5>
+          <p  >
+            Constructed in the early 1950s.  Design  is a fusion of Hispanic and American-Colonial building styles.
+            Home of Municipal President (1945) Don Alfonso Farcon.
+
+          </p>
+      </div>
+      <img src="{{URL::asset('image/farcon.jpg')}}" alt="SPC" height="150px" class="float-right mr-2">
+    </div>
+
+    <div class="media float-right mt-2 p-2">
+      <img src="{{URL::asset('image/plaza1.jpg')}}" alt="SPC" height="150px" class="float-right mr-2">
+      <div class="media-body">
+
+        <h5 class="mt-0 font-weight-bold" style="color:3490DC;">THE CITY PLAZA</h5>
+          <p>
+            *Rizal Monument was installed in 1911<br>
+*Plaza fountain was constructed between 1916-1918 during the term of Don Feliano Exconde<br>
+*Lamp posts in the plaza circle and islands along Rizal Ave. were erected  by Mun. President Crispin Calabia (1928-1931)<br>
+*The Mango Tree was believed to have been there since 1899.<br>
+
+          </p>
+      </div>
+    </div>
+
+    <div class="media float-right mt-2 p-2 py-2">
+      <div class="media-body text-right pr-2">
+        <h5 class="mt-0 font-weight-bold" style="color:3490DC;">SAN PABLO CITY HALL</h5>
+          <p  >
+            The Old City Hall.  Building was inaugurated in March 30, 1940.  Construction was undertaken during the term of MP Cristeto Brion.  It was designed by Architect Antonio Toledo. The 3rd and 4th floors are currently used as home of the San Pablo City Museum.
+
+          </p>
+      </div>
+      <img src="{{URL::asset('image/c_hall.jpg')}}" alt="SPC" height="150px" class="float-right mr-2">
+    </div>
+
+    <div class="media float-right mt-2 p-2">
+      <img src="{{URL::asset('image/hagdangbato.png')}}" alt="SPC" height="150px" class="float-right mr-2">
+      <div class="media-body">
+
+        <h5 class="mt-0 font-weight-bold" style="color:3490DC;">HAGDANG BATO</h5>
+          <p>
+            Constructed in 1915 under MP Marcial Alimario. It has five
+             sections with a total of 89 steps. It serves as an access
+              to Sampalok Lake from the view deck/Bonifacio Shrine.
+              The lot was part of Dona Leonila Park which was donated by Cabesang Sixto Bautista.
+
+          </p>
+      </div>
+    </div>
+
+
   </div>
+
+</div>
+</div>

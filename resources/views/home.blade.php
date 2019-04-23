@@ -103,12 +103,18 @@
           </h2>
             <div class="card-body text-dark">
               <dl>
-                <dt>San Pablo City Government Offices:</dt>
-                <dd>564-3212</dd>
-                <dt>San Pablo City Police (PNP): </dt>
-                <dd>564-3212</dd>
-                <dt>San Pablo City Fire Department:</dt>
-                <dd>564-3212</dd>
+                <dt>San Pablo CDRRMO:</dt>
+                <dd><span class='fa fa-phone'> </span> Landline 800-405</dd>
+                <dd><span class='fa fa-mobile'></span> Smart 09089078124</dd>
+                <dd><span class='fa fa-mobile'></span> Globe 09955619456</dd>
+                <dt>BARANGAY CONTROL:</dt>
+                <dd><span class='fa fa-phone'> </span> 5623-086</dd>
+                <dt><span class='fa fa-first-aid'> </span> RED CROSS SPC Chapter</dt>
+                <dd><span class='fa fa-phone'> </span> 564-3212</dd>
+                <dt><span class='fa fa-fire-extinguisher'> </span> Bumbero</dt>
+                <dd><span class='fa fa-phone'> </span> 5627-654</dd>
+                <dt><span class='fa fa-taxi'> </span> Pulis</dt>
+                <dd><span class='fa fa-phone'> </span> 5626-474 / 5210-610</dd>
               </dl>
           </div>
         </div>
@@ -145,16 +151,10 @@
             <div class="card-body">
               <dl class="text-center">
                 <dd>
-                  <a class="btn-link" href="https://www.facebook.com/Sanpablocity">San Pablo City Facebook Page</a>
+                  <a class="btn-link" href="https://www.facebook.com/sanpablo.lgu.1">San Pablo LGU FB Fage</a>
                 </dd>
                 <dd>
-                  <a class="btn-link" href="https://www.facebook.com/cio.sanpablo">CIO Facebook Link</a>
-                </dd>
-                <dd>
-                  <a class="btn-link" href="https://www.youtube.com/user/mysanpablo/featured">San Pablo City Youtube Channel</a>
-                </dd>
-                <dd>
-                  <a class="btn-link" href="https://twitter.com/sanpablocity">San Pablo City Twitter</a>
+                  <a class="btn-link" href="https://www.facebook.com/profile.php?id=100004675068302&fref=pb&hc_location=friends_tab">CDRRMO San Pablo FB Page</a>
                 </dd>
               </dl>
             </div>
@@ -162,6 +162,9 @@
         </div>
       </div>
     </div>
+    <h3 class="text-white p-2 mt-4">
+      Videos
+    </h3>
     {{-- <div class="col-md-12">
       <div class="card border-primary mb-3" style="height: 28rem;">
         <h3 class="text-white card-title p-2 text-center mb-0">
@@ -173,16 +176,20 @@
         </div>
         </div>
       </div> --}}
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/cauA0tG0NoE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="row mb-5">
+        <div class="col-9">
+          <iframe height="450" width="810" src="https://www.youtube.com/embed/Xja8v82gweA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+        <div class="col-3">
+          <iframe class="pb-3" width="250" height="150" src="https://www.youtube.com/embed/4M7GjCzUb40" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="pb-3" width="250" height="150" src="https://www.youtube.com/embed/HCj17hZM4vo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/QCd-faJ5OGI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
-    <h3 class="text-white p-2 mt-4">
-      Home
-    </h3>
-      <p class="card-text mb-xl-5">
-        The earliest historical record of the City of San Pablo dates back to pre-Spanish times when four(4) big barrios bounded by Mt. Banahaw and Mt. Makiling composed Sampaloc.
-        In 1521, Sampaloc was changed to San Pablo De Los Montes, which became a parish in 1556 and then a municipality in 1647.  In 1899, a Municipal Government was established with Inocente Martinez as Municipal President in 1902 when the Civil Government was granted independence from the Province of Laguna.  On May 7, 1940, the charter bill sponsored by Congressman Tomas Dizon was approved.
-      </p>
+
+
+
 </div>
 
 
