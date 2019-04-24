@@ -232,7 +232,7 @@
             <div class="card-body">
               <dl class="text-center">
                 <dd>
-                  <a class="btn-link" href="https://www.facebook.com/cio.sanpablo">CIO San Pablo FB Fage</a>
+                  <a class="btn-link" href="https://www.facebook.com/cio.sanpablo">CIO San Pablo FB Page</a>
                 </dd>
                 <dd>
                   <a class="btn-link" href="https://www.facebook.com/tourismsanpablo">Tourism Office San Pablo FB Page</a>
@@ -240,7 +240,7 @@
 
 
                 <dd>
-                  <a class="btn-link" href="https://www.facebook.com/sanpablo.lgu.1">San Pablo LGU FB Fage</a>
+                  <a class="btn-link" href="https://www.facebook.com/sanpablo.lgu.1">San Pablo LGU FB Page</a>
                 </dd>
                 <dd>
                   <a class="btn-link" href="https://www.facebook.com/profile.php?id=100004675068302&fref=pb&hc_location=friends_tab">CDRRMO San Pablo FB Page</a>
