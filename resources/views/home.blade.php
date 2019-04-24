@@ -27,7 +27,7 @@
             </div>
           </div> --}}
           <div class="col-6">
-            <div class="card border-primary mb-3" style="height: 28rem;">
+            <div class="card border-primary mb-3" style="height: 16rem;">
               <h3 class="text-white card-title p-2 text-center mb-0">
                 Jobs
               </h3>
@@ -41,6 +41,19 @@
                   href="https://www.philjobnet.gov.ph/"
                   class="btn btn-outline-info btn-block text-dark" aria-disabled="true" target="_blank">
                   Phil Job Net
+                </a>
+
+              </div>
+            </div>
+            <div class="card border-primary mb-3" style="height: 11rem;">
+              <h3 class="text-white card-title p-2 text-center mb-0">
+                Bids and Awards
+              </h3>
+              <div class="card-body text-primary">
+                <a
+                  href="https://www.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashOpenOpportunitiesUI.aspx?menuIndex=3&ClickFrom=OpenOpp&type=agency&fbclid=IwAR1rSQrAf0DDTweHIjYTNkT-PWWtHCoCbbN1EfSZcF4b77pZWcIOgOBarS0"
+                  class="btn btn-outline-info btn-block text-dark" aria-disabled="true" target="_blank">
+                  PhilGePS LINK
                 </a>
 
               </div>
@@ -98,9 +111,9 @@
       </div>
       <div class="col-3">
         <div class="card border-primary mb-1" style="height: 28rem;">
-          <h2 class="text-white card-title p-2 text-center mb-0">
+          <h3 class="text-white card-title p-2 text-center mb-0">
             Hotlines
-          </h2>
+          </h3>
             <div class="card-body text-dark">
               <dl>
                 <dt>San Pablo CDRRMO:</dt>
@@ -151,6 +164,14 @@
             <div class="card-body">
               <dl class="text-center">
                 <dd>
+                  <a class="btn-link" href="https://www.facebook.com/cio.sanpablo">CIO San Pablo FB Fage</a>
+                </dd>
+                <dd>
+                  <a class="btn-link" href="https://www.facebook.com/tourismsanpablo">Tourism Office San Pablo FB Page</a>
+                </dd>
+
+
+                <dd>
                   <a class="btn-link" href="https://www.facebook.com/sanpablo.lgu.1">San Pablo LGU FB Fage</a>
                 </dd>
                 <dd>
@@ -176,8 +197,8 @@
         </div>
         </div>
       </div> --}}
-      <div class="row mb-5">
-        <div class="col-9">
+      <div class="media row mb-5">
+        <div class=" media-body col-9">
           <iframe height="450" width="810" src="https://www.youtube.com/embed/Xja8v82gweA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
           </iframe>
         </div>

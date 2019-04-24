@@ -81,7 +81,13 @@
       <div class="col-6 mt-2">
           <h3 class="mt-0 font-weight-bold" style="color:3490DC;">Performance Pledge</h3>
           <p>
-           We, the offcials and employees of the City Government of San Pablocommit to: Assist every client and visitors with utmost courtesy and smile. Monitor our own ranks to ensure that services are delivered ontime. Adequate care shall be accorded to Senior Citizens, pregnant women, children and Persons with Disabilities(PWDs) that comes our door. Nurture each day as a gift of opportunity to serve others. Trustworthiness shall be epitome of our service delays with explanations. Ensure happy clients by addressing service delays with explanations. To all this we pledge and commit, keeping in mind that we are at all times accountable to the people that we serve.
+           We, the offcials and employees of the City Government of San Pablocommit to: <br>
+           <b style="font-size: 18px;">A</b>ssist every client and visitors with utmost courtesy and smile. <br>
+           <b style="font-size: 18px;">M</b>onitor our own ranks to ensure that services are delivered ontime. <br>
+           <b style="font-size: 18px;">A</b>dequate care shall be accorded to Senior Citizens, pregnant women, children and Persons with Disabilities(PWDs) that comes our door. <br>
+           <b style="font-size: 18px;">N</b>urture each day as a gift of opportunity to serve others.
+           <b style="font-size: 18px;">T</b>rustworthiness shall be epitome of our service delays with explanations. <br>
+           <b style="font-size: 18px;">E</b>nsure happy clients by addressing service delays with explanations. To all this we pledge and commit, keeping in mind that we are at all times accountable to the people that we serve.
         </p>
       </div>
       <hr/>
@@ -89,7 +95,7 @@
 
         <h3 class="mt-0 font-weight-bold" style="color:3490DC;">Agency Mandate</h3>
           <p>
-            All employees both rank and file and personnel holding kry positions in different departments of the local governmaent are mandated to deliver quality service through the implementation of tits programs to make them effcient and sustainable that have been developed in partnership with the private sector.
+            All employees both rank and file and personnel holding key positions in different departments of the local governmaent are mandated to deliver quality service through the implementation of tits programs to make them effcient and sustainable that have been developed in partnership with the private sector.
           </p>
     </div>
   </div>

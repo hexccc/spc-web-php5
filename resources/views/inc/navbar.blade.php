@@ -62,16 +62,26 @@
             <div class="dropdown-item"><li><a class="text-body btn-block" href="economy">Economy</a></li></div>
           </ul>
         </li>
-
+{{--  href="{{URL::asset('docs/SP TMP.pdf')}}" target="_blank" --}}
         <li class="nav-item dropdown">
           <a class="btn nav-link active dropdown-toggle mx-2" data-toggle="dropdown" href="#">
             Economy<span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="festival">Comprehensive Land Use Program</a></li></div>
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="gallery">Comprehensive Development Plan</a></li></div>
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="landmarks">SPC Ecological Profile</a></li></div>
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="landmarks">CDP Annexes</a></li></div>
+            <div class="dropdown-item">
+              <li class='dropright'>
+                <a class="text-body btn-block dropdown-toggle" data-toggle='dropdown' href='#'>Comprehensive Land Use Program<span class="caret"></span>
+                </a>
+                <ul class='dropdown-menu'>
+                  <li class="dropdown-item"><a class="text-body btn-block" href="{{URL::asset('docs/VOLUME 1 The Comprehensive Land Use Plan San Pablo City as of Nov 30 2016.pdf')}}" target="_blank">Volume 1</a></li>
+                  <li class="dropdown-item"><a class="text-body btn-block" href="{{URL::asset('docs/VOLUME 2 Zoning Ordinance San Pablo City as of Nov 30 2016.pdf')}}" target="_blank">Volume 2</a></li>
+                  <li class="dropdown-item"><a class="text-body btn-block" href="{{URL::asset('docs/VOLUME 3 Sectoral Studies San Pablo City UPDATED_as of Nov 27 2016.pdf')}}" target="_blank">Volume 3</a></li>
+                </ul>
+              </li>
+            </div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="{{URL::asset('docs/CDP Annexes 2018-2023.pdf')}}" target="_blank">Comprehensive Development Plan</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="{{URL::asset('docs/SPC Ecological Profile.pdf')}}" target="_blank">SPC Ecological Profile</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn-block" href="{{URL::asset('docs/CDP Annexes 2018-2023.pdf')}}" target="_blank">CDP Annexes</a></li></div>
           </ul>
         </li>
 
