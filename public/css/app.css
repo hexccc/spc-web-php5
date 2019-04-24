@@ -10665,19 +10665,19 @@ body {
   margin-top: 0;
   padding: 20px;
   color: #fff;
-  background: #2f6ea6;
+  background: #2484BA;
   text-decoration: none;
 }
 
 #title {
-  background: #2f6ea6;
+  background: #2484BA;
 }
 
 .navbar {
   font-size: 18px;
   text-decoration: none;
   color: #ffffff;
-  background: #2f6ea6;
+  background: #2484BA;
 }
 
 .nav-link {
@@ -10691,7 +10691,7 @@ body {
 }
 
 .text-white {
-  background: #2f6ea6;
+  background: #2484BA;
 }
 
 .btn {
@@ -10743,5 +10743,27 @@ hr {
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-size: 17px;
+  border-radius: 0px;
+  height: 100%;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+
+.dt {
+  text-decoration: none;
+  font-size: 20px;
 }
 

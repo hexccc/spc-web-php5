@@ -8,7 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/5.8.1/css/font-awesome.min.css'>
         <!-- Styles -->
         <style>
             html, body {

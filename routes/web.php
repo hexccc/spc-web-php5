@@ -88,8 +88,8 @@ Route::get('/org_chart', function () {
     return view('org_chart');
 });
 
-Route::get('/sanpablenos2', function () {
-    return view('sanpablenos2');
+Route::get('/mission', function () {
+    return view('mission');
 });
 
 
