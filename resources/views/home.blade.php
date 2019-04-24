@@ -137,8 +137,8 @@
     <div class="row">
       <div class="col-9">
         <div class="row">
-          <div class="col-12">
-            <div class="card border-primary mb-3" style="height: 18rem;">
+          <div class="col-6">
+            <div class="card border-primary mb-3" style="height: 22rem;">
               <h3 class="text-white card-title p-2 text-center mb-0 align-text-bottom">
                 Events and Announcements
               </h3>
@@ -151,13 +151,81 @@
                 </div>
             </div>
           </div>
-
-
-
+          <div class="col-6">
+            <div class="card border-primary mb-3" style="height: 22rem;">
+              <h3 class="text-white card-title p-2 text-center mb-0">
+                Disclosure
+              </h3>
+                <div class="card-body text-primary">
+                  <div class="row">
+                    <div class="col-6">
+                      <a style="font-size:12px;"
+                        href="{{URL::asset('docs/4th-qtr-SPP.xls')}}" target="_blank"
+                        class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true" >
+                        4th-qtr-SPP
+                      </a>
+                      <a style="font-size:12px;"
+                        href="{{URL::asset('docs/20-Uitlization-2018-4th-Quarter.xls')}}" target="_blank"
+                        class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+                        20-Utilization-2018-4th-Quarter
+                      </a>
+                      <a style="font-size:12px;"
+                        href="{{URL::asset('docs/APP-2019.xlsx')}}" target="_blank"
+                        class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+                      APP-2019
+                      </a>
+                      <a style="font-size:12px;"
+                        href="{{URL::asset('docs/BID-RESULTS 2018 4th Quarter.xlsx')}}" target="_blank"
+                        class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+                        BID-RESULTS 2018 4th Quarter
+                      </a>
+                      <a style="font-size:12px;"
+                        href="{{URL::asset('docs/CDRRMF-12.31.18.xlsx')}}" target="_blank"
+                        class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+                        CDRRMF-12.31.18
+                      </a>
+                      <a style="font-size:12px;"
+                        href="{{URL::asset('docs/Manpower Complement (DILG).xlsx')}}" target="_blank"
+                        class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+                        Manpower Complement (DILG)
+                      </a>
+                    </div>
+                      <div class="col-6">
+                      <a style="font-size:12px;"
+                        href="{{URL::asset('docs/PDAF UTILIZATION.xls')}}" target="_blank"
+                        class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+                        PDAF UTILIZATION
+                      </a>
+                      <a style="font-size:12px;"
+                        href="{{URL::asset('docs/SCF-4THQ.xlsx')}}" target="_blank"
+                        class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+                        SCF-4THQ
+                      </a>
+                      <a style="font-size:12px;"
+                        href="{{URL::asset('docs/SEF-Utilization-2018.xls')}}" target="_blank"
+                        class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+                        SEF-Utilization-2018
+                      </a>
+                      <a style="font-size:12px;"
+                        href="{{URL::asset('docs/Statement of Debt Services 03.24.14.xlsx')}}" target="_blank"
+                        class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+                        Statement of Debt Services 03.24.14
+                      </a>
+                      <a style="font-size:12px;"
+                      href="{{URL::asset('docs/Unliquidated-2018.xlsx')}}" target="_blank"
+                        class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+                        Unliquidated-2018
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+
       <div class="col-3">
-        <div class="card border-primary mb-1" style="height: 18rem;">
+        <div class="card border-primary mb-1" style="height: 22rem;">
           <h4 class="text-white card-title p-2 text-center mb-0">
             Featured Links
           </h4>

@@ -85,7 +85,7 @@
            <b style="font-size: 18px;">A</b>ssist every client and visitors with utmost courtesy and smile. <br>
            <b style="font-size: 18px;">M</b>onitor our own ranks to ensure that services are delivered ontime. <br>
            <b style="font-size: 18px;">A</b>dequate care shall be accorded to Senior Citizens, pregnant women, children and Persons with Disabilities(PWDs) that comes our door. <br>
-           <b style="font-size: 18px;">N</b>urture each day as a gift of opportunity to serve others.
+           <b style="font-size: 18px;">N</b>urture each day as a gift of opportunity to serve others.<br>
            <b style="font-size: 18px;">T</b>rustworthiness shall be epitome of our service delays with explanations. <br>
            <b style="font-size: 18px;">E</b>nsure happy clients by addressing service delays with explanations. To all this we pledge and commit, keeping in mind that we are at all times accountable to the people that we serve.
         </p>

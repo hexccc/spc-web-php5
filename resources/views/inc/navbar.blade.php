@@ -62,7 +62,7 @@
             <div class="dropdown-item"><li><a class="text-body btn-block" href="economy">Economy</a></li></div>
           </ul>
         </li>
-{{--  href="{{URL::asset('docs/SP TMP.pdf')}}" target="_blank" --}}
+
         <li class="nav-item dropdown">
           <a class="btn nav-link active dropdown-toggle mx-2" data-toggle="dropdown" href="#">
             Economy<span class="caret"></span>
@@ -97,41 +97,17 @@
           </ul>
         </li>
 
-        {{-- <li class="nav-item dropdown">
-          <a class="btn btn-outline-info nav-link dropdown-toggle mx-2" data-toggle="dropdown" href="economy">
-            Economy<span class="caret"></span>
-          </a>
-            <ul class="dropdown-menu">
-              <div class="dropdown-item"><li><a href="economy">Investments</a></li></div>
-              <div class="dropdown-item"><li><a href="#">Trade & relation</a></li></div>
-              <div class="dropdown-item"><li><a href="#">Banks & institutions</a></li></div>
-              <div class="dropdown-item"><li><a href="#">Revenue code</a></li></div>
-            </ul>
-          </li>
 
-        <li class="nav-item dropdown">
-          <a class="btn btn-outline-info nav-link dropdown-toggle mx-2" data-toggle="dropdown" href="spablenos">
-            San Pableños<span class="caret"></span>
+          <a class="float-right btn nav-link mx-2 d-flex justify-content-end" href="{{URL::asset('docs/SPC CC V 04.24.19.pdf')}}" target="_blank"  >
+            Citizen's Charter
           </a>
-          <ul class="dropdown-menu">
-            <div class="dropdown-item"><li><a href="spablenos">Population</a></li></div>
-            <div class="dropdown-item"><li><a href="#">Education</a></li></div>
-            <div class="dropdown-item"><li><a href="#">Livelihood</a></li></div>
-            <div class="dropdown-item"><li><a href="#">Contribution</a></li></div>
-            <div class="dropdown-item"><li><a href="#">Awardees</a></li></div>
-          </ul>
-        </li>
 
-        <li class="nav-item dropdown">
-          <a class="btn btn-outline-info nav-link dropdown-toggle mx-2" data-toggle="dropdown" href="gallery">
-            Gallery<span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <div class="dropdown-item"><li><a href="gallery">New Videos</a></li></div>
-            <div class="dropdown-item"><li><a href="#">Pictures</a></li></div>
-          </ul>
-        </li> --}}
+
       </ul>
+      <ul class="navbar-nav ml-auto">
+
+      </ul>
+
     </div>
   </div>
 </nav>
