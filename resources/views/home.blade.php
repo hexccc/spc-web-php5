@@ -276,7 +276,11 @@
           <iframe width="250" height="150" src="https://www.youtube.com/embed/QCd-faJ5OGI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-
+      <a>
+        <img src="https://smallseotools.com/counterDisplay?code=b393478765d82dad53f6f0aea97be612&style=0015&pad=5&type=page&initCount="  title="Visitor Hit Counter" Alt="Visitor Hit Counter" border="0">
+      </a>
+      <iframe style="pointer-events: none;" src="http://free.timeanddate.com/clock/i6qeu6qp/n145/tlph/fs15/fc444/tct/pct/avt/tt0" frameborder="0" width="279" height="20" allowTransparency="true" disabled>
+      </iframe>
 
 
 </div>
