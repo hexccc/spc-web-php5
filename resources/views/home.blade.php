@@ -1,31 +1,46 @@
 @extends('layouts.app')
       @include('inc.carousel')
+      @include('inc.calendar')
       @section('title', 'Home')
 @section('content')
   <div class="col-md-10 offset-md-1">
+  <div id='calendar'></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    plugins: [ 'dayGrid', 'googleCalendar' ],
+    header: {
+      left: 'prev',
+      center: 'title',
+      right: 'next today'
+    },
+
+
+    // THIS KEY WON'T WORK IN PRODUCTION!!!
+    // To make your own Google API key, follow the directions here:
+    // http://fullcalendar.io/docs/google_calendar/
+    googleCalendarApiKey: 'AIzaSyDcnW6WejpTOCffshGDDb4neIrXVUA1EAE',
+
+
+    eventClick: function(arg) {
+
+      // opens events in a popup window
+      window.open(arg.event.url, '_blank', 'width=700,height=650');
+
+      // prevents current tab from navigating
+      arg.jsEvent.preventDefault();
+    }
+
+  });
+
+  calendar.render();
+});
+</script>
     <div class="row">
       <div class="col-9">
         <div class="row">
-          {{-- <div class="col-6">
-            <div class="card border-primary mb-3" style="height: 12rem;">
-              <h2 class="text-white card-title p-2 text-center mb-0">
-                MISSION
-              </h2>
-                <div class="card-body text-primary">
-                  <p class="card-text text-dark">To implement the City's development programs through sustainable and effecient delivery of public services in partnership with the private sector.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card border-primary mb-3" style="height: 12rem;">
-              <h2 class="text-white card-title p-2 text-center mb-0">
-                VISION
-              </h2>
-                <div class="card-body text-primary">
-                  <p class="card-text text-dark">San Pablo, the City of Seven Lakes - a premier agricultural and light insdustrial zone, education hub and tourist destination in CALABARZON</p>
-              </div>
-            </div>
-          </div> --}}
           <div class="col-6">
             <div class="card border-primary mb-3" style="height: 16rem;">
               <h3 class="text-white card-title p-2 text-center mb-0">
@@ -55,7 +70,6 @@
                   class="btn btn-outline-info btn-block text-dark" aria-disabled="true" target="_blank">
                   PhilGePS LINK
                 </a>
-
               </div>
             </div>
           </div>
@@ -254,20 +268,10 @@
     <h3 class="text-white p-2 mt-4">
       Videos
     </h3>
-    {{-- <div class="col-md-12">
-      <div class="card border-primary mb-3" style="height: 28rem;">
-        <h3 class="text-white card-title p-2 text-center mb-0">
-          Videos
-        </h3>
-        <div class="card-item embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=cauA0tG0NoE" allowfullscreen>
-          </iframe>
-        </div>
-        </div>
-      </div> --}}
+
       <div class="media row mb-5">
         <div class=" media-body col-9">
-          <iframe height="450" width="810" src="https://www.youtube.com/embed/Xja8v82gweA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          <iframe class="" height="450" width="810" src="https://www.youtube.com/embed/Xja8v82gweA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
           </iframe>
         </div>
         <div class="col-3">
@@ -279,10 +283,8 @@
       <a>
         <img src="https://smallseotools.com/counterDisplay?code=b393478765d82dad53f6f0aea97be612&style=0015&pad=5&type=page&initCount="  title="Visitor Hit Counter" Alt="Visitor Hit Counter" border="0">
       </a>
-      <iframe style="pointer-events: none;" src="http://free.timeanddate.com/clock/i6qeu6qp/n145/tlph/fs15/fc444/tct/pct/avt/tt0" frameborder="0" width="279" height="20" allowTransparency="true" disabled>
-      </iframe>
-
-
+    </div>
+  </div>
 </div>
 
 

@@ -92,5 +92,9 @@ Route::get('/mission', function () {
     return view('mission');
 });
 
+Route::get('/calendar', function () {
+    return view('calendar');
+});
+
 
 Route::post('register', array('uses' => 'Register@store'));

@@ -99,10 +99,10 @@
           <a class="float-right btn nav-link mx-2 d-flex justify-content-end" href="{{URL::asset('docs/SPC CC V 04.24.19.pdf')}}" target="_blank"  >
             Citizen's Charter
           </a>
-          <li class="float-right mx-auto">
+          {{-- <li class="float-right mx-auto">
           <iframe class="float-right" style="pointer-events: none;" src="https://freesecure.timeanddate.com/clock/i6qeu6qp/n145/tlph/fs15/fcfff/tct/pct/tt0" frameborder="0" width="279" height="20" allowTransparency="true" disabled>
           </iframe>
-        </li>
+        </li> --}}
       </ul>
       <ul class="navbar-nav ml-auto">
 
