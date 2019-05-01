@@ -11,16 +11,10 @@
   </head>
     @include('inc.navbar')
   <body>
-    <div>
-    </div>
     <div class="container-fluid">
-    @if (Request::is('form'))
-      @include('inc.showcase')
-    @endif
-    <br>
       <div class="row">
-        <div class="">
-        @yield('content')
+        <div class="col-lg-12">
+          @yield('content')
         </div>
       </div>
     </div>
