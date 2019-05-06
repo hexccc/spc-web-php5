@@ -85,17 +85,17 @@
           <h3 class="text-white card-title p-2 text-center mb-0">Hotlines</h3>
           <div class="card-body text-dark">
             <dl>
-              <dt>San Pablo CDRRMO:</dt>
+              <dt><img src="{{URL::asset('image/spc-logo.png')}}" class="img-responsive" style="width:18px"> San Pablo CDRRMO:</dt>
               <dd><span class='fa fa-phone'> </span> Landline 800-405</dd>
               <dd><span class='fa fa-mobile'></span> Smart 09089078124</dd>
               <dd><span class='fa fa-mobile'></span> Globe 09955619456</dd>
-              <dt>BARANGAY CONTROL:</dt>
+              <dt><img src="{{URL::asset('image/brgy0.png')}}" class="img-responsive" style="width:18px"> BARANGAY CONTROL:</dt>
               <dd><span class='fa fa-phone'> </span> 5623-086</dd>
-              <dt><span class='fa fa-first-aid'> </span> RED CROSS SPC Chapter</dt>
+              <dt><img src="{{URL::asset('image/redcross.png')}}" class="img-responsive" style="width:20px"> RED CROSS SPC Chapter</dt>
               <dd><span class='fa fa-phone'> </span> 564-3212</dd>
-              <dt><span class='fa fa-fire-extinguisher'> </span> Bumbero</dt>
+              <dt><img src="{{URL::asset('image/bumbero.png')}}" class="img-responsive" style="width:20px"> Bumbero</dt>
               <dd><span class='fa fa-phone'> </span> 5627-654</dd>
-              <dt><span class='fa fa-taxi'> </span> Pulis</dt>
+              <dt><img src="{{URL::asset('image/policeman.png')}}" class="img-responsive" style="width:16px"> Pulis</dt>
               <dd><span class='fa fa-phone'> </span> 5626-474 / 5210-610</dd>
             </dl>
           </div>
