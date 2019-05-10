@@ -69,3 +69,4 @@
 
 
 </div>
+@extends('inc.modals')

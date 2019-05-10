@@ -5,6 +5,7 @@
 @section('content')
   <br>
   <div class="container-fluid">
+
     {{-- 1st row --}}
     <div class="row">
       <div class="col-lg-3">
@@ -112,7 +113,7 @@
           Events and Announcements
           </h3>
           <div class="card-body d-flex justify-content-center">
-          <img src="{{URL::asset('image/event2.jpg')}}" alt="Event 1" class="img-responsive" style="width: 100%;height: 100%;">
+          <img src="{{URL::asset('image/event3.jpg')}}" alt="Event 1" class="img-responsive" style="width: 100%;height: 100%;">
           </div>
           <a href="#" class=" float-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#exampleModalLong">See All Events>></a>
         </div>
@@ -182,7 +183,6 @@
           </div>
         </div>
       </div>
-
       <div class="col-lg-4">
         <div class="card border-primary mb-1">
           <h4 class="text-white card-title p-2 text-center mb-0">
@@ -211,7 +211,7 @@
 
     {{-- 3rd row --}}
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-12 mb-4">
         <div class="card border-primary mb-1">
           <h3 class="text-white card-title p-2 text-center mb-0">Videos</h3>
           <div class="card-body text-primary">
@@ -236,6 +236,7 @@
       </div>
     </div>
     {{-- 3rd row end --}}
+
   </div>
 
 
