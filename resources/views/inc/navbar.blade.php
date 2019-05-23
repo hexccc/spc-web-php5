@@ -1,14 +1,15 @@
 <nav class="navbar navbar-expand-lg fixed-top" role='navigation'>
-  <a class='navbar-brand'>
+  <a href="/" class='navbar-brand'>
     <img class='img-responsive' src="{{URL::asset('image/spc-logo.png')}}" alt="Logo" height="50px" width="50px" >
   </a>
-  <div class="text-center px-3">
+  <div class="text-center px-2">
     San Pablo City
     <p class="h6 text-nowrap" style="font-size:8px;">
       Official Website of the City
       Government of San Pablo
     </p>
   </div>
+
   <button type='button' class='navbar-toggler' data-toggle='collapse' data-target='#collapseNav'>
     <span class='fa fa-list-ul'></span>
   </button>
@@ -84,7 +85,7 @@
           <div class="dropdown-item"><li><a class="text-body btn-block" href="gallery">Gallery</a></li></div>
         </ul>
       </li>
-      
+
       <li class='nav-item'>
         <a class="btn nav-link mx-2" href="{{URL::asset('docs/SPC CC V 04.24.19.pdf')}}" target="_blank"  >
           Citizen's Charter

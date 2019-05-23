@@ -1,4 +1,4 @@
-<footer id="footer" class="text-center" style="height:2px;">
+<footer id="footer" class="text-center" style="height:1px;">
     {{-- <p>The Integrated Government Philippines (iGovPhil) is a joint program of the<br>
     Department of Information and Communications Technology (DICT) and the<br>
   Advanced Science and Technology Institute of the Department of Science and Technology (DOST-ASTI)</p>
