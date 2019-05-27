@@ -24,6 +24,7 @@
             </a>
           </div>
         </div>
+
         <div class="card border-primary mb-3">
             <h3 class="text-white card-title p-2 text-center mb-0">
               Bids and Awards
@@ -35,6 +36,9 @@
                 PhilGePS LINK
               </a>
             </div>
+          </div>
+          <div>
+            <img class="align-middle" src="{{URL::asset('image/banner.png')}}" style="height:73px">
           </div>
       </div>
       <div class="col-lg-6">
@@ -208,7 +212,7 @@
         </div>
         <div class="card border-primary card-body ">
           <img class="align-middle" src="{{URL::asset('image/flag.gif')}}">
-          <p class="text-center">The CIty Government Of San Pablo joins the entire country in celebrating the "<b>National Flag Day May 28, 2019</b>" Stop & Salute</p>
+          <p class="text-center">The City 1Government of San Pablo joins the entire country in celebrating the</br> <b>"National Flag Day May 28, 2019"</b> </br><i>Stop & Salute<i></p>
         </div>
       </div>
     </div>
