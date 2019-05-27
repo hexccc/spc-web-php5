@@ -204,13 +204,18 @@
             </dd>
             </dl>
           </div>
+
+        </div>
+        <div class="card border-primary card-body ">
+          <img class="align-middle" src="{{URL::asset('image/flag.gif')}}">
+          <p class="text-center">The CIty Government Of San Pablo joins the entire country in celebrating the "<b>National Flag Day May 28, 2019</b>" Stop & Salute</p>
         </div>
       </div>
     </div>
     {{-- 2nd row end --}}
 
     {{-- 3rd row --}}
-    <div class="row">
+    <div class="row mt-4">
       <div class="col-lg-12 mb-4">
         <div class="card border-primary mb-1">
           <h3 class="text-white card-title p-2 text-center mb-0">Videos</h3>

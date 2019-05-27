@@ -49,7 +49,7 @@
         <ul class="dropdown-menu">
           <div class="dropdown-item"><li><a class="text-body btn-block" href="#">Local Officials</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn-block" href="departments">Departments</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="ordinances">Standing Commitees</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn-block" href="#">Standing Commitees</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn-block" href="ordinances">Ordinances</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn-block" href="ela">ELA</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn-block" href="office_map">Office Vicinity Map</a></li></div>
