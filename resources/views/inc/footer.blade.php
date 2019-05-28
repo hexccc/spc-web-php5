@@ -82,7 +82,8 @@
   <footer class="container-fluid text-md-left">
     <div class="d-flex justify-content-around">
       <div class="p-2">
-        <p style="font-size: 8px; "> Powered by </p>
+        <p style="font-size: 8px; ">Powered by:
+        <img class="image-fluid pt-2"src="{{URL::asset('image/pylon.png')}}" alt="Logo" height="30px"> </p>
       </div>
       <div class="p-2">
         <img src="{{URL::asset('image/spc-logo.png')}}" alt="Logo" height="50px" width="50px">

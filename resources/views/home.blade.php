@@ -212,7 +212,7 @@
         </div>
         <div class="card border-primary card-body ">
           <img class="align-middle" src="{{URL::asset('image/flag.gif')}}">
-          <p class="text-center">The City 1Government of San Pablo joins the entire country in celebrating the</br> <b>"National Flag Day May 28, 2019"</b> </br><i>Stop & Salute<i></p>
+          <p class="text-center">The City Government of San Pablo joins the entire country in celebrating the</br> <b>"National Flag Day May 28, 2019"</b> </br><i>Stop & Salute</i></p>
         </div>
       </div>
     </div>
