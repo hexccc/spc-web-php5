@@ -117,9 +117,9 @@
           Events and Announcements
           </h3>
           <div class="card-body d-flex justify-content-center">
-          <img src="{{URL::asset('image/event3.jpg')}}" alt="Event 1" class="img-responsive" style="width: 100%;height: 100%;">
+          <img src="{{URL::asset('image/event3.jpg')}}" alt="Event 1" class="img-responsive" style="width: 100%;height: 100%;" data-toggle="modal" data-target="#event1">
           </div>
-          <a href="#" class=" float-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#exampleModalLong">See All Events>></a>
+          <a href="#" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#event1">See All Events>></a>
         </div>
       </div>
 
@@ -248,6 +248,26 @@
 
   </div>
 
+  <script type="text/javascript">
+    $("div[id^='event']").each(function(){
+
+      var currentModal = $(this);
+
+      //click next
+      currentModal.find('.btn-next').click(function(){
+        currentModal.modal('hide');
+        currentModal.closest("div[id^='event']").nextAll("div[id^='event']").first().modal('show');
+      });
+
+      //click prev
+      currentModal.find('.btn-prev').click(function(){
+        currentModal.modal('hide');
+        currentModal.closest("div[id^='event']").prevAll("div[id^='event']").first().modal('show');
+      });
+
+    });
+  </script>
 
 
+@extends('inc.modals')
 @endsection

@@ -19,8 +19,8 @@
       </div>
     </div>
 
-<div class="row">
-      <div class="col-md-8">
+<div class="row col-md-8">
+      <div class="col-md-12 pb-2">
         <div class="card border-primary card-body ">
           <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/amben.png')}}" style="height:100%; width:200px;">
           <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Mayor Loreto "Amben" S. Amante</h5>
@@ -28,7 +28,7 @@
         </div>
       </div>
 
-      <li class="media">
+      <div class="col-md-12 pb-2">
         <div class="card border-primary card-body ">
           <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/amben.png')}}" style="height:100%; width:200px;">
           <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Mayor Loreto "Amben" S. Amante</h5>
