@@ -114,3 +114,41 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="mayor_office" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mayor_office">Mayor's Office </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <dl class="row text-dark">
+          <dt class="col-6">HON. LORETO S. AMANTE</dt>
+          <dd class="col-6">City Mayor</dd>
+
+          <dt class="col-6">PAUL MICHAEL CUADRA</dt>
+          <dd class="col-6">
+            <p>CGDH -I
+            </br>Tel. No. (049) 521-0307</p>
+          </dd>
+          <dt class="col-6 text-uppercase">Rodel B. Biglete</dt>
+          <dd class="col-6">Head, Records Section </dd>
+          <dt class="col-6 text-uppercase">Emilio I. Tirones</dt>
+          <dd class="col-6">Head, Urban Housing Coordinator </dd>
+          <dt class="col-6 text-uppercase">Percival F. Alvero</dt>
+          <dd class="col-6">Head, Business Permit Office and Liscense Division </dd>
+          <dt class="col-6 text-uppercase">Melinda P. Bondad</dt>
+          <dd class="col-6">Head, Public Employment Service Office</dd>
+        </dl>
+        <hr>
+        <dl class="row text-dark">
+          <dt class="col-6">Office Location </dt>
+          <dd class="col-6">3rd Flr., 8th Storey Bldg.</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
