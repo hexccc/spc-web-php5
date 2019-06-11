@@ -93,10 +93,10 @@
         </script> San Pablo City Government</p>
       </div>
       <div class="p-2">
-        <pre class="align-middle"style="font-size: 10px; ">
+        {{-- <pre class="align-middle"style="font-size: 10px; ">
         Developed by
           Hendrixson Cordez</pre>
-      </div>
+      </div> --}}
     </div>
 
   </footer>

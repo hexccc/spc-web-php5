@@ -58,7 +58,7 @@
                       </br>Tel. No. (049) 503-1522
                       </dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -73,7 +73,7 @@
                       <dd class="col-8">City Accountant/CGDH-1</dd>
 
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -87,7 +87,7 @@
                       <dd class="col-7">Tel. No. 503-2229</dd>
                       <dd class="col-8">City Agriculturist/ CGDH-1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -101,7 +101,7 @@
                       <dd class="col-7">Tel. No. 521-0996</dd>
                       <dd class="col-8">City Assessor/ CGDH-1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -115,7 +115,7 @@
                       <dd class="col-7">Tel. No. 562-6817</dd>
                       <dd class="col-8">City Budget Officer /CGDH-1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -129,7 +129,7 @@
                       <dd class="col-7">Tel. No. 562-562-2866</dd>
                       <dd class="col-8">City Cooperative Officer/ CGDH-1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -143,7 +143,7 @@
                       <dd class="col-7">Tel. No. 562-2822</dd>
                       <dd class="col-8">CENR Officer/ CGDH-1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -157,7 +157,7 @@
                       <dd class="col-7">Tel. No. 521-0798</dd>
                       <dd class="col-8">City Engineer / CGDH-1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -171,7 +171,7 @@
                       <dd class="col-7">Tel. No. 562-2395</dd>
                       <dd class="col-8">City General Services Officer/ CGDH-1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -185,7 +185,7 @@
                       <dd class="col-7">Tel. No. 561-2649</dd>
                       <dd class="col-8">Human Resource Mngmt. Officer IV</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -199,7 +199,7 @@
                       <dd class="col-7">Tel. No. 562-0863</dd>
                       <dd class="col-8">City Legal Officer / CGDH-1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -213,7 +213,7 @@
                       <dd class="col-7">Tel. No. 562-8119</dd>
                       <dd class="col-8">City Civil Registry Officer/CGDH-1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -227,7 +227,7 @@
                       <dd class="col-7">Tel. No. 562-4980</dd>
                       <dd class="col-8">Acting City Planning and Development Officer</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -241,7 +241,7 @@
                       <dd class="col-7">Tel. No. 562-1030</dd>
                       <dd class="col-8">City Population and Nutrition Officer/CGDH1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -255,7 +255,7 @@
                       <dd class="col-7">Tel. No. 562-1575</dd>
                       <dd class="col-8">CSWDO / CGDH -1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -270,7 +270,7 @@
                       <dd class="col-7">Tel. No. 562-1429</dd>
                       <dd class="col-8">City Tourism Officer / CGDH-1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -285,7 +285,7 @@
                       <dd class="col-7">Tel. No. 562-6710</dd>
                       <dd class="col-8">City Treasure/ CGDH-1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -300,7 +300,7 @@
                       <dd class="col-7">Tel. No. 562-8266</dd>
                       <dd class="col-8">City Veterinarian / CGDH-1</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 
@@ -315,7 +315,7 @@
                       <dd class="col-7">Tel. No. 562-1575</dd>
                       <dd class="col-8">Vice Mayor</dd>
                     </dl>
-                    <a href="#" class="float-right  font-weight-bold font-italic">View more>>></a>
+
                 </div>
               </div>
 

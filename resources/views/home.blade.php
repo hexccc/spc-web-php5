@@ -90,18 +90,18 @@
           <h3 class="text-white card-title p-2 text-center mb-0">Hotlines</h3>
           <div class="card-body text-dark">
             <dl>
-              <dt><img src="{{URL::asset('image/spc-logo.png')}}" class="img-responsive" style="width:18px"> San Pablo CDRRMO:</dt>
-              <dd><span class='fa fa-phone'> </span> Landline 800-405</dd>
-              <dd><span class='fa fa-mobile'></span> Smart 09089078124</dd>
-              <dd><span class='fa fa-mobile'></span> Globe 09955619456</dd>
-              <dt><img src="{{URL::asset('image/brgy0.png')}}" class="img-responsive" style="width:18px"> BARANGAY CONTROL:</dt>
-              <dd><span class='fa fa-phone'> </span> 5623-086</dd>
+              <dt><img src="{{URL::asset('image/spc-logo.png')}}" class="img-responsive" style="width:20px"> San Pablo CDRRMO:</dt>
+              <dd> <img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px">&nbsp; Landline 800-405</dd>
+              <dd> <img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px">&nbsp; Smart 09089078124</dd>
+              <dd> <img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px">&nbsp;  Globe 09955619456</dd>
+              <dt><img src="{{URL::asset('image/control.png')}}" class="img-responsive" style="width:16px">&nbsp; BARANGAY CONTROL:</dt>
+              <dd><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"> &nbsp;5623-086</dd>
               <dt><img src="{{URL::asset('image/redcross.png')}}" class="img-responsive" style="width:20px"> RED CROSS SPC Chapter</dt>
-              <dd><span class='fa fa-phone'> </span> 564-3212</dd>
-              <dt><img src="{{URL::asset('image/bumbero.png')}}" class="img-responsive" style="width:20px"> Bumbero</dt>
-              <dd><span class='fa fa-phone'> </span> 5627-654</dd>
-              <dt><img src="{{URL::asset('image/policeman.png')}}" class="img-responsive" style="width:16px"> Pulis</dt>
-              <dd><span class='fa fa-phone'> </span> 5626-474 / 5210-610</dd>
+              <dd><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"> &nbsp;564-3212</dd>
+              <dt><img src="{{URL::asset('image/bumbero1.png')}}" class="img-responsive" style="width:20px"> Bumbero</dt>
+              <dd><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"> &nbsp;5627-654</dd>
+              <dt><img src="{{URL::asset('image/police.png')}}" class="img-responsive" style="width:23px"> Pulis</dt>
+              <dd><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"> &nbsp;5626-474 / 5210-610</dd>
             </dl>
           </div>
         </div>
@@ -212,7 +212,7 @@
         </div>
         <div class="card border-primary card-body ">
           <img class="align-middle" src="{{URL::asset('image/flag.gif')}}">
-          <p class="text-center">The City Government of San Pablo joins the entire country in celebrating the</br> <b>"National Flag Day May 28, 2019"</b> </br><i>Stop & Salute</i></p>
+          <p class="text-center">Happy Independence Day from The City Government of San Pablo</br> <b>"Independence Day June 12, 2019"</b> </br></p>
         </div>
       </div>
     </div>

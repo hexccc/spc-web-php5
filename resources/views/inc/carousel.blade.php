@@ -1,5 +1,5 @@
 
-<div id="demo" class="carousel slide" data-ride="carousel" style="position:relative">
+<div id="demo" class="carousel slide" data-ride="carousel">
   <a class="carousel-control-prev" href="#demo" data-slide="prev">
     <span class="carousel-control-prev-icon aria-hidden="true""></span>
   </a>
@@ -11,6 +11,7 @@
     <li data-target="#demo" data-slide-to="0" class="active"></li>
     <li data-target="#demo" data-slide-to="1"></li>
     <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
   </ul>
 
   <!-- The slideshow -->
@@ -50,6 +51,19 @@
             <p>San Pablo City Plaza</p>
           </div>
         </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="{{URL::asset('image/carousel4.jpg')}}" alt="mayor" height="600" width="100%">
+        <div class="carousel-caption">
+          <div class="float-right" style="text-align: right;">
+            <div class="mx-3 mt-3 ">
+              {{-- <h5 class="font-weight-bold">SAMPALOC LAKE</h5>
+              <p>&copy;Yen Baet</p> --}}
+            </div>
+          </div>
+          <div class="mask rgba-purple-slight"></div>
         </div>
       </div>
     </div>
