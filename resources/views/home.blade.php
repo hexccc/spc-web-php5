@@ -212,7 +212,7 @@
         </div>
         <div class="card border-primary card-body ">
           <img class="align-middle" src="{{URL::asset('image/flag.gif')}}">
-          <p class="text-center">Happy Independence Day from The City Government of San Pablo</br> <b>"Independence Day June 12, 2019"</b> </br></p>
+          <p class="text-center">Happy Independence Day from The City Government of San Pablo</br> <b style="font-size:1rem;">Independence Day June 12, 2019</b> </br></p>
         </div>
       </div>
     </div>

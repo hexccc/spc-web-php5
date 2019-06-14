@@ -19,24 +19,95 @@
       </div>
     </div>
 
-<div class="row col-md-8">
+    <div class="row col-md-8">
       <div class="col-md-12 pb-2">
         <div class="card border-primary card-body ">
           <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/amben.png')}}" style="height:100%; width:200px;">
-          <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Mayor Loreto "Amben" S. Amante</h5>
+          <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Mayor Loreto "Amben" S. Amante</h5>
           <p class="text-center"><b>City Mayor of San Pablo City</b></p>
         </div>
       </div>
 
       <div class="col-md-12 pb-2">
         <div class="card border-primary card-body ">
-          <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/amben.png')}}" style="height:100%; width:200px;">
-          <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Mayor Loreto "Amben" S. Amante</h5>
-          <p class="text-center"><b>City Mayor of San Pablo City</b></p>
+          <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
+          <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Justin G. Colago</h5>
+          <p class="text-center"><b>City Vice Mayor of San Pablo City</b></p>
         </div>
+      </div>
+        {{-- <div class="row col-md-12"> --}}
+          <div class="col-md-6 pb-2">
+            <div class="card border-primary card-body ">
+              <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <p class="text-center"><b>City Councilor</b></p>
+            </div>
+          </div>
+          <div class="col-md-6 pb-2">
+            <div class="card border-primary card-body ">
+              <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <p class="text-center"><b>City Councilor</b></p>
+            </div>
+          </div>
+          <div class="col-md-6 pb-2">
+            <div class="card border-primary card-body ">
+              <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <p class="text-center"><b>City Councilor</b></p>
+            </div>
+          </div>
+          <div class="col-md-6 pb-2">
+            <div class="card border-primary card-body ">
+              <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <p class="text-center"><b>City Councilor</b></p>
+            </div>
+          </div>
+          <div class="col-md-6 pb-2">
+            <div class="card border-primary card-body ">
+              <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <p class="text-center"><b>City Councilor</b></p>
+            </div>
+          </div>
+          <div class="col-md-6 pb-2">
+            <div class="card border-primary card-body ">
+              <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <p class="text-center"><b>City Councilor</b></p>
+            </div>
+          </div>
+          <div class="col-md-6 pb-2">
+            <div class="card border-primary card-body ">
+              <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <p class="text-center"><b>City Councilor</b></p>
+            </div>
+          </div>
+          <div class="col-md-6 pb-2">
+            <div class="card border-primary card-body ">
+              <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <p class="text-center"><b>City Councilor</b></p>
+            </div>
+          </div>
+          <div class="col-md-6 pb-2">
+            <div class="card border-primary card-body ">
+              <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <p class="text-center"><b>City Councilor</b></p>
+            </div>
+          </div>
+          <div class="col-md-6 pb-2">
+            <div class="card border-primary card-body ">
+              <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <p class="text-center"><b>City Councilor</b></p>
+            </div>
+          </div>
+          
+
       </div>
     </div>
-
-
   </div>
-</div>

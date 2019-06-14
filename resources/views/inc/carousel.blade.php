@@ -16,7 +16,21 @@
 
   <!-- The slideshow -->
   <div class="carousel-inner">
-    <div class="carousel-item active ">
+
+    <div class="carousel-item active">
+      <img src="{{URL::asset('image/carousel4.jpg')}}" alt="mayor" height="600" width="100%">
+      <div class="carousel-caption">
+        <div class="float-right" style="text-align: right;">
+          <div class="mx-3 mt-3 ">
+            {{-- <h5 class="font-weight-bold">SAMPALOC LAKE</h5>
+            <p>&copy;Yen Baet</p> --}}
+          </div>
+        </div>
+        <div class="mask rgba-purple-slight"></div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
       <img src="{{URL::asset('image/slake1.jpg')}}" alt="Sampaloc Lake" height="600" width="100%">
       <div class="carousel-caption">
         <div class="float-right" style="text-align: right;">
@@ -54,18 +68,7 @@
         </div>
       </div>
 
-      <div class="carousel-item">
-        <img src="{{URL::asset('image/carousel4.jpg')}}" alt="mayor" height="600" width="100%">
-        <div class="carousel-caption">
-          <div class="float-right" style="text-align: right;">
-            <div class="mx-3 mt-3 ">
-              {{-- <h5 class="font-weight-bold">SAMPALOC LAKE</h5>
-              <p>&copy;Yen Baet</p> --}}
-            </div>
-          </div>
-          <div class="mask rgba-purple-slight"></div>
-        </div>
-      </div>
+
     </div>
 
 </div>
