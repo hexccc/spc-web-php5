@@ -39,74 +39,74 @@
           <div class="col-md-6 pb-2">
             <div class="card border-primary card-body ">
               <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
-              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Angie Yang</h5>
               <p class="text-center"><b>City Councilor</b></p>
             </div>
           </div>
           <div class="col-md-6 pb-2">
             <div class="card border-primary card-body ">
               <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
-              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Karla Monica Adajar</h5>
               <p class="text-center"><b>City Councilor</b></p>
             </div>
           </div>
           <div class="col-md-6 pb-2">
             <div class="card border-primary card-body ">
               <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
-              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Carmela Acebedo</h5>
               <p class="text-center"><b>City Councilor</b></p>
             </div>
           </div>
           <div class="col-md-6 pb-2">
             <div class="card border-primary card-body ">
               <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
-              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Jojo Biglete</h5>
               <p class="text-center"><b>City Councilor</b></p>
             </div>
           </div>
           <div class="col-md-6 pb-2">
             <div class="card border-primary card-body ">
               <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
-              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Adriano Gel</h5>
               <p class="text-center"><b>City Councilor</b></p>
             </div>
           </div>
           <div class="col-md-6 pb-2">
             <div class="card border-primary card-body ">
               <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
-              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Ed Dela Cruz</h5>
               <p class="text-center"><b>City Councilor</b></p>
             </div>
           </div>
           <div class="col-md-6 pb-2">
             <div class="card border-primary card-body ">
               <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
-              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Elsie Pavico</h5>
               <p class="text-center"><b>City Councilor</b></p>
             </div>
           </div>
           <div class="col-md-6 pb-2">
             <div class="card border-primary card-body ">
               <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
-              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Buhay Espiritu</h5>
               <p class="text-center"><b>City Councilor</b></p>
             </div>
           </div>
           <div class="col-md-6 pb-2">
             <div class="card border-primary card-body ">
               <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
-              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Napoleon Calatrabra</h5>
               <p class="text-center"><b>City Councilor</b></p>
             </div>
           </div>
           <div class="col-md-6 pb-2">
             <div class="card border-primary card-body ">
               <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/2x2.jpg')}}" style="height:100%; width:200px;">
-              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon.</h5>
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Dandi Medina</h5>
               <p class="text-center"><b>City Councilor</b></p>
             </div>
           </div>
-          
+
 
       </div>
     </div>

@@ -47,7 +47,7 @@
       <li class="nav-item dropdown">
         <a class="btn nav-link dropdown-toggle mx-2" data-toggle="dropdown" href="#">Government<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="#">Local Officials</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn-block" href="local_off">Local Officials</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn-block" href="departments">Departments</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn-block" href="#">Standing Commitees</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn-block" href="ordinances">Ordinances</a></li></div>
