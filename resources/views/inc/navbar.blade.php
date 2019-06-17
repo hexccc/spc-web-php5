@@ -50,10 +50,10 @@
           <div class="dropdown-item"><li><a class="text-body btn-block" href="local_off">Local Officials</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn-block" href="departments">Departments</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn-block" href="#">Standing Commitees</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="ordinances">Ordinances</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="ela">ELA</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn-block" href="#">Ordinances</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn-block" href="#">ELA</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn-block" href="office_map">Office Vicinity Map</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="economy">Economy</a></li></div>
+
         </ul>
       </li>
 

@@ -28,9 +28,7 @@ Route::get('/economy', function () {
     return view('economy');
 });
 
-Route::get('/barangay', function () {
-    return view('barangay');
-});
+Route::get('/barangay', 'GetBrgyLs@viewToWeb');
 
 Route::get('/tourism', function () {
     return view('tourism');
@@ -58,6 +56,10 @@ Route::get('/departments', function () {
 
 Route::get('/modals', function () {
     return view('modals');
+});
+
+Route::get('/modal_district', function () {
+    return view('modal_district');
 });
 
 Route::get('/sanpablenos', function () {

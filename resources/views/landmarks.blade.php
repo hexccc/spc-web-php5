@@ -3,7 +3,7 @@
 
 <div class="mx-auto col-md-10 offset-md-1 pt-4" style="width:100%">
     <h3 class=" text-white p-2 mt-4">
-      San Pablo Ciy Famous Landmarks
+      San Pablo City Famous Landmarks
     </h3>
 <div class="row px-2">
     <div class="media float-right mt-2 p-2">
