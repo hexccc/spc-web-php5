@@ -93,11 +93,17 @@
         </script> San Pablo City Government</p>
       </div>
       <div class="p-2">
-        {{-- <pre class="align-middle"style="font-size: 10px; ">
-        Developed by
-          Hendrixson Cordez</pre>
-      </div> --}}
+      <p class="align-middle"style="font-size: 10px; ">
+        Developed by:</br>
+        &emsp;Hendrixson Cordez</p>
+      </div>
     </div>
+
+    {{-- <form style="" action ="{{ route ('visit.update', ['id'=>$id]) }}" method="post">
+      <input type="text" name="" value="{{ $post->visit_count}}" id="postVisitCount">
+    </form> --}}
+
+
 
   </footer>
 

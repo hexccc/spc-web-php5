@@ -12,9 +12,7 @@
 */
 
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'CountCtrl@countVisit');
 
 Route::get('/form', function () {
     return view('form');

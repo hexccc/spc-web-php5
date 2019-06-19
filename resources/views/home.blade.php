@@ -247,6 +247,9 @@
     {{-- 3rd row end --}}
 
   </div>
+  <div class="float-right mr-3">
+    <p>Visitor's Counter: {{ $count }}</p>
+  </div>
 
   <script type="text/javascript">
     $("div[id^='event']").each(function(){
