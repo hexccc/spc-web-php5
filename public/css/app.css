@@ -10777,6 +10777,12 @@ body {
   margin: 40px auto;
 }
 
+#galler-area {
+  background-color: #1d1d1d !important;
+  color: #989898;
+  margin: 10px;
+}
+
 #demo {
   position: relative;
   overflow: hidden;
@@ -10811,7 +10817,15 @@ img.zoom {
   transform: scale(1);
 }
 
+.modal-header {
+  border-bottom: none;
+}
+
 .modal-title {
   color: #000;
+}
+
+.modal-footer {
+  display: none;
 }
 

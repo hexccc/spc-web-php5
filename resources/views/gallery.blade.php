@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('title', 'Gallery')
 @section('content')
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
   <div class="mx-auto col-md-12 offset-md-1 py-4" style="width:100%">
       <h3 class="text-white p-2 my-2">
         Gallery
@@ -61,20 +65,20 @@
        </div>
 
        <script>
-       $(document).ready(function(){
-         $(".fancybox").fancybox({
-               openEffect: "none",
-               closeEffect: "none"
-           });
+         $(document).ready(function(){
+           $(".fancybox").fancybox({
+                 openEffect: "none",
+                 closeEffect: "none"
+             });
 
-           $(".zoom").hover(function(){
+             $(".zoom").hover(function(){
 
-       		$(this).addClass('transition');
-       	}, function(){
+         		$(this).addClass('transition');
+         	}, function(){
 
-       		$(this).removeClass('transition');
-       	});
-       });
+         		$(this).removeClass('transition');
+         	});
+         });
        </script>
 
 

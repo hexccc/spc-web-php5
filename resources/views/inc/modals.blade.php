@@ -67,7 +67,7 @@
         </button>
       </div>
       <div class="modal-body" class="fancybox">
-          <img src="{{URL::asset('image/event3.jpg')}}" alt="Event 3" class="img-fluid">
+          <img src="{{URL::asset('image/carousel4.jpg')}}" alt="Event 3" class="img-fluid">
           <div class="float-right">
             <button type="button" class="btn btn-outline-info text-dark btn-prev">< Prev</button>
             <button type="button" class="btn btn-outline-info text-dark btn-next">Next ></button>

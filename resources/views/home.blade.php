@@ -86,11 +86,36 @@
       </div>
 
       <div class="col-lg-3">
-        <div class="card border-primary mb-1">
+        <div class="card border-primary">
           <h3 class="text-white card-title p-2 text-center mb-0">Hotlines</h3>
-          <div class="card-body text-dark">
-            <dl>
-              <dt><img src="{{URL::asset('image/spc-logo.png')}}" class="img-responsive" style="width:20px"> San Pablo CDRRMO:</dt>
+          <div class="card-body text-primary col-md-12">
+            <dl class="row text-dark pb-0 mb-0">
+              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/spc-logo.png')}}" class="img-responsive" style="width:16px"></dt>
+              <dd class="col-10 font-weight-bold">San Pablo CDRRMO</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
+              <dd class="col-10 ">Landline 800-405</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px"></dt>
+              <dd class="col-10 ">Smart 09089078124</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px"></dt>
+              <dd class="col-10">Globe 09955619456</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/control.png')}}" class="img-responsive" style="width:16px"></dt>
+              <dd class="col-10 font-weight-bold">BARANGAY CONTROL</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
+              <dd class="col-10 ">5623-086</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/redcross.png')}}" class="img-responsive" style="width:16px"></dt>
+              <dd class="col-10 font-weight-bold">RED CROSS SPC Chapter</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
+              <dd class="col-10 ">564-3212</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/bumbero1.png')}}" class="img-responsive" style="width:20px"></dt>
+              <dd class="col-10 font-weight-bold">Bumbero</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
+              <dd class="col-10 ">5627-654</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/police.png')}}" class="img-responsive" style="width:23px"></dt>
+              <dd class="col-10 font-weight-bold">Pulis</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
+              <dd class="col-10 ">5626-474 / 5210-610</dd>
+
+              {{-- <dt><img src="{{URL::asset('image/spc-logo.png')}}" class="img-responsive" style="width:20px"> San Pablo CDRRMO:</dt>
               <dd> <img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px">&nbsp; Landline 800-405</dd>
               <dd> <img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px">&nbsp; Smart 09089078124</dd>
               <dd> <img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px">&nbsp;  Globe 09955619456</dd>
@@ -101,7 +126,7 @@
               <dt><img src="{{URL::asset('image/bumbero1.png')}}" class="img-responsive" style="width:20px"> Bumbero</dt>
               <dd><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"> &nbsp;5627-654</dd>
               <dt><img src="{{URL::asset('image/police.png')}}" class="img-responsive" style="width:23px"> Pulis</dt>
-              <dd><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"> &nbsp;5626-474 / 5210-610</dd>
+              <dd><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"> &nbsp;5626-474 / 5210-610</dd> --}}
             </dl>
           </div>
         </div>
@@ -112,7 +137,7 @@
     {{-- 2nd row --}}
     <div class="row">
       <div class="col-lg-4">
-        <div class="card border-primary mb-3" style="height: 22rem;">
+        <div class="card border-primary mb-3" style="height: 23rem;">
           <h3 class="text-white card-title p-2 text-center mb-0 align-text-bottom">
           Events and Announcements
           </h3>
@@ -256,13 +281,11 @@
 
       var currentModal = $(this);
 
-      //click next
       currentModal.find('.btn-next').click(function(){
         currentModal.modal('hide');
         currentModal.closest("div[id^='event']").nextAll("div[id^='event']").first().modal('show');
       });
 
-      //click prev
       currentModal.find('.btn-prev').click(function(){
         currentModal.modal('hide');
         currentModal.closest("div[id^='event']").prevAll("div[id^='event']").first().modal('show');
