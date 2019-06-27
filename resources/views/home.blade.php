@@ -1,10 +1,12 @@
+@include('inc.carousel')
 @extends('layouts.app')
-      @include('inc.carousel')
-      @include('inc.calendar')
-      @section('title', 'Home')
 @section('content')
-  <br>
+@section('title', 'Home')
+
   <div class="container-fluid">
+
+
+
 
     {{-- 1st row --}}
     <div class="row">
@@ -275,25 +277,9 @@
   <div class="float-right mr-3">
     <p>Visitor's Counter: {{ $count }}</p>
   </div>
-
-  <script type="text/javascript">
-    $("div[id^='event']").each(function(){
-
-      var currentModal = $(this);
-
-      currentModal.find('.btn-next').click(function(){
-        currentModal.modal('hide');
-        currentModal.closest("div[id^='event']").nextAll("div[id^='event']").first().modal('show');
-      });
-
-      currentModal.find('.btn-prev').click(function(){
-        currentModal.modal('hide');
-        currentModal.closest("div[id^='event']").prevAll("div[id^='event']").first().modal('show');
-      });
-
-    });
-  </script>
-
-
 @extends('inc.modals')
+
+
+
+
 @endsection

@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg fixed-top" role='navigation'>
   <a href="/" class='navbar-brand'>
-    <img class='img-responsive' src="{{URL::asset('image/spc-logo.png')}}" alt="Logo" height="50px" width="50px" >
+    <img class='img-responsive' src="{{URL::asset('image/spc-logo.png')}}" alt="Logo" width="50px" >
   </a>
   <div class="text-center px-2">
     San Pablo City
-    <p class="h6 text-nowrap" style="font-size:8px;">
+    <p class="h6 text-nowrap" style="font-size:8px; color: white;">
       Official Website of the City
       Government of San Pablo
     </p>

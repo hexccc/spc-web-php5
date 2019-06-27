@@ -11,4 +11,7 @@ $(document).ready(function() {
     modal.find('#mCont').text(contact);
     modal.find('#mBrgyCode').text(code);
   });
+  $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active');
+  });
 });

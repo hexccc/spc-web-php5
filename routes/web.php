@@ -96,5 +96,18 @@ Route::get('/calendar', function () {
     return view('calendar');
 });
 
+Route::get('/pylon-admin', function () {
+    return view('pylon-admin');
+});
+
+Route::get('/preloader', function () {
+    return view('preloader');
+});
+
+Route::get('/style-admin-nav', function () {
+    return view('style-admin-nav');
+});
+
+
 
 Route::post('register', array('uses' => 'Register@store'));
