@@ -49,6 +49,25 @@
       });
     </script>
 
+    <script type="text/javascript">
+      $("div[id^='news']").each(function(){
+
+        var currentModal = $(this);
+
+        currentModal.find('.btn-next').click(function(){
+          currentModal.modal('hide');
+          currentModal.closest("div[id^='news']").nextAll("div[id^='news']").first().modal('show');
+        });
+
+        currentModal.find('.btn-prev').click(function(){
+          currentModal.modal('hide');
+          currentModal.closest("div[id^='news']").prevAll("div[id^='news']").first().modal('show');
+        });
+
+      });
+    </script>
+
+
   </html>
   <div class="modal fade" id="bploForm" tabindex="-1" aria-labelledby="bploFormlbl" aria-hidden="true" role="dialog">
     <div class="modal-dialog" role="document">

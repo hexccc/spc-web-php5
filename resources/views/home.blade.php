@@ -12,19 +12,19 @@
           <div class="card-body text-primary" >
             <div class="row">
               <div class="col-sm-3">
-                <img class="align-middle" src="{{URL::asset('image/news1.jpg')}}" style="height:180px">
+                <img class="align-middle img-thumbnail rounded" src="{{URL::asset('image/news1.jpg')}}" >
                 <p>End of 15th Sangguniang Panlungsod during their 153rd Regular Session held last June 24, 2019</p>
               </div>
               <div class="col-sm-3">
-                <img class="align-middle" src="{{URL::asset('image/news2.jpg')}}" style="height:100px">
+                <img class="align-middle img-thumbnail rounded" src="{{URL::asset('image/news2.jpg')}}" >
                 <p>Congratulations to Barangay III-A for being "Drug-cleared Barangay"</p>
               </div>
               <div class="col-sm-3">
-                <img class="align-middle" src="{{URL::asset('image/news 3.jpg')}}" style="height:180px">
+                <img class="align-middle img-thumbnail rounded" src="{{URL::asset('image/news 3.jpg')}}">
                 <p>Courtesy Call of National PRISAA 2019 3rd placer (Mixed Doubles) Mr. John Carlitos F. Reyes and Mr. Jan Vermier M. Escueta his Coach.</p>
               </div>
               <div class="col-sm-3">
-                <img class="align-middle" src="{{URL::asset('image/news4.jpg')}}" style="height:180px">
+                <img class="align-middle img-thumbnail rounded" src="{{URL::asset('image/news4.jpg')}}" >
                 <p>Courtesy Call of Miss Tourism Philippines 2019 Official Candidate Ms. Daisy Rose A. Gonzales.</p>
               </div>
             </div>
@@ -121,6 +121,7 @@
           <div class="card-body text-primary col-md-12">
             <dl class="row text-dark pb-0 mb-0">
               <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/spc-logo.png')}}" class="img-responsive" style="width:16px"></dt>
+
               <dd class="col-10 font-weight-bold mb-0">San Pablo CDRRMO</dd>&nbsp;
                 <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
                 <dd class="col-10 mb-0">Landline 800-405</dd>&nbsp;
@@ -146,18 +147,6 @@
                 <dt class="col-1 justify-content-center align-items-right mb-0"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
                 <dd class="col-10 mb-0">5626-474 / 5210-610</dd>
 
-              {{-- <dt><img src="{{URL::asset('image/spc-logo.png')}}" class="img-responsive" style="width:20px"> San Pablo CDRRMO:</dt>
-              <dd> <img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px">&nbsp; Landline 800-405</dd>
-              <dd> <img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px">&nbsp; Smart 09089078124</dd>
-              <dd> <img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px">&nbsp;  Globe 09955619456</dd>
-              <dt><img src="{{URL::asset('image/control.png')}}" class="img-responsive" style="width:16px">&nbsp; BARANGAY CONTROL:</dt>
-              <dd><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"> &nbsp;5623-086</dd>
-              <dt><img src="{{URL::asset('image/redcross.png')}}" class="img-responsive" style="width:20px"> RED CROSS SPC Chapter</dt>
-              <dd><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"> &nbsp;564-3212</dd>
-              <dt><img src="{{URL::asset('image/bumbero1.png')}}" class="img-responsive" style="width:20px"> Bumbero</dt>
-              <dd><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"> &nbsp;5627-654</dd>
-              <dt><img src="{{URL::asset('image/police.png')}}" class="img-responsive" style="width:23px"> Pulis</dt>
-              <dd><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"> &nbsp;5626-474 / 5210-610</dd> --}}
             </dl>
           </div>
         </div>

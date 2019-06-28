@@ -10,7 +10,7 @@
         Gallery
       </h3>
       <div class="container page-top">
-        <div class="row" id="galler-area">
+        <div class="row" id="gallery-area" style="background-color:#fff;">
 
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
@@ -84,7 +84,7 @@
 
 
     </div>
-    
+
     </div>
 
 @endsection
