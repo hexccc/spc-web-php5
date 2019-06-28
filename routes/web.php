@@ -108,6 +108,14 @@ Route::get('/style-admin-nav', function () {
     return view('style-admin-nav');
 });
 
+Route::get('/officemap', function () {
+    return view('officemap');
+});
+Route::get('/newseditor', function () {
+
+    return view('newseditor');
+});
+
 
 
 Route::post('register', array('uses' => 'Register@store'));

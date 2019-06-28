@@ -16,5 +16,7 @@
   <body>
     @include('inc.admin-nav')
     @yield('admincontent')
+
+</div></div>
   </body>
 </html>

@@ -52,7 +52,7 @@
           <div class="dropdown-item"><li><a class="text-body btn-block" href="#">Standing Commitees</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn-block" href="#">Ordinances</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn-block" href="#">ELA</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="office_map">Office Vicinity Map</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn-block" href="officemap">Office Vicinity Map</a></li></div>
 
         </ul>
       </li>
