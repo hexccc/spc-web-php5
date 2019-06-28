@@ -4,7 +4,16 @@
 @section('title', 'Home')
 
   <div class="container-fluid">
+    <div class="row">
+      <div class='col-md-12'>
+        <div class="card border-primary mb-3">
+          <h3 class="text-white card-title p-2 text-center mb-0">My City, My Government</h3>
+          <div class="card-body text-primary">
 
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 

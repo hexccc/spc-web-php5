@@ -10681,19 +10681,9 @@ body {
   position: fixed-top;
 }
 
-.navbar:hover {
-  height: 100vh;
-  background: #ffffff;
-}
-
 .nav-link {
   text-decoration: none;
   color: #ffffff;
-}
-
-.nav-link:hover {
-  height: 100vh;
-  background: #ffffff;
 }
 
 .carousel {
