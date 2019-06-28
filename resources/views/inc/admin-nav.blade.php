@@ -3,7 +3,7 @@
   <div>
     <div class="wrapper col-sm pr-0 ">
         <!-- Sidebar -->
-        <nav id="sidebar" >
+        <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>Admin Panel</h3>
             </div>
@@ -13,7 +13,7 @@
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="/newseditor">News Editor</a>
+                            <a href="/news">News Editor</a>
                         </li>
                         <li>
                             <a href="#">Home 2</a>
@@ -67,8 +67,7 @@
 
   <div class="col-sm px-0">
     <div id="content">
-
-        <nav class="navbar   navbar-light bg-dark" >
+        <nav class="navbar navbar-light bg-dark">
             <div class="container-fluid">
                 <button type="button" id="sidebarCollapse" class="btn btn-info">
                     <i class="fas fa-align-left"></i>
@@ -78,11 +77,6 @@
             </div>
         </nav>
     </div>
-
-
-
-
-
 
 
 @include('style-admin-nav')

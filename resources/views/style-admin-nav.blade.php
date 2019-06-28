@@ -1,4 +1,8 @@
 <style media="screen">
+body{
+
+  overflow-x: hidden;
+}
 .wrapper {
     display: flex;
     width: 100%;
@@ -13,7 +17,8 @@
 #sidebar {
    min-width: 250px;
    max-width: 250px;
-   
+
+
 }
 
 #sidebar.active {
