@@ -10777,6 +10777,11 @@ body {
   margin: 40px auto;
 }
 
+#news {
+  background: #29b3e7;
+  background-color: #29b3e7;
+}
+
 #galler-area {
   background-color: #1d1d1d !important;
   color: #989898;

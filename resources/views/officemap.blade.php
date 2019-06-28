@@ -1,11 +1,12 @@
 @extends('layouts.app')
-@section('title', 'San Pableños')
-  <div class="col-md-10 offset-md-1 pt-4">
-    <h3 class="bg-primary text-white p-2 mt-4">
-      San Pableños
+@section('title', 'Office Vicinity Map')
+
+<div class="mx-auto col-md-10 offset-md-1 pt-4" style="width:100%">
+    <h3 class=" text-white p-2 mt-4">
+      Office Vicinity Map
     </h3>
-      <p class="card-text mb-xl-5">
-        The earliest historical record of the City of San Pablo dates back to pre-Spanish times when four(4) big barrios bounded by Mt. Banahaw and Mt. Makiling composed Sampaloc.
-        In 1521, Sampaloc was changed to San Pablo De Los Montes, which became a parish in 1556 and then a municipality in 1647.  In 1899, a Municipal Government was established with Inocente Martinez as Municipal President in 1902 when the Civil Government was granted independence from the Province of Laguna.  On May 7, 1940, the charter bill sponsored by Congressman Tomas Dizon was approved.
-      </p>
+      <div class="row">
+          <img class="align-middle px-2" src="{{URL::asset('image/cityhall.png')}}" style="height:100vh">
+      </div>
   </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d7740.128825323812!2d121.32083646232464!3d14.073373671893519!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x33bd5ccf79d1fc51%3A0x3b7a30db01a7f29d!2sSan+Pablo+City+Hall!3m2!1d14.074488299999999!2d121.32454279999999!4m0!5e0!3m2!1sen!2sph!4v1553066791791" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>

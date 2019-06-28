@@ -3,13 +3,32 @@
 @section('content')
 @section('title', 'Home')
 
+{{-- NEWS --}}
   <div class="container-fluid">
     <div class="row">
       <div class='col-md-12'>
         <div class="card border-primary mb-3">
-          <h3 class="text-white card-title p-2 text-center mb-0">My City, My Government</h3>
-          <div class="card-body text-primary">
-
+          <h3 class="text-white card-title p-2 text-center mb-0" style="background:#0072e9;">My City, My Government</h3>
+          <div class="card-body text-primary" >
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="align-middle" src="{{URL::asset('image/news1.jpg')}}" style="height:180px">
+                <p>End of 15th Sangguniang Panlungsod during their 153rd Regular Session held last June 24, 2019</p>
+              </div>
+              <div class="col-sm-3">
+                <img class="align-middle" src="{{URL::asset('image/news2.jpg')}}" style="height:100px">
+                <p>Congratulations to Barangay III-A for being "Drug-cleared Barangay"</p>
+              </div>
+              <div class="col-sm-3">
+                <img class="align-middle" src="{{URL::asset('image/news 3.jpg')}}" style="height:180px">
+                <p>Courtesy Call of National PRISAA 2019 3rd placer (Mixed Doubles) Mr. John Carlitos F. Reyes and Mr. Jan Vermier M. Escueta his Coach.</p>
+              </div>
+              <div class="col-sm-3">
+                <img class="align-middle" src="{{URL::asset('image/news4.jpg')}}" style="height:180px">
+                <p>Courtesy Call of Miss Tourism Philippines 2019 Official Candidate Ms. Daisy Rose A. Gonzales.</p>
+              </div>
+            </div>
+            <a href="#" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#news1">See All News>></a>
           </div>
         </div>
       </div>
@@ -102,29 +121,30 @@
           <div class="card-body text-primary col-md-12">
             <dl class="row text-dark pb-0 mb-0">
               <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/spc-logo.png')}}" class="img-responsive" style="width:16px"></dt>
-              <dd class="col-10 font-weight-bold">San Pablo CDRRMO</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
-              <dd class="col-10 ">Landline 800-405</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px"></dt>
-              <dd class="col-10 ">Smart 09089078124</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px"></dt>
-              <dd class="col-10">Globe 09955619456</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/control.png')}}" class="img-responsive" style="width:16px"></dt>
-              <dd class="col-10 font-weight-bold">BARANGAY CONTROL</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
-              <dd class="col-10 ">5623-086</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/redcross.png')}}" class="img-responsive" style="width:16px"></dt>
-              <dd class="col-10 font-weight-bold">RED CROSS SPC Chapter</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
-              <dd class="col-10 ">564-3212</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/bumbero1.png')}}" class="img-responsive" style="width:20px"></dt>
-              <dd class="col-10 font-weight-bold">Bumbero</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
-              <dd class="col-10 ">5627-654</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/police.png')}}" class="img-responsive" style="width:23px"></dt>
-              <dd class="col-10 font-weight-bold">Pulis</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
-              <dd class="col-10 ">5626-474 / 5210-610</dd>
+              <dd class="col-10 font-weight-bold mb-0">San Pablo CDRRMO</dd>&nbsp;
+                <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
+                <dd class="col-10 mb-0">Landline 800-405</dd>&nbsp;
+                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px"></dt>
+                <dd class="col-10 mb-0">Smart 09089078124</dd>&nbsp;
+                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px"></dt>
+                <dd class="col-10 pb-2">Globe 09955619456</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/control.png')}}" class="img-responsive" style="width:16px"></dt>
+              <dd class="col-10 font-weight-bold mb-0">BARANGAY CONTROL</dd>&nbsp;
+                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
+                <dd class="col-10 pb-2">5623-086</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/redcross.png')}}" class="img-responsive" style="width:16px"></dt>
+              <dd class="col-10 font-weight-bold mb-0">RED CROSS SPC Chapter</dd>&nbsp;
+                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
+                <dd class="col-10 pb-2">564-3212</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/bumbero1.png')}}" class="img-responsive" style="width:20px"></dt>
+              <dd class="col-10 font-weight-bold mb-0">Bumbero</dd>&nbsp;
+                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
+                <dd class="col-10 pb-2">5627-654</dd>&nbsp;
+
+              <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/police.png')}}" class="img-responsive" style="width:23px"></dt>
+              <dd class="col-10 font-weight-bold mb-0">Pulis</dd>&nbsp;
+                <dt class="col-1 justify-content-center align-items-right mb-0"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
+                <dd class="col-10 mb-0">5626-474 / 5210-610</dd>
 
               {{-- <dt><img src="{{URL::asset('image/spc-logo.png')}}" class="img-responsive" style="width:20px"> San Pablo CDRRMO:</dt>
               <dd> <img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px">&nbsp; Landline 800-405</dd>
