@@ -116,6 +116,9 @@ Route::get('/newseditor', function () {
     return view('newseditor');
 });
 
+Route::post('/createNews', 'new_controller@store');
+
+Route::get('/getNews', 'new_controller@index');
 
 
 Route::post('register', array('uses' => 'Register@store'));

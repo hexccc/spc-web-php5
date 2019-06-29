@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\News;
+use Illuminate\Support\Facades\DB;
+use Response;
 
 class new_controller extends Controller
 {
@@ -13,7 +16,9 @@ class new_controller extends Controller
      */
     public function index()
     {
-        //
+        $users = DB::table('news_table')->get();
+
+        return Response::json($users);
     }
 
     /**
@@ -34,7 +39,37 @@ class new_controller extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+      $thumbnail_name = $request->file('thumbnail');
+      $video_name = $request->file('video');
+
+      $new_thumbnail_name = date('Ymdhis', time()).'_thumb.'.$thumbnail_name->getClientOriginalExtension();
+      $thumbnail_name->move(public_path('image'), $new_thumbnail_name);
+
+      $new_video_name = date('Ymdhis', time()).'_vid.'.$video_name->getClientOriginalExtension();
+      $video_name->move(public_path('videos'),$new_video_name);
+
+        $title = $request->input('title');
+        $sub_title = $request->input('sub_title');
+        $content = $request->input('content');
+        $created_by = $request->input('created_by');
+
+        $data = array(
+          'title' => $title,
+          'subtitle' => $sub_title,
+          'content' => $content,
+          'thumbnail' => $new_thumbnail_name,
+          'video' => $new_video_name,
+          'created_by' => $created_by
+        );
+
+        $check = DB::table('news_table')->insert($data);
+
+        $arr = array('msg' => 'Something goes to wrong. Please try again lator', 'status' => false);
+        if($check){
+        $arr = array('msg' => 'Successfully News Posted', 'status' => true);
+        }
+        return Response::json($arr);
     }
 
     /**
