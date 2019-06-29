@@ -3,12 +3,14 @@
 @section('content')
 @section('title', 'Home')
 
+
+
 {{-- NEWS --}}
   <div class="container-fluid">
     <div class="row">
       <div class='col-md-12'>
         <div class="card border-primary mb-3">
-          <h3 class="text-white card-title p-2 text-center mb-0" style="background:#0072e9;">My City, My Government</h3>
+          <h3 class="text-white card-title p-2 pl-3 mb-0" style="background:#0072e9;">My City, My Government</h3>
           <div class="card-body text-primary" >
             <div class="row">
               <div class="col-sm-3">
@@ -296,8 +298,4 @@
     <p>Visitor's Counter: {{ $count }}</p>
   </div>
 @extends('inc.modals')
-
-
-
-
 @endsection
