@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+$(document).ready(function(){
+    console.log('Admin JS Here');
+});
+=======
 
 $(document).ready(function(){
     console.log('Admin JS Here');
@@ -58,3 +63,4 @@ function functionName() {
     });
 
 }
+>>>>>>> 095665e2effb3d98d1324c458b510a4bd9d0b83c

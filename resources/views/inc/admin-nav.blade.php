@@ -1,7 +1,9 @@
 
 <div class="row" id="app">
-  <div>
-    <div class="wrapper col-sm pr-0 ">
+    <div class="sidebar-wrapper">
+      <div class="wrapper col-sm pr-0 ">
+
+
         <!-- Sidebar -->
         <nav id="sidebar">
             <div class="sidebar-header">
