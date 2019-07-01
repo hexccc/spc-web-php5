@@ -156,7 +156,7 @@
                   <input type="hidden" name="updated_by" value="sampleID_updated_by">
                   <div class="container text-center">
                       <button type="submit" class="btn btn-primary">Submit</button>
-                          <button type="submit" class="btn btn-danger">Clear All</button>
+                          <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
                   </div>
 
           </form>

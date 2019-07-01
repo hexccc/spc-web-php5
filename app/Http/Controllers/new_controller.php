@@ -53,7 +53,7 @@ class new_controller extends Controller
         $sub_title = $request->input('sub_title');
         $content = $request->input('content');
         $created_by = $request->input('created_by');
-        $date = date('Y-m-d h:i:s a', time());
+        $date = date('Y-m-d h:i:s', time());
         $data = array(
           'title' => $title,
           'subtitle' => $sub_title,
