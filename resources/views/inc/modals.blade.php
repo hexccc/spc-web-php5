@@ -115,7 +115,7 @@
   </div>
 </div>
 
-
+<!-- For News -->
 
 <div class="modal fade" id="updatenewsmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -153,6 +153,55 @@
                       </div>
                           <input type="hidden" name="created_by" value="sampleID_created_by">
                           <input type="hidden" name="updated_by" value="sampleID_updated_by">
+                          <div class="container text-center">
+                              <button type="submit" class="btn btn-primary">Update</button>
+                                  <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
+                          </div>
+          </div>
+                  </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="viewnewsmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mayor_office">View News </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                  <form id="updatenews" enctype="multipart/form-data">
+                    <div class="row">
+                      <div class="col-6">
+                        <img src="image/20190701055237_thumb.jpg"  width="100%" height="100%" alt="">
+                      </div>
+                      <div class="col-6">
+                        <video width="320" height="240" controls>
+                          <source src="videos/20190701055617_vid.wmv" type="video/wmv" width="100%" height="100%">
+                        </video>
+                      </div>
+                      <div class="col-12 pt-4">
+                        <div class="form-group ">
+                          <label for="exampleInputEmail1">Title</label>
+                          <input type="text" class="form-control" name="title" id="exampleInputEmail1" aria-describedby="emailHelp" readonly >
+                            </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Sub Title</label>
+                          <input type="text" class="form-control" name="sub_title" id="exampleInputPassword1"  readonly>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Content</label>
+                          <textarea class="form-control" name="content"  rows="8" cols="80" readonly></textarea>
+                        </div>
+                      </div>
+                          <input type="hidden" name="created_by" value="sampleID_created_by" readonly>
+                          <input type="hidden" name="updated_by" value="sampleID_updated_by" readonly>
                           <div class="container text-center">
                               <button type="submit" class="btn btn-primary">Update</button>
                                   <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>

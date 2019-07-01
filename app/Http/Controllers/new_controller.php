@@ -18,8 +18,8 @@ class new_controller extends Controller
     {
 
       $draw = $request->get('draw');
-        $start = $request->get('start');
-        $length = $request->get('length');
+      $start = $request->get('start');
+      $length = $request->get('length');
 
       $query = DB::table('news_table')->get();
 
@@ -32,7 +32,20 @@ class new_controller extends Controller
           'subtitle' => $r->subtitle,
           'created_at' => $r->created_at,
           'updated_at' => $r->updated_at,
-          'btn' => $r->btn='<button type="button" class="btn btn-primary" name="button">Sample View</button>'
+          'btn' => $r->btn='<select type="button" id="action_btn" onchange="changeAction('.$r->id.')" class="btn btn-primary" name="button">'.
+                              '<option value="---">'.
+                                'Choose Action'.
+                              '</option>'.
+                              '<option value="view">'.
+                                'View'.
+                              '</option>'.
+                              '<option value="update">'.
+                                'Update'.
+                              '</option>'.
+                              '<option value="delete">'.
+                                'Delete'.
+                              '</option>'.
+                            '</select>'
         );
       }
       $result = array(

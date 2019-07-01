@@ -54,7 +54,40 @@ $(document).ready(function(){
       });
     });
 
+    $('#action_btn').change(function(){
+      switch ($('#action_btn').val()) {
+        case 'view':
+          $('#viewnewsmodal').modal('show');
+          break;
+        case 'update':
+          $('#updatenewsmodal').modal('show');
+          break;
+        case 'delete':
+          $('#newsdelete').modal('show');
+          break;
+        default:
+      }
+    });
+
 });
+
+function changeAction(id) {
+  switch ($('#action_btn').val()) {
+    case 'view':
+      console.log(id);
+      $('#viewnewsmodal').modal('show');
+      break;
+    case 'update':
+      console.log(id);
+      $('#updatenewsmodal').modal('show');
+      break;
+    case 'delete':
+      console.log(id);
+      $('#newsdelete').modal('show');
+      break;
+    default:
+  }
+}
 function notif(msg,type,responseTime) {
   setTimeout(function() {
                    $.bootstrapGrowl(msg, {
