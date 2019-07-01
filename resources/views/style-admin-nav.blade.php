@@ -7,6 +7,7 @@ body{
     display: flex;
     width: 100%;
     align-items: stretch;
+
 }
 
 .wrapper {
@@ -17,8 +18,11 @@ body{
 #sidebar {
    min-width: 250px;
    max-width: 250px;
+min-height: 100vh;
 
-
+}
+.sidebar-wrapper{
+ background: #7386D5;
 }
 
 #sidebar.active {
@@ -28,7 +32,8 @@ body{
 #sidebar {
    min-width: 250px;
    max-width: 250px;
-   min-height: 100vh;
+
+
 }
 
 a[data-toggle="collapse"] {

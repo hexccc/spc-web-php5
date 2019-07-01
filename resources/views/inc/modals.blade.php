@@ -114,3 +114,53 @@
     </div>
   </div>
 </div>
+
+
+
+
+<div class="modal fade" id="inputnews" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="event1">Input News</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+          <form id="addNews" enctype="multipart/form-data">
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Title</label>
+              <input type="text" class="form-control" name="title" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Sub Title</label>
+              <input type="text" class="form-control" name="sub_title" id="exampleInputPassword1" >
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Content</label>
+              <textarea class="form-control" name="content"  rows="8" cols="80"></textarea>
+            </div>
+            <div class="file-upload-wrapper">
+              <label for="exampleInputPassword1">Thumbnail</label>
+              <input type="file"  name="thumbnail" id="input-file-now" class="file-upload" />
+            </div>
+            <div class="file-upload-wrapper">
+              <label for="exampleInputPassword1">Video</label>
+              <input type="file" name="video"  id="input-file-now" class="file-upload" />
+            </div>
+                  <input type="hidden" name="created_by" value="sampleID_created_by">
+                  <input type="hidden" name="updated_by" value="sampleID_updated_by">
+                  <div class="container text-center">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                          <button type="submit" class="btn btn-danger">Clear All</button>
+                  </div>
+
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
