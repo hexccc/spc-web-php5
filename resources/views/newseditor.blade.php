@@ -511,11 +511,11 @@ function notif() {
   setTimeout(function() {
                    $.bootstrapGrowl("Danger, Danger!", {
                        type: 'danger',
-                       align: 'center',
+                       align: 'right',
                        width: 'auto',
                        allow_dismiss: true
                    });
-               }, 2000);
+               }, 1);
 
 
 }
