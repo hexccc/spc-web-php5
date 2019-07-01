@@ -8,7 +8,8 @@
 <div class="container p-5">
 <div class="row">
   <div class="container">
-    <!-- <button href="#" class="btn btn-success text-right font-weight-bold font-italic p-2  align-baseline align-text-bottom" onclick="notif()">Notif</button> -->
+    <button href="#" class="btn btn-success text-right font-weight-bold font-italic p-2  align-baseline align-text-bottom" data-toggle="modal" data-target="#updatenewsmodal">Notif</button>
+    <button href="#" class="btn btn-warning text-right font-weight-bold font-italic p-2  align-baseline align-text-bottom" data-toggle="modal" data-target="#newsdelete">Delete</button>
 
   </div>
 
