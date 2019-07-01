@@ -1,8 +1,13 @@
 <style media="screen">
+body{
+
+  overflow-x: hidden;
+}
 .wrapper {
     display: flex;
     width: 100%;
     align-items: stretch;
+
 }
 
 .wrapper {
@@ -13,7 +18,11 @@
 #sidebar {
    min-width: 250px;
    max-width: 250px;
-   
+min-height: 100vh;
+
+}
+.sidebar-wrapper{
+ background: #7386D5;
 }
 
 #sidebar.active {
@@ -23,7 +32,8 @@
 #sidebar {
    min-width: 250px;
    max-width: 250px;
-   min-height: 100vh;
+
+
 }
 
 a[data-toggle="collapse"] {

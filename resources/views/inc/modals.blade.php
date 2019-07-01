@@ -117,85 +117,49 @@
 
 
 
-<div class="modal slide" id="news1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="news1">News 1</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" class="fancybox">
-          <img src="{{URL::asset('image/news1.jpg')}}" alt="News 1" class="img-fluid">
-          <p>End of 15th Sangguniang Panlungsod during their 153rd Regular Session held last June 24, 2019</p>
-          <div class="float-right">
-            <button type="button" class="btn btn-outline-info text-dark btn-prev">< Prev</button>
-            <button type="button" class="btn btn-outline-info text-dark btn-next">Next ></button>
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="modal slide" id="news2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="inputnews" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="news2">News 2</h5>
+        <h5 class="modal-title" id="event1">Input News</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body" class="fancybox">
-          <img src="{{URL::asset('image/news2.jpg')}}" alt="News 2" class="img-fluid">
-          <p>Congratulations to Barangay III-A for being "Drug-cleared Barangay"</p>
-          <div class="float-right">
-            <button type="button" class="btn btn-outline-info text-dark btn-prev">< Prev</button>
-            <button type="button" class="btn btn-outline-info text-dark btn-next">Next ></button>
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
+      <div class="modal-body">
 
-<div class="modal slide" id="news3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="news1">News 1</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" class="fancybox">
-          <img src="{{URL::asset('image/news 3.jpg')}}" alt="News 3" class="img-fluid allign-center" style="height:500px" alt="image-responsive">
-          <p>Courtesy Call of National PRISAA 2019 3rd placer (Mixed Doubles) Mr. John Carlitos F. Reyes and Mr. Jan Vermier M. Escueta his Coach.</p>
-          <div class="float-right">
-            <button type="button" class="btn btn-outline-info text-dark btn-prev">< Prev</button>
-            <button type="button" class="btn btn-outline-info text-dark btn-next">Next ></button>
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="modal slide" id="news4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="news4">News 4</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" class="fancybox">
-          <img src="{{URL::asset('image/news4.jpg')}}" alt="News 4" class="img-fluid">
-          <p>Courtesy Call of Miss Tourism Philippines 2019 Official Candidate Ms. Daisy Rose A. Gonzales.</p>
-          <div class="float-right">
-            <button type="button" class="btn btn-outline-info text-dark btn-prev">< Prev</button>
-            <button type="button" class="btn btn-outline-info text-dark btn-next">Next ></button>
-          </div>
+          <form id="addNews" enctype="multipart/form-data">
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Title</label>
+              <input type="text" class="form-control" name="title" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Sub Title</label>
+              <input type="text" class="form-control" name="sub_title" id="exampleInputPassword1" >
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Content</label>
+              <textarea class="form-control" name="content"  rows="8" cols="80"></textarea>
+            </div>
+            <div class="file-upload-wrapper">
+              <label for="exampleInputPassword1">Thumbnail</label>
+              <input type="file"  name="thumbnail" id="input-file-now" class="file-upload" />
+            </div>
+            <div class="file-upload-wrapper">
+              <label for="exampleInputPassword1">Video</label>
+              <input type="file" name="video"  id="input-file-now" class="file-upload" />
+            </div>
+                  <input type="hidden" name="created_by" value="sampleID_created_by">
+                  <input type="hidden" name="updated_by" value="sampleID_updated_by">
+                  <div class="container text-center">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                          <button type="submit" class="btn btn-danger">Clear All</button>
+                  </div>
+
+          </form>
       </div>
     </div>
   </div>

@@ -1,7 +1,9 @@
 
-<div class="row">
-  <div>
-    <div class="wrapper col-sm pr-0 ">
+<div class="row" id="app">
+    <div class="sidebar-wrapper">
+      <div class="wrapper col-sm pr-0 ">
+
+
         <!-- Sidebar -->
         <nav id="sidebar">
             <div class="sidebar-header">
@@ -13,7 +15,7 @@
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#">News</a>
+                            <a href="/newseditor">News Editor</a>
                         </li>
                         <li>
                             <a href="#">Services</a>
@@ -80,7 +82,6 @@
             </div>
         </nav>
     </div>
-  </div>
-</div>
+
 
 @include('style-admin-nav')
