@@ -111,10 +111,7 @@ Route::get('/style-admin-nav', function () {
 Route::get('/officemap', function () {
     return view('officemap');
 });
-Route::get('/newseditor', function () {
-
-    return view('newseditor');
-});
+Route::get('/newseditor', 'new_controller@index');
 
 Route::post('/createNews', 'new_controller@store');
 
