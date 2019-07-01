@@ -16,9 +16,9 @@ class new_controller extends Controller
      */
     public function index()
     {
-        $users = DB::table('news_table')->get();
+         $users = DB::table('news_table')->get();
 
-        return Response::json($users);
+         return view('newseditor')->with('users',$users);
     }
 
     /**
@@ -53,14 +53,15 @@ class new_controller extends Controller
         $sub_title = $request->input('sub_title');
         $content = $request->input('content');
         $created_by = $request->input('created_by');
-
+        $date = date('Y-m-d h:i:s a', time());
         $data = array(
           'title' => $title,
           'subtitle' => $sub_title,
           'content' => $content,
           'thumbnail' => $new_thumbnail_name,
           'video' => $new_video_name,
-          'created_by' => $created_by
+          'created_by' => $created_by,
+          'created_at' => $date
         );
 
         $check = DB::table('news_table')->insert($data);
