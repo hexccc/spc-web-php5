@@ -27,20 +27,7 @@
               </tr>
           </thead>
           <tbody>
-            @foreach($users as $user)
-              <tr>
-                  <td>{{ $user->id }}</td>
-                  <td>{{ $user->title }}</td>
-                  <td>{{ $user->subtitle }}</td>
-                  <td>{{ $user->created_at }}</td>
-                  <td>{{ $user->updated_at }}</td>
-                  <td>
-                    <button type="button" class="btn btn-primary" name="button">
-                      Sample View
-                    </button>
-                  </td>
-              </tr>
-            @endforeach
+          
           </tbody>
           <tfoot>
               <tr>

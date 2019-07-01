@@ -14,11 +14,36 @@ class new_controller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-         $users = DB::table('news_table')->get();
 
-         return view('newseditor')->with('users',$users);
+      $draw = $request->get('draw');
+        $start = $request->get('start');
+        $length = $request->get('length');
+
+      $query = DB::table('news_table')->get();
+
+      $data = [];
+      foreach ($query as $r) {
+        $data[] = array(
+
+          'id' => $r->id,
+          'title' => $r->title,
+          'subtitle' => $r->subtitle,
+          'created_at' => $r->created_at,
+          'updated_at' => $r->updated_at,
+          'btn' => $r->btn='<button type="button" class="btn btn-primary" name="button">Sample View</button>'
+        );
+      }
+      $result = array(
+                "draw" => $draw,
+                "recordsTotal" => $query->count(),
+                "recordsFiltered" => $query->count(),
+                "data" => $data
+            );
+
+
+      return $result;
     }
 
     /**

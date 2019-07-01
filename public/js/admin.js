@@ -1,7 +1,25 @@
 $(document).ready(function(){
-    $('#tb_news').DataTable();
+    var datable_news = $('#tb_news').DataTable({
+      "ajax" : {
+        "url" : '/getNews',
+        dataSrc : 'data'
+      },
+      "columns" : [{
+          "data" : "id"
+      }, {
+          "data" : "title"
+      }, {
+          "data" : "subtitle"
+      }, {
+          "data" : "created_at"
+      }, {
+          "data" : "updated_at"
+      }, {
+          "data" : "btn"
+      }]
+    });
     console.log('Admin JS Here');
-    // functionName();
+
     $('#addNews').submit(function(e){
       e.preventDefault();
       $.ajaxSetup({
@@ -14,7 +32,7 @@ $(document).ready(function(){
         type : 'POST',
         data : new FormData(this),
         beforeSend: function(){
-          notif('Uploading Your Post \n This may take for a while if you have a video in your news','warning')
+          notif('Uploading Your Post \n This may take for a while if you have a video in your news','warning',)
         },
         contentType: false,
         processData:false,
@@ -24,7 +42,8 @@ $(document).ready(function(){
 
           notif('Success ! Uploading Your Post \n ' + res.msg,'success');
           $('#addNews')[0].reset();
-          data_table.ajax.reload();
+          $('#inputnews').modal('hide');
+          datable_news.ajax.reload();
           setTimeout(function(){
             $('#exampleModal').modal('hide');
           },3000);
@@ -36,7 +55,7 @@ $(document).ready(function(){
     });
 
 });
-function notif(msg,type) {
+function notif(msg,type,responseTime) {
   setTimeout(function() {
                    $.bootstrapGrowl(msg, {
                        type: type,
@@ -44,7 +63,7 @@ function notif(msg,type) {
                        width: 'auto',
                        allow_dismiss: true
                    });
-               }, 1000);
+               }, responseTime);
 
 
 }
