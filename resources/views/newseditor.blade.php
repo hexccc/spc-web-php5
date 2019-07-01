@@ -58,4 +58,28 @@
 </div>
 </div>
 @include('inc.modals')
+<<<<<<< HEAD
+=======
+<script type="text/javascript">
+
+
+function notif() {
+  setTimeout(function() {
+                   $.bootstrapGrowl("Danger, Danger!", {
+                       type: 'danger',
+                       align: 'right',
+                       width: 'auto',
+                       allow_dismiss: true
+                   });
+               }, 1);
+
+
+}
+
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+</script>
+>>>>>>> 6f83c49ac269e30c799efcfb95d698b15628ccb7
 @stop

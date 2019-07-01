@@ -18,10 +18,13 @@
                             <a href="/newseditor">News Editor</a>
                         </li>
                         <li>
-                            <a href="#">Home 2</a>
+                            <a href="#">Services</a>
                         </li>
                         <li>
-                            <a href="#">Home 3</a>
+                            <a href="#">Events and Announcements</a>
+                        </li>
+                        <li>
+                            <a href="#">Holidays</a>
                         </li>
                     </ul>
                 </li>
