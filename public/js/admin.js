@@ -15,14 +15,24 @@ $(document).ready(function(){
         data : new FormData(this),
         beforeSend: function(){
         console.log('Sending.. loading could be here waiting for UI');
+          $('#exampleModal').modal('show');
+          $('#msg_status').html('Uploading Your Post');
+          $('#msg_content').html('This may take for a while if you have a video in your news');
         },
         contentType: false,
         processData:false,
         dataType : 'json',
         success : function(res){
           console.log(res);
-          alert(res.msg);
+          // $('#exampleModal').modal('hide');
+          $('#exampleModal').modal('show');
+          $('#msg_status').html('Success ! Uploading Your Post');
+          $('#msg_content').html(res.msg);
           $('#addNews')[0].reset();
+
+          setTimeout(function(){
+            $('#exampleModal').modal('hide');
+          },3000);
         },
         error : function(){
           console.log('Error in Adding News');
