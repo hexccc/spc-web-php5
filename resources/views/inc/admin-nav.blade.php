@@ -1,5 +1,5 @@
 
-<div class="row">
+<div class="row" id="app">
   <div>
     <div class="wrapper col-sm pr-0 ">
         <!-- Sidebar -->
