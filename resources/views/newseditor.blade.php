@@ -8,7 +8,7 @@
 <div class="container p-5">
 <div class="row">
   <div class="container">
-    <button href="#" class="btn btn-success text-right font-weight-bold font-italic p-2  align-baseline align-text-bottom" onclick="notif()">Notif</button>
+    <!-- <button href="#" class="btn btn-success text-right font-weight-bold font-italic p-2  align-baseline align-text-bottom" onclick="notif()">Notif</button> -->
 
   </div>
 
@@ -58,25 +58,4 @@
 </div>
 </div>
 @include('inc.modals')
-<script type="text/javascript">
-
-
-function notif() {
-  setTimeout(function() {
-                   $.bootstrapGrowl("Danger, Danger!", {
-                       type: 'danger',
-                       align: 'center',
-                       width: 'auto',
-                       allow_dismiss: true
-                   });
-               }, 2000);
-
-
-}
-
-$(document).ready(function() {
-    $('#example').DataTable();
-} );
-
-</script>
 @stop
