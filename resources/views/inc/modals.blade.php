@@ -121,7 +121,7 @@
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="mayor_office">Update News </h5>
+        <h5 class="modal-title" id="mayor_office">Update News  <span id="update_created_at"></span> </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -130,34 +130,75 @@
                   <form id="updatenews" enctype="multipart/form-data">
                     <div class="row">
                       <div class="col-6">
-                        <img src="image/20190701055237_thumb.jpg"  width="100%" height="100%" alt="">
+                        <div class="row">
+                          <div class=" text-center col-12">
+                            <img src="image/20190701055237_thumb.jpg" id="update_thumb"  width="100%" height="100%" alt="No Image thumbnail found in the database">
+                            <input type="file" style="display:none;" name="update_thumbnail" id="update_thumb_input" value="">
+                          </div>
+
+                          <div class="text-center col-12 pt-3">
+                            <button type="button" id="update_btn_thumb" class="btn btn-primary" name="button">
+                              <i class="fas fa-upload"></i>
+                              Upload New Thumbnail
+                            </button>
+                          </div>
+                        </div>
                       </div>
                       <div class="col-6">
-                        <video width="320" height="240" controls>
-                          <source src="videos/20190701055617_vid.wmv" type="video/wmv" width="100%" height="100%">
-                        </video>
+                        <div class="row">
+                          <div class=" text-center col-12">
+                              <iframe id="update_yt_frame" width="100%" height="100%"  src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+
+                          <div class="text-center col-12 pt-3">
+                            <div class="row">
+                              <div class="col-4">
+                                <button type="button" id="update_paste_btn" name="button" class="btn btn-danger">
+                                  <i class="fas fa-paste"></i>
+                                  &nbsp; Paste
+                                </button>
+                              </div>
+                              <div class="col-8">
+                                <input type="text" class="form-control" name="update_news_video" id="update_news_video" value="" readonly>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+
+                          <div class="col-12 text-center">
+
+
+                          </div>
+<!--
+                          <div class="col-12 text-center">
+                          </div> -->
+                        </div>
                       </div>
+
+
                       <div class="col-12 pt-4">
                         <div class="form-group ">
                           <label for="exampleInputEmail1">Title</label>
-                          <input type="text" class="form-control" name="title" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                          <input type="text" class="form-control" name="update_title" id="update_title" aria-describedby="emailHelp" >
                             </div>
                         <div class="form-group">
                           <label for="exampleInputPassword1">Sub Title</label>
-                          <input type="text" class="form-control" name="sub_title" id="exampleInputPassword1" >
+                          <input type="text" class="form-control" name="update_sub_title" id="update_subtitle" >
                         </div>
                         <div class="form-group">
                           <label for="exampleInputPassword1">Content</label>
-                          <textarea class="form-control" name="content"  rows="8" cols="80"></textarea>
+                          <textarea class="form-control" name="update_content" id="update_content"  rows="8" cols="80"></textarea>
                         </div>
                       </div>
-                          <input type="hidden" name="created_by" value="sampleID_created_by">
-                          <input type="hidden" name="updated_by" value="sampleID_updated_by">
+                      <input type="hidden" name="update_news_id" id="update_news_id" value="">
+                          <input type="hidden" name="update_created_by" id="update_created_by" value="sampleID_created_by">
+                          <input type="hidden" name="update_updated_by" id="update_updated_by" value="sampleID_updated_by">
                           <div class="container text-center">
-                              <button type="submit" class="btn btn-primary">Update</button>
+                              <button type="submit" id="update_submit_news" class="btn btn-primary">Update</button>
                                   <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
                           </div>
-          </div>
+                      </div>
                   </form>
 
       </div>
@@ -170,41 +211,41 @@
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="mayor_office">View News </h5>
+        <h5 class="modal-title" id="mayor_office">View News <span id="view_created_at"></span> </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-                  <form id="updatenews" enctype="multipart/form-data">
+                  <form id="viewnews" enctype="multipart/form-data">
                     <div class="row">
-                      <div class="col-6">
-                        <img src="image/20190701055237_thumb.jpg"  width="100%" height="100%" alt="">
+                      <div class="col-lg-6 col-md-12 col-sm-12">
+                        <img src="image/20190701055237_thumb.jpg"   id="view_thumb" width="100%" height="100%" alt="">
                       </div>
-                      <div class="col-6">
-                        <video width="320" height="240" controls>
-                          <source src="videos/20190701055617_vid.wmv" type="video/wmv" width="100%" height="100%">
-                        </video>
+                      <div class="col-lg-6 col-md-12 col-sm-12">
+
+                        <iframe width="100%" id="view_video" height="100%" src="https://www.youtube.com/embed/CAHyQRC75c4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                       </div>
                       <div class="col-12 pt-4">
                         <div class="form-group ">
                           <label for="exampleInputEmail1">Title</label>
-                          <input type="text" class="form-control" name="title" id="exampleInputEmail1" aria-describedby="emailHelp" readonly >
+                          <input type="text" class="form-control" name="title" id="view_title"  aria-describedby="emailHelp" readonly >
                             </div>
                         <div class="form-group">
                           <label for="exampleInputPassword1">Sub Title</label>
-                          <input type="text" class="form-control" name="sub_title" id="exampleInputPassword1"  readonly>
+                          <input type="text" class="form-control" name="sub_title" id="view_subtitle"  readonly>
                         </div>
                         <div class="form-group">
                           <label for="exampleInputPassword1">Content</label>
-                          <textarea class="form-control" name="content"  rows="8" cols="80" readonly></textarea>
+                          <textarea class="form-control" name="content" id="view_content"   rows="8" cols="80" readonly></textarea>
                         </div>
                       </div>
-                          <input type="hidden" name="created_by" value="sampleID_created_by" readonly>
-                          <input type="hidden" name="updated_by" value="sampleID_updated_by" readonly>
+
+                          <input type="hidden" name="created_by" id="view_created_by"  value="admin" readonly>
+                          <input type="hidden" name="updated_by" id="view_updated_by"  value="admin" readonly>
                           <div class="container text-center">
-                              <button type="submit" class="btn btn-primary">Update</button>
-                                  <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
+                                  <button type="reset" data-dismiss="modal" class="btn btn-info" >Close</button>
                           </div>
           </div>
                   </form>
@@ -226,12 +267,17 @@
       </div>
       <div class="modal-body">
 <div class="">
-<p>Are you sure you want to Delete?</p>
+<p>Are you sure you want to Delete?  <span id="delete_title_news"></span> </p>
 </div>
 
                   <div class="container text-center">
-                                          <button type="reset" data-dismiss="modal" class="btn btn-danger" >Yes</button>
-                      <button type="submit" data-dismiss="modal" class="btn btn-primary">No</button>
+
+                    <form id="delete_news_form">
+                      <input type="hidden" name="delete_id" value="" id="delete_id_news">
+                      <button type="submit" class="btn btn-danger" >Yes</button>
+                      <button type="reset" data-dismiss="modal" class="btn btn-primary">No</button>
+                    </form>
+
 
                   </div>
 
@@ -268,18 +314,34 @@
               <label for="exampleInputPassword1">Content</label>
               <textarea class="form-control" name="content"  rows="8" cols="80"></textarea>
             </div>
-            <div class="file-upload-wrapper">
-              <label for="exampleInputPassword1">Thumbnail</label>
-              <input type="file"  name="thumbnail" id="input-file-now" class="file-upload" />
+            <div class="row">
+
+              <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="file-upload-wrapper">
+                  <label for="exampleInputPassword1">Thumbnail</label>
+                  <input type="file"  name="thumbnail" id="input-file-now" class="file-upload" />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="row">
+                  <div class="col-4">
+                    <button type="button" id="add_paste_btn" name="button" class="btn btn-danger">
+                      <i class="fas fa-paste"></i>
+                      &nbsp; Paste
+                    </button>
+                  </div>
+                  <div class="col-8">
+                    <input type="text" class="form-control" name="add_news_video" id="add_news_video" value="" readonly>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="file-upload-wrapper">
-              <label for="exampleInputPassword1">Video</label>
-              <input type="file" name="video"  id="input-file-now" class="file-upload" />
-            </div>
+
                   <input type="hidden" name="created_by" value="sampleID_created_by">
                   <input type="hidden" name="updated_by" value="sampleID_updated_by">
-                  <div class="container text-center">
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                  <div class="container text-center pt-3">
+                      <button type="submit" id="add_submit_news" class="btn btn-primary">Submit</button>
                           <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
                   </div>
 
