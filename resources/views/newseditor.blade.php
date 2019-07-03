@@ -7,9 +7,11 @@
 <div class="container-fluid">
 <div class="container p-5">
 <div class="row">
-<button href="#" class="btn btn-success text-right font-weight-bold font-italic p-2  align-baseline align-text-bottom" data-toggle="modal" data-target="#inputnews">Create News</button>
+  <div class="container">
+    <button href="#" class="btn btn-success text-right font-weight-bold font-italic p-2  align-baseline align-text-bottom" data-toggle="modal" data-target="#inputnews">Create News</button>
+  </div>
 
-<div class="container">
+<div class="container card py-4">
   <table id="tb_news" class="table table-striped table-bordered" style="width:100%">
           <thead>
               <tr>

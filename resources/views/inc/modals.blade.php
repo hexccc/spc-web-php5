@@ -147,10 +147,10 @@
                       <div class="col-6">
                         <div class="row">
                           <div class=" text-center col-12">
-                              <iframe id="update_yt_frame" width="100%" height="100%"  src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <iframe id="update_yt_frame" width="100%" style="min-height: 42vh;"  src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                           </div>
 
-                          <div class="text-center col-12 pt-3">
+                        <div class="text-center col-12 pt-3">
                             <div class="row">
                               <div class="col-4">
                                 <button type="button" id="update_paste_btn" name="button" class="btn btn-danger">
