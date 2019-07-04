@@ -18,9 +18,9 @@ class NewsTable extends Migration
           $table->string('title');
           $table->string('subtitle');
           $table->longText('content');
-          $table->string('thumbnail');
-          $table->string('video');
-          $table->string('created_by');
+          $table->string('thumbnail')->nullable();
+          $table->string('video')->nullable();
+          $table->string('created_by')->nullable();
           $table->string('updated_by')->nullable();
 					$table->timestamps();
       });
