@@ -19,3 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/get-brgy-list', 'GetBrgyLs@getList');
 Route::get('/get-dept-list', 'GetDeptList@getList');
+
+Route::post('/postNews_android', 'android_controller@store');
+
+Route::get('/getNews_android', 'android_controller@index');

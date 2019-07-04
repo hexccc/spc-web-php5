@@ -115,12 +115,6 @@ Route::get('/newseditor', function(){
   return view('newseditor');
 });
 
-// Adroid Routes
-Route::post('/postNews_android', 'android_controller@store');
-
-Route::get('/getNews_android', 'android_controller@index');
-
-// END
 Route::post('/createNews', 'new_controller@store');
 
 Route::get('/getNews', 'new_controller@index');
