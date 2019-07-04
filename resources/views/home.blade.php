@@ -30,7 +30,7 @@
                 <p>Courtesy Call of Miss Tourism Philippines 2019 Official Candidate Ms. Daisy Rose A. Gonzales.</p>
               </div>
             </div>
-            <a href="#" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#news1">See All News>></a>
+            <a href="#" class="font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#news1">See All News>></a>
           </div>
         </div>
       </div>
