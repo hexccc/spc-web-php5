@@ -111,11 +111,18 @@ Route::get('/style-admin-nav', function () {
 Route::get('/officemap', function () {
     return view('officemap');
 });
-Route::get('/newseditor', 'new_controller@index');
+Route::get('/newseditor', function(){
+  return view('newseditor');
+});
 
 Route::post('/createNews', 'new_controller@store');
 
 Route::get('/getNews', 'new_controller@index');
 
+Route::post('/getOneNews', 'new_controller@show');
+
+Route::post('/updateOneNews', 'new_controller@update');
+
+Route::post('/deleteOneNews', 'new_controller@destroy');
 
 Route::post('register', array('uses' => 'Register@store'));
