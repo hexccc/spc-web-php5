@@ -1,3 +1,20 @@
+<div class="modal fade" id="bploForm" tabindex="-1" aria-labelledby="bploFormlbl" aria-hidden="true" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header float-none">
+        <h4 id="bploFormlbl">Fill Up Forms</h4>
+        <button class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a class="btn btn-info" href="{{URL::asset('docs/BUSINESS PERMIT APPLICATION FORM.docx')}}" download>Download Business Registration Form</a>
+        <a class="btn btn-info" href="form">Online BPLO Fill Up</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="modal fade" id="modalBrgy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -129,7 +146,6 @@
       </div>
       <div class="modal-body">
 
-
           <form id="addNews" enctype="multipart/form-data">
 
             <div class="form-group">
@@ -158,7 +174,6 @@
                       <button type="submit" class="btn btn-primary">Submit</button>
                           <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
                   </div>
-
           </form>
       </div>
     </div>

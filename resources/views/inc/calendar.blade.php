@@ -9,7 +9,7 @@
       left: 'prev',
       center: 'title',
       right: 'next today'
-    },
+    };
 
 
     // THIS KEY WON'T WORK IN PRODUCTION!!!

@@ -43,11 +43,19 @@ class new_controller extends Controller
       $thumbnail_name = $request->file('thumbnail');
       $video_name = $request->file('video');
 
-      $new_thumbnail_name = date('Ymdhis', time()).'_thumb.'.$thumbnail_name->getClientOriginalExtension();
-      $thumbnail_name->move(public_path('image'), $new_thumbnail_name);
+      if($thumbnail_name != null) {
+        $new_thumbnail_name = date('Ymdhis', time()).'_thumb.'.$thumbnail_name->getClientOriginalExtension();
+        $thumbnail_name->move(public_path('image'), $new_thumbnail_name);
+      } else {
+        $new_thumbnail_name = '';
+      }
 
-      $new_video_name = date('Ymdhis', time()).'_vid.'.$video_name->getClientOriginalExtension();
-      $video_name->move(public_path('videos'),$new_video_name);
+      if($video_name != null) {
+        $new_video_name = date('Ymdhis', time()).'_vid.'.$video_name->getClientOriginalExtension();
+        $video_name->move(public_path('videos'),$new_video_name);
+      } else {
+        $new_video_name = '';
+      }
 
         $title = $request->input('title');
         $sub_title = $request->input('sub_title');
@@ -61,12 +69,13 @@ class new_controller extends Controller
           'thumbnail' => $new_thumbnail_name,
           'video' => $new_video_name,
           'created_by' => $created_by,
-          'created_at' => $date
+          'created_at' => $date,
+          'updated_by' => 'Admin'
         );
 
         $check = DB::table('news_table')->insert($data);
 
-        $arr = array('msg' => 'Something goes to wrong. Please try again lator', 'status' => false);
+        $arr = array('msg' => 'Something goes to wrong. Please try again later', 'status' => false);
         if($check){
         $arr = array('msg' => 'Successfully News Posted', 'status' => true);
         }
