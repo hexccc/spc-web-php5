@@ -67,12 +67,20 @@ class new_controller extends Controller
     public function store(Request $request)
     {
 
-      $thumbnail_name = $request->file('thumbnail');
-
-      $new_thumbnail_name = date('Ymdhis', time()).'_thumb.'.$thumbnail_name->getClientOriginalExtension();
-      $thumbnail_name->move(public_path('image'), $new_thumbnail_name);
-
-
+        $thumbnail_name = $request->file('thumbnail');
+        $video_name = $request->file('video');
+        if($thumbnail_name != null) {
+          $new_thumbnail_name = date('Ymdhis', time()).'_thumb.'.$thumbnail_name->getClientOriginalExtension();
+          $thumbnail_name->move(public_path('image'), $new_thumbnail_name);
+        } else {
+          $new_thumbnail_name = '';
+        }
+        if($video_name != null) {
+          $new_video_name = date('Ymdhis', time()).'_vid.'.$video_name->getClientOriginalExtension();
+          $video_name->move(public_path('videos'),$new_video_name);
+        } else {
+          $new_video_name = '';
+        }
         $title = $request->input('title');
         $sub_title = $request->input('sub_title');
         $content = $request->input('content');
@@ -84,7 +92,7 @@ class new_controller extends Controller
           'subtitle' => $sub_title,
           'content' => $content,
           'thumbnail' => $new_thumbnail_name,
-          'video' => $video,
+          'video' => $new_video_name,
           'created_by' => $created_by,
           'created_at' => $date,
           'updated_by' => 'Admin'

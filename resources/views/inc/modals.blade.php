@@ -15,6 +15,8 @@
   </div>
 </div>
 
+
+{{-- BARANGGAY MODAL --}}
 <div class="modal fade" id="modalBrgy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -33,7 +35,30 @@
   </div>
 </div>
 
+{{-- MODAL NEWS --}}
+<div id='newsModals'></div>
+{{-- <div class="modal fade" id="modalNews" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="nTitle"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id='nTitle'></p>
+        <p id='nSubtitle'></p>
+        <p id='nContent'></p>
+        <img id="nThumbnail" alt="news-thumbnail">
+        <iframe id="nVideo" width="" height=""></iframe>
+        </video>
+      </div>
+    </div>
+  </div>
+</div> --}}
 
+{{-- EVENT MODALS --}}
 <div class="modal fade" id="event1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -94,6 +119,8 @@
   </div>
 </div>
 
+
+{{-- LOCAL OFFICIAL --}}
 <div class="modal fade" id="mayor_office" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -133,7 +160,7 @@
 </div>
 
 <!-- For News -->
-
+{{-- ADMIN PANEL --}}
 <div class="modal fade" id="updatenewsmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
