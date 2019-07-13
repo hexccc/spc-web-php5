@@ -4,7 +4,6 @@
 @section('title', 'Home')
 
 
-
 {{-- NEWS --}}
   <div class="container-fluid">
     <div class="row">

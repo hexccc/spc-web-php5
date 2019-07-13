@@ -7,8 +7,8 @@
      <div class="col-6 mt-2">
          <h3 class="mt-0 font-weight-bold" style="color:3490DC;">MISSION</h3>
          <p>
-          To uplift the quality of the life ofSan Pablenos through effective and effceient delivery of
-           public service inpartnership with the private.
+          To uplift the quality of the life of San Pablenos through effective and efficeient delivery of
+           public service in partnership with the private.
        </p>
      </div>
      <hr/>
@@ -17,8 +17,8 @@
        <h3 class="mt-0 font-weight-bold" style="color:3490DC;">VISION</h3>
          <p>
            San Pablo, the City of Seven lakes-premier tourist destination,
-           light industrial and education hub inCALABARZON, commited
-           to good governance andsustainable development.
+           light industrial and education hub in CALABARZON, commited
+           to good governance and sustainable development.
          </p>
    </div>
  </div>
@@ -36,13 +36,13 @@
           2.We will greet our clients with a sincere smile.
           </p>
           <p>
-          3.When you enter our offce premises,we will introduce ourselves to you so that you can address usback in an apporiate manner.
+          3.When you enter our offce premises, we will introduce ourselves to you so that you can address usback in an appropriate manner.
           </p>
           <p>
           4.We will attend our clients’  inquiries within three(3)minutes.
           </p>
           <p>
-          5.Approriate action will immediately follow your queries and you will be referred accordinly.
+          5.Approriate action will immediately follow your queries and you will be referred accordingly.
           </p>
           <p>
           6.We will make you comfortable inside our facilities while you wait for your service request.
@@ -54,7 +54,7 @@
           8.We will teach the clients, needed requiremnts that can expedite their service request.
           </p>
           <p>
-          9.We will promplty return your denied request and explain to you the reason forsuch, which in turn will allow us to reprocess it.
+          9.We will promptly return your denied request and explain to you the reason for such, which in turn will allow us to reprocess it.
           </p>
           <p>
           10.Our service stations will be properly labeled that will include our organizational chart and service ow chart.
@@ -72,7 +72,7 @@
           14.No noon-break policy is followed and we are to serve beyond office hours if need.
           </p>
           <p>
-          15. A satised client is our happiness in the goverment service.
+          15. A satisfied client is our happiness in the government service.
           </p>
       </div>
     </li>
@@ -81,7 +81,7 @@
       <div class="col-6 mt-2">
           <h3 class="mt-0 font-weight-bold" style="color:3490DC;">Performance Pledge</h3>
           <p>
-           We, the offcials and employees of the City Government of San Pablocommit to: <br>
+           We, the officials and employees of the City Government of San Pablo commit to: <br>
            <b style="font-size: 18px;">A</b>ssist every client and visitors with utmost courtesy and smile. <br>
            <b style="font-size: 18px;">M</b>onitor our own ranks to ensure that services are delivered ontime. <br>
            <b style="font-size: 18px;">A</b>dequate care shall be accorded to Senior Citizens, pregnant women, children and Persons with Disabilities(PWDs) that comes our door. <br>
@@ -95,7 +95,7 @@
 
         <h3 class="mt-0 font-weight-bold" style="color:3490DC;">Agency Mandate</h3>
           <p>
-            All employees both rank and file and personnel holding key positions in different departments of the local governmaent are mandated to deliver quality service through the implementation of tits programs to make them effcient and sustainable that have been developed in partnership with the private sector.
+            All employees both rank and file and personnel holding key positions in different departments of the local governmaent are mandated to deliver quality service through the implementation of its programs to make them efficient and sustainable that have been developed in partnership with the private sector.
           </p>
     </div>
   </div>
@@ -108,16 +108,16 @@
         These directions can be realized by strictly following:
         </p>
         <p>
-        1. Existing policies of the city/ agency have to be reviewed and revisited by the implementing offce.
+        1. Existing policies of the city/agency have to be reviewed and revisited by the implementing offce.
         </p>
         <p>
-        2. Implementation of recuitment, selection and promotion plan, along with the performance management plan, learningand development strategy and rewards and recognition policies have to be strictly observed by the city and to be upheldby the city’s implementing offcials/offcers at all times.
+        2. Implementation of recuitment, selection and promotion plan, along with the performance management plan, learning and development strategy and rewards and recognition policies have to be strictly observed by the city and to be upheld by the city’s implementing officials/offcers at all times.
         </p>
         <p>
         3. Monitor day-to-day activities of all employees.
         </p>
         <p>
-        4. Public service has to be the topmost priority of all employees
+        4. Public service has to be the top most priority of all employees
         </p>
 
     </div>
