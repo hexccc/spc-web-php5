@@ -208,4 +208,26 @@ class new_controller extends Controller
       }
       return Response::json($arr);
     }
+
+    public function getAllNewsHeadlines()
+    {
+      $query = DB::select('CALL get_news()');
+
+      $data = [];
+      foreach ($query as $r) {
+        $data[] = array(
+          // date('l jS \of F Y h:i:s A',strtotime($r->date_of_death)
+          'id' => $r->id,
+          'title' => $r->title,
+          'subtitle' => $r->subtitle,
+          'content' => $r->content,
+          'thumbnail' => $r->thumbnail,
+          'video' => $r->video,
+          'created_at' => date("l jS \of F Y h:i:s A",strtotime($r->created_at)),
+          // 'updated_at' => $r->updated_at
+        );
+      }
+
+      return $data;
+    }
 }
