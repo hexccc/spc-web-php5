@@ -22,3 +22,5 @@ Route::get('/get-dept-list', 'GetDeptList@getList');
 Route::post('/postNews_android', 'android_controller@store');
 
 Route::get('/getNews_android', 'android_controller@index');
+
+Route::get('/getNews', 'CountCtrl@getNews');

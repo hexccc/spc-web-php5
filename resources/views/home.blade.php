@@ -4,7 +4,6 @@
 @section('title', 'Home')
 
 
-
 {{-- NEWS --}}
   <div class="container-fluid">
     <div class="row">
@@ -18,7 +17,7 @@
           </div>
         </div>
       </div>
-    </div>
+</div>
 
 
 
@@ -134,12 +133,10 @@
               <dd class="col-10 font-weight-bold mb-0">Bureau of Fire Protection</dd>&nbsp;
                 <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
                 <dd class="col-10 pb-2">5627-654/5210-610</dd>&nbsp;
-
               <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/police.png')}}" class="img-responsive" style="width:23px"></dt>
               <dd class="col-10 font-weight-bold mb-0">San Pablo City Police</dd>&nbsp;
                 <dt class="col-1 justify-content-center align-items-right mb-0"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
                 <dd class="col-10 mb-0">5626-474 / 5210-610</dd>
-
             </dl>
           </div>
         </div>
@@ -288,5 +285,8 @@
   <div class="float-right mr-3">
     <p>Visitor's Counter: {{ $count }}</p>
   </div>
+
+  <script src="/js/modal.js"></script>
+  <script src="/js/modal-brgy.js"></script>
 @extends('inc.modals')
 @endsection

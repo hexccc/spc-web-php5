@@ -83,7 +83,7 @@
     <div class="d-flex justify-content-around">
       <div class="p-2">
         <p style="font-size: 8px; ">Powered by:
-        <img class="image-fluid pt-2"src="{{URL::asset('image/pylon.png')}}" alt="Logo" height="30px"> </p>
+        <img class="image-fluid pt-2"src="{{URL::asset('image/pylon.png')}}" alt="Logo" height="40px"></p>
       </div>
       <div class="p-2">
         <img src="{{URL::asset('image/spc-logo.png')}}" alt="Logo" height="50px" width="50px">
@@ -95,7 +95,8 @@
       <div class="p-2">
       <p class="align-middle"style="font-size: 10px; ">
         Developed by:</br>
-        &emsp;Hendrixson Cordez</p>
+        &emsp;Hendrixson Cordez:</br>
+        &emsp;Renzo Dimasapit</p>
       </div>
     </div>
 

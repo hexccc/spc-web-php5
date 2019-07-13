@@ -126,7 +126,7 @@
                   <div class="card-body text-primary col-12">
                     <dl class="row text-dark">
                       <dt class="col-5 text-uppercase">Concepcion M. Biglete</dt>
-                      <dd class="col-7">Tel. No. 562-562-2866</dd>
+                      <dd class="col-7">Tel. No. 562-2866</dd>
                       <dd class="col-8">City Cooperative Officer/ CGDH-1</dd>
                     </dl>
 
@@ -266,7 +266,7 @@
                 </h3>
                   <div class="card-body text-primary col-12">
                     <dl class="row text-dark">
-                      <dt class="col-5 text-uppercase">Ma. Donnalyn E. Bri¤as</dt>
+                      <dt class="col-5 text-uppercase">Ma. Donnalyn E. Briñas</dt>
                       <dd class="col-7">Tel. No. 562-1429</dd>
                       <dd class="col-8">City Tourism Officer / CGDH-1</dd>
                     </dl>
@@ -281,7 +281,7 @@
                 </h3>
                   <div class="card-body text-primary col-12">
                     <dl class="row text-dark">
-                      <dt class="col-5 text-uppercase">Arjan V. Babanbi</dt>
+                      <dt class="col-5 text-uppercase">Arjan V. Babani</dt>
                       <dd class="col-7">Tel. No. 562-6710</dd>
                       <dd class="col-8">City Treasure/ CGDH-1</dd>
                     </dl>
@@ -311,7 +311,7 @@
                 </h3>
                   <div class="card-body text-primary col-12">
                     <dl class="row text-dark">
-                      <dt class="col-5 text-uppercase">Hon. Angelita E. Yang</dt>
+                      <dt class="col-5 text-uppercase">Hon. Justin Colago</dt>
                       <dd class="col-7">Tel. No. 562-1575</dd>
                       <dd class="col-8">Vice Mayor</dd>
                     </dl>

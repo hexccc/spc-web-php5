@@ -13,6 +13,15 @@ class CountCtrl extends Controller
       $res = DB::select($q);
       $cnt = $res[0]->count + 1;
       DB::select("CALL save_count(".$cnt.")");
-      return view('home')->with(["count" => $cnt]);
+      $news = DB::select("CALL get_news()");
+      return view('home')->with([
+        "count" => $cnt,
+        "news" => $news
+      ]);
     }
+
+    public function getNews() {
+      return DB::select("CALL get_news()");
+    }
+
 }
