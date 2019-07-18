@@ -4,7 +4,6 @@
 @section('title', 'Home')
 
 
-
 {{-- NEWS --}}
   <div class="container-fluid">
     <div class="row">
@@ -31,21 +30,21 @@
               </div> --}}
               @foreach($news as $n)
                 <div class="col-sm-3">
-                  <img class="align-middle img-thumbnail rounded" src="{{ URL::to('/') }}/image/{{$n->thumbnail}}">
+                  <img class="align-middle img-thumbnail rounded" src="{{ URL::to('/') }}/image/{{$n->thumbnail}}" data-toggle="modal" data-target="#nModal">
                   <p>{{$n->title}}</p>
                 </div>
               @endforeach
             </div>
-            <a href="#" id="moreNews"
+            {{-- <a href="#" id="moreNews"
               class="font-weight-bold font-italic text-primary align-baseline"
               data-toggle="modal"
               data-target="#id-2">
               See All News>>
-            </a>
+            </a> --}}
           </div>
         </div>
       </div>
-    </div>
+</div>
 
 
 

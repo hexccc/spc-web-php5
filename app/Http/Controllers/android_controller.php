@@ -58,18 +58,19 @@ class android_controller extends Controller
       $title = $request->input('title');
       $subtitle = $request->input('subtitle');
       $content = $request->input('content');
-      $thumbnail = $request->input('thumbnail');
-      $video = $request->input('video'); //Does we need a video link on app?
+      // $thumbnail = $request->input('thumbnail');
+      // $video = $request->input('video'); //Does we need a video link on app?
       $created_by = 'android device';
       $created_at = $date;
+
+      // 'thumbnail' => $thumbnail,
+      // 'video' => $video,
 
       $data = array(
         'date' => $date,
         'title' => $title,
         'subtitle' => $subtitle,
         'content' => $content,
-        'thumbnail' => $thumbnail,
-        'video' => $video,
         'created_by' => $created_by,
         'created_at' => $created_at
       );

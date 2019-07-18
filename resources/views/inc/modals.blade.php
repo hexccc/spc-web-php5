@@ -37,7 +37,7 @@
 
 {{-- MODAL NEWS --}}
 <div id='newsModals'></div>
-{{-- <div class="modal fade" id="modalNews" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+{{-- <div class="modal" id="modalNews" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -48,9 +48,10 @@
       </div>
       <div class="modal-body">
         <p id='nTitle'></p>
+        <img id="nThumbnail" alt="news-thumbnail">
         <p id='nSubtitle'></p>
         <p id='nContent'></p>
-        <img id="nThumbnail" alt="news-thumbnail">
+    
         <iframe id="nVideo" width="" height=""></iframe>
         </video>
       </div>
@@ -388,6 +389,44 @@
                           <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
                   </div>
           </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- For News Modal View Client Side -->
+<div class="modal fade" id="showClientNews" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="title_client">Input News</h5> -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row text-center">
+          <div class="col-12">
+            <h4 id="newCli_title">
+
+            </h4>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-12">
+            <img width="100%" class="img img-thumbnail" src="#" alt="New Thumbnail not found" id="newCli_thumbnail">
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-12">
+            <p id="newCli_content">
+
+            </p>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
