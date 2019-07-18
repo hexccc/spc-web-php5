@@ -5,45 +5,18 @@
 
 
 {{-- NEWS --}}
-  <div class="container-fluid">
-    <div class="row">
-      <div class='col-md-12'>
-        <div class="card border-primary mb-3">
-          <h3 class="text-white card-title p-2 pl-3 mb-0" style="background:#0072e9;">My City, My Government</h3>
-          <div class="card-body text-primary" >
-            <div class="row">
-              {{-- <div class="col-sm-3">
-                <img class="align-middle img-thumbnail rounded" src="{{URL::asset('image/news1.jpg')}}" >
-                <p>End of 15th Sangguniang Panlungsod during their 153rd Regular Session held last June 24, 2019</p>
-              </div>
-              <div class="col-sm-3">
-                <img class="align-middle img-thumbnail rounded" src="{{URL::asset('image/news2.jpg')}}" >
-                <p>Congratulations to Barangay III-A for being "Drug-cleared Barangay"</p>
-              </div>
-              <div class="col-sm-3">
-                <img class="align-middle img-thumbnail rounded" src="{{URL::asset('image/news 3.jpg')}}">
-                <p>Courtesy Call of National PRISAA 2019 3rd placer (Mixed Doubles) Mr. John Carlitos F. Reyes and Mr. Jan Vermier M. Escueta his Coach.</p>
-              </div>
-              <div class="col-sm-3">
-                <img class="align-middle img-thumbnail rounded" src="{{URL::asset('image/news4.jpg')}}" >
-                <p>Courtesy Call of Miss Tourism Philippines 2019 Official Candidate Ms. Daisy Rose A. Gonzales.</p>
-              </div> --}}
-              @foreach($news as $n)
-                <div class="col-sm-3">
-                  <img class="align-middle img-thumbnail rounded" src="{{ URL::to('/') }}/image/{{$n->thumbnail}}" data-toggle="modal" data-target="#nModal">
-                  <p>{{$n->title}}</p>
-                </div>
-              @endforeach
-            </div>
-            {{-- <a href="#" id="moreNews"
-              class="font-weight-bold font-italic text-primary align-baseline"
-              data-toggle="modal"
-              data-target="#id-2">
-              See All News>>
-            </a> --}}
+<div class="container-fluid">
+  <div class="row">
+    <div class='col-md-12'>
+      <div class="card border-primary mb-3">
+        <h3 class="text-white card-title p-2 pl-3 mb-0" style="background:#0072e9;">My City, My Government</h3>
+        <div class="card-body text-primary" >
+          <div class="row" id="news_headlines">
           </div>
+          <a href="#" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#news1">See All News>></a>
         </div>
       </div>
+    </div>
 </div>
 
 
