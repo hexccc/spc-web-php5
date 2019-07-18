@@ -37,7 +37,7 @@
 
 {{-- MODAL NEWS --}}
 <div id='newsModals'></div>
-{{-- <div class="modal fade" id="modalNews" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+{{-- <div class="modal" id="modalNews" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -48,9 +48,10 @@
       </div>
       <div class="modal-body">
         <p id='nTitle'></p>
+        <img id="nThumbnail" alt="news-thumbnail">
         <p id='nSubtitle'></p>
         <p id='nContent'></p>
-        <img id="nThumbnail" alt="news-thumbnail">
+    
         <iframe id="nVideo" width="" height=""></iframe>
         </video>
       </div>
