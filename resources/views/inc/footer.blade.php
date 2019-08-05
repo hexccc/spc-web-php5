@@ -78,7 +78,7 @@
     </div>
   </div>
   </footer>
-
+<hr>
   <footer class="container-fluid text-md-left">
     <div class="d-flex justify-content-around">
       <div class="p-2">

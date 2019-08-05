@@ -94,6 +94,8 @@ right: 0px;
   color: #FFF !important;
 }
 
+
+//NAVBAR
 .navbar li{
   display: inline-block;
   position: relative;
@@ -118,7 +120,6 @@ right: 0px;
 .nav-item a:hover::before{
   width: 100%;
 }
-
 
 .navbar .dropdown-menu{
   background-color: rgba(34, 49, 63, 0.5);

@@ -51,7 +51,7 @@
         <img id="nThumbnail" alt="news-thumbnail">
         <p id='nSubtitle'></p>
         <p id='nContent'></p>
-    
+
         <iframe id="nVideo" width="" height=""></iframe>
         </video>
       </div>
@@ -210,17 +210,10 @@
                           </div>
                         </div>
                         <div class="row">
-
                           <div class="col-12 text-center">
-
-
                           </div>
-<!--
-                          <div class="col-12 text-center">
-                          </div> -->
                         </div>
                       </div>
-
 
                       <div class="col-12 pt-4">
                         <div class="form-group ">
@@ -264,35 +257,36 @@
       <div class="modal-body">
                   <form id="viewnews" enctype="multipart/form-data">
                     <div class="row">
-                      <div class="col-lg-6 col-md-12 col-sm-12">
-                        <img src="image/20190701055237_thumb.jpg"   id="view_thumb" width="100%" height="100%" alt="">
-                      </div>
-                      <div class="col-lg-6 col-md-12 col-sm-12">
-
-                        <iframe width="100%" id="view_video" height="100%" src="https://www.youtube.com/embed/CAHyQRC75c4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                      </div>
-                      <div class="col-12 pt-4">
-                        <div class="form-group ">
-                          <label for="exampleInputEmail1">Title</label>
-                          <input type="text" class="form-control" name="title" id="view_title"  aria-describedby="emailHelp" readonly >
-                            </div>
-                        <div class="form-group">
-                          <label for="exampleInputPassword1">Sub Title</label>
-                          <input type="text" class="form-control" name="sub_title" id="view_subtitle"  readonly>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                          <img src="image/20190701055237_thumb.jpg"   id="view_thumb" width="100%" height="100%" alt="">
                         </div>
-                        <div class="form-group">
-                          <label for="exampleInputPassword1">Content</label>
-                          <textarea class="form-control" name="content" id="view_content"   rows="8" cols="80" readonly></textarea>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+
+                          <iframe width="100%" id="view_video" height="100%" src="https://www.youtube.com/embed/CAHyQRC75c4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                         </div>
-                      </div>
+                        <div class="col-12 pt-4">
+                          <div class="form-group ">
+                            <label for="exampleInputEmail1">Title</label>
+                            <input type="text" class="form-control" name="title" id="view_title"  aria-describedby="emailHelp" readonly >
+                              </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Sub Title</label>
+                            <input type="text" class="form-control" name="sub_title" id="view_subtitle"  readonly>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Content</label>
+                            <textarea class="form-control" name="content" id="view_content"   rows="8" cols="80" readonly></textarea>
+                          </div>
+                        </div>
 
                           <input type="hidden" name="created_by" id="view_created_by"  value="admin" readonly>
                           <input type="hidden" name="updated_by" id="view_updated_by"  value="admin" readonly>
+
                           <div class="container text-center">
-                                  <button type="reset" data-dismiss="modal" class="btn btn-info" >Close</button>
+                            <button type="reset" data-dismiss="modal" class="btn btn-info" >Close</button>
                           </div>
-          </div>
+                      </div>
                   </form>
 
       </div>
@@ -301,19 +295,21 @@
 </div>
 
 
-<div class="modal fade" id="newsdelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog  modal-dialog-top" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="event1">Delete</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <div class="modal fade" id="newsdelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-top" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="event1">Delete</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+      <div class="">
+        <p>Are you sure you want to Delete?
+          <span id="delete_title_news"></span>
+        </p>
       </div>
-      <div class="modal-body">
-<div class="">
-<p>Are you sure you want to Delete?  <span id="delete_title_news"></span> </p>
-</div>
 
                   <div class="container text-center">
 
@@ -386,7 +382,7 @@
                   <input type="hidden" name="updated_by" value="sampleID_updated_by">
                   <div class="container text-center pt-3">
                       <button type="submit" id="add_submit_news" class="btn btn-primary">Submit</button>
-                          <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
+                      <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
                   </div>
           </form>
       </div>
@@ -408,11 +404,9 @@
         <div class="row text-center">
           <div class="col-12">
             <h4 id="newCli_title">
-
             </h4>
           </div>
         </div>
-
         <div class="row text-center">
           <div class="col-12">
             <img width="100%" class="img img-thumbnail" src="#" alt="New Thumbnail not found" id="newCli_thumbnail">
@@ -421,12 +415,9 @@
         <div class="row text-center">
           <div class="col-12">
             <p id="newCli_content">
-
             </p>
           </div>
         </div>
-
-
       </div>
     </div>
   </div>
