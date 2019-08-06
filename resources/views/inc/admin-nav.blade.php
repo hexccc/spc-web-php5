@@ -7,7 +7,7 @@
         <!-- Sidebar -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Admin Panel</h3>
+                <h3><a href="pylon-admin">Admin Panel</a></h3>
             </div>
             <ul class="list-unstyled components">
 
@@ -78,13 +78,17 @@
                     <i class="fas fa-align-left" title="Sidebar"></i>
                     <span></span>
                 </button>
-
                     <a class="btn btn-dark" data-toggle="modal" title="Admin Log in" data-toggle="modal" data-target="#modalLoginForm">Admin Login</a>
-
-
             </div>
         </nav>
     </div>
+
+
+    {{-- <div class="container h-100">
+      <div class="row h-100 justify-content-center align-items-center">
+        <img class="" style="position:absolute;height:300px;z-index:-1;"src="{{URL::asset('image/spc.png')}}" alt="spc">
+      </div>
+    </div> --}}
 
 
     {{-- LOGIN MODAL --}}

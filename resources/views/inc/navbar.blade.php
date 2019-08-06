@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-lg fixed-top" role='navigation'>
   <a href="/" class='navbar-brand'>
-    <img class='img-responsive' src="{{URL::asset('image/spc-logo.png')}}" alt="Logo" width="50px" >
+    <img class='img-responsive' src="{{URL::asset('image/spc-logo.png')}}" alt="Logo" width="40px" >
   </a>
-  <div class="text-center px-2">
-    San Pablo City
+  <div class="text-center">
+      <p class="my-0"style="">San Pablo City</p>
     <p class="h6 text-nowrap" style="font-size:8px; color: white;">
       Official Website of the City
       Government of San Pablo
@@ -25,34 +25,34 @@
           <ul class="dropdown-menu">
             <div class="dropdown-item">
               <li>
-                <a class="text-body btn-block"href="mission">Mission & Vision</a>
+                <a class="text-body btn btn-block"href="mission">Mission & Vision</a>
               </li>
             </div>
             <div class="dropdown-item">
               <li>
-                <a class="text-body btn-block"href="location">Location & Topology</a>
+                <a class="text-body btn btn-block"href="location">Location & Topology</a>
               </li>
             </div>
             <div class="dropdown-item">
               <li>
-                <a class="text-body btn-block" href="history">History</a>
+                <a class="text-body btn btn-block" href="history">History</a>
               </li>
             </div>
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="sanpablenos">San Pableños</a></li></div>
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="barangay">Barangays</a></li></div>
-            <div class="dropdown-item"><li><a class="text-body btn-block" href="hymn">Hymn</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn btn-block" href="sanpablenos">San Pableños</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn btn-block" href="barangay">Barangays</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn btn-block" href="hymn">Hymn</a></li></div>
           </ul>
       </li>
 
       <li class="nav-item dropdown">
         <a class="btn nav-link dropdown-toggle mx-2" data-toggle="dropdown" href="#">Government<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="local_off">Local Officials</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="departments">Departments</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="#">Standing Commitees</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="#">Ordinances</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="#">ELA</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="officemap">Office Vicinity Map</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="local_off">Local Officials</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="departments">Departments</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="#">Standing Commitees</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="#">Ordinances</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="#">ELA</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="officemap">Office Vicinity Map</a></li></div>
 
         </ul>
       </li>
@@ -62,27 +62,27 @@
         <ul class="dropdown-menu">
           <div class="dropdown-item">
             <li class='dropright'>
-              <a class="text-body btn-block dropdown-toggle" data-toggle='dropdown' href='#'>Comprehensive Land Use Program<span class="caret"></span></a>
+              <a class="active btn btn-block dropdown-toggle" data-toggle='dropdown' href='#'>Comprehensive Land Use Program<span class="caret"></span></a>
               <ul class='dropdown-menu'>
-                <li class="dropdown-item"><a class="text-body btn-block" href="{{URL::asset('docs/VOLUME 1 The Comprehensive Land Use Plan San Pablo City as of Nov 30 2016.pdf')}}" target="_blank">Volume 1</a></li>
-                <li class="dropdown-item"><a class="text-body btn-block" href="{{URL::asset('docs/VOLUME 2 Zoning Ordinance San Pablo City as of Nov 30 2016.pdf')}}" target="_blank">Volume 2</a></li>
-                <li class="dropdown-item"><a class="text-body btn-block" href="{{URL::asset('docs/VOLUME 3 Sectoral Studies San Pablo City UPDATED_as of Nov 27 2016.pdf')}}" target="_blank">Volume 3</a></li>
+                <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/VOLUME 1 The Comprehensive Land Use Plan San Pablo City as of Nov 30 2016.pdf')}}" target="_blank">Volume 1</a></li></div>
+                <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/VOLUME 2 Zoning Ordinance San Pablo City as of Nov 30 2016.pdf')}}" target="_blank">Volume 2</a></li></div>
+                <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/VOLUME 3 Sectoral Studies San Pablo City UPDATED_as of Nov 27 2016.pdf')}}" target="_blank">Volume 3</a></li></div>
               </ul>
             </li>
           </div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="{{URL::asset('docs/CDP Annexes 2018-2023.pdf')}}" target="_blank">Comprehensive Development Plan</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="{{URL::asset('docs/SPC Ecological Profile.pdf')}}" target="_blank">SPC Ecological Profile</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="{{URL::asset('docs/CDP Annexes 2018-2023.pdf')}}" target="_blank">CDP Annexes</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/CDP Annexes 2018-2023.pdf')}}" target="_blank">Comprehensive Development Plan</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/SPC Ecological Profile.pdf')}}" target="_blank">SPC Ecological Profile</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/CDP Annexes 2018-2023.pdf')}}" target="_blank">CDP Annexes</a></li></div>
         </ul>
       </li>
 
       <li class="nav-item dropdown">
         <a class="btn nav-link dropdown-toggle mx-2" data-toggle="dropdown" href="#">Tourism<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="{{URL::asset('docs/SP TMP.pdf')}}" target="_blank">Tourism Masterplan</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/SP TMP.pdf')}}" target="_blank">Tourism Masterplan</a></li></div>
 
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="landmarks">Landmarks</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn-block" href="gallery">Gallery</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="landmarks">Landmarks</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="gallery">Gallery</a></li></div>
         </ul>
       </li>
 
