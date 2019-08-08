@@ -128,3 +128,10 @@ Route::post('/deleteOneNews', 'new_controller@destroy');
 Route::post('register', array('uses' => 'Register@store'));
 
 Route::get('getLatestNews', 'new_controller@getAllNewsHeadlines');
+
+
+
+//////////////
+///BPLO Routes
+
+Route::post('/addnewbuss', 'JController@addnewbuss');
