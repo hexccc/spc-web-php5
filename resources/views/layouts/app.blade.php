@@ -10,7 +10,11 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="/css/app.css">
 
-		<script src="/js/app.js"></script>
+    <script src="/js/app.js"></script>
+		<script src="/js/form.js"></script>
+    <script type="text/javascript" src="/js/inputmask.js"></script>
+
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
