@@ -2,6 +2,7 @@
 
 @section('content')
     <script src="/js/BPLO.js"></script>
+    <script src="/js/form.js"></script>
 <div class=" col-md-10 offset-md-1">
   <h1 class="mb-5" align="center">Please Fill Out the Form</h1>
   <div>
@@ -349,6 +350,69 @@
     </div>
 
   </div>
+
+
+      <div class="mt-5">
+        <p align="center"><b>4. ADDITIONAL LINE OF BUSINESS</b></p>
+      </div>
+      <form id="addlineofbuss">
+      <div class="form-row">
+			<div class="form-group col-md-3">
+			  <label for='fname'>Line of Business</label>
+					<select class="form-control" name="app[busact_addline]" id="addline">
+						<option selected value="">Line of Business</option>
+            <option value="Dummy1">Dummy Line 1</option>
+						<option value="Dummy2">Dummy Line 2</option>
+						<option value="Dummy3">Dummy Line 3</option>
+						<option value="Dummy4">Dummy Line 4</option>
+					</select>
+				</div>
+
+			<div class="form-group col-md-3">
+			 <label for='fname'>Code of Business</label>
+					<select class="form-control" name="app[busact_addcode]" id="Addcode">
+						<option selected value="">CODE</option>
+            <option value="DummyCode1">Dummy Code 1</option>
+            <option value="DummyCode2">Dummy Code 2</option>
+            <option value="DummyCode3">Dummy Code 3</option>
+            <option value="DummyCode4">Dummy Code 4</option>
+					</select>
+				</div>
+
+			<div class="form-group col-md-3">
+				<div class="md-form">
+		      <label for="addsubcat">Sub Category</label>
+					<input type="text" id="addsubcat" name="app[busact_addsubcat]" class="form-control">
+				</div>
+			</div>
+			<div class="form-group col-md-2">
+				<div class="md-form">
+          <label for="addcap">Capitalization</label>
+					<input type="text" id="addcap" name="app[busact_addcap]" class="form-control money2">
+				</div>
+			</div>
+
+      <div class="form-group col-md-1">
+        <label for="addcap">Add</label>
+        <button type="button" class="btn btn-primary" name="button" onclick="addlineaddRow()" value="ADD">ADD</button>
+      </div>
+    </div>
+  </form>
+    <div class="form-group col-md-12">
+      <table id="addlinetable" class="table  table-sm table-striped table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Line of Business</th>
+            <th scope="col">Code</th>
+            <th scope="col">Sub Category</th>
+            <th scope="col">Capitalization</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+
   <button type="submit" class="btn btn-primary mt-2 mb-4 float-right">Print</button>
 
 </form>

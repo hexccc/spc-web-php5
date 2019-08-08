@@ -22,5 +22,7 @@ public function addnewbuss(Request $request)
 return $request;
 }
 
+public function addlineofbuss(Request $request)
+{
 
 }

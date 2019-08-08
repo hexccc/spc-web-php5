@@ -135,3 +135,5 @@ Route::get('getLatestNews', 'new_controller@getAllNewsHeadlines');
 ///BPLO Routes
 
 Route::post('/addnewbuss', 'JController@addnewbuss');
+
+Route::post('/addlineofbuss', 'JController@addlineofbuss');
