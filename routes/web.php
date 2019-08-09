@@ -96,6 +96,10 @@ Route::get('/calendar', function () {
     return view('calendar');
 });
 
+Route::get('/7lakes', function () {
+    return view('7lakes');
+});
+
 Route::get('/pylon-admin', function () {
     return view('pylon-admin');
 });

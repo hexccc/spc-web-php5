@@ -81,6 +81,7 @@
         <ul class="dropdown-menu">
           <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/SP TMP.pdf')}}" target="_blank">Tourism Masterplan</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn btn-block" href="cultural_properties">Imporant Cultural Properties</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="7lakes">Our Seven Lakes</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn btn-block" href="gallery">Gallery</a></li></div>
         </ul>
       </li>

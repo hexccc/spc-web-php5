@@ -7,7 +7,7 @@
     </h3>
   <div class="row px-2">
       <div class="media float-right mt-2 p-2">
-        <img style="display:none" src="{{URL::asset('image/cathedral.jpg')}}" alt="SPC" height="150px" class="float-right mr-2">
+        <img style="display:none" src="{{URL::asset('image/1 San Pablo Cathedral.jpg')}}" alt="SPC" width="250px" class="float-right mr-2">
         <div class="media-body">
           <h5 class="mt-0 font-weight-bold" style="color:3490DC;">SAN PABLO CITY CATHEDRAL</h5>
             <p id='landmarksText'>
@@ -30,11 +30,11 @@
 
             </p>
         </div>
-        <img style="display:none" src="{{URL::asset('image/farcon.jpg')}}" alt="SPC" height="150px" class="float-right mr-2">
+        <img style="display:none" src="{{URL::asset('image/farcon.jpg')}}" alt="SPC" width="250px" class="float-right mr-2">
       </div>
 
       <div class="media float-right mt-2 p-2">
-        <img style="display:none" src="{{URL::asset('image/plaza1.jpg')}}" alt="SPC" height="150px" class="float-right mr-2">
+        <img style="display:none" src="{{URL::asset('image/plaza1.jpg')}}" alt="SPC" width="250px" class="float-right mr-2">
         <div class="media-body">
 
           <h5 class="mt-0 font-weight-bold" style="color:3490DC;">THE CITY PLAZA</h5>
@@ -55,11 +55,11 @@
 
             </p>
         </div>
-        <img style="display:none" src="{{URL::asset('image/c_hall.jpg')}}" alt="SPC" height="150px" class="float-right mr-2">
+        <img style="display:none" src="{{URL::asset('image/c_hall.jpg')}}" alt="SPC" width="250px" class="float-right mr-2">
       </div>
 
       <div class="media float-right mt-2 p-2">
-        <img style="display:none" src="{{URL::asset('image/hagdangbato.png')}}" alt="SPC" height="150px" class="float-right mr-2">
+        <img style="display:none" src="{{URL::asset('image/hagdangbato.png')}}" alt="SPC" width="250px" class="float-right mr-2">
         <div class="media-body">
 
           <h5 class="mt-0 font-weight-bold" style="color:3490DC;">HAGDANG BATO</h5>
@@ -71,15 +71,68 @@
             </p>
         </div>
       </div>
+
+      <div class="media float-right mt-2 p-2 py-2">
+        <div class="media-body text-right pr-2">
+          <h5 class="mt-0 font-weight-bold" style="color:3490DC;">ESCUELA PIA</h5>
+            <p id='landmarksText' >
+              (now Don Marcos Paulino Building; Red Cross and  Puericulture Center) and Bureau of Lands Monuments/Marker
+              City Plaza, Rizal Ave., San Pablo City
+            </p>
+        </div>
+        <img style="display:none" src="{{URL::asset('image/12 Red Cross.jpg')}}" alt="SPC" width="250px" class="float-right mr-2">
+      </div>
+
     </div>
       <h3 class=" text-white p-2 mt-4" style=" background-color: #ff4554;">
-        Artifacts
+        Cultural Properties
       </h3>
     <div class="row px-2">
       <div class="media float-right mt-2 p-2">
-        <img style="display:none" src="{{URL::asset('image/cathedral.jpg')}}" alt="SPC" display="none" height="150px" class="float-right mr-2">
+        <img style="display:none" src="{{URL::asset('image/7 Apolinario Mabini.JPG')}}" alt="SPC"  width="250px" class="float-right mr-2">
         <div class="media-body">
-          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;">Artifacts</h5>
+          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;">7.	Apolinario Mabini Shrine</h5>
+          <p id='landmarksText' >
+            City Plaza, Rizal Ave., San Pablo City
+          </p>
+        </div>
+      </div>
+      <div class="media float-right mt-2 p-2 py-2">
+        <div class="media-body text-right pr-2">
+          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;">ESCUELA PIA</h5>
+            <p id='landmarksText' >
+              (now Don Marcos Paulino Building; Red Cross and  Puericulture Center) and Bureau of Lands Monuments/Marker
+              City Plaza, Rizal Ave., San Pablo City
+            </p>
+        </div>
+        <img style="display:none" src="{{URL::asset('image/Lina Building.jpg')}}" alt="SPC" width="250px" class="float-right mr-2">
+      </div>
+      <div class="media col-12 float-right mt-2 p-2">
+        <img style="display:none" src="{{URL::asset('image/14 Dambana ng Bayani  Kagitingan.jpg')}}" alt="SPC"  width="250px" class="float-right mr-2">
+        <div class="media-body">
+          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;">DAMBANA NG BAYANI</h5>
+          <p id='landmarksText' >
+            Trece Martirez St., Brgy. V-A, San Pablo City
+          </p>
+        </div>
+      </div>
+
+      <div class="media col-12 float-right mt-2 p-2 py-2">
+        <div class="media-body text-right pr-2">
+          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;">TRECE MARTIREZ SHRINE</h5>
+            <p id='landmarksText' >
+              Trece Martirez St., Brgy. V-A, San Pablo City
+            </p>
+        </div>
+        <img style="display:none" src="{{URL::asset('image/17 Trece Martirez Shrine.JPG')}}" alt="SPC" width="250px" class="float-right mr-2">
+      </div>
+      <div class="media col-12 float-right mt-2 p-2">
+        <img style="display:none" src="{{URL::asset('image/19 Guerilla Shrine in San Mateo.JPG')}}" alt="SPC"  width="250px" class="float-right mr-2">
+        <div class="media-body">
+          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;">GUERILLA SHRINE</h5>
+          <p id='landmarksText' >
+          Brgy. San Mateo, San Pablo City
+          </p>
         </div>
       </div>
     </div>
