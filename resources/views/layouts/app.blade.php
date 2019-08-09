@@ -13,10 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
-    <script type="text/javascript" src="{{URL::asset('js/news.js')}}"></script>
-
-
-
+    <script type="text/javascript" src="{{URL::asset('js/news.js')}}">
+    </script>
     <div>
       @include('inc.navbar')
       <div class="container-fluid pt-4">
@@ -27,7 +25,6 @@
         </div>
       </div>
     </div>
-
         @include('inc.footer')
     </body>
 

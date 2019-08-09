@@ -72,8 +72,8 @@ Route::get('/ela', function () {
     return view('ela');
 });
 
-Route::get('/landmarks', function () {
-    return view('landmarks');
+Route::get('/cultural_properties', function () {
+    return view('cultural_properties');
 });
 
 Route::get('/officemap', function () {

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg fixed-top" role='navigation'>
-  <a href="/" class='navbar-brand'>
+  <a href="/" class='navbar-brand mr-1'>
     <img class='img-responsive' src="{{URL::asset('image/spc-logo.png')}}" alt="Logo" width="40px" >
   </a>
   <div class="text-center">
@@ -13,9 +13,9 @@
   <button type='button' class='navbar-toggler' data-toggle='collapse' data-target='#collapseNav'>
     <span class='fa fa-list-ul'></span>
   </button>
-  <div class='collapse navbar-collapse' id='collapseNav' >
+  <div class='collapse navbar-collapse container text-center' id='collapseNav' >
     <a class='navbar-brand'></a>
-    <ul class="navbar-nav mr-auto ml-3">
+    <ul class="navbar-nav mr-0 float-left">
       <li class="nav-item">
         <a class="btn nav-link mx-2" href="/">Home</a>
       </li>
@@ -80,8 +80,7 @@
         <a class="btn nav-link dropdown-toggle mx-2" data-toggle="dropdown" href="#">Tourism<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/SP TMP.pdf')}}" target="_blank">Tourism Masterplan</a></li></div>
-
-          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="landmarks">Landmarks</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="cultural_properties">Imporant Cultural Properties</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn btn-block" href="gallery">Gallery</a></li></div>
         </ul>
       </li>
@@ -91,9 +90,10 @@
           Citizen's Charter
         </a>
       </li>
-      <li class='nav-item text-center' style="padding-top:10px">
-        <iframe style="pointer-events: none;" src="https://freesecure.timeanddate.com/clock/i6qeu6qp/n145/tlph/fs15/fcfff/tct/pct/tt0" frameborder="0" width="279" height="20" allowTransparency="true" disabled></iframe>
-      </li>
     </ul>
+
+  </div>
+  <div class='nav-item float-right'>
+    <iframe style="pointer-events: none;" src="https://freesecure.timeanddate.com/clock/i6qeu6qp/n145/tlph/fs15/fcfff/tct/pct/tt0" frameborder="0" width="279" height="20" allowTransparency="true" disabled></iframe>
   </div>
 </nav>
