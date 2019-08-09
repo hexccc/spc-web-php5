@@ -133,7 +133,19 @@ Route::get('getLatestNews', 'new_controller@getAllNewsHeadlines');
 
 //////////////
 ///BPLO Routes
+Route::get('/multistep', function(){
+  return view('multistep');
+});
+
+Route::get('/signin_requestor', function(){
+  return view('signin_requestor');
+});
+
 
 Route::post('/addnewbuss', 'JController@addnewbuss');
 
-Route::post('/addlineofbuss', 'JController@addlineofbuss');
+Route::get('/addlineofbuss', 'JController@addlineofbuss');
+
+Route::post('/addReg', 'JController@addReg');
+
+Route::post('/signinReg', 'JController@signinReg');

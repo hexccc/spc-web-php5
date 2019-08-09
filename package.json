@@ -24,6 +24,7 @@
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
+    "inputmask": "^4.0.8",
     "spinkit": "^1.2.5"
   }
 }
