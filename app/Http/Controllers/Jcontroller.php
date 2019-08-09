@@ -30,10 +30,11 @@ public function addReg(Request $request)
 
 public function signinReg(Request $request)
 {
+  $this->validate(request(),[
+      'username'=>'required',
+      'password'=>'required'
+  ]);
   $input  = $request->input('user');
-  // DB::table('users')->count(DB::raw(''))
-  // return redirect('/form');
-  // return $input['password'];
   return Response::json($input);
 }
 

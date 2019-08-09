@@ -13,13 +13,13 @@
   <!-- <form class="email-login"> -->
     <form id="signinReg" enctype="multipart/form-data" class="email-login">
     <div class="u-form-group">
-      <input type="text" placeholder="Username" name="user[username]" id="username"/>
+      <input type="text" placeholder="Username" name="user[username]" id="username" required/>
     </div>
     <div class="u-form-group">
-      <input type="password" placeholder="Password" name="user[password]" id="password"/>
+      <input type="password" placeholder="Password" name="user[password]" id="password" required/>
     </div>
     <div class="u-form-group">
-      <button type="submit">Log in</button>
+      <button type="submit" >Log in</button>
     </div>
     <div class="u-form-group">
       <!-- <a href="#" class="forgot-password">Forgot password?</a> -->
