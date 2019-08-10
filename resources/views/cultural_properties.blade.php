@@ -2,8 +2,8 @@
 @section('title', 'Important Cultural Properties')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <div id="landmark" class="mx-auto col-md-10 offset-md-1 pt-4" style="width:100%;">
-    <h3 class=" text-white p-2 mt-2" >
-      San Pablo City Famous Landmarks
+    <h3 class=" text-white p-2 mt-2" style="background-color:#00205b;" >
+      Important Culutral Properties
     </h3>
   <div class="row px-2">
       <div class="media float-right mt-2 p-2">
@@ -71,7 +71,7 @@
         </div>
       </div>
 
-      <div class="media float-right mt-2 p-2 py-2">
+      <div class="media col-12 float-right mt-2 p-2 py-2">
         <div class="media-body text-right pr-2">
           <h5 class="mt-0 font-weight-bold" style="color:3490DC;background-color:#a9f2ff;">ESCUELA PIA</h5>
             <p id='landmarksText' >
@@ -79,15 +79,15 @@
               City Plaza, Rizal Ave., San Pablo City
             </p>
         </div>
-        <img style="display:none" src="{{URL::asset('image/12 Red Cross.jpg')}}" alt="SPC" width="250px" class="float-right mr-2">
+        <img style="display:none" src="{{URL::asset('image/')}}" alt="SPC" width="250px" class="float-right mr-2">
       </div>
 
     </div>
-      <h3 class=" text-white p-2 mt-4" style=" background-color: #ff4554;">
+      <!-- <h3 class=" text-white p-2 mt-4" style=" background-color: #ff4554;">
         Cultural Properties
-      </h3>
+      </h3> -->
     <div class="row px-2">
-      <div class="media float-right mt-2 p-2">
+      <div class="media col-12 float-right mt-2 p-2">
         <img style="display:none" src="{{URL::asset('image/7 Apolinario Mabini.JPG')}}" alt="SPC"  width="250px" class="float-right mr-2">
         <div class="media-body">
           <h5 class="mt-0 font-weight-bold" style="color:#ff4554;background-color:#ffe0e4">APOLINARIO MABINI SHRINE</h5>
@@ -96,12 +96,13 @@
           </p>
         </div>
       </div>
-      <div class="media float-right mt-2 p-2 py-2">
+      <div class="media col-12 float-right mt-2 p-2 py-2">
         <div class="media-body text-right pr-2">
-          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;background-color:#ffe0e4">ESCUELA PIA</h5>
+          <h5 class="mt-0  font-weight-bold" style="color:#ff4554;background-color:#ffe0e4">LINA BUILDUING</h5>
             <p id='landmarksText' >
-              (now Don Marcos Paulino Building; Red Cross and  Puericulture Center) and Bureau of Lands Monuments/Marker
-              City Plaza, Rizal Ave., San Pablo City
+            Administrative Building for Controlled Merchandize (now Lina Building)<br>
+                Rizal Ave., San Pablo City
+
             </p>
         </div>
         <img style="display:none" src="{{URL::asset('image/Lina Building.jpg')}}" alt="SPC" width="250px" class="float-right mr-2">
@@ -155,6 +156,7 @@
         h5, h3, #landmarksText{
           display: none;
         }
+        
       </style>
   </div>
 </div>

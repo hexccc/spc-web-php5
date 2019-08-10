@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Important Cultural Properties')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <div id="landmark" class="mx-auto col-md-10 offset-md-1 pt-4" style="width:100%;">
     <h3 class=" text-white p-2 mt-4" >
@@ -7,9 +9,9 @@
     </h3>
   <div class="row px-2">
       <div class="media float-right mt-4 p-2">
-        <img style="display:none" src="{{URL::asset('image/1 Sampalok.jpg')}}" alt="SPC" width="350px" class="float-right mr-2">
+        <img  href="#lake1" class="" style="display:none" src="{{URL::asset('image/1 Sampalok.jpg')}}" alt="SPC" ">
         <div class="media-body">
-          <h5 class="mt-0 p-2 font-weight-bold" style="color:3490DC;background-color:#a9f2ff ">SAMPALOC LAKE</h5>
+          <h5 class="mt-0 font-weight-bold p-2" style="color:3490DC;background-color:#a9f2ff ">SAMPALOC LAKE</h5>
             <p id='landmarksText'>
  •	Nasasakupan: Barangay IV-A, IV-C, V-A, Concepcion, San Lucas 1<br>
  •	Lawak: 99.21 Hectares<br>
@@ -25,7 +27,7 @@
 
       <div class="col-12 media float-right mt-4 p-2 py-2">
         <div class="media-body text-right pr-2">
-          <h5 class="mt-0 p-2 font-weight-bold p-2" style="color:3490DC;background-color:#a9f2ff">CALIBATO</h5>
+          <h5 class="mt-0 font-weight-bold p-2" style="color:3490DC;background-color:#a9f2ff">CALIBATO</h5>
             <p id='landmarksText'>
               •	Nasasakupan: Barangay Sto. Angel <br>
               •  Lawak: 27.18 Hectares<br>
@@ -35,11 +37,11 @@
               •	Tourist Arrivals: January 2019 – 47 | February 2019 – 239 | March 2019 - 74
             </p>
         </div>
-        <img style="display:none" src="{{URL::asset('image/2 Calibato.jpg')}}" alt="SPC" width="350px" class="float-right mr-2">
+        <img style="display:none" src="{{URL::asset('image/2 Calibato.jpg')}}" alt="SPC"  ">
       </div>
 
       <div class="col-12 media float-right mt-4 p-2">
-        <img style="display:none" src="{{URL::asset('image/3 Bunot.jpg')}}" alt="SPC" width="350px" class="float-right mr-2">
+        <img style="display:none" src="{{URL::asset('image/3 Bunot.jpg')}}" alt="SPC"  ">
         <div class="media-body">
 
           <h5 class="mt-0 p-2 font-weight-bold" style="color:3490DC;">BUNOT</h5>
@@ -70,11 +72,11 @@
 
             </p>
         </div>
-        <img style="display:none" src="{{URL::asset('image/4 Mohicap.jpg')}}" alt="SPC" width="350px" class="float-right mr-2">
+        <img style="display:none" src="{{URL::asset('image/4 Mohicap.jpg')}}" alt="SPC"  ">
       </div>
 
       <div class="col-12 media float-right mt-4 p-2">
-        <img style="display:none" src="{{URL::asset('image/5 Palakpakin.jpg')}}" alt="SPC" width="350px" class="float-right mr-2">
+        <img style="display:none" src="{{URL::asset('image/5 Palakpakin.jpg')}}" alt="SPC"  ">
         <div class="media-body">
 
           <h5 class="mt-0 p-2 font-weight-bold" style="color:3490DC;">PALAKPAKIN</h5>
@@ -101,11 +103,11 @@
                • 	Tourist Arrivals: January 2019 – 2,647 | February 2019 – 2,905 | March 2019 – 5,651
             </p>
         </div>
-        <img style="display:none" src="{{URL::asset('image/6 Pandin.jpg')}}" alt="SPC" width="350px" class="float-right mr-2">
+        <img style="display:none" src="{{URL::asset('image/6 Pandin.jpg')}}" alt="SPC" ">
       </div>
 
       <div class="col-12 media float-right mt-4 p-2">
-        <img style="display:none" src="{{URL::asset('image/7 Yambo.jpg')}}" alt="SPC" width="350px" class="float-right mr-2">
+        <img style="display:none" src="{{URL::asset('image/7 Yambo.jpg')}}" alt="SPC"  ">
         <div class="media-body">
           <h5 class="mt-0 p-2 font-weight-bold" style="color:3490DC;">YAMBO</h5>
             <p id='landmarksText'>
@@ -118,13 +120,13 @@
             </p>
         </div>
       </div>
-
     </div>
 
     <script>
       $(document).ready(function(){
         $(window).bind("load", function() {
-          $('#landmarkPic').css('display', 'none')
+          
+          $('#landmark').find('img').css('width', '350px')
           $('h3').fadeIn();
           $("h5").fadeIn('slow');
           $('div').find('img').fadeIn('slow');
@@ -141,6 +143,5 @@
           background-color:#a9f2ff;
         }
       </style>
-
-  </div>
+</div>
 </div>
