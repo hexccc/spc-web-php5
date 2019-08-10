@@ -30,10 +30,10 @@ public function addReg(Request $request)
 
 public function signinReg(Request $request)
 {
-  $this->validate(request(),[
-      'username'=>'required',
-      'password'=>'required'
-  ]);
+  // $this->validate(request(),[
+  //     'username'=>'required',
+  //     'password'=>'required'
+  // ]);
   $input  = $request->input('user');
   return Response::json($input);
 }

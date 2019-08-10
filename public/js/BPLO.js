@@ -3,7 +3,6 @@ var add_line_buss = [];
 $(document).ready(function () {
 
 
-
   $.ajaxSetup({
     headers: {
       'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -12,8 +11,6 @@ $(document).ready(function () {
     console.log('success');
     $('#addnewbuss').submit(function(e){
       e.preventDefault();
-
-
           // console.log(add_liness_buss);
 
       console.log(add_line_buss);
@@ -32,9 +29,16 @@ $(document).ready(function () {
           res = res[0];
           console.log(res[37].name1);
           console.log(res[37].name1);
-        }
+                $('#logged').modal('show');
+        },
+        error: function()
+          {
+            $('#logged').modal('show');
 
+          }
       });
+
+
     });
 
 $('#addlineaddRow').click(function(){
@@ -75,7 +79,7 @@ $('#addlineaddRow').click(function(){
 
     table.children[0].appendChild(row);
     $('#addnewbuss')[0].reset();
-    // notify('Added Successfully', 'success');
+
 
 });
 
@@ -90,10 +94,13 @@ $('#addReg').submit(function(e){
       success : function(res)
       {
         console.log(res);
+          notify('Added Successfully', 'success');
       },
       error : function()
       {
         console.log("error");
+        notify('Error in Adding Account', 'danger');
+
       }
     });
 });
@@ -110,12 +117,11 @@ $('#signinReg').submit(function(e){
       success :  function(res)
       {
         console.log(res);
-
         window.location = "/form"
       },
       error : function()
       {
-        console.log("error");
+        notify('Error in Signing In', 'danger');
       }
 
     });
@@ -130,3 +136,13 @@ $('#signinReg').submit(function(e){
    // delete add_line_buss[i];
    console.log(i);
 }
+
+function notify(msg, type,responseTime) {
+	setTimeout(function () {
+		$.bootstrapGrowl(msg, {
+			type: type,
+			align: 'right',
+			width: 'auto',
+			allow_dismiss: false
+		});
+	}, responseTime);}
