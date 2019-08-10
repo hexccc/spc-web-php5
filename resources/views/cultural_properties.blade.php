@@ -2,14 +2,14 @@
 @section('title', 'Important Cultural Properties')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <div id="landmark" class="mx-auto col-md-10 offset-md-1 pt-4" style="width:100%;">
-    <h3 class=" text-white p-2 mt-4" >
+    <h3 class=" text-white p-2 mt-2" >
       San Pablo City Famous Landmarks
     </h3>
   <div class="row px-2">
       <div class="media float-right mt-2 p-2">
         <img style="display:none" src="{{URL::asset('image/1 San Pablo Cathedral.jpg')}}" alt="SPC" width="250px" class="float-right mr-2">
         <div class="media-body">
-          <h5 class="mt-0 font-weight-bold" style="color:3490DC;">SAN PABLO CITY CATHEDRAL</h5>
+          <h5 class="mt-0 font-weight-bold" style="color:3490DC;background-color:#a9f2ff;">SAN PABLO CITY CATHEDRAL</h5>
             <p id='landmarksText'>
               Construction of the bricks and stones church started in 1680 and finished in 1721.
               The detailed affluent, ecclesiastical ornamentation were made by artist Juan de los
@@ -23,11 +23,10 @@
     <br>
       <div class="media float-right mt-2 p-2 py-2">
         <div class="media-body text-right pr-2">
-          <h5 class="mt-0 font-weight-bold" style="color:3490DC;">FARCON RESIDENCE</h5>
+          <h5 class="mt-0 font-weight-bold" style="color:3490DC;background-color:#a9f2ff;">FARCON RESIDENCE</h5>
             <p id='landmarksText'>
               Constructed in the early 1950s.  Design  is a fusion of Hispanic and American-Colonial building styles.
               Home of Municipal President (1945) Don Alfonso Farcon.
-
             </p>
         </div>
         <img style="display:none" src="{{URL::asset('image/farcon.jpg')}}" alt="SPC" width="250px" class="float-right mr-2">
@@ -37,7 +36,7 @@
         <img style="display:none" src="{{URL::asset('image/plaza1.jpg')}}" alt="SPC" width="250px" class="float-right mr-2">
         <div class="media-body">
 
-          <h5 class="mt-0 font-weight-bold" style="color:3490DC;">THE CITY PLAZA</h5>
+          <h5 class="mt-0 font-weight-bold" style="color:3490DC;background-color:#a9f2ff;">THE CITY PLAZA</h5>
             <p id='landmarksText'>
               *Rizal Monument was installed in 1911<br>
               *Plaza fountain was constructed between 1916-1918 during the term of Don Feliano Exconde<br>
@@ -49,7 +48,7 @@
 
       <div class="media float-right mt-2 p-2 py-2">
         <div class="media-body text-right pr-2">
-          <h5 class="mt-0 font-weight-bold" style="color:3490DC;">SAN PABLO CITY HALL</h5>
+          <h5 class="mt-0 font-weight-bold" style="color:3490DC;background-color:#a9f2ff;">SAN PABLO CITY HALL</h5>
             <p id='landmarksText' >
               The Old City Hall.  Building was inaugurated in March 30, 1940.  Construction was undertaken during the term of MP Cristeto Brion.  It was designed by Architect Antonio Toledo. The 3rd and 4th floors are currently used as home of the San Pablo City Museum.
 
@@ -62,7 +61,7 @@
         <img style="display:none" src="{{URL::asset('image/hagdangbato.png')}}" alt="SPC" width="250px" class="float-right mr-2">
         <div class="media-body">
 
-          <h5 class="mt-0 font-weight-bold" style="color:3490DC;">HAGDANG BATO</h5>
+          <h5 class="mt-0 font-weight-bold" style="color:3490DC;background-color:#a9f2ff;">HAGDANG BATO</h5>
             <p id='landmarksText'>
               Constructed in 1915 under MP Marcial Alimario. It has five
                sections with a total of 89 steps. It serves as an access
@@ -74,7 +73,7 @@
 
       <div class="media float-right mt-2 p-2 py-2">
         <div class="media-body text-right pr-2">
-          <h5 class="mt-0 font-weight-bold" style="color:3490DC;">ESCUELA PIA</h5>
+          <h5 class="mt-0 font-weight-bold" style="color:3490DC;background-color:#a9f2ff;">ESCUELA PIA</h5>
             <p id='landmarksText' >
               (now Don Marcos Paulino Building; Red Cross and  Puericulture Center) and Bureau of Lands Monuments/Marker
               City Plaza, Rizal Ave., San Pablo City
@@ -91,7 +90,7 @@
       <div class="media float-right mt-2 p-2">
         <img style="display:none" src="{{URL::asset('image/7 Apolinario Mabini.JPG')}}" alt="SPC"  width="250px" class="float-right mr-2">
         <div class="media-body">
-          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;">7.	Apolinario Mabini Shrine</h5>
+          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;background-color:#ffe0e4">APOLINARIO MABINI SHRINE</h5>
           <p id='landmarksText' >
             City Plaza, Rizal Ave., San Pablo City
           </p>
@@ -99,7 +98,7 @@
       </div>
       <div class="media float-right mt-2 p-2 py-2">
         <div class="media-body text-right pr-2">
-          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;">ESCUELA PIA</h5>
+          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;background-color:#ffe0e4">ESCUELA PIA</h5>
             <p id='landmarksText' >
               (now Don Marcos Paulino Building; Red Cross and  Puericulture Center) and Bureau of Lands Monuments/Marker
               City Plaza, Rizal Ave., San Pablo City
@@ -110,7 +109,7 @@
       <div class="media col-12 float-right mt-2 p-2">
         <img style="display:none" src="{{URL::asset('image/14 Dambana ng Bayani  Kagitingan.jpg')}}" alt="SPC"  width="250px" class="float-right mr-2">
         <div class="media-body">
-          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;">DAMBANA NG BAYANI</h5>
+          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;background-color:#ffe0e4">DAMBANA NG BAYANI</h5>
           <p id='landmarksText' >
             Trece Martirez St., Brgy. V-A, San Pablo City
           </p>
@@ -119,7 +118,7 @@
 
       <div class="media col-12 float-right mt-2 p-2 py-2">
         <div class="media-body text-right pr-2">
-          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;">TRECE MARTIREZ SHRINE</h5>
+          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;background-color:#ffe0e4">TRECE MARTIREZ SHRINE</h5>
             <p id='landmarksText' >
               Trece Martirez St., Brgy. V-A, San Pablo City
             </p>
@@ -129,7 +128,7 @@
       <div class="media col-12 float-right mt-2 p-2">
         <img style="display:none" src="{{URL::asset('image/19 Guerilla Shrine in San Mateo.JPG')}}" alt="SPC"  width="250px" class="float-right mr-2">
         <div class="media-body">
-          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;">GUERILLA SHRINE</h5>
+          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;background-color:#ffe0e4">GUERILLA SHRINE</h5>
           <p id='landmarksText' >
           Brgy. San Mateo, San Pablo City
           </p>
@@ -139,6 +138,7 @@
     <script>
       $(document).ready(function(){
         $(window).bind("load", function() {
+          $("h5").addClass("p-2");
           $('#landmarkPic').css('display', 'none')
           $('h3').fadeIn();
           $("h5").fadeIn('slow');
@@ -146,7 +146,10 @@
           $('div').delay('slow').find('p').slideDown(3000);
         });
       });
-
+      // $(document).ready(function(){
+      //     $("h5").addClass("p-2");
+      //   });
+      // });
     </script>
       <style media="screen">
         h5, h3, #landmarksText{
