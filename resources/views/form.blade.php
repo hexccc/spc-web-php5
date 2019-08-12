@@ -3,6 +3,7 @@
 @section('content')
 
 <!-- //////MODAL BPLO login -->
+
 <div class="modal fade logged" id="logged" tabindex="-1" role="dialog" aria-labelledby="logged">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -62,11 +63,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
-
-
-
 
 <div class=" col-md-10 offset-md-1">
   <h1 class="mb-5" align="center">Please Fill Out the Form</h1>
@@ -148,7 +144,7 @@
       </div>
       <div class="form-check-inline">
        <label class="form-check-label">
-         <input type="radio" class="form-check-input" value="partner"name="new[typeofbuss_partner]">Partnership
+         <input type="radio" class="form-check-input" value="partner" name="new[typeofbuss_partner]">Partnership
        </label>
       </div>
       <div class="form-check-inline">
@@ -425,6 +421,18 @@
 			<div class="form-group col-md-3">
 			  <label for='fname'>Line of Business</label>
 					<select class="form-control" name="new[busact_addline]" id="addline">
+						<?php
+						// A sample product array
+						$linebuss = array("Mobile", "Laptop", "Tablet", "Camera");
+
+						// Iterating through the product array
+						foreach($products as $item){
+						?>
+						<option value="<?php echo strtolower($item); ?>"><?php echo $item; ?></option>
+						<?php
+						}
+						?>
+
 						<option selected value="">Line of Business</option>
             <option value="Single">Single</option>
             <option value="Partnership">Partnership</option>
@@ -480,25 +488,28 @@
         </tbody>
       </table>
     </div>
-
-
-  <button type="submit" class="btn btn-primary mt-2 mb-4 float-right">Print</button>
-
+		<div class = "">
+			<button type="submit" class="btn btn-primary  mb-4 float-right">Submit</button>
+			<a href = "/logout"  class="btn btn-primary  mb-4 mr-3 float-right">Logout</a>
+		</div>
 </form>
+</div>
+
   <!-- {!! Form::close() !!} -->
-	<input type="hidden" value ="{{$name}}" id ="name">
+
+	<!-- <input type="text" value ="{{ $name }}" id ="name">
 </div>
 
 			<script>
 			var nameused = $('#name').val();
 			console.log(nameused);
-			if (nameused != " ")
+			if (nameused != ' ')
 			{
 				$('#logged').modal('hide');
 			}
-			else {
+			else  {
 				$('#logged').modal('show');
 			}
-			</script>
+			</script> -->
 
 @endsection

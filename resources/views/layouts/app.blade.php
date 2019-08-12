@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="/css/app.css">
-    <!-- <link rel="stylesheet" href="/css/multistep.css"> -->
     <link rel="stylesheet" href="/css/login.css">
 
-    <!-- <script src="/js/multistep.js"></script> -->
     <script src="/js/app.js"></script>
     <script src="/js/form.js"></script>
-		<script src="/js/BPLO.js"></script>
+    <script src="/js/BPLO.js"></script>
+		<script src="/js/bploses.js"></script>
     <script src="/js/inputmask.js"></script>
     <script src="/js/jquery.bootstrap-growl.js"></script>
 

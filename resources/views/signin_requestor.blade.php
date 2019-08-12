@@ -48,13 +48,13 @@
 
     <div class ="col-md-6">
     <div class="r-form-group">
-      <input type="text" placeholder="Username" name="buss_client[username]" id="username" required/>
+      <input type="text" placeholder="Username" name="user[username]" id="username" required/>
     </div>
     <div class="r-form-group">
       <input type="email" placeholder="Email" name="buss_client[email]" id="email" required/>
     </div>
     <div class="r-form-group">
-      <input type="password" placeholder="Password" name="buss_client[password]" id="password" required/>
+      <input type="password" placeholder="Password" name="user[password]" id="password" required/>
     </div>
     <div class="r-form-group">
       <!-- <input type="password" placeholder="Confirm Password" name="buss_client[confirmpassword]" id="confirmpassword"/> -->
