@@ -9,7 +9,7 @@
       </div>
       <div class="modal-body">
         <a class="btn btn-info" href="{{URL::asset('docs/BUSINESS PERMIT APPLICATION FORM.docx')}}" download>Download Business Registration Form</a>
-        <a class="btn btn-info" href="signin_requestor">Online BPLO Fill Up</a>
+        <a class="btn btn-info" href="form">Online BPLO Fill Up</a>
         <!-- <a class="btn btn-info text-white" data-toggle="modal" data-target="#regForm" data-dismiss="modal" >Online BPLO Fill Up</a> -->
       </div>
     </div>

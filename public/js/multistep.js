@@ -1,8 +1,8 @@
+
 //jQuery time
 var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
 var animating; //flag to prevent quick multi-click glitches
-$(document).ready(function(){
 
 $(".next").click(function(){
 	if(animating) return false;
@@ -26,7 +26,10 @@ $(".next").click(function(){
 			left = (now * 50)+"%";
 			//3. increase opacity of next_fs to 1 as it moves in
 			opacity = 1 - now;
-			current_fs.css({'transform': 'scale('+scale+')'});
+			current_fs.css({
+        'transform': 'scale('+scale+')',
+        'position': 'absolute'
+      });
 			next_fs.css({'left': left, 'opacity': opacity});
 		},
 		duration: 800,
@@ -77,4 +80,3 @@ $(".previous").click(function(){
 $(".submit").click(function(){
 	return false;
 })
-});

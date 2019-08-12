@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/multistep.css">
+    <!-- <link rel="stylesheet" href="/css/multistep.css"> -->
     <link rel="stylesheet" href="/css/login.css">
 
+    <!-- <script src="/js/multistep.js"></script> -->
     <script src="/js/app.js"></script>
     <script src="/js/form.js"></script>
 		<script src="/js/BPLO.js"></script>
     <script src="/js/inputmask.js"></script>
-    <script src="/js/multistep.js"></script>
     <script src="/js/jquery.bootstrap-growl.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -89,7 +89,7 @@
 
 
 <!-- //////MODAL BPLO login -->
-<div class="modal fade logged" id="logged" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade logged" id="logged" tabindex="-1" role="dialog" aria-labelledby="logged" >
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header float-none">

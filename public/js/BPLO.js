@@ -3,15 +3,19 @@ var add_line_buss = [];
 $(document).ready(function () {
 
 
-  $.ajaxSetup({
-    headers: {
-      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
+  $('#logged').on('hide.bs.modal', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
   });
+  // $.ajaxSetup({
+  //   headers: {
+  //     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  //   }
+  // });
     console.log('success');
     $('#addnewbuss').submit(function(e){
       e.preventDefault();
-          // console.log(add_liness_buss);
 
       console.log(add_line_buss);
       console.log($(this).serializeArray());
@@ -29,12 +33,10 @@ $(document).ready(function () {
           res = res[0];
           console.log(res[37].name1);
           console.log(res[37].name1);
-                $('#logged').modal('show');
         },
         error: function()
           {
-            $('#logged').modal('show');
-
+            console.log("error");
           }
       });
 
@@ -42,7 +44,6 @@ $(document).ready(function () {
     });
 
 $('#addlineaddRow').click(function(){
-  // function addlineaddRow() {
   	add_line_buss.push({
   		'new[busact_addline]': $('#addline').val(),
   		'new[busact_addcode]': $('#addcode').val(),
@@ -85,47 +86,65 @@ $('#addlineaddRow').click(function(){
 
 $('#addReg').submit(function(e){
     e.preventDefault();
-    console.log($('#addReg').serializeArray());
-    $.ajax({
-      url:'/addReg',
-      type:'POST',
-      data: $(this).serialize(),
-      datatype: 'json',
-      success : function(res)
-      {
-        console.log(res);
-          notify('Added Successfully', 'success');
-      },
-      error : function()
-      {
-        console.log("error");
-        notify('Error in Adding Account', 'danger');
+    // console.log($('#addReg').serializeArray());
+    // $.ajax({
+    //   url:'/addReg',
+    //   type:'POST',
+    //   data: $(this).serialize(),
+    //   datatype: 'json',
+    //   success : function(res)
+    //   {
+    //     console.log(res);
+    //       notify('Added Successfully', 'success');
+    //   },
+    //   error : function()
+    //   {
+    //     console.log("error");
+    //     notify('Error in Adding Account', 'danger');
+    //
+    //   }
+    // });
 
-      }
+     console.log($(this).serialize());
+    $.ajax({
+      url : 'http://192.168.100.207:8080/api/spc_api/',
+      type : 'POST',
+      crossDomain: true,
+      dataType: 'json',
+      data :
+        $(this).serialize()
+      ,
+      success : function(res){
+        console.log(res);
+      },
+      error: function()
+        {
+          console.log("error");
+        }
     });
 });
-
 
 $('#signinReg').submit(function(e){
     e.preventDefault();
-    console.log($('#signinReg').serializeArray());
-    $.ajax({
-      url:'/signinReg',
-      type:'POST',
-      data: $(this).serialize(),
-      datatype: 'json',
-      success :  function(res)
-      {
-        console.log(res);
-        window.location = "/form"
-      },
-      error : function()
-      {
-        notify('Error in Signing In', 'danger');
-      }
-
-    });
+    console.log($(this).serialize());
+   $.ajax({
+     url : 'http://192.168.100.207:8080/api/login_api/',
+     type : 'POST',
+     crossDomain: true,
+     dataType: 'json',
+     data :
+       $(this).serialize()
+     ,
+     success : function(res){
+       console.log(res);
+     },
+     error: function()
+       {
+         console.log("error");
+       }
+   });
 });
+
 
 });
 
@@ -136,6 +155,9 @@ $('#signinReg').submit(function(e){
    // delete add_line_buss[i];
    console.log(i);
 }
+
+
+
 
 function notify(msg, type,responseTime) {
 	setTimeout(function () {

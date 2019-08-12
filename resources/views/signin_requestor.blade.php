@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div class=" col-md-10">
+<div class="col-md-10 offset-md-1">
 
 	<!-- //////BPLO MODALS ALERT -->
 

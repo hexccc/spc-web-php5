@@ -2,45 +2,45 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 /*basic reset*/
-/* * {margin: 0; padding: 0;} */
+* {margin: 0; padding: 0;}
 
-/* html {
+html {
 	height: 100%;
 	/*Image only BG fallback*/
-	/* background: url('http://thecodeplayer.com/uploads/media/gs.png');
 	/*background = gradient + image pattern combo*/
-	/* background:
-		linear-gradient(rgba(196, 102, 0, 0.2), rgba(155, 89, 182, 0.2)),
-		url('http://thecodeplayer.com/uploads/media/gs.png'); */ */
-} */
+	background:
+		linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+}
 
 body {
 	font-family: montserrat, arial, verdana;
 }
 /*form styles*/
-#addnewbuss {
-	width: auto;
+#msform {
+	width: 400px;
 	margin: 50px auto;
-	position:
+	text-align: center;
+	position: relative;
 }
-#addnewbuss fieldset {
+#msform fieldset {
 	background: white;
 	border: 0 none;
 	border-radius: 3px;
 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 	padding: 20px 30px;
 	box-sizing: border-box;
-	width: 100%;
+	width: 80%;
 	margin: 0 10%;
 
 	/*stacking fieldsets above each other*/
+	position: relative;
 }
 /*Hide all except first fieldset*/
-#addnewbuss fieldset:not(:first-of-type) {
+#msform fieldset:not(:first-of-type) {
 	display: none;
 }
 /*inputs*/
-#addnewbuss input, #addnewbuss textarea {
+#msform input, #msform textarea {
 	padding: 15px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -52,7 +52,7 @@ body {
 	font-size: 13px;
 }
 /*buttons*/
-#addnewbuss .action-button {
+#msform .action-button {
 	width: 100px;
 	background: #27AE60;
 	font-weight: bold;
@@ -63,7 +63,7 @@ body {
 	padding: 10px 5px;
 	margin: 10px 5px;
 }
-#addnewbuss .action-button:hover, #addnewbuss .action-button:focus {
+#msform .action-button:hover, #msform .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
 /*headings*/

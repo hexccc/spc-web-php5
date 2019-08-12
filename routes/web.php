@@ -14,9 +14,9 @@
 
 Route::get('/', 'CountCtrl@countVisit');
 
-Route::get('/form', function () {
-    return view('form');
-});
+// Route::get('/form', function () {
+//     return view('form');
+// });
 
 Route::get('/gov', function () {
     return view('gov');
@@ -141,6 +141,11 @@ Route::get('/signin_requestor', function(){
   return view('signin_requestor');
 });
 
+
+Route::get('/form/{name?}', function($name = ' '){
+    return view('form',['name'=> $name  ]);
+});
+// Route::get('/form/{name?}', 'JController@logged');
 
 Route::post('/addnewbuss', 'JController@addnewbuss');
 

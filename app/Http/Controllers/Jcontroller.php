@@ -24,16 +24,12 @@ public function addnewbuss(Request $request)
 public function addReg(Request $request)
 {
   $input  = $request->input('buss_client');
-  //return $input['first_name'];
+  // return redirect('/form{name = $name}');
   return Response::json($input);
 }
 
 public function signinReg(Request $request)
 {
-  // $this->validate(request(),[
-  //     'username'=>'required',
-  //     'password'=>'required'
-  // ]);
   $input  = $request->input('user');
   return Response::json($input);
 }
