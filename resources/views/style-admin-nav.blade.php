@@ -22,7 +22,7 @@ min-height: 100vh;
 
 }
 .sidebar-wrapper{
- background: #7386D5;
+ background: #005b96;
 }
 
 #sidebar.active {
@@ -66,7 +66,6 @@ body {
 }
 
 p {
-
    font-size: 1.1em;
    font-weight: 300;
    line-height: 1.7em;
@@ -81,14 +80,14 @@ a, a:hover, a:focus {
 
 #sidebar {
    /* don't forget to add all the previously mentioned styles here too */
-   background: #7386D5;
+   background: #005b96;
    color: #fff;
    transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
    padding: 20px;
-   background: #6d7fcc;
+   background: #03396c;
 }
 
 #sidebar ul.components {
@@ -107,17 +106,17 @@ a, a:hover, a:focus {
    display: block;
 }
 #sidebar ul li a:hover {
-   color: #7386D5;
+   color: #03396c;
    background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
    color: #fff;
-   background: #6d7fcc;
+   background: #03396c;
 }
 ul ul a {
    font-size: 0.9em !important;
    padding-left: 30px !important;
-   background: #6d7fcc;
+   background: #03396c;
 }
 </style>

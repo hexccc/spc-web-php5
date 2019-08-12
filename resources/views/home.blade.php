@@ -5,18 +5,18 @@
 
 
 {{-- NEWS --}}
-  <div class="container-fluid">
-    <div class="row">
-      <div class='col-md-12'>
-        <div class="card border-primary mb-3">
-          <h3 class="text-white card-title p-2 pl-3 mb-0" style="background:#0072e9;">My City, My Government</h3>
-          <div class="card-body text-primary" >
-            <div class="row" id="news_headlines">
-            </div>
-            <a href="#" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#news1">See All News>></a>
+<div class="container-fluid">
+  <div class="row">
+    <div class='col-md-12'>
+      <div class="card border-primary mb-3">
+        <h3 class="text-white card-title p-2 pl-3 mb-0" style="background:#0072e9;">My City, My Government</h3>
+        <div class="card-body text-primary" >
+          <div class="row" id="news_headlines">
           </div>
+          <a href="#" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#news1">See All News>></a>
         </div>
       </div>
+    </div>
 </div>
 
 

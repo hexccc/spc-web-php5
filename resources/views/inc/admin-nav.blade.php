@@ -7,10 +7,10 @@
         <!-- Sidebar -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Admin Panel</h3>
+                <h3><a href="pylon-admin">Admin Panel</a></h3>
             </div>
             <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
+
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -46,17 +46,17 @@
                     <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Systems</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">Page 1</a>
+                            <a href="#">BPLS</a>
                         </li>
                         <li>
-                            <a href="#">Page 2</a>
+                            <a href="#">Market</a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a href="#">Page 3</a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </li>
                 <li>
@@ -74,14 +74,52 @@
     <div id="content">
         <nav class="navbar navbar-light bg-dark">
             <div class="container-fluid">
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
-                    <i class="fas fa-align-left"></i>
-                    <span>Sidebar</span>
+                <button type="btn btn-dark" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left" title="Sidebar"></i>
+                    <span></span>
                 </button>
-
+                    <a class="btn btn-dark" data-toggle="modal" title="Admin Log in" data-toggle="modal" data-target="#modalLoginForm">Admin Login</a>
             </div>
         </nav>
     </div>
+
+
+    {{-- <div class="container h-100">
+      <div class="row h-100 justify-content-center align-items-center">
+        <img class="" style="position:absolute;height:300px;z-index:-1;"src="{{URL::asset('image/spc.png')}}" alt="spc">
+      </div>
+    </div> --}}
+
+
+    {{-- LOGIN MODAL --}}
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">ADMIN Sign in</h4>
+          </div>
+          <div class="modal-body mx-3">
+            <div class="md-form">
+              <i class="fas fa-user-shield prefix grey-text"></i>
+              <input type="text" id="defaultForm-email" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="defaultForm-email">Admin User</label>
+            </div>
+            <div class="md-form">
+              <i class="fas fa-user-lock prefix grey-text"></i>
+              <input type="password" id="defaultForm-pass" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="defaultForm-pass">Password</label>
+            </div>
+            <div class="d-flex justify-content-around">
+              <button type="button" class="btn btn-success">Log In</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
 
 @include('style-admin-nav')

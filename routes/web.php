@@ -72,8 +72,8 @@ Route::get('/ela', function () {
     return view('ela');
 });
 
-Route::get('/landmarks', function () {
-    return view('landmarks');
+Route::get('/cultural_properties', function () {
+    return view('cultural_properties');
 });
 
 Route::get('/officemap', function () {
@@ -94,6 +94,10 @@ Route::get('/mission', function () {
 
 Route::get('/calendar', function () {
     return view('calendar');
+});
+
+Route::get('/7lakes', function () {
+    return view('7lakes');
 });
 
 Route::get('/pylon-admin', function () {

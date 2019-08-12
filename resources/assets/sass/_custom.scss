@@ -41,6 +41,8 @@ body {
 
 .btn{
   color: #ffffff;
+
+  transition: all ease-in-out 250ms;
 }
 
 
@@ -90,6 +92,51 @@ right: 0px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
+.navbar .nav-item a{
+  color: #FFF !important;
+}
+
+
+//NAVBAR
+.nav-item li{
+  display: inline-block;
+  position: relative;
+}
+
+.navbar a:hover{
+  color: #75deff
+}
+
+.nav-item .btn:hover{
+
+}
+
+.nav-item a:before{
+  content:'';
+  display: block;
+  height: 3px;
+  width: 90%;
+  background-color: #28cbff;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.nav-item a:hover::before{
+  width: 90%;
+}
+
+.navbar .dropdown-menu{
+  background-color: rgba(34, 49, 63, 0.5);
+}
+.navbar .dropdown-menu:hover{
+  color: blue;
+}
+.dropdown-item:hover{
+  background-color: rgba(34, 49, 63, 0.5);
+}
+
 .nav-link{
   text-decoration: none;
   position: relative;
@@ -109,6 +156,13 @@ right: 0px;
 .dt{
   text-decoration:none;
   font-size:20px;
+}
+
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,
+.btn-primary:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover{
+    box-shadow: none!important;
+    outline: 0;
 }
 
 html, body {
@@ -173,4 +227,24 @@ img.zoom {
 
 .modal-footer {
   display:none;
+}
+
+
+.whole-page-overlay{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100% !important;
+  z-index: 1050;
+  display: none;
+}
+.whole-page-overlay .center-loader{
+  top: 50%;
+  left: 52%;
+  position: absolute;
+  color: white;
 }

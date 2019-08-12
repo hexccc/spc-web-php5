@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Online Fill Up Form')
 @section('content')
 
 <!-- //////MODAL BPLO login -->
