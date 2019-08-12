@@ -11,28 +11,13 @@ $(document).ready(function () {
     $('#addnewbuss').submit(function(e){
       e.preventDefault();
 
-      // console.log(add_line_buss);
-      // console.log($(this).serializeArray());
-      $.ajax({
-        url : 'http://192.168.100.207:8080/api/spc_api/',
-        type : 'POST',
-        crossDomain: true,
-        dataType: 'json',
-        data : {
-          'test[name1]' : '122dasds1',
-          'test[name2]' : '22asdas21'
-        },
 
-        success : function(res){
-          console.log(res.msg);
 
-          
-        },
-        error: function()
-          {
-            console.log("error");
-          }
-      });
+
+
+
+
+      
 
 
     });
@@ -91,7 +76,7 @@ $('#addReg').submit(function(e){
         $(this).serializeArray()
       ,
       success : function(res){
-<<<<<<< HEAD
+
     notify(res.msg, 'success',500) 
     $('#addReg')[0].reset();
   
@@ -100,16 +85,6 @@ $('#addReg').submit(function(e){
         {
           notify('Regestration Failed', 'danger',500) 
     
-=======
-        console.log(res);
-          notify('Registration Done. Please check your email for verification.', 'success');
-
-      },
-      error: function()
-        {
-          console.log("error");
-          notify('Error in Adding an Account', 'danger');
->>>>>>> 678562c3f11bf389754eb26378f9b73a39dd9621
         }
     });
 });         
@@ -123,7 +98,6 @@ $('#signinReg').submit(function(e){
      type : 'POST',
      crossDomain: true,
      dataType: 'json',
-<<<<<<< HEAD
      data :
        $(this).serialize()
 
@@ -138,23 +112,11 @@ $('#signinReg').submit(function(e){
       }
 
       notify(res.msg, 'info',500) 
-=======
-     data :$(this).serializeArray(),
-     success : function(res){
-       console.log(res);
-       notify('Login Successfully', 'success');
-       // $('#logged').modal('hide');
->>>>>>> 678562c3f11bf389754eb26378f9b73a39dd9621
      },
      error: function(msgres)
        {
-<<<<<<< HEAD
-  
-    
-=======
          notify('Error in Logging in an Account', 'danger');
         // window.location = "/bploform";
->>>>>>> 678562c3f11bf389754eb26378f9b73a39dd9621
        }
    });
 });
