@@ -9,7 +9,7 @@
     </h3>
   <div class="row px-2">
       <div class="media float-right mt-4 p-2">
-        <img  href="#lake1" class="" style="display:none" src="{{URL::asset('image/1 Sampalok.jpg')}}" alt="SPC" ">
+        <img  href="#lake1" class="pr-2" style="display:none" src="{{URL::asset('image/1 Sampalok.jpg')}}" alt="SPC" ">
         <div class="media-body">
           <h5 class="mt-0 font-weight-bold p-2" style="color:3490DC;background-color:#a9f2ff ">SAMPALOC LAKE</h5>
             <p id='landmarksText'>
@@ -37,11 +37,11 @@
               •	Tourist Arrivals: January 2019 – 47 | February 2019 – 239 | March 2019 - 74
             </p>
         </div>
-        <img style="display:none" src="{{URL::asset('image/2 Calibato.jpg')}}" alt="SPC"  ">
+        <img style="display:none"  src="{{URL::asset('image/2 Calibato.jpg')}}" alt="SPC"  ">
       </div>
 
       <div class="col-12 media float-right mt-4 p-2">
-        <img style="display:none" src="{{URL::asset('image/3 Bunot.jpg')}}" alt="SPC"  ">
+        <img style="display:none" class="pr-2" src="{{URL::asset('image/3 Bunot.jpg')}}" alt="SPC"  ">
         <div class="media-body">
 
           <h5 class="mt-0 p-2 font-weight-bold" style="color:3490DC;">BUNOT</h5>
@@ -76,7 +76,7 @@
       </div>
 
       <div class="col-12 media float-right mt-4 p-2">
-        <img style="display:none" src="{{URL::asset('image/5 Palakpakin.jpg')}}" alt="SPC"  ">
+        <img style="display:none" class="pr-2" src="{{URL::asset('image/5 Palakpakin.jpg')}}" alt="SPC"  ">
         <div class="media-body">
 
           <h5 class="mt-0 p-2 font-weight-bold" style="color:3490DC;">PALAKPAKIN</h5>
@@ -107,7 +107,7 @@
       </div>
 
       <div class="col-12 media float-right mt-4 p-2">
-        <img style="display:none" src="{{URL::asset('image/7 Yambo.jpg')}}" alt="SPC"  ">
+        <img style="display:none" class="pr-2" src="{{URL::asset('image/7 Yambo.jpg')}}" alt="SPC"  ">
         <div class="media-body">
           <h5 class="mt-0 p-2 font-weight-bold" style="color:3490DC;">YAMBO</h5>
             <p id='landmarksText'>

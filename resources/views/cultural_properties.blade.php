@@ -50,7 +50,16 @@
         <div class="media-body text-right pr-2">
           <h5 class="mt-0 font-weight-bold" style="color:3490DC;background-color:#a9f2ff;">SAN PABLO CITY HALL</h5>
             <p id='landmarksText' >
-              The Old City Hall.  Building was inaugurated in March 30, 1940.  Construction was undertaken during the term of MP Cristeto Brion.  It was designed by Architect Antonio Toledo. The 3rd and 4th floors are currently used as home of the San Pablo City Museum.
+            It represents the prevailing architectural characteristics and design during the American Colonial period when the structure was built.
+            <br>
+            The building was designed  by Architect Antonio Toledo, one of the government Architects during 
+            the American Colonial period, show cases the popular design of the same period.  Other buildings
+             designed by Architect Toledo include:  City Hall of Manila (1941), Dept. of Agriculture and Commerce 
+             (now Tourism Building), Department of Finance (now National Museum), Leyte Capitol (1920s), Cebu Provincial Capitol 
+             (1937), Manila Customs House, UP College of Medicine Annex (Padre Faura Campus), UP University Library 
+             (Padre Faura Campus), Women’s Dormitory of the Philippine Normal School.
+
+            
 
             </p>
         </div>
@@ -186,18 +195,22 @@ The battle of Sta. Isabel Shrine was erected in November 22, 1979 to commemorate
         <div class="media-body">
           <h5 class="mt-0 font-weight-bold" style="color:#ff4554;background-color:#ffe0e4">SAN PABLO RAILROAD STATION</h5>
           <p id='landmarksText' >
-          The coming of the railroad system to San Pablo City in 1908 revolutionized the transport of coconut- the city’s primary product, to Manila and ports where they are loaded and exported to various countries in the west and Europe, capitalizing on the high demand for coconut products abroad.  This tremendously boosted the economy of San Pablo.  In 1912, the Bureau of Public Works Publication mentioned that the most prosperous community in the Philippines was San Pablo (Juan B. Hernandez, San Pablo delos Montes).
+          The coming of the railroad system to San Pablo City in 1908 revolutionized the transport of coconut- 
+          the city’s primary product, to Manila and ports where they are loaded and exported to various countries in 
+          the west and Europe, capitalizing on the high demand for coconut products abroad.  This tremendously boosted the economy of San Pablo.  In 1912, the Bureau of Public Works Publication mentioned that the most prosperous community in the Philippines was San Pablo (Juan B. Hernandez, San Pablo delos Montes).
           </p>
         </div>
       </div>
 
       <div class="media col-12 float-right mt-2 p-2 py-2">
         <div class="media-body text-right pr-2">
-          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;background-color:#ffe0e4">TRECE MARTIREZ SHRINE</h5>
+          <h5 class="mt-0 font-weight-bold" style="color:#ff4554;background-color:#ffe0e4">TRECE MARTIRES SHRINE</h5>
             <p id='landmarksText' >
             The Trece Martires monument is a reminder of the martyrdom of the 13 Filipinos who were part of  the quest for 
             Philippine Independence.  
             It is located at the intersection of a street which was named in their behalf.
+            <br>
+            Located just a few meters from the shrine of Andres Bonifacio. Constructed in honor of the thirteen martyrs of Cavite who were executed by musketry in September 12, 1896, for cooperating with the Katipunan during the Philippine Revolution against Spain. The shrine was erected through the initiative of Attorney Teofila Sahagun, First woman President of the Association  de Diaconiza dela Iglesia Filipina Independiente on June 30, 1916.
             </p>
         </div>
         <img style="display:none" src="{{URL::asset('image/17 Trece Martirez Shrine.JPG')}}" alt="SPC" width="250px" class="float-right mr-2">
