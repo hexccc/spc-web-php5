@@ -17,8 +17,8 @@ $(document).ready(function () {
     $('#addnewbuss').submit(function(e){
       e.preventDefault();
 
-      console.log(add_line_buss);
-      console.log($(this).serializeArray());
+      // console.log(add_line_buss);
+      // console.log($(this).serializeArray());
       $.ajax({
         url : 'http://192.168.100.207:8080/api/spc_api/',
         type : 'POST',
@@ -30,9 +30,9 @@ $(document).ready(function () {
         },
 
         success : function(res){
-          res = res[0];
-          console.log(res[37].name1);
-          console.log(res[37].name1);
+          console.log(res.msg);
+
+          
         },
         error: function()
           {
@@ -112,21 +112,25 @@ $('#addReg').submit(function(e){
       crossDomain: true,
       dataType: 'json',
       data :
-        $(this).serialize()
+        $(this).serializeArray()
       ,
       success : function(res){
-        console.log(res);
+    notify(res.msg, 'success',500) 
+    $('#addReg')[0].reset();
+  
       },
       error: function()
         {
-          console.log("error");
+          notify('Regestration Failed', 'danger',500) 
+    
         }
     });
-});
+});         
 
 $('#signinReg').submit(function(e){
+
     e.preventDefault();
-    console.log($(this).serialize());
+    console.log($(this).serializeArray());
    $.ajax({
      url : 'http://192.168.100.207:8080/api/login_api/',
      type : 'POST',
@@ -134,13 +138,23 @@ $('#signinReg').submit(function(e){
      dataType: 'json',
      data :
        $(this).serialize()
+
      ,
      success : function(res){
-       console.log(res);
+
+
+      if(res.response == true){
+        console.log('123');
+        
+        window.location.href = "/bploform";
+      }
+
+      notify(res.msg, 'info',500) 
      },
-     error: function()
+     error: function(msgres)
        {
-         console.log("error");
+  
+    
        }
    });
 });
@@ -168,3 +182,6 @@ function notify(msg, type,responseTime) {
 			allow_dismiss: false
 		});
 	}, responseTime);}
+
+
+
