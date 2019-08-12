@@ -1,6 +1,6 @@
 var add_line_buss = [];
 
-
+var global_url = 'http://81cdf678.ngrok.io';
 var userSession = sessionStorage.getItem("user_id");
 $(document).ready(function () {
   $('#logged').on('hide.bs.modal', function (e) {
@@ -14,7 +14,7 @@ $(document).ready(function () {
     if(userSession != null) {
 
       $.ajax({
-        url : 'http://192.168.100.207:8080/api/bplo_api/' + userSession,
+        url : global_url+'/api/bplo_api/' + userSession,
         type : 'GET',
         dataType : 'json',
         success : function (res) {
@@ -92,7 +92,7 @@ $('#addReg').submit(function(e){
 
      console.log($(this).serialize());
     $.ajax({
-      url : 'http://192.168.100.207:8080/api/spc_api/',
+      url : global_url+'/api/spc_api/',
       type : 'POST',
       crossDomain: true,
       dataType: 'json',
@@ -118,7 +118,7 @@ $('#signinReg').submit(function(e){
     e.preventDefault();
     console.log($(this).serializeArray());
    $.ajax({
-     url : 'http://192.168.100.207:8080/api/login_api/',
+     url : global_url+'/api/login_api/',
      type : 'POST',
      crossDomain: true,
      dataType: 'json',
