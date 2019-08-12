@@ -1,5 +1,7 @@
 var add_line_buss = [];
 
+
+var userSession = sessionStorage.getItem("user_id");
 $(document).ready(function () {
   $('#logged').on('hide.bs.modal', function (e) {
       e.preventDefault();
@@ -7,18 +9,40 @@ $(document).ready(function () {
       return false;
   });
 
-    console.log('success');
+    console.log('success' + userSession);
+
+    if(userSession != null) {
+
+      $.ajax({
+        url : 'http://192.168.100.207:8080/api/bplo_api/' + userSession,
+        type : 'GET',
+        dataType : 'json',
+        success : function (res) {
+          // console.log(res);
+          content = res.content;
+
+          if (content != null) {
+            // console.log('not null');
+            $('#buss_name').html('&nbsp; : ' + content[0].buss_name);
+            $('#date_approve').html('&nbsp; : ' + (content[0].date_approve == null) ? '&nbsp; : Not Approve Yet' : content[0].date_approve);
+            $('#owner_name').html('&nbsp; : ' + content[0].owner_name);
+            $('#date_payment').html('&nbsp; : ' + (content[0].date_payment == null) ? '&nbsp; : Not Approve Yet' : content[0].date_payment);
+            $('#buss_code').html('&nbsp; : ' + content[0].buss_code);
+            $('#buss_line').html('&nbsp; : ' + content[0].buss_line);
+            notify(res.msg,'success',500);
+          }
+
+        },
+        error : function(xhr){
+          // console.log(xhr.responseText);
+        }
+      });
+
+    }
+
+
     $('#addnewbuss').submit(function(e){
       e.preventDefault();
-
-
-
-
-
-
-
-      
-
 
     });
 
@@ -77,17 +101,17 @@ $('#addReg').submit(function(e){
       ,
       success : function(res){
 
-    notify(res.msg, 'success',500) 
+    notify(res.msg, 'success',500)
     $('#addReg')[0].reset();
-  
+
       },
       error: function()
         {
-          notify('Regestration Failed', 'danger',500) 
-    
+          notify('Regestration Failed', 'danger',500)
+
         }
     });
-});         
+});
 
 $('#signinReg').submit(function(e){
 
@@ -100,18 +124,19 @@ $('#signinReg').submit(function(e){
      dataType: 'json',
      data :
        $(this).serialize()
-
      ,
      success : function(res){
+       content = res.content;
 
-
+       // console.log();
+       sessionStorage.setItem("user_id",content[0].user_id);
+       console.log(res);
       if(res.response == true){
         console.log('123');
-        
         window.location.href = "/bploform";
       }
 
-      notify(res.msg, 'info',500) 
+      notify(res.msg, 'info',500)
      },
      error: function(msgres)
        {
@@ -143,4 +168,7 @@ function notify(msg, type,responseTime) {
 	}, responseTime);}
 
 
-
+  function logout() {
+    sessionStorage.setItem("user_id",null);
+      window.location.href = "/signin_requestor";
+  }

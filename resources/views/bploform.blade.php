@@ -19,18 +19,18 @@
             </thead>
             <tbody id="">
               <tr>
-                <td>Business Name</td>
-                <td>Date Approved</td>
+                <td>Business Name <span id="buss_name"></span> </td>
+                <td>Date Approved <span id="date_approve"></span> </td>
               </tr>
               <tr>
-                <td>Owner's Name</td>
-                <td>Date of Payment</td>
+                <td>Owner's Name <span id="owner_name"></span> </td>
+                <td>Date of Payment <span id="date_payment"></span> </td>
               </tr>
               <tr>
-                <td>Business ID</td>
+                <td>Business ID <span id="buss_code"></span> </td>
                 <td></td>
               </tr>
-              <td>Main Line of Business</td>
+              <td>Main Line of Business <span id="buss_line"></span> </td>
               <td></td>
               </tr>
 
@@ -41,7 +41,7 @@
     <p class="lead">
       <a class="btn btn-primary btn-lg" href="{{url('form')}}" role="button">Apply Now</a>
       <a class="btn btn-primary btn-lg" href="https://www.landbank.com" role="button">Pay Now</a>
-      <a class="btn btn-primary btn-lg" href="{{url('home')}}" role="button">Log Out</a>
+      <a class="btn btn-primary btn-lg" href="#" onclick="logout()" role="button">Log Out</a>
     </p>
   </div>
 
