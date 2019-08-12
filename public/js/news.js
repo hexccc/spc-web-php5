@@ -45,7 +45,7 @@
         // console.log(res);
         $('#newCli_title').html(res.title);
         $('#newCli_thumbnail').attr('src','/image/'+res.thumbnail);
-        $('#newCli_content').html(res.subtitle + '&nbsp; <a href="#link_here_toSpecificNews">Read more... </a>');
+        $('#newCli_content').html(res.content) ;
         // $('#view_video').attr('src',res.video);
         // $('#view_title').val(res.title);
         // $('#view_subtitle').val(res.subtitle);

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>San Pablo City | @yield('title')</title>
-    {{-- <link rel="icon" href={!! asset('image/spc_small.png')!!}/> --}}
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
@@ -22,8 +21,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
-    <script type="text/javascript" src="{{URL::asset('js/news.js')}}"></script>
-    @include('inc.preloader')
+    <script type="text/javascript" src="{{URL::asset('js/news.js')}}">
+    </script>
     <div>
       @include('inc.navbar')
       <div class="container-fluid pt-4">
@@ -34,7 +33,6 @@
         </div>
       </div>
     </div>
-
         @include('inc.footer')
     </body>
 
@@ -67,11 +65,11 @@
     </script>
 
 
-  </html>
-  <div class="modal fade" id="bploForm" tabindex="-1" aria-labelledby="bploFormlbl" aria-hidden="true" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header float-none">
+</html>
+<div class="modal fade" id="bploForm" tabindex="-1" aria-labelledby="bploFormlbl" aria-hidden="true" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header float-none">
           <h4 id="bploFormlbl">Fill Up Forms</h4>
           <button class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -84,8 +82,6 @@
       </div>
     </div>
 </div>
-
-
 
 <!-- //////MODAL BPLO login -->
 <div class="modal fade logged" id="logged" tabindex="-1" role="dialog" aria-labelledby="logged" >
