@@ -250,7 +250,7 @@ function changeAction(id,action) {
           $('#update_news_id').val(res.id);
         },
         error : function(xhr){
-          console.log(xhr.responseText);
+        console.log(xhr.responseText);
         }
       });
       $('#updatenewsmodal').modal('show');

@@ -10894,10 +10894,3 @@ img.zoom {
   display: none;
 }
 
-.whole-page-overlay .center-loader {
-  top: 50%;
-  left: 52%;
-  position: absolute;
-  color: white;
-}
-
