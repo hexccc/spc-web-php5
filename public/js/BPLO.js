@@ -1,18 +1,12 @@
 var add_line_buss = [];
 
 $(document).ready(function () {
-
-
   $('#logged').on('hide.bs.modal', function (e) {
       e.preventDefault();
       e.stopPropagation();
       return false;
   });
-  // $.ajaxSetup({
-  //   headers: {
-  //     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-  //   }
-  // });
+
     console.log('success');
     $('#addnewbuss').submit(function(e){
       e.preventDefault();
@@ -86,24 +80,6 @@ $('#addlineaddRow').click(function(){
 
 $('#addReg').submit(function(e){
     e.preventDefault();
-    // console.log($('#addReg').serializeArray());
-    // $.ajax({
-    //   url:'/addReg',
-    //   type:'POST',
-    //   data: $(this).serialize(),
-    //   datatype: 'json',
-    //   success : function(res)
-    //   {
-    //     console.log(res);
-    //       notify('Added Successfully', 'success');
-    //   },
-    //   error : function()
-    //   {
-    //     console.log("error");
-    //     notify('Error in Adding Account', 'danger');
-    //
-    //   }
-    // });
 
      console.log($(this).serialize());
     $.ajax({
@@ -112,14 +88,17 @@ $('#addReg').submit(function(e){
       crossDomain: true,
       dataType: 'json',
       data :
-        $(this).serialize()
+        $(this).serializeArray()
       ,
       success : function(res){
         console.log(res);
+          notify('Registration Done. Please check your email for verification.', 'success');
+
       },
       error: function()
         {
           console.log("error");
+          notify('Error in Adding an Account', 'danger');
         }
     });
 });
@@ -132,15 +111,16 @@ $('#signinReg').submit(function(e){
      type : 'POST',
      crossDomain: true,
      dataType: 'json',
-     data :
-       $(this).serialize()
-     ,
+     data :$(this).serializeArray(),
      success : function(res){
        console.log(res);
+       notify('Login Successfully', 'success');
+       // $('#logged').modal('hide');
      },
      error: function()
        {
-         console.log("error");
+         notify('Error in Logging in an Account', 'danger');
+        // window.location = "/bploform";
        }
    });
 });
@@ -155,9 +135,6 @@ $('#signinReg').submit(function(e){
    // delete add_line_buss[i];
    console.log(i);
 }
-
-
-
 
 function notify(msg, type,responseTime) {
 	setTimeout(function () {

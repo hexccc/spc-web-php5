@@ -406,10 +406,6 @@
       <input type="number" class="form-control" name="new[bussact_nonessential]" placeholder="">
     </div>
 
-    <div class="mt-2">
-      <p align="center"><b>I DECLARE UNDER PENALTY OF PERJURY</b> that the forgoing information are true based on my personal knowledge and authentic records. Further,<b> I agree to comply with the regulatory requirements and other deficiencies within thirty (30) days from release of the business permit.</b></p>
-    </div>
-
   </div>
 
 
@@ -421,17 +417,17 @@
 			<div class="form-group col-md-3">
 			  <label for='fname'>Line of Business</label>
 					<select class="form-control" name="new[busact_addline]" id="addline">
-						<?php
+						<!-- ?php
 						// A sample product array
 						$linebuss = array("Mobile", "Laptop", "Tablet", "Camera");
 
 						// Iterating through the product array
 						foreach($products as $item){
 						?>
-						<option value="<?php echo strtolower($item); ?>"><?php echo $item; ?></option>
-						<?php
+						<option value="<php echo strtolower($item); ?>"><php echo $item; ?></option>
+						?php
 						}
-						?>
+						?> -->
 
 						<option selected value="">Line of Business</option>
             <option value="Single">Single</option>
@@ -488,10 +484,20 @@
         </tbody>
       </table>
     </div>
-		<div class = "">
+
+    <div class="mt-2">
+     <p align="center"><b>I DECLARE UNDER PENALTY OF PERJURY</b> that the forgoing information are true based on my personal knowledge and authentic records. Further,<b> I agree to comply with the regulatory requirements and other deficiencies within thirty (30) days from release of the business permit.</b></p>
+	   </div>
+
+
+		<div >
+			<p align="center">By submitting this as a fully accomplished form;
+			you hereby consent to the collection, generation, use, processing, storage and retention of your personal data
+			by the City Government of San Pablo as provided for in the Data Privacy Act of 2012.</p>
+		</div>
 			<button type="submit" class="btn btn-primary  mb-4 float-right">Submit</button>
 			<a href = "/logout"  class="btn btn-primary  mb-4 mr-3 float-right">Logout</a>
-		</div>
+
 </form>
 </div>
 
