@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Online Fill Up Form')
 @section('content')
 <div class=" col-md-10 offset-md-1">
   <h1 class="mb-5" align="center">Please Fill Out the Form</h1>

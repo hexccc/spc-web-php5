@@ -13,13 +13,13 @@
         <div class="media-body">
           <h5 class="mt-0 font-weight-bold p-2" style="color:3490DC;background-color:#a9f2ff ">SAMPALOC LAKE</h5>
             <p id='landmarksText'>
- •	Nasasakupan: Barangay IV-A, IV-C, V-A, Concepcion, San Lucas 1<br>
- •	Lawak: 99.21 Hectares<br>
- •	Lalim: 27 Meters<br>
- •	Yamang Lawa: Dalag, Hito, Tilapia,Gurami, Hipon, Ayungin, Dulong, Big Head, Karpa, Bitoo, Kuhol<br>
- •	Atrakson: Ang Lawa ng Sampalok, Sampalok Lake Mini Parks, Museo ng San Pablo, Doña Leonila Park, Hagdang Bato, Bonifacio Monument, Trese Martirez Monument<br>
- •	Mga Akomodasyon: Ang Tahanan ni Aling Meding Hotel & Restaurant, Lake City Hotel<br>
- •	Tourist Arrivals: January 2019 – 72,134 | February 2019 – 14,863 | March 2019 – 16,027
+            •	Nasasakupan: Barangay IV-A, IV-C, V-A, Concepcion, San Lucas 1<br>
+            •	Lawak: 99.21 Hectares<br>
+            •	Lalim: 27 Meters<br>
+            •	Yamang Lawa: Dalag, Hito, Tilapia,Gurami, Hipon, Ayungin, Dulong, Big Head, Karpa, Bitoo, Kuhol<br>
+            •	Atrakson: Ang Lawa ng Sampalok, Sampalok Lake Mini Parks, Museo ng San Pablo, Doña Leonila Park, Hagdang Bato, Bonifacio Monument, Trese Martirez Monument<br>
+            •	Mga Akomodasyon: Ang Tahanan ni Aling Meding Hotel & Restaurant, Lake City Hotel<br>
+            •	Tourist Arrivals: January 2019 – 72,134 | February 2019 – 14,863 | March 2019 – 16,027
 
             </p>
         </div>
