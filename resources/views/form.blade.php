@@ -417,27 +417,36 @@
 			<div class="form-group col-md-3">
 			  <label for='fname'>Line of Business</label>
 					<select class="form-control" name="new[busact_addline]" id="addline">
-						<!-- ?php
-						// A sample product array
-						$linebuss = array("Mobile", "Laptop", "Tablet", "Camera");
-
-						// Iterating through the product array
-						foreach($products as $item){
-						?>
-						<option value="<php echo strtolower($item); ?>"><php echo $item; ?></option>
-						?php
-						}
-						?> -->
-
 						<option selected value="">Line of Business</option>
-            <option value="Single">Single</option>
-            <option value="Partnership">Partnership</option>
-            <option value="Corporation">Corporation3</option>
-            <option value="Cooperative">Cooperative</option>
+						<?php
+						$linebuss = array("Manufacturers", "Wholesalers","distributors, or dealers", "Retailers", "Food","Contractors","Banks and other financial institutions","Lease","Lessor of real property","Tobacco dealers","Dealers of Liquors","Amusement Places and Devices","Theater and Cinema","Other business");
+						foreach($linebuss as $linebus){
+						?>
+						 <option value="<?php echo strtolower($linebus); ?>"><?php echo $linebus; ?></option>
+						<?php
+						}
+						?>
 					</select>
 				</div>
 
-			<div class="form-group col-md-3">
+
+				<div class="form-group col-md-3">
+					<label for='fname'>Code of Business</label>
+						<select class="form-control" name="new[busact_addcode]" id="addcode">
+							<option selected value="">Code of Business</option>
+							<?php
+							$addcode = array("Assemblers", "Re-packers", "Processors", "Brewers", "Distillers", "Rectifiers","Compounders of Liquors","Distilled Spirits","Wines","Bakery","Woodcraft/ Handicraft (Stuffed Toys)","Compounding (Distillers)","Oil Extraction","Food Processing - Ube Making", "Ice Cream Making","Body Builder (Jeep)");
+							// $addcode2 = array("Water Refilling", "Boutique", "Dry Goods", "Ambulant/ Grocery", "Dry Goods/RTW", "Mini-Mart","Cedera","Glassware/ Aluminum","Cell Phone Accessories","Petshop ","Jewelries","Junkshop","Gift Shop","Radio Equipment", "Party Shop","Subdivision/Realty","Flower Shop/ Seedlings","Medical Supplies","Footwear","Relief Goods","Car Accessories","Hardware");
+							foreach($addcode as $addcod){
+							?>
+							 <option value="<?php echo strtolower($addcod); ?>"><?php echo $addcod; ?></option>
+							<?php
+							}
+							?>
+						</select>
+					</div>
+
+			<!-- <div class="form-group col-md-3">
 			 <label for='fname'>Code of Business</label>
 					<select class="form-control" name="new[busact_addcode]" id="addcode">
 						<option selected value="">CODE</option>
@@ -446,7 +455,7 @@
             <option value="Corporation">Corporation3</option>
             <option value="Cooperative">Cooperative</option>
 					</select>
-				</div>
+				</div> -->
 
 			<div class="form-group col-md-3">
 				<div class="md-form">
@@ -496,7 +505,6 @@
 			by the City Government of San Pablo as provided for in the Data Privacy Act of 2012.</p>
 		</div>
 			<button type="submit" class="btn btn-primary  mb-4 float-right">Submit</button>
-			<a href = "/logout"  class="btn btn-primary  mb-4 mr-3 float-right">Logout</a>
 
 </form>
 </div>
@@ -504,7 +512,7 @@
   <!-- {!! Form::close() !!} -->
 
 	<!-- <input type="text" value ="{{ $name }}" id ="name">
-</div>
+	</div>
 
 			<script>
 			var nameused = $('#name').val();

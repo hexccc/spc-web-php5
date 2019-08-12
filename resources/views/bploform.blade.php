@@ -9,16 +9,39 @@
       <span><img class="align-middle float-right " src="{{URL::asset('svg/ubilis 1.0.svg')}}" style="height:85px"></span>
     </h1>
 
-    <p>Business Name:</p>
-    <p>Business No.:</p>
-    <p>Owner's Name:</p>
-    <p>Mainline of Business:</p>
-    <p>Date of Payment:</p>
-    <p>Date Approved:</p>
+        <div class="form-group col-md-12">
+          <table id="addnewline" class="table table-sm table-striped table-bordered">
+            <thead>
+              <tr>
+                <th scope="col" class="w-50">Business Information</th>
+                <th scope="col" class="w-50">Business Profile</th>
+              </tr>
+            </thead>
+            <tbody id="">
+              <tr>
+                <td>Business Name</td>
+                <td>Date Approved</td>
+              </tr>
+              <tr>
+                <td>Owner's Name</td>
+                <td>Date of Payment</td>
+              </tr>
+              <tr>
+                <td>Business ID</td>
+                <td></td>
+              </tr>
+              <td>Main Line of Business</td>
+              <td></td>
+              </tr>
 
+            </tbody>
+          </table>
+        </div>
     <hr class="my-4">
     <p class="lead">
-      <a class="btn btn-primary btn-lg" href="{{url('form')}}" role="button">Request Form</a>
+      <a class="btn btn-primary btn-lg" href="{{url('form')}}" role="button">Apply Now</a>
+      <a class="btn btn-primary btn-lg" href="https://www.landbank.com" role="button">Pay Now</a>
+      <a class="btn btn-primary btn-lg" href="{{url('home')}}" role="button">Log Out</a>
     </p>
   </div>
 
