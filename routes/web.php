@@ -137,15 +137,31 @@ Route::get('/multistep', function(){
   return view('multistep');
 });
 
-Route::get('/signin_requestor', function(){
-  return view('signin_requestor');
-});
-
+// Route::get('/form/{name?}', function($name = ' '){
+//     return view('form',['name'=> $name  ]);
+// });
 
 Route::get('/form/{name?}', function($name = ' '){
-    return view('form',['name'=> $name  ]);
+    // Session::get("username")
+    // Session::put('username', $username);
+    return view('form',['name'=> $name]);
 });
-// Route::get('/form/{name?}', 'JController@logged');
+Route::get('/signin_requestor', function () {
+    return view('signin_requestor');
+});
+
+Route::get('/logout', function() {
+  Session::forget('username');
+  if(!Session::has('username'))
+   {
+      return view('/bploform');
+   }
+ });
+
+ Route::get('/bploform', function() {
+       return view('/bploform');
+  });
+
 
 Route::post('/addnewbuss', 'JController@addnewbuss');
 

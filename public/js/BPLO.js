@@ -1,18 +1,12 @@
 var add_line_buss = [];
 
 $(document).ready(function () {
-
-
   $('#logged').on('hide.bs.modal', function (e) {
       e.preventDefault();
       e.stopPropagation();
       return false;
   });
-  // $.ajaxSetup({
-  //   headers: {
-  //     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-  //   }
-  // });
+
     console.log('success');
     $('#addnewbuss').submit(function(e){
       e.preventDefault();
@@ -86,24 +80,6 @@ $('#addlineaddRow').click(function(){
 
 $('#addReg').submit(function(e){
     e.preventDefault();
-    // console.log($('#addReg').serializeArray());
-    // $.ajax({
-    //   url:'/addReg',
-    //   type:'POST',
-    //   data: $(this).serialize(),
-    //   datatype: 'json',
-    //   success : function(res)
-    //   {
-    //     console.log(res);
-    //       notify('Added Successfully', 'success');
-    //   },
-    //   error : function()
-    //   {
-    //     console.log("error");
-    //     notify('Error in Adding Account', 'danger');
-    //
-    //   }
-    // });
 
      console.log($(this).serialize());
     $.ajax({
@@ -115,6 +91,7 @@ $('#addReg').submit(function(e){
         $(this).serializeArray()
       ,
       success : function(res){
+<<<<<<< HEAD
     notify(res.msg, 'success',500) 
     $('#addReg')[0].reset();
   
@@ -123,6 +100,16 @@ $('#addReg').submit(function(e){
         {
           notify('Regestration Failed', 'danger',500) 
     
+=======
+        console.log(res);
+          notify('Registration Done. Please check your email for verification.', 'success');
+
+      },
+      error: function()
+        {
+          console.log("error");
+          notify('Error in Adding an Account', 'danger');
+>>>>>>> 678562c3f11bf389754eb26378f9b73a39dd9621
         }
     });
 });         
@@ -136,6 +123,7 @@ $('#signinReg').submit(function(e){
      type : 'POST',
      crossDomain: true,
      dataType: 'json',
+<<<<<<< HEAD
      data :
        $(this).serialize()
 
@@ -150,11 +138,23 @@ $('#signinReg').submit(function(e){
       }
 
       notify(res.msg, 'info',500) 
+=======
+     data :$(this).serializeArray(),
+     success : function(res){
+       console.log(res);
+       notify('Login Successfully', 'success');
+       // $('#logged').modal('hide');
+>>>>>>> 678562c3f11bf389754eb26378f9b73a39dd9621
      },
      error: function(msgres)
        {
+<<<<<<< HEAD
   
     
+=======
+         notify('Error in Logging in an Account', 'danger');
+        // window.location = "/bploform";
+>>>>>>> 678562c3f11bf389754eb26378f9b73a39dd9621
        }
    });
 });
@@ -169,9 +169,6 @@ $('#signinReg').submit(function(e){
    // delete add_line_buss[i];
    console.log(i);
 }
-
-
-
 
 function notify(msg, type,responseTime) {
 	setTimeout(function () {

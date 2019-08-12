@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Carbon;
 use Response;
+use Session;
 
 class Jcontroller extends Controller
 {
@@ -15,8 +16,6 @@ public function addnewbuss(Request $request)
 {
   $input  = $request->input('new');
   $draw = $request->get('draw');
-  // DB::insert("INSERT INTO `clients`(``)VALUES(?)", [$input]);
-  // return redirect('/form');
   return Response::json($input);
   return $request;
 }
@@ -31,7 +30,10 @@ public function addReg(Request $request)
 public function signinReg(Request $request)
 {
   $input  = $request->input('user');
-  return Response::json($input);
+    return Response::json($input);
+  // session(['username' => $input['username']]);
+  // return response()->json(Session::get('username'));
+
 }
 
 public function addlineofbuss(Request $request)
