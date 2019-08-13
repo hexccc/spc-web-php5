@@ -1,5 +1,8 @@
 var add_line_buss = [];
 
+
+
+
 var global_url = 'http://32f3d634.ngrok.io';
 var userSession = sessionStorage.getItem("user_id");
 $(document).ready(function () {
