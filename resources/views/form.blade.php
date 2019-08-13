@@ -97,7 +97,7 @@
       <div class="form-check-inline mb-4">
         <label class="new[mode_annually]">Mode of Payment:
            <input type="radio" class="form-check-input" value="annual" name="new[mode_annually]" id ="annually">Annually
-					 
+
         </label>
       </div>
       <div class="form-check-inline">
@@ -128,12 +128,12 @@
       <div class="form-group col-md-6">
         <label for='dti1'>DTI/SEC/CDA Registration
         </label>
-        <input type="text" class="form-control" name="new[dti_sec1]" class ="ornum" >
+        <input type="text" class="form-control" name="new[dti_sec]" class ="ornum" >
       </div>
       <div class="form-group col-md-6">
-        <label for="dti2">DTI/SEC/CDA Registration
+        <label for="dti2">DTI/SEC/CDA Number
         </label>
-        <input type="text" class="form-control" name="new[dti_sec2]">
+        <input type="text" class="form-control" name="new[dti_number]">
       </div>
     </div>
 
@@ -247,7 +247,11 @@
   <div class="form-row">
     <div class="form-group col-md-12">
       <label>Business Address</label>
+<<<<<<< HEAD
       <textarea type="text" class="form-control" name="other[bussinfo_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
+=======
+      <textarea type="text" class="form-control" name="new[bussinfo_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
+>>>>>>> 9da2e2dd2af8f963d07e4d6edcad469bd7f873db
     </div>
     <div class="form-group col-md-6">
       <label>Postal Code</label>
@@ -273,6 +277,7 @@
   <div class="form-row mt-5">
     <div class="form-group col-md-12">
       <label>Owner's Adress</label>
+<<<<<<< HEAD
       <textarea type="text" class="form-control" name="other[owner_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
     </div>
     <div class="form-group col-md-6">
@@ -282,16 +287,35 @@
     <div class="form-group col-md-6">
       <label>Email Adress</label>
       <input type="email" class="form-control" name="other[owner_email]" placeholder="example@email.com">
+=======
+      <textarea type="text" class="form-control" name="owner[owner_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
+    </div>
+    <div class="form-group col-md-6">
+      <label>Postal Code</label>
+      <input type="number" class="form-control postcode" name="owner[owner_postal]">
+    </div>
+    <div class="form-group col-md-6">
+      <label>Email Adress</label>
+      <input type="email" class="form-control" name="owner[owner_email]" placeholder="example@email.com">
+>>>>>>> 9da2e2dd2af8f963d07e4d6edcad469bd7f873db
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Telephone</label>
+<<<<<<< HEAD
         <input class="form-control tel" type="tel" name="other[owner_tel]" placeholder="539-966">
     </div>
     <div class="form-group col-md-6">
       <label>Mobile No.</label>
         <input class="form-control mobile" type="tel" name="other[owner_mobile]" placeholder="09XX XXX XXXX">
+=======
+        <input class="form-control tel" type="tel" name="owner[owner_tel]" placeholder="539-966">
+    </div>
+    <div class="form-group col-md-6">
+      <label>Mobile No.</label>
+        <input class="form-control mobile" type="tel" name="owner[owner_mobile]" placeholder="09XX XXX XXXX">
+>>>>>>> 9da2e2dd2af8f963d07e4d6edcad469bd7f873db
     </div>
   </div>
 
