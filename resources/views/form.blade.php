@@ -126,12 +126,12 @@
       <div class="form-group col-md-6">
         <label for='dti1'>DTI/SEC/CDA Registration
         </label>
-        <input type="text" class="form-control" name="new[dti_sec1]" class ="ornum" >
+        <input type="text" class="form-control" name="new[dti_sec]" class ="ornum" >
       </div>
       <div class="form-group col-md-6">
-        <label for="dti2">DTI/SEC/CDA Registration
+        <label for="dti2">DTI/SEC/CDA Number
         </label>
-        <input type="text" class="form-control" name="new[dti_sec2]">
+        <input type="text" class="form-control" name="new[dti_number]">
       </div>
     </div>
 
@@ -245,7 +245,7 @@
   <div class="form-row">
     <div class="form-group col-md-12">
       <label>Business Address</label>
-      <textarea type="text" class="form-control" name="app[bussinfo_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
+      <textarea type="text" class="form-control" name="new[bussinfo_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
     </div>
     <div class="form-group col-md-6">
       <label>Postal Code</label>
@@ -271,25 +271,25 @@
   <div class="form-row mt-5">
     <div class="form-group col-md-12">
       <label>Owner's Adress</label>
-      <textarea type="text" class="form-control" name="new[owner_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
+      <textarea type="text" class="form-control" name="owner[owner_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
     </div>
     <div class="form-group col-md-6">
       <label>Postal Code</label>
-      <input type="number" class="form-control postcode" name="new[owner_postal]">
+      <input type="number" class="form-control postcode" name="owner[owner_postal]">
     </div>
     <div class="form-group col-md-6">
       <label>Email Adress</label>
-      <input type="email" class="form-control" name="new[owner_email]" placeholder="example@email.com">
+      <input type="email" class="form-control" name="owner[owner_email]" placeholder="example@email.com">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Telephone</label>
-        <input class="form-control tel" type="tel" name="new[owner_tel]" placeholder="539-966">
+        <input class="form-control tel" type="tel" name="owner[owner_tel]" placeholder="539-966">
     </div>
     <div class="form-group col-md-6">
       <label>Mobile No.</label>
-        <input class="form-control mobile" type="tel" name="new[owner_mobile]" placeholder="09XX XXX XXXX">
+        <input class="form-control mobile" type="tel" name="owner[owner_mobile]" placeholder="09XX XXX XXXX">
     </div>
   </div>
 

@@ -1,6 +1,6 @@
 var add_line_buss = [];
 
-var global_url = 'http://81cdf678.ngrok.io';
+var global_url = 'http://32f3d634.ngrok.io';
 var userSession = sessionStorage.getItem("user_id");
 $(document).ready(function () {
   $('#logged').on('hide.bs.modal', function (e) {
@@ -9,9 +9,9 @@ $(document).ready(function () {
       return false;
   });
 
-    console.log('success' + userSession);
+    // console.log('success' + userSession);
 
-    if(userSession != null) {
+    if(userSession !== null) {
 
       $.ajax({
         url : global_url+'/api/bplo_api/' + userSession,
@@ -37,22 +37,34 @@ $(document).ready(function () {
           // console.log(xhr.responseText);
         }
       });
+      console.log('this is my '+userSession);
 
+    }else{
+      $('#logged').modal('show');
+      console.log('null');
     }
+
+    (userSession == 0) ? $('#logged').modal('show') : console.log('not null');
 
 
     $('#addnewbuss').submit(function(e){
       e.preventDefault();
+      // add_line_buss.push();
+
+
+
+      console.table($(this).serializeArray());
+      // console.log();
 
     });
 
 $('#addlineaddRow').click(function(){
   	add_line_buss.push({
-  		'new[busact_addline]': $('#addline').val(),
-  		'new[busact_addcode]': $('#addcode').val(),
-  		'new[busact_addsubcat]': $('#addsubcat').val(),
-  		'new[busact_addcap]': $('#addcap').val().replace(/,/g, ''),
-  		'new[rank]': 'secondary'
+  		'addline[busact_addline]': $('#addline').val(),
+  		'addline[busact_addcode]': $('#addcode').val(),
+  		'addline[busact_addsubcat]': $('#addsubcat').val(),
+  		'addline[busact_addcap]': $('#addcap').val().replace(/,/g, ''),
+  		'addline[rank]': 'secondary'
   	});
 
       // console.log(add_line_buss);
@@ -129,9 +141,9 @@ $('#signinReg').submit(function(e){
        content = res.content;
 
        // console.log();
-       sessionStorage.setItem("user_id",content[0].user_id);
-       console.log(res);
+       // console.log(res);
       if(res.response == true){
+        sessionStorage.setItem("user_id",content[0].user_id);
         console.log('123');
         window.location.href = "/bploform";
       }
@@ -169,6 +181,6 @@ function notify(msg, type,responseTime) {
 
 
   function logout() {
-    sessionStorage.setItem("user_id",null);
+    sessionStorage.setItem("user_id",0);
       window.location.href = "/signin_requestor";
   }
