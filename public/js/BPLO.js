@@ -3,7 +3,7 @@ var add_line_buss = [];
 
 
 
-var global_url = 'http://32f3d634.ngrok.io';
+var global_url = 'http://192.168.100.207:8080';
 var userSession = sessionStorage.getItem("user_id");
 $(document).ready(function () {
   $('#logged').on('hide.bs.modal', function (e) {
@@ -14,7 +14,8 @@ $(document).ready(function () {
 
     console.log('success' + userSession);
 
-    if(userSession != null) {
+    if(userSession != 0) {
+      $('#userid').val(userSession);
 
       $.ajax({
         url : global_url+'/api/bplo_api/' + userSession,
@@ -41,21 +42,75 @@ $(document).ready(function () {
         }
       });
 
+    }else{
+      // $('#logged').modal('show');
     }
 
 
     $('#addnewbuss').submit(function(e){
       e.preventDefault();
+      // console.log($(this).serializeArray());
+      var buss_id;
+      $.ajax({
+        url : global_url + '/api/bplo_api',
+        type : 'POST',
+        crossDomain: true,
+        dataType: 'json',
+        data : $(this).serialize(),
+        success : function(res){
+          console.log(res);
+          console.log(add_line_buss);
+          // replace(/-/g,'')
+
+          if (res.response) {
+
+            buss_id = res.buss_id;
+
+            for (var i = 0; i < add_line_buss.length; i++) {
+              console.log(add_line_buss[i]);
+              $.ajax({
+                url : global_url + '/api/bplo_api',
+                type : 'POST',
+                crossDomain: true,
+                dataType: 'json',
+                data : {
+                  'addline[buss_line]' : add_line_buss[i].busact_addline,
+                  'addline[buss_line_code]' : add_line_buss[i].busact_addcode,
+                  'addline[sub_category]' : add_line_buss[i].busact_addsubcat,
+                  'addline[capitalization]' : add_line_buss[i].busact_addcap.replace(/,/g,''),
+                  'addline[essential]' : 0,
+                  'addline[non_essential]' : 0,
+                  'addline[ranks]' : 'secondary',
+                  'addline[buss_id]' : buss_id
+                },
+                success : function(res){
+                  console.log(res);
+                },
+                error : function(xhr){
+
+                }
+              });
+            }
+            notify(res.msg,'success',500);
+          }
+
+        },
+        error : function(xhr){
+          console.log(xhr.responseText);
+        }
+      });
+
+
 
     });
 
 $('#addlineaddRow').click(function(){
   	add_line_buss.push({
-  		'new[busact_addline]': $('#addline').val(),
-  		'new[busact_addcode]': $('#addcode').val(),
-  		'new[busact_addsubcat]': $('#addsubcat').val(),
-  		'new[busact_addcap]': $('#addcap').val().replace(/,/g, ''),
-  		'new[rank]': 'secondary'
+  		'busact_addline': $('#addline').val(),
+  		'busact_addcode': $('#addcode').val(),
+  		'busact_addsubcat': $('#addsubcat').val(),
+  		'busact_addcap': $('#addcap').val().replace(/,/g, ''),
+  		'rank': 'secondary'
   	});
 
       // console.log(add_line_buss);
@@ -85,7 +140,10 @@ $('#addlineaddRow').click(function(){
     row.appendChild(td5);
 
     table.children[0].appendChild(row);
-    $('#addnewbuss')[0].reset();
+    $('#addline').val('');
+    $('#addcode').val('');
+    $('#addsubcat').val('');
+    $('#addcap').val('');
 
 
 });
@@ -172,6 +230,6 @@ function notify(msg, type,responseTime) {
 
 
   function logout() {
-    sessionStorage.setItem("user_id",null);
+    sessionStorage.setItem("user_id",0);
       window.location.href = "/signin_requestor";
   }
