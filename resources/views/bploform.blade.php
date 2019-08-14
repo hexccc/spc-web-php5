@@ -9,7 +9,11 @@
       <span><img class="align-middle float-right " src="{{URL::asset('svg/ubilis 1.0.svg')}}" style="height:85px"></span>
     </h1>
 
+
         <div class="form-group col-md-12">
+          <select class = "form-control w-50 mb-3">
+            <option id ="buss_name">Businesses</option>
+          </select>
           <table id="addnewline" class="table table-sm table-striped table-bordered">
             <thead>
               <tr>

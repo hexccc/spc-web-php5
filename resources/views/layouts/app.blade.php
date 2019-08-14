@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>San Pablo City | @yield('title')</title>
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/login.css">
 
+    <!-- <script src="/js/multistep.js"></script>
+    <link rel="stylesheet" href="/css/multistep.css"> -->
+
     <script src="/js/app.js"></script>
     <script src="/js/form.js"></script>
     <script src="/js/BPLO.js"></script>
-		<script src="/js/bploses.js"></script>
     <script src="/js/inputmask.js"></script>
     <script src="/js/jquery.bootstrap-growl.js"></script>
 
