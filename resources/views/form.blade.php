@@ -119,7 +119,7 @@
       <div class="form-group col-md-6">
         <label for='tin'>TIN no.
         </label>
-        <input type="text" class="form-control tin"  name="new[tin]">
+        <input type="number" class="form-control tin"  name="new[tin]">
       </div>
     </div>
     <div class="form-row">
@@ -259,11 +259,11 @@
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Telephone</label>
-        <input class="form-control tel" type="tel" name="new[bussinfo_tel]" placeholder="539-966">
+        <input class="form-control tel" type="tel" name="new[bussinfo_tel]" placeholder="539-1234">
     </div>
     <div class="form-group col-md-6">
       <label>Mobile No.</label>
-        <input class="form-control mobile" type="tel" name="new[bussinfo_mobile]" placeholder="09XX XXX XXXX">
+        <input class="form-control mobile" type="tel" name="new[bussinfo_mobile]" placeholder="09XX-XXX-XXXX">
     </div>
   </div>
 
@@ -285,7 +285,7 @@
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Telephone</label>
-        <input class="form-control tel" type="tel" name="new[owner_tel]" placeholder="539-966">
+        <input class="form-control tel" type="tel" maxlength="7" name="new[owner_tel]" placeholder="539-1234">
     </div>
     <div class="form-group col-md-6">
       <label>Mobile No.</label>

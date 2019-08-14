@@ -23,6 +23,21 @@ body {
   position: fixed-top;
 }
 
+.vl {
+    border-left: 3px solid #3498DB;
+    height: 40;
+    margin-left: 20;
+}
+
+.grid-divider {
+
+  background-color: red;
+
+  top: 0;
+  bottom: 0;
+}
+
+
 
 .nav-link{
   text-decoration: none;

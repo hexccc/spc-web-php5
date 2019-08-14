@@ -10,72 +10,79 @@
   <footer class="page-footer font-small blue pt-2">
   <div class="container-fluid text-center text-md-left">
     <div class="row">
-      <div class="col-md-3 mt-md-0 mt-3">
-        <img style="float:left; padding-left:100px;" class="mt-4 mb-2"src="{{URL::asset('image/phlogo.png')}}" alt="Logo" height="120px">
+      <div class="col-md-2 text-center">
+        <img class="my-2"src="{{URL::asset('image/phlogo.png')}}" alt="Logo" height="90px"><br>
+        <img class=""src="{{URL::asset('image/transpa.png')}}" alt="Logo" height="90px">
       </div>
-  <hr class="clearfix w-100 d-md-none pb-3">
-    <div class="col-md-3 mb-md-0">
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <div class="col-md-3 mb-md-0">
+          <ul class="list-unstyled small">
+            <li>
+              <p class="font-weight-bold">REPUBLIC OF THE PHILIPPINES</p>
+            </li>
+            <li>
+              <p>All content is in the public domain unless otherwise stated.</p>
+            </li>
+          </ul>
+      </div>
+      <div class="col-md-2 mb-md-0 mb-3">
         <ul class="list-unstyled small">
           <li>
-            <p class="font-weight-bold">REPUBLIC OF THE PHILIPPINES</p>
+            <p class="font-weight-bold">ABOUT GOVPH</p>
           </li>
           <li>
-            <p>All content is in the public domain unless otherwise stated.</p>
+            <p>Learn more about the Philippine government, its structure, how government works and the people behind it.</p>
+          </li>
+          <li>
+              <a href="http://www.gov.ph/">GOV.PH</a>
+          </li>
+          <li>
+            <a href="http://www.gov.ph/data/">Open Data Portal</a>
+          </li>
+          <li>
+            <a href="http://www.officialgazette.gov.ph/">Official Gazette</a>
           </li>
         </ul>
-    </div>
-    <div class="col-md-2 mb-md-0 mb-3">
-      <ul class="list-unstyled small">
-        <li>
-          <p class="font-weight-bold">ABOUT GOVPH</p>
-        </li>
-        <li>
-          <p>Learn more about the Philippine government, its structure, how government works and the people behind it.</p>
-        </li>
-        <li>
-            <a href="http://www.gov.ph/">GOV.PH</a>
-        </li>
-        <li>
-          <a href="http://www.gov.ph/data/">Open Data Portal</a>
-        </li>
-        <li>
-          <a href="http://www.officialgazette.gov.ph/">Official Gazette</a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-md-2 mb-md-0 mb-3">
-      <ul class="list-unstyled small">
-        <li>
-          <p class="font-weight-bold">GOVERNMENT LINKS</p>
-        </li>
-        <li>
-          <a href="http://president.gov.ph/">Office of the President</a>
-        </li>
-        <li>
-            <a href="http://ovp.gov.ph/">Office of the Vice President</a>
-        </li>
-        <li>
-          <a href="http://www.senate.gov.ph/">Senate of the Philippines</a>
-        </li>
-        <li>
-          <a href="http://www.congress.gov.ph/">House of Representatives</a>
-        </li>
-        <li>
-            <a href="http://sc.judiciary.gov.ph/">Supreme Court</a>
-        </li>
-        <li>
-          <a href="http://ca.judiciary.gov.ph/">Court of Appeals</a>
-        </li>
-        <li>
-          <a href="http://sb.judiciary.gov.ph/">Sandiganbayan</a>
-        </li>
-      </ul>
-    </div>
-
-      <div class="col-md-2 mt-md-2">
-        <img style="float:right; padding-left:0px; padding-right:80px;" class="mt-4 mb-2"src="{{URL::asset('image/transpa.png')}}" alt="Logo" height="120px">
       </div>
-    </div>
+      <div class="col-md-2 mb-md-0 mb-3">
+        <ul class="list-unstyled small">
+          <li>
+            <p class="font-weight-bold">GOVERNMENT LINKS</p>
+          </li>
+          <li>
+            <a href="http://president.gov.ph/">Office of the President</a>
+          </li>
+          <li>
+              <a href="http://ovp.gov.ph/">Office of the Vice President</a>
+          </li>
+          <li>
+            <a href="http://www.senate.gov.ph/">Senate of the Philippines</a>
+          </li>
+          <li>
+            <a href="http://www.congress.gov.ph/">House of Representatives</a>
+          </li>
+          <li>
+              <a href="http://sc.judiciary.gov.ph/">Supreme Court</a>
+          </li>
+          <li>
+            <a href="http://ca.judiciary.gov.ph/">Court of Appeals</a>
+          </li>
+          <li>
+            <a href="http://sb.judiciary.gov.ph/">Sandiganbayan</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-primary mb-2">
+            <h2 class="text-white card-title border-primary text-center mt-0" >Member Log in</h2>
+            <button class="btn btn-primary mb-1" style="border-radius:25px";><h4>Log In</h4></button>
+          </div>
+          <div class="card border-primary">
+            <h2 class="text-white card-title border-primary text-center mt-0" >Visitor's Counter:</h2>
+            <h3 class="text-center py-2" style="background-color:#48C9B0;border-radius:20px; color:white;">{{ $count }}</h3>
+          </div>
+        </div>
+      </div>
   </div>
   </footer>
 <hr>

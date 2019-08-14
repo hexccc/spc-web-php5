@@ -4,18 +4,19 @@
   </a>
   <div class="text-center">
       <p class="my-0"style="">San Pablo City</p>
-    <p class="h6 text-nowrap" style="font-size:8px; color: white;">
+    <p class="h6 text-nowrap pr-2" style="font-size:8px; color: white;">
       Official Website of the City
       Government of San Pablo
     </p>
   </div>
-
-  <button type='button' class='navbar-toggler' data-toggle='collapse' data-target='#collapseNav'>
+  <div class="vl px-1">
+  </div>
+  <button type='button' class='navbar-toggler' style="color:white;" data-toggle='collapse' data-target='#collapseNav'>
     <span class='fa fa-list-ul'></span>
   </button>
-  <div class='collapse navbar-collapse container text-center' id='collapseNav' >
-    <a class='navbar-brand'></a>
-    <ul class="navbar-nav mr-0 float-left">
+  <div class='collapse navbar-collapse' id='collapseNav' >
+
+    <ul class="navbar-nav mr-0 text-center">
       <li class="nav-item">
         <a class="btn nav-link mx-2" href="/">Home</a>
       </li>
@@ -91,10 +92,14 @@
           Citizen's Charter
         </a>
       </li>
+      <a class='navbar-brand'></a>
+      <li>
+        <p style="padding-top:11px;"><iframe class="text-center" style="pointer-events: none;" src="https://freesecure.timeanddate.com/clock/i6qeu6qp/n145/tlph/fs15/fcfff/tct/pct/tt0" frameborder="0" width="279" height="20" allowTransparency="true" disabled></iframe>
+        </p>
+      </li>
+
     </ul>
 
   </div>
-  <div class='nav-item float-right'>
-    <iframe style="pointer-events: none;" src="https://freesecure.timeanddate.com/clock/i6qeu6qp/n145/tlph/fs15/fcfff/tct/pct/tt0" frameborder="0" width="279" height="20" allowTransparency="true" disabled></iframe>
-  </div>
+
 </nav>

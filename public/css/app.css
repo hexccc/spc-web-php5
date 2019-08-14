@@ -10681,6 +10681,18 @@ body {
   position: fixed-top;
 }
 
+.vl {
+  border-left: 3px solid #3498DB;
+  height: 40;
+  margin-left: 20;
+}
+
+.grid-divider {
+  background-color: red;
+  top: 0;
+  bottom: 0;
+}
+
 .nav-link {
   text-decoration: none;
   color: #ffffff;
@@ -10892,5 +10904,12 @@ img.zoom {
   height: 100% !important;
   z-index: 1050;
   display: none;
+}
+
+.whole-page-overlay .center-loader {
+  top: 50%;
+  left: 52%;
+  position: absolute;
+  color: white;
 }
 

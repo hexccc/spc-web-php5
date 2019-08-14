@@ -283,7 +283,7 @@
 
   </div>
   <div class="float-right mr-3">
-    <p>Visitor's Counter: {{ $count }}</p>
+
   </div>
 
   <script src="/js/modal.js"></script>
