@@ -287,19 +287,11 @@
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Telephone</label>
-<<<<<<< HEAD
-        <input class="form-control tel" type="tel" name="other[owner_tel]" placeholder="539-966">
-    </div>
-    <div class="form-group col-md-6">
-      <label>Mobile No.</label>
-        <input class="form-control mobile" type="tel" name="other[owner_mobile]" placeholder="09XX XXX XXXX">
-=======
         <input class="form-control tel" type="tel" name="owner[owner_tel]" placeholder="539-966">
     </div>
     <div class="form-group col-md-6">
       <label>Mobile No.</label>
         <input class="form-control mobile" type="tel" name="owner[owner_mobile]" placeholder="09XX XXX XXXX">
->>>>>>> 9da2e2dd2af8f963d07e4d6edcad469bd7f873db
     </div>
   </div>
 
