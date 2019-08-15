@@ -219,6 +219,21 @@
             class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
             Unliquidated-2018
             </a>
+            <a style="font-size:12px;"
+            href="{{URL::asset('docs/SCF.xlsx')}}" target="_blank"
+            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+            Statement of  Cash Flows - General Fund
+            </a>
+            <a style="font-size:12px;"
+            href="{{URL::asset('docs/SFP.xlsx')}}" target="_blank"
+            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+            Condensed Statement of Financial Performance - GF
+            </a>
+            <a style="font-size:12px;"
+            href="{{URL::asset('docs/SFPBS.xlsx')}}" target="_blank"
+            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+            Condensed Statement of Financial Position - GF
+            </a>
           </div>
         </div>
       </div>

@@ -92,15 +92,17 @@
        <input type="radio" class="form-check-input" value="renewal" name="new[basicnew]">Renewal
      </label>
     </div>
-    <div>
+
+    <div class="">
       <div class="form-check-inline mb-4">
-        <label class="form-check-label">Mode of Payment:
-           <input type="radio" class="form-check-input" value="annual" name="new[mode_annually]">Annually
+        <label class="new[mode_annually]">Mode of Payment:
+           <input type="radio" class="form-check-input" value="annual" name="new[mode_annually]" id ="annually">Annually
+
         </label>
       </div>
       <div class="form-check-inline">
        <label class="form-check-label">
-         <input type="radio" class="form-check-input" value="semi_annual" name="new[mode_semiannually]">Semi-Annually
+         <input type="radio" class="form-check-input" value="semi_annual" name="new[mode_semiannually] ">Semi-Annually
        </label>
       </div>
       <div class="form-check-inline disabled">
@@ -113,7 +115,7 @@
     {{-- second row --}}
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="dateapp">Date Application</label>2019-01-01
+        <label for="dateapp">Date Application</label>
         <input class="form-control" type="date" value="{{date('Y-m-d')}}" id="date_application" name = "new[date_application]">
       </div>
       <div class="form-group col-md-6">
@@ -126,12 +128,12 @@
       <div class="form-group col-md-6">
         <label for='dti1'>DTI/SEC/CDA Registration
         </label>
-        <input type="text" class="form-control" name="new[dti_sec1]" class ="ornum" >
+        <input type="text" class="form-control" name="new[dti_sec]" class ="ornum" >
       </div>
       <div class="form-group col-md-6">
-        <label for="dti2">DTI/SEC/CDA Registration
+        <label for="dti2">DTI/SEC/CDA Number
         </label>
-        <input type="text" class="form-control" name="new[dti_sec2]">
+        <input type="text" class="form-control" name="new[dti_number]">
       </div>
     </div>
 
@@ -245,25 +247,25 @@
   <div class="form-row">
     <div class="form-group col-md-12">
       <label>Business Address</label>
-      <textarea type="text" class="form-control" name="app[bussinfo_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
+      <textarea type="text" class="form-control" name="new[bussinfo_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
     </div>
     <div class="form-group col-md-6">
       <label>Postal Code</label>
-      <input type="number" class="form-control postcode" name="new[bussinfo_postal]">
+      <input type="number" class="form-control postcode" name="other[bussinfo_postal]">
     </div>
     <div class="form-group col-md-6">
       <label>Email Adress</label>
-      <input type="email" class="form-control" name="new[bussinfo_email]" placeholder="example@email.com">
+      <input type="email" class="form-control" name="other[bussinfo_email]" placeholder="example@email.com">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Telephone</label>
-        <input class="form-control tel" type="tel" name="new[bussinfo_tel]" placeholder="539-1234">
+        <input class="form-control tel" type="tel" name="other[bussinfo_tel]" placeholder="539-966">
     </div>
     <div class="form-group col-md-6">
       <label>Mobile No.</label>
-        <input class="form-control mobile" type="tel" name="new[bussinfo_mobile]" placeholder="09XX-XXX-XXXX">
+        <input class="form-control mobile" type="tel" name="other[bussinfo_mobile]" placeholder="09XX XXX XXXX">
     </div>
   </div>
 
@@ -271,25 +273,33 @@
   <div class="form-row mt-5">
     <div class="form-group col-md-12">
       <label>Owner's Adress</label>
-      <textarea type="text" class="form-control" name="new[owner_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
+      <textarea type="text" class="form-control" name="owner[owner_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
     </div>
     <div class="form-group col-md-6">
       <label>Postal Code</label>
-      <input type="number" class="form-control postcode" name="new[owner_postal]">
+      <input type="number" class="form-control postcode" name="owner[owner_postal]">
     </div>
     <div class="form-group col-md-6">
       <label>Email Adress</label>
-      <input type="email" class="form-control" name="new[owner_email]" placeholder="example@email.com">
+      <input type="email" class="form-control" name="owner[owner_email]" placeholder="example@email.com">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Telephone</label>
-        <input class="form-control tel" type="tel" maxlength="7" name="new[owner_tel]" placeholder="539-1234">
+<<<<<<< HEAD
+        <input class="form-control tel" type="tel" name="other[owner_tel]" placeholder="539-966">
     </div>
     <div class="form-group col-md-6">
       <label>Mobile No.</label>
-        <input class="form-control mobile" type="tel" name="new[owner_mobile]" placeholder="09XX XXX XXXX">
+        <input class="form-control mobile" type="tel" name="other[owner_mobile]" placeholder="09XX XXX XXXX">
+=======
+        <input class="form-control tel" type="tel" name="owner[owner_tel]" placeholder="539-966">
+    </div>
+    <div class="form-group col-md-6">
+      <label>Mobile No.</label>
+        <input class="form-control mobile" type="tel" name="owner[owner_mobile]" placeholder="09XX XXX XXXX">
+>>>>>>> 9da2e2dd2af8f963d07e4d6edcad469bd7f873db
     </div>
   </div>
 
@@ -298,46 +308,46 @@
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>In Case of emergency, provide name of contact person: </label>
-      <input type="text" class="form-control" name="new[emergency_fname]" placeholder="First Name">
+      <input type="text" class="form-control" name="other[emergency_fname]" placeholder="First Name">
     </div>
     <div class="form-group col-md-6">
       <label>&nbsp;</label>
-      <input type="text" class="form-control" name="new[emergency_lname]" placeholder="Last Name">
+      <input type="text" class="form-control" name="other[emergency_lname]" placeholder="Last Name">
     </div>
   </div>
 
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Telephone/Mobile No.</label>
-        <input class="form-control tel" type="tel" name="new[emergency_tel]" placeholder="539-966">
+        <input class="form-control tel" type="tel" name="other[emergency_tel]" placeholder="539-966">
     </div>
     <div class="form-group col-md-6">
       <label>Email Address</label>
-        <input class="form-control" type="email" name="new[emergency_email]" placeholder="Email Address">
+        <input class="form-control" type="email" name="other[emergency_email]" placeholder="Email Address">
     </div>
   </div>
 
   <div class="form-row">
     <div class="form-group col-md-2">
       <label>Business Area</label>
-        <input class="form-control" type="number" name="new[buss_area]" placeholder="In sq m">
+        <input class="form-control" type="number" name="other[buss_area]" placeholder="In sq m">
     </div>
     <div class="form-group col-md-4">
       <label>Total No. of Employees in Establishment</label>
-        <input class="form-control" type="number" name="new[totalno_employees]" placeholder="Total Number of Employees">
+        <input class="form-control" type="number" name="other[totalno_employees]" placeholder="Total Number of Employees">
     </div>
 
     <div class="form-group col-md-2 mb-2" >
       <label style="white-space: nowrap">No. of Employees Residing within</label>
-        <input class="form-control" type="number" name="new[noemployees_lgu]" placeholder="LGU">
+        <input class="form-control" type="number" name="other[noemployees_lgu]" placeholder="LGU">
     </div>
     <div class="form-group col-md-2 mt-2">
       <label></label>
-        <input class="form-control" type="number" name="new[noemployees_male]" placeholder="Male">
+        <input class="form-control" type="number" name="other[noemployees_male]" placeholder="Male">
     </div>
     <div class="form-group col-md-2 mt-2">
       <label></label>
-        <input class="form-control" type="number" name="new[noemployees_female]" placeholder="Female">
+        <input class="form-control" type="number" name="other[noemployees_female]" placeholder="Female">
     </div>
   </div>
 
@@ -351,33 +361,33 @@
 
     <div class="form-group col-md-4">
       <label>Lessor's Full Name</label>
-      <input type="text" class="form-control" name="new[lessor_lname]" placeholder="Last Name">
+      <input type="text" class="form-control" name="lessor[lessor_lname]" placeholder="Last Name">
     </div>
     <div class="form-group col-md-4 mt-2">
       <label ></label>
-      <input type="text" class="form-control" name="new[lessor_fname]" placeholder="First Name">
+      <input type="text" class="form-control" name="lessor[lessor_fname]" placeholder="First Name">
     </div>
     <div class="form-group col-md-4 mt-2">
       <label></label>
-      <input type="text" class="form-control" name="new[lessor_mname]" placeholder="Middle Name">
+      <input type="text" class="form-control" name="lessor[lessor_mname]" placeholder="Middle Name">
     </div>
     <div class="form-group col-md-12">
       <label>Lessor'Full Adress</label>
-      <textarea type="text" class="form-control" name="new[lessor_fulladdress]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
+      <textarea type="text" class="form-control" name="lessor[lessor_fulladdress]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-4">
       <label>Telephone/Mobile No.</label>
-        <input class="form-control" type="tel" name="new[lessor_telephoneno]" placeholder="539-1234 / 09123456789">
+        <input class="form-control" type="tel" name="lessor[lessor_telephoneno]" placeholder="539-1234 / 09123456789">
     </div>
     <div class="form-group col-md-6">
       <label>Email Address</label>
-        <input class="form-control" type="email" name="new[lessor_emailadd]" placeholder="Email Address">
+        <input class="form-control" type="email" name="lessor[lessor_emailadd]" placeholder="Email Address">
     </div>
     <div class="form-group col-md-2">
       <label>Monthly Rental</label>
-        <input class="form-control" type="number" name="new[lessor_monthlyrental]" placeholder="">
+        <input class="form-control" type="number" name="lessor[lessor_monthlyrental]" placeholder="">
     </div>
   </div>
 
@@ -387,23 +397,23 @@
   <div class="form-row">
     <div class="form-group col-md-4">
       <label >Line of Busniness</label>
-      <input type="text" class="form-control" name="new[bussactivity_linebuss]" placeholder="Name of Business">
+      <input type="text" class="form-control" name="bussactivity[bussactivity_linebuss]" placeholder="Name of Business">
     </div>
     <div class="form-group col-md-2">
       <label >No. of Units</label>
-      <input type="number" class="form-control" name="new[bussact_nounits]" placeholder="">
+      <input type="number" class="form-control" name="bussactivity[bussact_nounits]" placeholder="">
     </div>
     <div class="form-group col-md-2">
       <label >Capitalization</label>
-      <input type="number" class="form-control" name="new[bussact_capital]" placeholder="">
+      <input type="number" class="form-control" name="bussactivity[bussact_capital]" placeholder="">
     </div>
     <div class="form-group col-md-2">
       <label>Essential</label>
-      <input type="number" class="form-control" name="new[bussact_essential]" placeholder="">
+      <input type="number" class="form-control" name="bussactivity[bussact_essential]" placeholder="">
     </div>
     <div class="form-group col-md-2">
       <label>Non-Essential</label>
-      <input type="number" class="form-control" name="new[bussact_nonessential]" placeholder="">
+      <input type="number" class="form-control" name="bussactivity[bussact_nonessential]" placeholder="">
     </div>
 
   </div>
