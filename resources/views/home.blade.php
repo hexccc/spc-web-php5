@@ -294,6 +294,10 @@
         </div>
       </div>
     </div>
+    <div class="card border-primary">
+      <h2 class="text-white card-title border-primary text-center mt-0" >Visitor's Counter:</h2>
+      <h3 class="text-center py-2" style="background-color:#48C9B0;border-radius:20px; color:white;">{{ $count }}</h3>
+    </div>
     {{-- 3rd row end --}}
 
   </div>

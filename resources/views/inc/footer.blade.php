@@ -77,10 +77,7 @@
             <h2 class="text-white card-title border-primary text-center mt-0" >Member Log in</h2>
             <button class="btn btn-primary mb-1" style="border-radius:25px";><h4>Log In</h4></button>
           </div>
-          <div class="card border-primary">
-            <h2 class="text-white card-title border-primary text-center mt-0" >Visitor's Counter:</h2>
-            <h3 class="text-center py-2" style="background-color:#48C9B0;border-radius:20px; color:white;">{{ $count }}</h3>
-          </div>
+
         </div>
       </div>
   </div>
