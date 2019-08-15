@@ -75,9 +75,8 @@
       <div class="col-md-3">
         <div class="card border-primary mb-2">
             <h2 class="text-white card-title border-primary text-center mt-0" >Member Log in</h2>
-            <button class="btn btn-primary mb-1" style="border-radius:25px";><h4>Log In</h4></button>
+            <a href="signin_requestor" class="btn btn-primary mb-1" style="border-radius:25px";><h4>Log In</h4></a>
           </div>
-
         </div>
       </div>
   </div>
