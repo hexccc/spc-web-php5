@@ -26,7 +26,7 @@
           <ul class="dropdown-menu">
             <div class="dropdown-item">
               <li>
-                <a class="text-body btn btn-block"href="mission">Mission & Vision</a>
+                <a class="text-body btn btn-block"href="missionvision">Mission & Vision</a>
               </li>
             </div>
             <div class="dropdown-item">

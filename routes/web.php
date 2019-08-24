@@ -92,6 +92,10 @@ Route::get('/mission', function () {
     return view('mission');
 });
 
+Route::get('/missionvision', function () {
+    return view('missionvision');
+});
+
 Route::get('/calendar', function () {
     return view('calendar');
 });

@@ -1,4 +1,6 @@
 body {
+  height:100%;
+  margin:0;
   margin-top:65px;
 }
 #footer{
@@ -46,8 +48,9 @@ body {
 
 
 .carousel{
-
-  z-index: 0;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
 }
 //Header
 .text-white{
