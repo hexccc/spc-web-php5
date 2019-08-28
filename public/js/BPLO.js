@@ -1,9 +1,8 @@
 var add_line_buss = [];
 
-
-
-
 var global_url = 'http://192.168.100.207:8080';
+
+// var global_url = 'http://localhost:8000';
 var userSession = sessionStorage.getItem("user_id");
 $(document).ready(function () {
   $('#logged').on('hide.bs.modal', function (e) {
@@ -12,62 +11,30 @@ $(document).ready(function () {
       return false;
   });
 
-    console.log('success' + userSession);
-
-    if(userSession != 0) {
-      $('#userid').val(userSession);
-
-      $.ajax({
-        url : global_url+'/api/bplo_api/' + userSession,
-        type : 'GET',
-        dataType : 'json',
-        success : function (res) {
-          // console.log(res);
-          content = res.content;
-
-          if (content != null) {
-            // console.log('not null');
-            $('#buss_name').html('&nbsp; : ' + content[0].buss_name);
-            $('#date_approve').html('&nbsp; : ' + (content[0].date_approve == null) ? '&nbsp; : Not Approve Yet' : content[0].date_approve);
-            $('#owner_name').html('&nbsp; : ' + content[0].owner_name);
-            $('#date_payment').html('&nbsp; : ' + (content[0].date_payment == null) ? '&nbsp; : Not Approve Yet' : content[0].date_payment);
-            $('#buss_code').html('&nbsp; : ' + content[0].buss_code);
-            $('#buss_line').html('&nbsp; : ' + content[0].buss_line);
-            notify(res.msg,'success',500);
-          }
-
-        },
-        error : function(xhr){
-          // console.log(xhr.responseText);
-        }
-      });
-
-    }else{
-      // $('#logged').modal('show');
-    }
-
-
-    $('#addnewbuss').submit(function(e){
+//SUBMIT NEW BUSINESS
+$('#addnewbuss').submit(function(e){
       e.preventDefault();
       // console.log($(this).serializeArray());
+      console.log($(this).serializeArray());
+
       var buss_id;
       $.ajax({
         url : global_url + '/api/bplo_api',
         type : 'POST',
         crossDomain: true,
         dataType: 'json',
-        data : $(this).serialize(),
+        data : $(this).serializeArray(),
         success : function(res){
           console.log(res);
           console.log(add_line_buss);
           // replace(/-/g,'')
 
           if (res.response) {
-
             buss_id = res.buss_id;
-
             for (var i = 0; i < add_line_buss.length; i++) {
               console.log(add_line_buss[i]);
+
+
               $.ajax({
                 url : global_url + '/api/bplo_api',
                 type : 'POST',
@@ -85,9 +52,9 @@ $(document).ready(function () {
                 },
                 success : function(res){
                   console.log(res);
+
                 },
                 error : function(xhr){
-
                 }
               });
             }
@@ -97,13 +64,13 @@ $(document).ready(function () {
         },
         error : function(xhr){
           console.log(xhr.responseText);
+          notify('Request Not Sent', 'danger',500)
+
+
         }
       });
-
-
-
     });
-
+//ADDITIONAL LINE OF BUSINESS
 $('#addlineaddRow').click(function(){
   	add_line_buss.push({
   		'busact_addline': $('#addline').val(),
@@ -113,7 +80,7 @@ $('#addlineaddRow').click(function(){
   		'rank': 'secondary'
   	});
 
-      // console.log(add_line_buss);
+  // console.log(add_line_buss);
 
     "use strict";
     var table = document.getElementById("addnewline");
@@ -142,12 +109,13 @@ $('#addlineaddRow').click(function(){
     table.children[0].appendChild(row);
     $('#addline').val('');
     $('#addcode').val('');
+    $('#addunits').val('');
     $('#addsubcat').val('');
     $('#addcap').val('');
 
 
 });
-
+//REGISTRATION
 $('#addReg').submit(function(e){
     e.preventDefault();
 
@@ -168,14 +136,13 @@ $('#addReg').submit(function(e){
       },
       error: function()
         {
-          notify('Regestration Failed', 'danger',500)
+          notify('Registration Failed', 'danger',500)
 
         }
     });
 });
-
+//lOGIN
 $('#signinReg').submit(function(e){
-
     e.preventDefault();
     console.log($(this).serializeArray());
    $.ajax({
@@ -188,11 +155,9 @@ $('#signinReg').submit(function(e){
      ,
      success : function(res){
        content = res.content;
-
-       // console.log();
-       sessionStorage.setItem("user_id",content[0].user_id);
        console.log(res);
       if(res.response == true){
+        sessionStorage.setItem("user_id",content.user_id);
         console.log('123');
         window.location.href = "/bploform";
       }
@@ -208,7 +173,186 @@ $('#signinReg').submit(function(e){
 });
 
 
+
+    manufacturers = Array("Assemblers", "Re-packers", "Processors", "Brewers", "Distillers", "Rectifiers","Compounders of Liquors","Distilled Spirits","Wines","Bakery","Woodcraft/ Handicraft (Stuffed Toys)","Compounding (Distillers)","Oil Extraction","Food Processing - Ube Making", "Ice Cream Making","Body Builder (Jeep)");
+
+    wholesalers   = Array("Water Refilling", "Boutique", "Dry Goods", "Ambulant/ Grocery", "Dry Goods/RTW", "Mini-Mart","Cedera","Glassware/ Aluminum","Cell Phone Accessories","Petshop ","Jewelries","Junkshop","Gift Shop","Radio Equipment", "Party Shop","Subdivision/Realty","Flower Shop/ Seedlings","Medical Supplies","Footwear","Relief Goods","Car Accessories","Hardware","Telecom Accessories","Telecom Accessories","Native Products","Supermarket","Coconut Dealer","FeedsN et.supplies","Pharmacy/Drug store","Fish Vendor","Chicken Vendor","Meat Vendor","Rice Retailer","Cement","Poultry/Piggery(Proprietor)","School Supplies","Fruit Vendor","Dried Fish","Rady To Cook-(Frozen Products)");
+
+    food = Array("Breadshop", "Cafeteria", "Restaurant", "Canteen", "Food Vendor", "Take-Out Counter","Cocktail Lounge Or Bar","Cooked Food","Andok's","Goldilucks","Red Ribbon","Food Caterer","Palamig");
+
+    contractors = Array("Machine/RepairNulcanizing shop", "Beauty Parlor/ Barbershop/ Spa Massage", "Bodega", "Internet Cafe", "Construction Services", "Computer Shop/ Rental","Dress Shop/ Tailoring","Skin & Body Care Clinic","Cemetery Contractor (Fixed)","Poultry & Piggery (Sub-Contractor)","Security Agency","Dry Cleaning","Drug Testing","Memorial Park","Printing Press/ Publication","Art Sign","Travel Agency","Educational(Schools)","Car Wash","Training Center","Catering Services","Funeral Parlor","Fitness Gym Center","Photography","Trucking","Brokerage");
+
+    essentials = Array("Lying In Clinic","Medical Services/Laboratories","Hospital/ Medical Clinic","Veterinary Clinic","Feed Milling/ Rice Mill");
+
+    banks = Array("Lending","Money Changer","Pre-Need Life Plan","Bank","Pawnshop","Money Remittance","Bill Payments");
+
+    lease = Array("Hotels","Motels","Taverns");
+
+    dealersLiquors = Array("Wines","Distilled spirits","Fermented liquors");
+
+    other = Array("Boarding House","Lodging House","Private cemetery or Memorial park");
+
+      $("#addline").change(function(){
+      var stdlinebuss = $(".addlinebuss option:selected").val();
+      var data = "<option value =''>Code of Business</option>";
+
+        if (stdlinebuss =="manufacturers")
+        {
+              manufacturers.forEach(function(code){
+              data += "<option value='"+code+"'>"+code+"</option>";
+
+           });
+        }
+        else if (stdlinebuss =="wholesalers, distributors, or dealers")
+        {
+              wholesalers.forEach(function(code){
+              data += "<option value='"+code+"'>"+code+"</option>";
+           });
+        }
+        else if (stdlinebuss =="wholesalers")
+        {
+              wholesalers.forEach(function(code){
+              data += "<option value='"+code+"'>"+code+"</option>";
+           });
+        }
+        else if (stdlinebuss =="retailers")
+        {
+              data += "<option value='Sari-Sari Store'>Sari-Sari Store</option>";
+        }
+        else if (stdlinebuss =="food")
+        {
+              food.forEach(function(code){
+              data += "<option value='"+code+"'>"+code+"</option>";
+           });
+        }
+        else if (stdlinebuss =="contractors")
+        {
+              contractors.forEach(function(code){
+                data += "<option value='"+code+"'>"+code+"</option>";
+                });
+           data += "<option value='' class='font-weight-bold bg-gray'>ESSENTIALS</option>";
+
+           data += "<option value='lying in clinic'>Lying in clinic</option>";
+           data += "<option value='medical services/laboratories'>Medical Services/Laboratories</option>";
+           data += "<option value='hospital/medical clinic'>Hospital/Medical Clinic</option>";
+           data += "<option value='veterinary clinic'>Veterinary Clinic</option>";
+           data += "<option value='feed milling/rice mill'>Feed Milling/Rice Mill</option>";
+        }
+        else if (stdlinebuss =="banks and other financial institutions")
+        {
+              banks.forEach(function(code){
+              data += "<option value='"+code+"'>"+code+"</option>";
+           });
+        }
+        else if (stdlinebuss =="lease")
+        {
+              lease.forEach(function(code){
+              data += "<option value='"+code+"'>"+code+"</option>";
+           });
+        }
+        else if (stdlinebuss =="dealers of liquors")
+        {
+              dealersLiquors.forEach(function(code){
+              data += "<option value='"+code+"'>"+code+"</option>";
+           });
+        }
+        else if (stdlinebuss =="other business")
+        {
+              other.forEach(function(code){
+              data += "<option value='"+code+"'>"+code+"</option>";
+           });
+        }
+        else {
+            data += "<option value=''></option>";
+        }
+          $("#addcode").html(data );
+        });
+
+      $("#addline1").change(function(){
+        var stdlinebuss = $(".addlinebuss1 option:selected").val();
+        var data = "<option value =''>Code of Business</option>";
+
+          if (stdlinebuss =="manufacturers")
+          {
+                manufacturers.forEach(function(code){
+                data += "<option value='"+code+"'>"+code+"</option>";
+
+             });
+          }
+          else if (stdlinebuss =="wholesalers, distributors, or dealers")
+          {
+                wholesalers.forEach(function(code){
+                data += "<option value='"+code+"'>"+code+"</option>";
+             });
+          }
+          else if (stdlinebuss =="wholesalers")
+          {
+                wholesalers.forEach(function(code){
+                data += "<option value='"+code+"'>"+code+"</option>";
+             });
+          }
+          else if (stdlinebuss =="retailers")
+          {
+                data += "<option value='Sari-Sari Store'>Sari-Sari Store</option>";
+          }
+          else if (stdlinebuss =="food")
+          {
+                food.forEach(function(code){
+                data += "<option value='"+code+"'>"+code+"</option>";
+             });
+          }
+          else if (stdlinebuss =="contractors")
+          {
+                contractors.forEach(function(code){
+                  data += "<option value='"+code+"'>"+code+"</option>";
+                  });
+             data += "<option value='' class='font-weight-bold bg-gray'>ESSENTIALS</option>";
+
+             data += "<option value='lying in clinic'>Lying in clinic</option>";
+             data += "<option value='medical services/laboratories'>Medical Services/Laboratories</option>";
+             data += "<option value='hospital/medical clinic'>Hospital/Medical Clinic</option>";
+             data += "<option value='veterinary clinic'>Veterinary Clinic</option>";
+             data += "<option value='feed milling/rice mill'>Feed Milling/Rice Mill</option>";
+          }
+          else if (stdlinebuss =="banks and other financial institutions")
+          {
+                banks.forEach(function(code){
+                data += "<option value='"+code+"'>"+code+"</option>";
+             });
+          }
+          else if (stdlinebuss =="lease")
+          {
+                lease.forEach(function(code){
+                data += "<option value='"+code+"'>"+code+"</option>";
+             });
+          }
+          else if (stdlinebuss =="dealers of liquors")
+          {
+                dealersLiquors.forEach(function(code){
+                data += "<option value='"+code+"'>"+code+"</option>";
+             });
+          }
+          else if (stdlinebuss =="other business")
+          {
+                other.forEach(function(code){
+                data += "<option value='"+code+"'>"+code+"</option>";
+             });
+          }
+          else {
+              data += "<option value=''></option>";
+          }
+
+            $("#addcode1").html(data );
+          });
+
+
+
 });
+//end of document ready function
+
+
+
+
 
   function addlinerowdelete(r){
   var i = r.parentNode.parentNode.rowIndex;
@@ -231,5 +375,6 @@ function notify(msg, type,responseTime) {
 
   function logout() {
     sessionStorage.setItem("user_id",0);
+    sessionStorage.setItem("bussId",0);
       window.location.href = "/signin_requestor";
   }
