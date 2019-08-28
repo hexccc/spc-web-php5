@@ -119,9 +119,15 @@ Route::get('/style-admin-nav', function () {
 Route::get('/officemap', function () {
     return view('officemap');
 });
+
 Route::get('/newseditor', function(){
   return view('newseditor');
 });
+
+Route::get('/our7lakes', function(){
+  return view('our7lakes');
+});
+
 
 Route::post('/createNews', 'new_controller@store');
 

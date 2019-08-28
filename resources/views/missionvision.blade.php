@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Mission & Vision')
 
-  <div class="pimg1">
+  <div class="misvispic">
     <div class="ptext">
        <div class="row d-flex justify-content-around">
           <span class="col-4 border">
@@ -117,14 +117,14 @@
         </li>
       </div>
     </div>
+  </div>
   </section>
 
-</div>
 
 
 
 <style>
-.pimg1, .pimg2, .pimg3{
+.misvispic, .pimg2, .pimg3{
   position:relative;
   opacity:0.70;
   background-position:center;
@@ -138,7 +138,7 @@
   background-attachment:fixed;
 }
 
-.pimg1{
+.misvispic{
   background-image:url('image/1 Sampalok.jpg');
   min-height:100%;
   width:100%;

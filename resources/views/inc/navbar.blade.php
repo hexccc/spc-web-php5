@@ -40,7 +40,7 @@
               </li>
             </div>
             <div class="dropdown-item"><li><a class="text-body btn btn-block" href="sanpablenos">San Pableños</a></li></div>
-            <div class="dropdown-item"><li><a class="text-body btn btn-block" href="barangay">Barangays</a></li></div>
+            <div class="dropd1own-item"><li><a class="text-body btn btn-block" href="barangay">Barangays</a></li></div>
             <div class="dropdown-item"><li><a class="text-body btn btn-block" href="hymn">Hymn</a></li></div>
           </ul>
       </li>
@@ -65,15 +65,49 @@
             <li class='dropright'>
               <a class="active btn btn-block dropdown-toggle" data-toggle='dropdown' href='#'>Comprehensive Land Use Program<span class="caret"></span></a>
               <ul class='dropdown-menu'>
-                <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/VOLUME 1 The Comprehensive Land Use Plan San Pablo City as of Nov 30 2016.pdf')}}" target="_blank">Volume 1</a></li></div>
-                <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/VOLUME 2 Zoning Ordinance San Pablo City as of Nov 30 2016.pdf')}}" target="_blank">Volume 2</a></li></div>
-                <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/VOLUME 3 Sectoral Studies San Pablo City UPDATED_as of Nov 27 2016.pdf')}}" target="_blank">Volume 3</a></li></div>
+            <div class="dropdown-item">
+              <li>
+                <a class="text-body btn btn-block" href="{{URL::asset('docs/VOLUME 1 The Comprehensive Land Use Plan San Pablo City as of Nov 30 2016.pdf')}}" target="_blank">
+                  Volume 1
+                </a>
+              </li>
+            </div>
+            <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/VOLUME 2 Zoning Ordinance San Pablo City as of Nov 30 2016.pdf')}}" target="_blank">
+                  Volume 2
+                </a>
+              </li>
+            </div>
+            <div class="dropdown-item">
+              <li>
+                <a class="text-body btn btn-block" href="{{URL::asset('docs/VOLUME 3 Sectoral Studies San Pablo City UPDATED_as of Nov 27 2016.pdf')}}" target="_blank">
+                  Volume 3
+                </a>
+              </li>
+            </div>
               </ul>
             </li>
           </div>
-          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/CDP Annexes 2018-2023.pdf')}}" target="_blank">Comprehensive Development Plan</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/SPC Ecological Profile.pdf')}}" target="_blank">SPC Ecological Profile</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/CDP Annexes 2018-2023.pdf')}}" target="_blank">CDP Annexes</a></li></div>
+          <div class="dropdown-item">
+            <li>
+              <a class="text-body btn btn-block" href="{{URL::asset('docs/CDP Annexes 2018-2023.pdf')}}" target="_blank">
+                Comprehensive Development Plan
+              </a>
+            </li>
+          </div>
+          <div class="dropdown-item">
+            <li>
+              <a class="text-body btn btn-block" href="{{URL::asset('docs/SPC Ecological Profile.pdf')}}" target="_blank">
+                SPC Ecological Profile
+              </a>
+            </li>
+          </div>
+          <div class="dropdown-item">
+            <li>
+              <a class="text-body btn btn-block" href="{{URL::asset('docs/CDP Annexes 2018-2023.pdf')}}" target="_blank">
+                CDP Annexes
+              </a>
+            </li>
+          </div>
         </ul>
       </li>
 
@@ -82,7 +116,7 @@
         <ul class="dropdown-menu">
           <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/SP TMP.pdf')}}" target="_blank">Tourism Masterplan</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn btn-block" href="cultural_properties">Imporant Cultural Properties</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="7lakes">Our Seven Lakes</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="our7lakes">Our Seven Lakes</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn btn-block" href="gallery">Gallery</a></li></div>
         </ul>
       </li>

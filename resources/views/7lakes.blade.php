@@ -9,7 +9,7 @@
     </h3>
   <div class="row px-2">
       <div class="media float-right mt-4 p-2">
-        <img  href="#lake1" class="pr-2" style="display:none" src="{{URL::asset('image/1 Sampalok.jpg')}}" alt="SPC" ">
+        <img  href="#lake1" class="pr-2" style="display:none" src="{{URL::asset('image/1 Sampalok.jpg')}}" alt="SPC">
         <div class="media-body">
           <h5 class="mt-0 font-weight-bold p-2" style="color:3490DC;background-color:#a9f2ff ">SAMPALOC LAKE</h5>
             <p id='landmarksText'>
@@ -20,7 +20,6 @@
             •	Atrakson: Ang Lawa ng Sampalok, Sampalok Lake Mini Parks, Museo ng San Pablo, Doña Leonila Park, Hagdang Bato, Bonifacio Monument, Trese Martirez Monument<br>
             •	Mga Akomodasyon: Ang Tahanan ni Aling Meding Hotel & Restaurant, Lake City Hotel<br>
             •	Tourist Arrivals: January 2019 – 72,134 | February 2019 – 14,863 | March 2019 – 16,027
-
             </p>
         </div>
       </div>
@@ -37,11 +36,11 @@
               •	Tourist Arrivals: January 2019 – 47 | February 2019 – 239 | March 2019 - 74
             </p>
         </div>
-        <img style="display:none"  src="{{URL::asset('image/2 Calibato.jpg')}}" alt="SPC"  ">
+        <img style="display:none"  src="{{URL::asset('image/2 Calibato.jpg')}}" alt="SPC"  >
       </div>
 
       <div class="col-12 media float-right mt-4 p-2">
-        <img style="display:none" class="pr-2" src="{{URL::asset('image/3 Bunot.jpg')}}" alt="SPC"  ">
+        <img style="display:none" class="pr-2" src="{{URL::asset('image/3 Bunot.jpg')}}" alt="SPC">
         <div class="media-body">
 
           <h5 class="mt-0 p-2 font-weight-bold" style="color:3490DC;">BUNOT</h5>
@@ -72,11 +71,11 @@
 
             </p>
         </div>
-        <img style="display:none" src="{{URL::asset('image/4 Mohicap.jpg')}}" alt="SPC"  ">
+        <img style="display:none" src="{{URL::asset('image/4 Mohicap.jpg')}}" alt="SPC">
       </div>
 
       <div class="col-12 media float-right mt-4 p-2">
-        <img style="display:none" class="pr-2" src="{{URL::asset('image/5 Palakpakin.jpg')}}" alt="SPC"  ">
+        <img style="display:none" class="pr-2" src="{{URL::asset('image/5 Palakpakin.jpg')}}" alt="SPC">
         <div class="media-body">
 
           <h5 class="mt-0 p-2 font-weight-bold" style="color:3490DC;">PALAKPAKIN</h5>
@@ -103,11 +102,11 @@
                • 	Tourist Arrivals: January 2019 – 2,647 | February 2019 – 2,905 | March 2019 – 5,651
             </p>
         </div>
-        <img style="display:none" src="{{URL::asset('image/6 Pandin.jpg')}}" alt="SPC" ">
+        <img style="display:none" src="{{URL::asset('image/6 Pandin.jpg')}}" alt="SPC" >
       </div>
 
       <div class="col-12 media float-right mt-4 p-2">
-        <img style="display:none" class="pr-2" src="{{URL::asset('image/7 Yambo.jpg')}}" alt="SPC"  ">
+        <img style="display:none" class="pr-2" src="{{URL::asset('image/7 Yambo.jpg')}}" alt="SPC"  >
         <div class="media-body">
           <h5 class="mt-0 p-2 font-weight-bold" style="color:3490DC;">YAMBO</h5>
             <p id='landmarksText'>
@@ -125,7 +124,7 @@
     <script>
       $(document).ready(function(){
         $(window).bind("load", function() {
-          
+
           $('#landmark').find('img').css('width', '350px')
           $('h3').fadeIn();
           $("h5").fadeIn('slow');
