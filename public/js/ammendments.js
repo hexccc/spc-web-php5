@@ -194,7 +194,6 @@ $('#change_emp').click(function(){
           data: {bussId:$('#buss_id').val()},
           datatype:'JSON',
           success: function(res){
-            console.log(sessionStorage.getItem("bussId"));
           },
           error: function (res)
           {

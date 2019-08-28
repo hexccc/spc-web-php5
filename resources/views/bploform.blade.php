@@ -209,27 +209,19 @@
               </thead>
               <tr>
 
-                <td>Line of Business</td>
-                <td>Code</td>
-                <td>Date added</td>
-                <td>Sub Category</td>
-                <td>Essential</td>
-                <td>Non Essential</td>
-                <td>Capitalization</td>
+                <th>Line of Business</th>
+                <th>Code</th>
+                <th>Date added</th>
+                <th>Sub Category</th>
+                <th>Essential</th>
+                <th>Non Essential</th>
+                <th>Capitalization</th>
                 <!-- <td>Status</td> -->
 
               </tr>
-              <tr id ="add_bussline">
-                <!-- <td><span id="business_line"></span></td>
-                <td><span id="business_code"></span></td>
-                <td><span id="buss_dateadded"></span> </td>
-                <td><span id="buss_subcat"></span> </td>
-                <td><span id="buss_essen"></span> </td>
-                <td><span id="buss_nonessen"></span> </td>
-                <td><span id="buss_cap"></span> </td>
-                <td><span id="buss_stat"></span> </td> -->
+              <tbody id ="add_bussline">
+              </tbody>
 
-              </tr>
 
           </table>
           <a class="btn btn-info" href="signin_requestor/" >Submit</a>
