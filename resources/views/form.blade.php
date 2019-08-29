@@ -660,24 +660,54 @@
 													</div>
 												</div>
                         <!-- NOTE: added inputfield no.units -->
+
                         <div class="form-group col-md-2">
-      							      <label >No. of Units</label>
-      							      <input type="number" id="addunits" class="form-control" name="app[no_units]" placeholder="">
-      							    </div>
-												<div class="form-group col-md-2">
-													<div class="md-form">
+                          <label >No. of Units</label>
+                          <input type="number" id="addunits" class="form-control" name="app[no_units]" placeholder="">
+                        </div>
+
+
+                        <div class="form-row">
+                          <div class="form-group col-md-3">
+                            <label >Essentials</label>
+                            <input type="number" id="addessen" class="form-control" name="app[no_units]" placeholder="">
+                          </div>
+                          <div class="form-group col-md-3">
+                            <label >Non Essentials</label>
+                            <input type="number" id="addnonessen" class="form-control" name="app[no_units]" placeholder="">
+                          </div>
+													<div class="form-group col-md-3">
 									          <label for="addcap">Capitalization</label>
 									          <input type="text" id="addcap" name="app[capitalization]" class="form-control money">
                             <input type="hidden" id="" name="app[ranks]" class="form-control" value="secondary">
 													</div>
-												</div>
-
-									      <div class="form-group col-md-1">
+									      <div class="form-group col-md-3">
 									        <label for="addcap">Add</label>
 									        <!-- <button type="submit" class="btn btn-primary" name="button"  value="ADD">ADD</button> -->
 									        <button type="button" class="btn btn-success" name="button" id ="addlineaddRow"  >ADD</button>
 									      </div>
 									    </div>
+
+                      <div class="form-row">
+                      <div class="form-group col-md-3">
+
+
+                        <div class="form-group col-md-2">
+                          <div class="md-form">
+                            <label for="addcap">Capitalization</label>
+                            <input type="text" id="addcap" name="app[capitalization]" class="form-control money">
+                            <input type="hidden" id="" name="app[ranks]" class="form-control" value="secondary">
+                          </div>
+                        </div>
+
+                        <div class="form-group col-md-1">
+                          <label for="addcap">Add</label>
+                          <!-- <button type="submit" class="btn btn-primary" name="button"  value="ADD">ADD</button> -->
+                          <button type="button" class="btn btn-success" name="button" id ="addlineaddRow"  >ADD</button>
+                        </div>
+                      </div>
+                      </div>
+                      </div>
 
 
 									    <div class="form-group col-md-12">

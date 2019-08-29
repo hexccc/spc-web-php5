@@ -1,8 +1,8 @@
 var add_line_buss = [];
 
-var global_url = 'http://192.168.100.207:8080';
+// var global_url = 'http://192.168.100.207:8080';
+var global_url = 'http://795a28e3.ngrok.io/';
 
-// var global_url = 'http://localhost:8000';
 var userSession = sessionStorage.getItem("user_id");
 $(document).ready(function () {
   $('#logged').on('hide.bs.modal', function (e) {
@@ -85,7 +85,6 @@ $('#btn_renewal').click(function(){
  var buss_profile2 ="bp.gov_entity,bp.buss_area,bp.buss_total_emp,bp.male_emp,bp.female_emp,bp.unit_vehicle,bp.emp_in_lgu";
  var buss_profile3 ="bp.amendment,bp.amendment_to,bp.buss_email,bp.buss_telno,bp.buss_phone,bp.buss_address,bp.buss_postcode,bp.is_rented";
  var owners_profile ="op.first_name,op.last_name,op.middle_name,op.address,op.mobile,op.tel_no,op.emaill,op.postcode";
- var lessor ="lp.first_name as lessor_fname,lp.last_name as lessor_fname,lp.middle_name as lessor_mname,bp.address,lp.monthly_rental,lp.mobile_no,lp.tel_no,lp.email";
  var buss_line ="bl.buss_line,bl.buss_line_code,bl.sub_category,bl.no_units,bl.capitalization,bl.essential,bl.non_essential";
  var taxpayer = "tp.last_name as tax_lname,tp.first_name as tax_fname,tp.middle_name as tax_mname,tp.franchise";
 
@@ -106,16 +105,14 @@ $('#btn_renewal').click(function(){
          "type[2]" : "inner",
          "ids[2]" : "bp.buss_id = tp.buss_id",
          "where[0]" : "bp.buss_id",
-         "pars[0]" : bussId,
+         "pars[0]" : buss_id,
          "where[1]" : "bl.ranks",
          "pars[1]" : "primary"
        },
        dataType : 'json',
        success : function (res) {
-         console.log(res);
 
           content = res.content;
-          console.log(content);
           if (res.response == true)
           {
           $('#renewal_form').modal('show');
@@ -159,14 +156,12 @@ $('#btn_renewal').click(function(){
 /////////////////////////
 ////////// business line
 ////////////////////////
-
           var data = "<td>"+res.buss_line+"</td>";
           data += "<td>"+res.buss_line_code+"</td>";
           data += "<td>"+res.sub_category+"</td>";
           data += "<td>"+res.no_units+"</td>";
           data += "<td>"+res.capitalization+"</td>";
         $('#business_act').html(data);
-
 
         $.ajax({
           url : global_url+'/api/bplo_api/dynamic/',
@@ -184,12 +179,13 @@ $('#btn_renewal').click(function(){
           },
           dataType : 'json',
           success : function (res) {
-            console.log(res);
 
              var content = res.content;
+              var data = "<tr>"
              for( var i = 0; i<content.length; i++ ){
               const res = content[i];
-             var data = "<td>"+res.buss_line+"</td>";
+
+             data += "<tr><td>"+res.buss_line+"</td>";
              data += "<td>"+res.buss_line_code+"</td>";
              data += "<td>"+res.sub_category+"</td>";
              data += "<td>"+res.no_units+"</td>";
@@ -197,49 +193,55 @@ $('#btn_renewal').click(function(){
              data += "<td>"+res.non_essential+"</td>";
              data += "<td>"+res.capitalization+"</td>";
              // data += "<td>"+res.capitalization+"</td>";
-           $('#add_bussline').html(data);
+             data += "<tr>";
             }
+                 $('#add_bussline').html(data);
           }
-        })
+        });
+
 
 ////////////////////////
 // Lessor's information
 ////////////////////////
-        if(res.is_rented == 1){
-          var lessor ="lp.first_name as lessor_fname,lp.last_name as lessor_lname,lp.middle_name as lessor_mname,bp.address,lp.monthly_rental,lp.mobile_no,lp.tel_no,lp.email";
-          var buss_profile ="bp.user_id,bp.buss_name,bp.tin_no,bp.buss_mop,bp.dt_apply,bp.tin_no,bp.refno,bp.dti_no,bp.dti_dt_reg,bp.buss_type";
-          var bussId = sessionStorage.getItem("bussId");
-          $('#lessors').show();
-          $.ajax({
-          url : global_url+'/api/bplo_api/dynamic/',
-          type : 'POST',
-          data : {
-            column_names : lessor,
-            table_name : 'lessor_profile bp',
-            // "join[0]" : "lessor_profile lp",
-            // "type[0]" : "inner",
-            // "ids[0]" : "bp.buss_id = lp.buss_id",
-            "where[0]" : "bp.buss_id",
-            "pars[0]" : bussId
+    if(res.is_rented == 1){
+      var lessor_profile ="lp.email as lessor_email,lp.first_name,lp.last_name,lp.middle_name,lp.address,lp.monthly_rental,lp.mobile_no,lp.tel_no";
+            $('#lessors').show();
+            $.ajax({
+            url : global_url+'/api/bplo_api/dynamic/',
+            type : 'POST',
+            data : {
+              column_names :lessor_profile,
+              table_name : 'lessor_profile lp',
+              "where[0]" : "lp.buss_id",
+              "pars[0]" : bussId
+            },
+            dataType : 'json',
+            success : function (res) {
+
+              for (var i = 0; i < content.length; i++) {
+                const res = content[i];
+               $('#lessor_name'). html('&nbsp; : ' + res.first_name +" "+ res.last_name );
+               $('#lessor_address'). html('&nbsp; : ' + res.address);
+               $('#monthly_rental'). html('&nbsp; : ' + res.monthly_rental);
+               $('#lessor_email'). html('&nbsp; : ' + res.email);
+               $('#lessor_tel'). html('&nbsp; : ' + res.telno);
+               $('#lessor_mobile'). html('&nbsp; : ' + res.mobile);
+               $('#lessor_emerg'). html('&nbsp; : ' + res.buss_total_emp);
+               $('#emerg_contact'). html('&nbsp; : ' + res.unit_vehicle);
+            }
           },
-          dataType : 'json',
-          success : function (res) {
-            console.log(res);
-             var res = res[0];
-             // $('#lessor_name'). html('&nbsp; : ' + res.lessor_fname +" "+ res.lessor_lname );
-             // $('#lessor_address'). html('&nbsp; : ' + res.address);
-             // $('#monthly_rental'). html('&nbsp; : ' + res.email);
-             // $('#lessor_email'). html('&nbsp; : ' + res.tel_no);
-             // $('#lessor_tel'). html('&nbsp; : ' + res.mobile);
-             // $('#lessor_mobile'). html('&nbsp; : ' + res.buss_area);
-             // $('#lessor_emerg'). html('&nbsp; : ' + res.buss_total_emp);
-             // $('#emerg_contact'). html('&nbsp; : ' + res.unit_vehicle);
+          error: function(xhr)
+          {
+            console.log(xhr.responseText);
           }
-        })
-      }
-      else {
+        });
+        }
+        else {
         $('#lessors').hide();
-      }}}
+        console.log("gsdf");
+      }
+    }
+    }
     },
        error: function(xhr)
        {
