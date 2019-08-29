@@ -63,6 +63,8 @@
     </div>
 
 
+
+
 <div class="wrapper">
   <div class="table table-full align-center">
     <div class="table-row h100">
@@ -77,32 +79,6 @@
 						</p></font>
 					</div>
 
-    {{-- second row --}}
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="dateapp">Date Application</label>
-        <input class="form-control" type="date" value="{{date('Y-m-d')}}" id="date_application" name = "new[date_application]">
-      </div>
-      <div class="form-group col-md-6">
-        <label for='tin'>TIN no.
-        </label>
-        <input type="number" class="form-control tin"  name="new[tin]">
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for='dti1'>DTI/SEC/CDA Registration
-        </label>
-        <input type="text" class="form-control" name="new[dti_sec]" class ="ornum" >
-      </div>
-      <div class="form-group col-md-6">
-        <label for="dti2">DTI/SEC/CDA Number
-        </label>
-        <input type="text" class="form-control" name="new[dti_number]">
-      </div>
-    </div>
-
-
 
           <!-- card -->
           <div class="card">
@@ -110,7 +86,7 @@
               <li data-step="0" class="active">
                 <div class="ui-step-content in">
 
-									<form id="addnewbuss">
+									<form id="renewbuss">
 
 										<div class="">
 											<p align="center"><b>1.	BASIC INFORMATION </b></p>
@@ -119,7 +95,7 @@
 									  {{-- first row --}}
 									    <div class="form-check-inline mb-4">
 									      <label class="form-check-label">
-									         <input type="radio" class="form-check-input"  value="new" name="app[basicnew]" checked>New
+									         <input type="radio" class="form-check-input"  value="renewal" name="renew[basicnew]" checked>Renewal
 									      </label>
 									    </div>
 
@@ -134,17 +110,17 @@
 									    <div class="">
 									      <div class="form-check-inline mb-4">
 									        <label class="">Mode of Payment:
-									           <input type="radio" class="form-check-input" value="Annually" name="app[mud_payment]" checked>Annually
+									           <input type="radio" class="form-check-input" value="Annually" name="renew[mud_payment]" checked>Annually
 									        </label>
 									      </div>
 									      <div class="form-check-inline">
 									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="Semi-Annually" name="app[mud_payment]" disabled>Semi-Annually
+									         <input type="radio" class="form-check-input" value="Semi-Annually" name="renew[mud_payment]" disabled>Semi-Annually
 									       </label>
 									      </div>
 									      <div class="form-check-inline disabled">
 									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="Quarterly" name="app[mud_payment]" disabled>Quarterly
+									         <input type="radio" class="form-check-input" value="Quarterly" name="renew[mud_payment]" disabled>Quarterly
 									       </label>
 									      </div>
 									    </div>
@@ -153,24 +129,24 @@
 									    <div class="form-row">
 									      <div class="form-group col-md-6">
 									        <label for="dateapp">Date Application</label>
-									        <input class="form-control" type="date" value="{{date('Y-m-d')}}" id="date_application" name = "app[date_application]">
+									        <input class="form-control" type="date" value="{{date('Y-m-d')}}" id="date_application" name = "renew[date_application]">
 									      </div>
 									      <div class="form-group col-md-6">
 									        <label for='tin'>TIN no.
 									        </label>
-									        <input type="text" class="form-control tin"  name="app[tin]">
+									        <input type="text" class="form-control tin" id="tin" name="renew[tin]">
 									      </div>
 									    </div>
 									    <div class="form-row">
 									      <div class="form-group col-md-6">
 									        <label for='dti1'>DTI/SEC/CDA Registration Date
 									        </label>
-									        <input type="date"  class="form-control" name="app[dti_sec]" class ="ornum" >
+									        <input type="date"  class="form-control" name="renew[dti_sec]" class ="ornum" id ="dti_sec">
 									      </div>
 									      <div class="form-group col-md-6">
 									        <label for="dti2">DTI/SEC/CDA Number
 									        </label>
-									        <input type="number" class="form-control" name="app[dti_number]">
+									        <input type="number" class="form-control" name="renew[dti_number]" id = "dti_number">
 									      </div>
 									    </div>
 
@@ -178,93 +154,93 @@
 									    <div>
 									      <div class="form-check-inline mb-4">
 									        <label class="form-check-label">Type of Business:
-									           <input type="radio" class="form-check-input" value="5" name="app[typeofbuss]" checked>Single
+									           <input type="radio" class="form-check-input" value="5" name="renew[typeofbuss]" checked>Single
 									        </label>
 									      </div>
 									      <div class="form-check-inline">
 									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="4" name="app[typeofbuss]">Partnership
+									         <input type="radio" class="form-check-input" value="4" name="renew[typeofbuss]">Partnership
 									       </label>
 									      </div>
 									      <div class="form-check-inline">
 									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="3" name="app[typeofbuss]">Corporation
+									         <input type="radio" class="form-check-input" value="3" name="renew[typeofbuss]">Corporation
 									       </label>
 									      </div>
 									      <div class="form-check-inline">
 									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="2" name="app[typeofbuss]">Cooperative
+									         <input type="radio" class="form-check-input" value="2" name="renew[typeofbuss]">Cooperative
 									       </label>
 									      </div>
 												<div class="form-check-inline">
 									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="1" name="app[typeofbuss]">Association
+									         <input type="radio" class="form-check-input" value="1" name="renew[typeofbuss]">Association
 									       </label>
 									      </div>
 									    </div>
-									    <!--
-											NOTE : Ammendments is only for renewal
+
+											<!-- NOTE : Ammendments is only for renewal -->
 
 											<div>
 									      <div class="form-check-inline mb-4">Amendment: &nbsp;
 									        <label class="form-check-label">From:
-									           <input type="radio" class="form-check-input" value="from_single" name="new[amendfrom]">Single
+									           <input type="radio" class="form-check-input" value="from_single" name="renew[amendfrom]">Single
 									        </label>
 									      </div>
 									      <div class="form-check-inline">
 									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="from_partner" name="new[amendfrom]">Partnership
+									         <input type="radio" class="form-check-input" value="from_partner" name="renew[amendfrom]">Partnership
 									       </label>
 									      </div>
 									      <div class="form-check-inline">
 									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="from_corp"name="new[amendfrom]">Corporation
+									         <input type="radio" class="form-check-input" value="from_corp"name="renew[amendfrom]">Corporation
 									       </label>
 									      </div>
 									    </div>
 									    <div>
 									      <div class="form-check-inline mb-4">Amendment: &nbsp;
 									        <label class="form-check-label">To:
-									           <input type="radio" class="form-check-input" value="to_single" name="new[amendto]">Single
+									           <input type="radio" class="form-check-input" value="to_single" name="renew[amendto]">Single
 									        </label>
 									      </div>
 									      <div class="form-check-inline">
 									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="to_partner" name="new[amendto]">Partnership
+									         <input type="radio" class="form-check-input" value="to_partner" name="renew[amendto]">Partnership
 									       </label>
 									      </div>
 									      <div class="form-check-inline">
 									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="to_corp" name="new[amendto]">Corporation
+									         <input type="radio" class="form-check-input" value="to_corp" name="renew[amendto]">Corporation
 									       </label>
 									      </div>
-									    </div> -->
+									    </div>
 
 									    <div class="form-check-inline mb-4">Are you enjoying tax incentive from any Government Entity? &nbsp;
 									      <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="1" name="app[entity]" checked>Yes
+									         <input type="radio" class="form-check-input" value="1" name="renew[entity]" checked>Yes
 									      </label>
 									    </div>
 									    <div class="form-check-inline">
 									     <label class="form-check-label">
-									       <input type="radio" class="form-check-input" value="0" name="app[entity]">No
+									       <input type="radio" class="form-check-input" value="0" name="renew[entity]">No
 									     </label>
 									    </div>
 
 											<div class="form-group-inline mb-4">
 											 <label>Please Specify Entity</label>
-											 <textarea type="text" class="form-control" name="app[buss_specifyentity]" rows="2"></textarea>
+											 <textarea type="text" class="form-control" name="renew[buss_specifyentity]" rows="2"></textarea>
 										 	</div>
 
 											<!-- 			NOTE : added inputfield -->
 											<div class="form-check-inline ">Is the Establishment CCTV equipped? &nbsp;
 												<label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="1" name="app[cctv_eqp]">Yes
+									         <input type="radio" class="form-check-input" value="1" name="renew[cctv_eqp]">Yes
 									      </label>
 									    </div>
 									    <div class="form-check-inline mb-4">
 									     <label class="form-check-label">
-									       <input type="radio" class="form-check-input" value="0" name="app[cctv_eqp]">No
+									       <input type="radio" class="form-check-input" value="0" name="renew[cctv_eqp]">No
 									     </label>
 
 											 </div>
@@ -275,44 +251,44 @@
 									  <div class="form-row">
 									    <div class="form-group col-md-4">
 									      <label for='fname'>Last Name</label>
-									      <input type="text" class="form-control" name="app[tax_last_name]" >
+									      <input type="text" class="form-control" name="renew[tax_last_name]">
 									    </div>
 									    <div class="form-group col-md-4">
 									      <label for="lname">First Name</label>
-									      <input type="text" class="form-control" name="app[tax_first_name]" >
+									      <input type="text" class="form-control" name="renew[tax_first_name]">
 									    </div>
 									    <div class="form-group col-md-4">
 									      <label for="lname">Middle Name</label>
-									      <input type="text" class="form-control" name="app[tax_middle_name]">
+									      <input type="text" class="form-control" name="renew[tax_middle_name]">
 									    </div>
 									  </div>
 									  <div class="form-group">
 									    <label for="email">Business Name</label>
-									    <input type="text" class="form-control" name="app[tax_buss_name]" >
+									    <input type="text" class="form-control" name="renew[tax_buss_name]">
 									  </div>
 									  <div class="form-group">
 									    <label for="address">Trade Name/Franchise</label>
-									    <input type="text" class="form-control" name="app[tax_franchise]" >
+									    <input type="text" class="form-control" name="renew[tax_franchise]">
 									  </div>
 										<!-- NOTE: added input -->
 										<div class="form-group">
 									 	 <label for="address">Name of President/Treasurer of Corporation</label>
-									 	 <input type="text" class="form-control" name="app[tax_president]" >
+									 	 <input type="text" class="form-control" name="renew[tax_president]" >
 									  </div>
 
 										<div class="form-check-inline ">Owner's Gender &nbsp;
 											<label class="form-check-label">
-												 <input type="radio" class="form-check-input" name="app[tax_gender]">Male
+												 <input type="radio" class="form-check-input" name="renew[tax_gender]">Male
 											</label>
 										</div>
 										<div class="form-check-inline mb-4">
 										 <label class="form-check-label">
-											 <input type="radio" class="form-check-input" name="app[tax_gender]">Female
+											 <input type="radio" class="form-check-input" name="renew[tax_gender]">Female
 										 </label>
 										 </div>
 										 <div class="form-check-inline mb-4">
 											<label class="form-check-label">
-												<input type="radio" class="form-check-input" name="app[tax_gender]">JP
+												<input type="radio" class="form-check-input" name="renew[tax_gender]">JP
 											</label>
 											</div>
 												<!-- NOTE: ended here -->
@@ -339,49 +315,49 @@
 									  <div class="form-row">
 									    <div class="form-group col-md-4">
 									      <label>Business Address</label>
-												<input type="text" class="form-control"  placeholder="Bdlg#/Street/Brgy/City" name="app[buss_address]">
+												<input type="text" class="form-control"  placeholder="Bdlg#/Street/Brgy/City" name="renew[buss_address]">
 									      <!-- <textarea type="text" class="form-control" name="app[buss_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea> -->
 									    </div>
 											<!-- NOTE: added field -->
 											<div class="form-group col-md-4">
 												<label>House No./Bldg. No.</label>
-												<input type="number" class="form-control " name="app[buss_houseno]">
+												<input type="number" class="form-control " name="renew[buss_houseno]">
 											</div>
 											<div class="form-group col-md-4">
 												<label>Building Name</label>
-												<input type="text" class="form-control " name="app[buss_bldgname]">
+												<input type="text" class="form-control " name="renew[buss_bldgname]">
 											</div>
 										</div>
 
 										<div class="form-row">
 											<div class="form-group col-md-4">
 												<label>Unit No.</label>
-												<input type="number" class="form-control " name="app[buss_unit]">
+												<input type="number" class="form-control " name="renew[buss_unit]">
 											</div>
 											<div class="form-group col-md-4">
 												<label>Street</label>
-												<input type="text" class="form-control " name="app[buss_street]">
+												<input type="text" class="form-control " name="renew[buss_street]">
 											</div>
 											<div class="form-group col-md-4">
 												<label>Barangay</label>
-												<input type="text" class="form-control " name="app[buss_barangay]">
+												<input type="text" class="form-control " name="renew[buss_barangay]">
 											</div>
 										</div>
 
 										 <div class="form-row">
 											<div class="form-group col-md-4">
 												<label>Subdivision</label>
-												<input type="text" class="form-control " name="app[buss_subdivision]">
+												<input type="text" class="form-control " name="renew[buss_subdivision]">
 											</div>
 
 											<div class="form-group col-md-4">
 												<label>City/Municipality </label>
-												<input type="text" class="form-control " name="app[buss_city]" Placeholder = "San Pablo" value= "San Pablo" disabled>
+												<input type="text" class="form-control " name="renew[buss_city]" Placeholder = "San Pablo" value= "San Pablo" disabled>
 											</div>
 
 											<div class="form-group col-md-4">
 												<label>Province</label>
-												<input type="text" class="form-control " name="app[buss_province]" placeholder ="Laguna"  value= "Laguna" disabled>
+												<input type="text" class="form-control " name="renew[buss_province]" placeholder ="Laguna"  value= "Laguna" disabled>
 											</div>
 										</div>
 
@@ -389,21 +365,21 @@
 										<div class="form-row">
 									    <div class="form-group col-md-6">
 									      <label>Postal Code</label>
-									      <input type="number" class="form-control postcode" name="app[buss_postcode]">
+									      <input type="number" class="form-control postcode" name="renew[buss_postcode]">
 									    </div>
 									    <div class="form-group col-md-6">
 									      <label>Email Address</label>
-									      <input type="email" class="form-control" id ="buss_email" name="app[buss_email]" placeholder="example@email.com">
+									      <input type="email" class="form-control" id ="buss_email" name="renew[buss_email]" placeholder="example@email.com">
 									    </div>
 									  </div>
 									  <div class="form-row">
 									    <div class="form-group col-md-6">
 									      <label>Telephone</label>
-									        <input class="form-control tel" type="tel" name="app[buss_telno]" placeholder="539-966">
+									        <input class="form-control tel" type="tel" name="renew[buss_telno]" placeholder="539-966">
 									    </div>
 									    <div class="form-group col-md-6">
 									      <label>Mobile No.</label>
-									        <input class="form-control mobile" type="tel" name="app[buss_phone]" placeholder="09XX XXX XXXX">
+									        <input class="form-control mobile" type="tel" name="renew[buss_phone]" placeholder="09XX XXX XXXX">
 									    </div>
 									  </div>
 										<hr class="mt-5">
@@ -414,15 +390,15 @@
 										<div class="form-row">
 											<div class="form-group col-md-4">
 												<label>Last Name</label>
-												<input type="text" class="form-control"  name="app[owner_lastname]">
+												<input type="text" class="form-control"  name="renew[owner_lastname]">
 											</div>
 											<div class="form-group col-md-4">
 												<label>First Name</label>
-												<input type="type" class="form-control " name="app[owner_firstname]">
+												<input type="type" class="form-control " name="renew[owner_firstname]">
 											</div>
 											<div class="form-group col-md-4">
 												<label>Middle Name</label>
-												<input type="text" class="form-control " name="app[owner_middlename]">
+												<input type="text" class="form-control " name="renew[owner_middlename]">
 											</div>
 										</div>
 										<!-- NOTE: ended here -->
@@ -430,71 +406,71 @@
 									<div class="form-row">
 										<div class="form-group col-md-4">
 											<label>Owner's Address</label>
-											<input type="text" class="form-control"  placeholder="Bdlg#/Street/Brgy/City" name="app[owner_address]">
+											<input type="text" class="form-control"  placeholder="Bdlg#/Street/Brgy/City" name="renew[owner_postcode]">
 											<!-- <textarea type="text" class="form-control" name="app[buss_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea> -->
 										</div>
 										<!-- NOTE: added field -->
 										<div class="form-group col-md-4">
 											<label>House No./Bldg. No.</label>
-											<input type="number" class="form-control " name="app[owner_houseno]">
+											<input type="number" class="form-control " name="renew[owner_houseno]">
 										</div>
 										<div class="form-group col-md-4">
 											<label>Building Name</label>
-											<input type="text" class="form-control " name="app[owner_bldgname]">
+											<input type="text" class="form-control " name="renew[owner_bldgname]">
 										</div>
 									</div>
 
 									<div class="form-row">
 										<div class="form-group col-md-4">
 											<label>Unit No.</label>
-											<input type="number" class="form-control " name="app[owner_unit]">
+											<input type="number" class="form-control " name="renew[owner_unit]">
 										</div>
 										<div class="form-group col-md-4">
 											<label>Street</label>
-											<input type="text" class="form-control " name="app[owner_street]">
+											<input type="text" class="form-control " name="renew[owner_street]">
 										</div>
 										<div class="form-group col-md-4">
 											<label>Barangay</label>
-											<input type="text" class="form-control " name="app[owner_barangay]">
+											<input type="text" class="form-control " name="renew[owner_barangay]">
 										</div>
 									</div>
 
 									 <div class="form-row">
 										<div class="form-group col-md-4">
 											<label>Subdivision</label>
-											<input type="text" class="form-control " name="app[owner_subdivision]">
+											<input type="text" class="form-control " name="renew[owner_subdivision]">
 										</div>
 
 										<div class="form-group col-md-4">
 											<label>City/Municipality </label>
-											<input type="text" class="form-control " name="app[owner_city]" Placeholder = "San Pablo" value = "San Pablo" disabled>
+											<input type="text" class="form-control " name="renew[owner_city]" Placeholder = "San Pablo" value = "San Pablo" disabled>
 										</div>
 
 										<div class="form-group col-md-4">
 											<label>Province</label>
-											<input type="text" class="form-control " name="app[owner_province]" placeholder ="Laguna" value = "San Pablo" disabled>
+											<input type="text" class="form-control " name="renew[owner_province]" placeholder ="Laguna" value = "Laguna" disabled>
 										</div>
 									</div>
 									<!-- NOTE: ended here -->
 									 <div class="form-row">
 									    <div class="form-group col-md-6">
 									      <label>Postal Code</label>
-									      <input type="number" class="form-control postcode" name="app[owner_postcode]">
+									      <input type="number" class="form-control postcode" name="renew[owner_postcode]">
 									    </div>
 									    <div class="form-group col-md-6">
 									      <label>Email Address</label>
-									      <input type="email" class="form-control" id ="owner_email" name="app[owner_email]" placeholder="example@email.com">
+									      <input type="email" class="form-control" id ="owner_email" name="renew[owner_email]" placeholder="example@email.com">
 									    </div>
 										</div>
 
 									  <div class="form-row">
 									    <div class="form-group col-md-6">
 									      <label>Telephone</label>
-									        <input class="form-control tel" type="tel" name="app[owner_tel_no]" placeholder="539-966">
+									        <input class="form-control tel" type="tel" name="renew[owner_tel_no]" placeholder="539-966">
 									    </div>
 									    <div class="form-group col-md-6">
 									      <label>Mobile No.</label>
-									        <input class="form-control mobile" type="tel" name="app[owner_mobile]" placeholder="09XX XXX XXXX">
+									        <input class="form-control mobile" type="tel" name="renew[owner_mobile]" placeholder="09XX XXX XXXX">
 									    </div>
 									  </div>
 
@@ -525,7 +501,7 @@
 									  <div class="form-row">
 									    <div class="form-group col-md-6">
 									      <label>Business Area</label>
-									        <input class="form-control" type="number" name="app[buss_area]" placeholder="In sq m">
+									        <input class="form-control" type="number" name="renew[buss_area]" placeholder="In sq m">
 									    </div>
 
 									    <!--
@@ -537,23 +513,23 @@
 
 									    <div class="form-group col-md-2 mb-2" >
 									      <label style="white-space: nowrap">No. of Employees Residing within</label>
-									        <input class="form-control" type="number" name="app[emp_in_lgu]" placeholder="LGU">
+									        <input class="form-control" type="number" name="renew[emp_in_lgu]" placeholder="LGU">
 									    </div>
 									    <div class="form-group col-md-2 mt-2">
 									      <label></label>
-									        <input class="form-control" type="number" name="app[male_emp]" placeholder="Male">
+									        <input class="form-control" type="number" name="renew[male_emp]" placeholder="Male">
 									    </div>
 									    <div class="form-group col-md-2 mt-2">
 									      <label></label>
 												<input type="hidden" name="app[buss_user_id]" id="userid" value="">
-									        <input class="form-control" type="number" name="app[female_emp]" placeholder="Female">
+									        <input class="form-control" type="number" name="renew[female_emp]" placeholder="Female">
 									    </div>
 									  </div>
 
                     <div class="form-row">
                     <div class="form-group col-md-6 mt-2">
                       <label></label>
-                        <input class="form-control" type="number" name="app[service_vehicle]" placeholder="Unit of Service Vehicle">
+                        <input class="form-control" type="number" name="renew[service_vehicle]" placeholder="Unit of Service Vehicle">
                       </div>
                     </div>
 
@@ -568,33 +544,33 @@
 
 									    <div class="form-group col-md-4">
 									      <label>Lessor's Full Name</label>
-									      <input type="text" class="form-control" name="app[lessor_last_name]" placeholder="Last Name">
+									      <input type="text" class="form-control" name="renew[lessor_last_name]" placeholder="Last Name">
 									    </div>
 									    <div class="form-group col-md-4 mt-2">
 									      <label ></label>
-									      <input type="text" class="form-control" name="app[lessor_first_name]" placeholder="First Name">
+									      <input type="text" class="form-control" name="renew[lessor_first_name]" placeholder="First Name">
 									    </div>
 									    <div class="form-group col-md-4 mt-2">
 									      <label></label>
-									      <input type="text" class="form-control" name="app[lessor_middle_name]" placeholder="Middle Name">
+									      <input type="text" class="form-control" name="renew[lessor_middle_name]" placeholder="Middle Name">
 									    </div>
 									    <div class="form-group col-md-12">
 									      <label>Lessor'Full Adress</label>
-									      <textarea type="text" class="form-control" name="app[lessor_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
+									      <textarea type="text" class="form-control" name="renew[lessor_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
 									    </div>
 									  </div>
 									  <div class="form-row">
 									    <div class="form-group col-md-4">
 									      <label>Telephone/Mobile No.</label>
-									        <input class="form-control" type="tel" name="app[lessor_tel_no]" placeholder="539-1234 / 09123456789">
+									        <input class="form-control" type="tel" name="renew[lessor_tel_no]" placeholder="539-1234 / 09123456789">
 									    </div>
 									    <div class="form-group col-md-6">
 									      <label>Email Address</label>
-									        <input class="form-control" type="email" name="app[lessor_email]" placeholder="Email Address">
+									        <input class="form-control" type="email" name="renew[lessor_email]" placeholder="Email Address">
 									    </div>
 									    <div class="form-group col-md-2">
 									      <label>Monthly Rental</label>
-									        <input class="form-control" type="number" name="app[lessor_monthly_rental]" placeholder="">
+									        <input class="form-control" type="number" name="renew[lessor_monthly_rental]" placeholder="">
 									    </div>
 									  </div>
 
@@ -612,8 +588,7 @@
 							  <div class="form-row mb-3 mt-3">
 							    <div class="form-group col-md-3">
 										<label >Line of Business</label>
-                    <!-- name="bussactivity[bussactivity_linebuss]"  -->
-										<select class="form-control addlinebuss1" name="app[buss_line]" id="addline1">
+										<select class="form-control addlinebuss1" name="buss_activity[bussactivity_linebuss]" id="addline1">
 										<option selected value="">Line of Business</option>
 										<?php
 										$linebuss = array("Manufacturers", "Wholesalers, distributors, or dealers", "Retailers", "Food","Contractors","Banks and other financial institutions","Lease","Lessor of real property","Tobacco dealers","Dealers of Liquors","Amusement Places and Devices","Theater and Cinema","Other business");
@@ -626,26 +601,34 @@
 										</select>    </div>
 										<div class="form-group col-md-3">
 											<label for='fname'>Code of Business</label>
-												<select class="form-control" name="app[buss_line_code]" id="addcode1">
+												<select class="form-control" name="buss_activity[busact_addcode]" id="addcode1">
 													<option selected value="" selected>Code of Business</option>
 												</select>
 										</div>
                       <!-- NOTE: added inputfield Sub Category -->
                     <div class="form-group col-md-2">
                       <label >Sub Category</label>
-                      <input type="text" class="form-control" name="app[sub_category]" placeholder="">
+                      <input type="text" class="form-control" name="renew[subcategory]" placeholder="">
                     </div>
 							    <div class="form-group col-md-2">
 							      <label >No. of Units</label>
-							      <input type="number" class="form-control" name="app[no_units]" placeholder="">
+							      <input type="number" class="form-control" name="renew[no_units]" placeholder="">
 							    </div>
 							    <div class="form-group col-md-2">
 							      <label >Capitalization</label>
-							      <input type="text" class="form-control money" name="app[capitalization]" placeholder="">
+							      <input type="text" class="form-control money" name="renew[capitalization]" placeholder="">
 							    </div>
-
-
 							  </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Essentials</label>
+                    <input type="text" class="form-control" name="renew[essentials]">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Non-Essentials</label>
+                    <input type="text" class="form-control" name="renew[non-essentials]">
+                  </div>
+                </div>
               </div>
               </li>
 
@@ -657,9 +640,9 @@
 									      </div>
 
 									      <div class="form-row">
-												<div class="form-group col-md-2">
+												<div class="form-group col-md-3">
 													<label >Line of Business</label>
-                          <select class="form-control addlinebuss" name="app[buss_line]" id="addline">
+													<select class="form-control addlinebuss" name="renew[bussactivity_linebuss]" id="addline">
 													<option selected value=" ">Line of Business</option>
 													<?php
 													$linebuss = array("Manufacturers", "Wholesalers, distributors, or dealers", "Retailers", "Food","Contractors","Banks and other financial institutions","Lease","Lessor of real property","Tobacco dealers","Dealers of Liquors","Amusement Places and Devices","Theater and Cinema","Other business");
@@ -674,8 +657,8 @@
 
 
 													<div class="form-group col-md-2">
-														<label for='fname'>Code</label>
-															<select class="form-control" name="app[buss_line_code]" id="addcode">
+														<label for='fname'>Code of Business</label>
+															<select class="form-control" name="renew[busact_addcode]" id="addcode">
 																<option selected value="">Code of Business</option>
 															</select>
 														</div>
@@ -683,33 +666,27 @@
 												<div class="form-group col-md-2">
 													<div class="md-form">
 											      <label for="addsubcat">Sub Category</label>
-														<input type="text" id="addsubcat" name="app[sub_category]" class="form-control">
+														<input type="text" id="addsubcat" name="renew[essentials]" class="form-control">
 													</div>
 												</div>
                         <!-- NOTE: added inputfield no.units -->
-
-                        <div class="form-group col-md-1">
-                          <label >Unit's No.</label>
-                          <input type="number" id="addunits" class="form-control" name="app[no_units]" placeholder="">
-                        </div>
-
                         <div class="form-group col-md-2">
-                          <label >Essentials</label>
-                          <input type="number" id="addessen" class="form-control" name="app[essentials]" placeholder="">
-                        </div>
-                        <div class="form-group col-md-2">
-                          <label >Non Essentials</label>
-                          <input type="number" id="addnonessen" class="form-control" name="app[non_essentials]" placeholder="">
-                        </div>
-                        <div class="form-group col-md-1">
-                          <label>Capitalization</label>
-                          <input type="text" id="addcap" name="app[capitalization]" class="form-control money">
-                          <!-- <input type="hidden" id="" name="app[ranks]" class="form-control" value="secondary"> -->
-                        </div>
-                        </div>
+      							      <label >No. of Units</label>
+      							      <input type="number" id="addunits" class="form-control" name="renew[no_units]" placeholder="">
+      							    </div>
+												<div class="form-group col-md-2">
+													<div class="md-form">
+									          <label for="addcap">Capitalization</label>
+									          <input type="text" id="addcap" name="renew[capital]" class="form-control money">
+													</div>
+												</div>
 
-
-
+									      <div class="form-group col-md-1">
+									        <label for="addcap">Add</label>
+									        <!-- <button type="submit" class="btn btn-primary" name="button"  value="ADD">ADD</button> -->
+									        <button type="button" class="btn btn-success" name="button" id ="addlineRenewRow"  >ADD</button>
+									      </div>
+									    </div>
 
 
 									    <div class="form-group col-md-12">
@@ -718,10 +695,7 @@
 									          <tr>
 									            <th scope="col">Line of Business</th>
 									            <th scope="col">Code</th>
-                              <th scope="col">Sub Category</th>
-                              <th scope="col">Unit's No.</th>
-                              <th scope="col">Essentials</th>
-									            <th scope="col">Non Essentials</th>
+									            <th scope="col">Sub Category</th>
 									            <th scope="col">Capitalization</th>
 									            <th scope="col">Action</th>
 									          </tr>
@@ -730,10 +704,6 @@
 									        </tbody>
 									      </table>
 									    </div>
-
-                      <div class="form-row float-right mb-2">
-                        <button type="button" class="btn btn-primary "  name="button" id ="addlineaddRow"  >ADD</button>
-                    </div>
 										 </div>
               </li>
 
@@ -775,267 +745,7 @@
   </div>
   </div>
 
-
-  <div class="mt-5">
-    <p align="center"><b>2.	OTHER INFORMATION </b></p>
-  </div>
-  <div>
-    <p class="mb-4"><font color="red">Note:<b> For renewal applications,</b> do not fill up this section unless certain information have changed.
-    </p></font>
-  </div>
-
-  {{-- BUSINESS INFORMATION --}}
-  <div class="form-row">
-    <div class="form-group col-md-12">
-      <label>Business Address</label>
-      <textarea type="text" class="form-control" name="new[bussinfo_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label>Postal Code</label>
-      <input type="number" class="form-control postcode" name="other[bussinfo_postal]">
-    </div>
-    <div class="form-group col-md-6">
-      <label>Email Adress</label>
-      <input type="email" class="form-control" name="other[bussinfo_email]" placeholder="example@email.com">
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label>Telephone</label>
-        <input class="form-control tel" type="tel" name="other[bussinfo_tel]" placeholder="539-966">
-    </div>
-    <div class="form-group col-md-6">
-      <label>Mobile No.</label>
-        <input class="form-control mobile" type="tel" name="other[bussinfo_mobile]" placeholder="09XX XXX XXXX">
-    </div>
-  </div>
-
-{{-- OWNER INFORMATIONS --}}
-  <div class="form-row mt-5">
-    <div class="form-group col-md-12">
-      <label>Owner's Adress</label>
-      <textarea type="text" class="form-control" name="owner[owner_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label>Postal Code</label>
-      <input type="number" class="form-control postcode" name="owner[owner_postal]">
-    </div>
-    <div class="form-group col-md-6">
-      <label>Email Adress</label>
-      <input type="email" class="form-control" name="owner[owner_email]" placeholder="example@email.com">
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label>Telephone</label>
-        <input class="form-control tel" type="tel" name="owner[owner_tel]" placeholder="539-966">
-    </div>
-    <div class="form-group col-md-6">
-      <label>Mobile No.</label>
-        <input class="form-control mobile" type="tel" name="owner[owner_mobile]" placeholder="09XX XXX XXXX">
-    </div>
-  </div>
-
-
-{{-- IN CASE OF EMERGENCY INFORMATIONS --}}
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label>In Case of emergency, provide name of contact person: </label>
-      <input type="text" class="form-control" name="other[emergency_fname]" placeholder="First Name">
-    </div>
-    <div class="form-group col-md-6">
-      <label>&nbsp;</label>
-      <input type="text" class="form-control" name="other[emergency_lname]" placeholder="Last Name">
-    </div>
-  </div>
-
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label>Telephone/Mobile No.</label>
-        <input class="form-control tel" type="tel" name="other[emergency_tel]" placeholder="539-966">
-    </div>
-    <div class="form-group col-md-6">
-      <label>Email Address</label>
-        <input class="form-control" type="email" name="other[emergency_email]" placeholder="Email Address">
-    </div>
-  </div>
-
-  <div class="form-row">
-    <div class="form-group col-md-2">
-      <label>Business Area</label>
-        <input class="form-control" type="number" name="other[buss_area]" placeholder="In sq m">
-    </div>
-    <div class="form-group col-md-4">
-      <label>Total No. of Employees in Establishment</label>
-        <input class="form-control" type="number" name="other[totalno_employees]" placeholder="Total Number of Employees">
-    </div>
-
-    <div class="form-group col-md-2 mb-2" >
-      <label style="white-space: nowrap">No. of Employees Residing within</label>
-        <input class="form-control" type="number" name="other[noemployees_lgu]" placeholder="LGU">
-    </div>
-    <div class="form-group col-md-2 mt-2">
-      <label></label>
-        <input class="form-control" type="number" name="other[noemployees_male]" placeholder="Male">
-    </div>
-    <div class="form-group col-md-2 mt-2">
-      <label></label>
-        <input class="form-control" type="number" name="other[noemployees_female]" placeholder="Female">
-    </div>
-  </div>
-
-
-  <div>
-    <p class="mt-5 mb-4"><font color="red">Note: <b>Fill Up Only if Business Place is Rented</b>
-    </p></font>
-  </div>
-
-  <div class="form-row">
-
-    <div class="form-group col-md-4">
-      <label>Lessor's Full Name</label>
-      <input type="text" class="form-control" name="lessor[lessor_lname]" placeholder="Last Name">
-    </div>
-    <div class="form-group col-md-4 mt-2">
-      <label ></label>
-      <input type="text" class="form-control" name="lessor[lessor_fname]" placeholder="First Name">
-    </div>
-    <div class="form-group col-md-4 mt-2">
-      <label></label>
-      <input type="text" class="form-control" name="lessor[lessor_mname]" placeholder="Middle Name">
-    </div>
-    <div class="form-group col-md-12">
-      <label>Lessor'Full Adress</label>
-      <textarea type="text" class="form-control" name="lessor[lessor_fulladdress]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-4">
-      <label>Telephone/Mobile No.</label>
-        <input class="form-control" type="tel" name="lessor[lessor_telephoneno]" placeholder="539-1234 / 09123456789">
-    </div>
-    <div class="form-group col-md-6">
-      <label>Email Address</label>
-        <input class="form-control" type="email" name="lessor[lessor_emailadd]" placeholder="Email Address">
-    </div>
-    <div class="form-group col-md-2">
-      <label>Monthly Rental</label>
-        <input class="form-control" type="number" name="lessor[lessor_monthlyrental]" placeholder="">
-    </div>
-  </div>
-
-    <div class="mt-5">
-      <p align="center"><b>3. BUSINESS ACTIVITY</b></p>
-    </div>
-  <div class="form-row">
-    <div class="form-group col-md-4">
-      <label >Line of Busniness</label>
-      <input type="text" class="form-control" name="bussactivity[bussactivity_linebuss]" placeholder="Name of Business">
-    </div>
-    <div class="form-group col-md-2">
-      <label >No. of Units</label>
-      <input type="number" class="form-control" name="bussactivity[bussact_nounits]" placeholder="">
-    </div>
-    <div class="form-group col-md-2">
-      <label >Capitalization</label>
-      <input type="number" class="form-control" name="bussactivity[bussact_capital]" placeholder="">
-    </div>
-    <div class="form-group col-md-2">
-      <label>Essential</label>
-      <input type="number" class="form-control" name="bussactivity[bussact_essential]" placeholder="">
-    </div>
-    <div class="form-group col-md-2">
-      <label>Non-Essential</label>
-      <input type="number" class="form-control" name="bussactivity[bussact_nonessential]" placeholder="">
-    </div>
-
-  </div>
-
-
-      <div class="mt-5">
-        <p align="center"><b>4. ADDITIONAL LINE OF BUSINESS</b></p>
-      </div>
-
-      <div class="form-row">
-			<div class="form-group col-md-3">
-			  <label for='fname'>Line of Business</label>
-					<select class="form-control" name="new[busact_addline]" id="addline">
-						<option selected value="">Line of Business</option>
-						<?php
-						$linebuss = array("Manufacturers", "Wholesalers","distributors, or dealers", "Retailers", "Food","Contractors","Banks and other financial institutions","Lease","Lessor of real property","Tobacco dealers","Dealers of Liquors","Amusement Places and Devices","Theater and Cinema","Other business");
-						foreach($linebuss as $linebus){
-						?>
-						 <option value="<?php echo strtolower($linebus); ?>"><?php echo $linebus; ?></option>
-						<?php
-						}
-						?>
-					</select>
-				</div>
-
-
-				<div class="form-group col-md-3">
-					<label for='fname'>Code of Business</label>
-						<select class="form-control" name="new[busact_addcode]" id="addcode">
-							<option selected value="">Code of Business</option>
-							<?php
-							$addcode = array("Assemblers", "Re-packers", "Processors", "Brewers", "Distillers", "Rectifiers","Compounders of Liquors","Distilled Spirits","Wines","Bakery","Woodcraft/ Handicraft (Stuffed Toys)","Compounding (Distillers)","Oil Extraction","Food Processing - Ube Making", "Ice Cream Making","Body Builder (Jeep)");
-							// $addcode2 = array("Water Refilling", "Boutique", "Dry Goods", "Ambulant/ Grocery", "Dry Goods/RTW", "Mini-Mart","Cedera","Glassware/ Aluminum","Cell Phone Accessories","Petshop ","Jewelries","Junkshop","Gift Shop","Radio Equipment", "Party Shop","Subdivision/Realty","Flower Shop/ Seedlings","Medical Supplies","Footwear","Relief Goods","Car Accessories","Hardware");
-							foreach($addcode as $addcod){
-							?>
-							 <option value="<?php echo strtolower($addcod); ?>"><?php echo $addcod; ?></option>
-							<?php
-							}
-							?>
-						</select>
-					</div>
-
-			<!-- <div class="form-group col-md-3">
-			 <label for='fname'>Code of Business</label>
-					<select class="form-control" name="new[busact_addcode]" id="addcode">
-						<option selected value="">CODE</option>
-            <option value="Single">Single</option>
-            <option value="Partnership">Partnership</option>
-            <option value="Corporation">Corporation3</option>
-            <option value="Cooperative">Cooperative</option>
-					</select>
-				</div> -->
-
-			<div class="form-group col-md-3">
-				<div class="md-form">
-		      <label for="addsubcat">Sub Category</label>
-					<input type="text" id="addsubcat" name="new[busact_addsubcat]" class="form-control">
-				</div>
-			</div>
-			<div class="form-group col-md-2">
-				<div class="md-form">
-          <label for="addcap">Capitalization</label>
-          <input type="text" id="addcap" name="new[busact_addcap]" class="form-control money">
-				</div>
-			</div>
-
-      <div class="form-group col-md-1">
-        <label for="addcap">Add</label>
-        <!-- <button type="submit" class="btn btn-primary" name="button"  value="ADD">ADD</button> -->
-        <button type="button" class="btn btn-success" name="button" id ="addlineaddRow"  >ADD</button>
-      </div>
-    </div>
-
-
-    <div class="form-group col-md-12">
-      <table id="addnewline" class="table table-sm table-striped table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">Line of Business</th>
-            <th scope="col">Code</th>
-            <th scope="col">Sub Category</th>
-            <th scope="col">Capitalization</th>
-            <th scope="col">Action</th>
-          </tr>
-        </thead>
-        <!-- <tbody id="addtnline_table"> -->
-        </tbody>
-      </table>
-    </div>
+<!-- ////formmm -->
 
 
 @endsection
