@@ -173,8 +173,8 @@
                 <td> <input type="checkbox" class="form-check-input" id="auto-gross"></td>
               </tr>
               <tr>
-                <td>Essentials</td>
-                <td>Non-Essentials</td>
+                <td>Essentials<input type="text" placeholder="" name="gross[essential]" id="username" required/></td>
+                <td>Non-Essentials<input type="text" placeholder="" name="gross[non-essential]" id="username" required/></td>
               </tr>
               <tr>
                 <td><span id="essentials"></span></td>

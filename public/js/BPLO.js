@@ -47,6 +47,8 @@ $('#addnewbuss').submit(function(e){
                   'addline[capitalization]' : add_line_buss[i].busact_addcap.replace(/,/g,''),
                   'addline[essential]' : 0,
                   'addline[non_essential]' : 0,
+                  // 'addline[essential]' : add_line_buss[i].busact_addessen
+                  // 'addline[non_essential]' : add_line_buss[i].busact_addnonessen,
                   'addline[ranks]' : 'secondary',
                   'addline[buss_id]' : buss_id
                 },
@@ -91,26 +93,35 @@ $('#addlineaddRow').click(function(){
     var td3 = document.createElement("td");
     var td4 = document.createElement("td");
     var td5 = document.createElement("td");
+    var td6 = document.createElement("td");
+    var td7 = document.createElement("td");
+    var td8 = document.createElement("td");
 
     td1.innerHTML = document.getElementById("addline").value;
     td2.innerHTML = document.getElementById("addcode").value;
     td3.innerHTML = document.getElementById("addsubcat").value;
-    td4.innerHTML = document.getElementById("addcap").value;
-    // onclick="addlinerowdelete(this)
-    // id ="addlinerowdelete"
-    td5.innerHTML = '<a class="btn btn-sm btn-warning" onclick="addlinerowdelete(this)" >Delete</a>';
+    td4.innerHTML = document.getElementById("addunits").value;
+    td5.innerHTML = document.getElementById("addessen").value;
+    td6.innerHTML = document.getElementById("addnonessen").value;
+    td7.innerHTML = document.getElementById("addcap").value;
+    td8.innerHTML = '<a class="btn btn-sm btn-warning" onclick="addlinerowdelete(this)" >Delete</a>';
 
     row.appendChild(td1);
     row.appendChild(td2);
     row.appendChild(td3);
     row.appendChild(td4);
     row.appendChild(td5);
+    row.appendChild(td6);
+    row.appendChild(td7);
+    row.appendChild(td8);
 
     table.children[0].appendChild(row);
     $('#addline').val('');
     $('#addcode').val('');
     $('#addunits').val('');
     $('#addsubcat').val('');
+    $('#addessen').val('');
+    $('#addnonessen').val('');
     $('#addcap').val('');
 
 
