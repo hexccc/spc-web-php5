@@ -38,8 +38,6 @@
             </div>
           </div> -->
 
-
-
           <table id="" class="table table-sm table-striped table-bordered">
             <thead>
               <tr>
@@ -173,8 +171,8 @@
                 <td> <input type="checkbox" class="form-check-input" id="auto-gross"></td>
               </tr>
               <tr>
-                <td>Essentials <input type="text" placeholder="" name="gross[essential]" id="" class="ml-2" required/></td>
-                <td>Non-Essentials <input type="text" placeholder="" name="gross[non-essential]" id="" class="ml-2" required/></td>
+                <td> <input type="text" placeholder="Essentials" name="gross[essential]" id="" class=" form-control" required/></td>
+                <td> <input type="text" placeholder="Non-Essentials" name="gross[non-essential]" id="" class=" form-control" required/></td>
               </tr>
               <tr>
                 <td><span id="essentials"></span></td>
@@ -200,6 +198,58 @@
                 <!-- -->
               </tr>
             </table>
+
+
+            <!-- <div class="form-row">
+            <div class="form-group col-md-2">
+              <label >Line of Business</label>
+              <select class="form-control addlinebuss" name="app[buss_line]" id="addline">
+              <option selected value=" ">Line of Business</option>
+              <?php
+              $linebuss = array("Manufacturers", "Wholesalers, distributors, or dealers", "Retailers", "Food","Contractors","Banks and other financial institutions","Lease","Lessor of real property","Tobacco dealers","Dealers of Liquors","Amusement Places and Devices","Theater and Cinema","Other business");
+              foreach($linebuss as $linebus){
+              ?>
+               <option value="<?php echo strtolower($linebus); ?>"><?php echo $linebus; ?></option>
+              <?php
+              }
+              ?>
+              </select>
+              </div>
+
+
+              <div class="form-group col-md-2">
+                <label for='fname'>Code</label>
+                  <select class="form-control" name="app[buss_line_code]" id="addcode">
+                    <option selected value="">Code of Business</option>
+                  </select>
+                </div>
+
+            <div class="form-group col-md-2">
+              <div class="md-form">
+                <label for="addsubcat">Sub Category</label>
+                <input type="text" id="addsubcat" name="app[sub_category]" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group col-md-1">
+              <label >Unit's No.</label>
+              <input type="number" id="addunits" class="form-control" name="app[no_units]" placeholder="">
+            </div>
+
+            <div class="form-group col-md-2">
+              <label >Essentials</label>
+              <input type="number" id="addessen" class="form-control" name="app[essentials]" placeholder="">
+            </div>
+            <div class="form-group col-md-2">
+              <label >Non Essentials</label>
+              <input type="number" id="addnonessen" class="form-control" name="app[non_essentials]" placeholder="">
+            </div>
+            <div class="form-group col-md-1">
+              <label>Capitalization</label>
+              <input type="text" id="addcap" name="app[capitalization]" class="form-control money">
+               <input type="hidden" id="" name="app[ranks]" class="form-control" value="secondary">
+            </div>
+            </div> -->
 
               <table id="addnewline" class="table table-sm table-striped table-bordered">
               <thead>
