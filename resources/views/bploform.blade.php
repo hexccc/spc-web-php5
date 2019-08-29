@@ -173,8 +173,8 @@
                 <td> <input type="checkbox" class="form-check-input" id="auto-gross"></td>
               </tr>
               <tr>
-                <td>Essentials<input type="text" placeholder="" name="gross[essential]" id="username" required/></td>
-                <td>Non-Essentials<input type="text" placeholder="" name="gross[non-essential]" id="username" required/></td>
+                <td>Essentials <input type="text" placeholder="" name="gross[essential]" id="" class="ml-2" required/></td>
+                <td>Non-Essentials <input type="text" placeholder="" name="gross[non-essential]" id="" class="ml-2" required/></td>
               </tr>
               <tr>
                 <td><span id="essentials"></span></td>
@@ -224,7 +224,7 @@
 
 
           </table>
-          <a class="btn btn-info" href="signin_requestor/" >Submit</a>
+          <a class="btn btn-info" href="" >Submit</a>
         </div>
       </div>
     </div>
