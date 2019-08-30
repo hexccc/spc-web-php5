@@ -40,7 +40,7 @@
               </li>
             </div>
             <div class="dropdown-item"><li><a class="text-body btn btn-block" href="sanpablenos">San Pableños</a></li></div>
-            <div class="dropd1own-item"><li><a class="text-body btn btn-block" href="barangay">Barangays</a></li></div>
+            <div class="dropdown-item"><li><a class="text-body btn btn-block" href="barangay">Barangays</a></li></div>
             <div class="dropdown-item"><li><a class="text-body btn btn-block" href="hymn">Hymn</a></li></div>
           </ul>
       </li>
