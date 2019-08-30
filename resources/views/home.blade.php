@@ -219,6 +219,21 @@
             class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
             Unliquidated-2018
             </a>
+            <a style="font-size:12px;"
+            href="{{URL::asset('docs/SCF.xlsx')}}" target="_blank"
+            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+            Statement of  Cash Flows - General Fund
+            </a>
+            <a style="font-size:12px;"
+            href="{{URL::asset('docs/SFP.xlsx')}}" target="_blank"
+            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+            Condensed Statement of Financial Performance - GF
+            </a>
+            <a style="font-size:12px;"
+            href="{{URL::asset('docs/SFPBS.xlsx')}}" target="_blank"
+            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true">
+            Condensed Statement of Financial Position - GF
+            </a>
           </div>
         </div>
       </div>
@@ -247,7 +262,7 @@
         </div>
         <div class="card border-primary card-body ">
           <img class="align-middle" src="{{URL::asset('image/flag.gif')}}">
-          <p class="text-center">Happy Independence Day from The City Government of San Pablo</br> <b style="font-size:1rem;">Independence Day June 12, 2019</b> </br></p>
+          <p class="text-center">Happy National Heroes' Day from The City Government of San Pablo</br> <b style="font-size:1rem;">National Heroes' Day August 26, 2019</b> </br></p>
         </div>
       </div>
     </div>
@@ -279,11 +294,15 @@
         </div>
       </div>
     </div>
+    <div class="card border-primary mb-4">
+      <h2 class="text-white card-title border-primary text-center mt-0" >Visitor's Counter:</h2>
+      <h3 class="text-center py-2" style="background-color:#48C9B0;border-radius:20px; color:white;">{{ $count }}</h3>
+    </div>
     {{-- 3rd row end --}}
 
   </div>
   <div class="float-right mr-3">
-    <p>Visitor's Counter: {{ $count }}</p>
+
   </div>
 
   <script src="/js/modal.js"></script>

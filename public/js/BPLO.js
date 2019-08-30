@@ -1,6 +1,10 @@
 var add_line_buss = [];
 
-// var global_url = 'http://192.168.100.207:8080';
+
+var global_url = 'http://192.168.100.207:8080';
+
+//var global_url = 'http://81cdf678.ngrok.io';
+
 
 var global_url = 'http://795a28e3.ngrok.io/';
 var userSession = sessionStorage.getItem("user_id");

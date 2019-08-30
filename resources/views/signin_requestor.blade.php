@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'BPLO Online Application')
 @section('content')
 
 
