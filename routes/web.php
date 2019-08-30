@@ -147,19 +147,31 @@ Route::get('getLatestNews', 'new_controller@getAllNewsHeadlines');
 
 //////////////
 ///BPLO Routes
-Route::get('/multistep', function(){
-  return view('multistep');
+
+Route::get('/form', function(){
+  return view('form');
 });
 
-// Route::get('/form/{name?}', function($name = ' '){
-//     return view('form',['name'=> $name  ]);
+// Route::get('/form_renewal/{user?}', function($user){
+//     // Session::get("username")
+//     // Session::put('username', $username);
+// if (Request::ajax())
+// {
+//
+// }
+// return view('form_renewal',['user'=> $user]);
 // });
 
-Route::get('/form/{name?}', function($name = ' '){
-    // Session::get("username")
-    // Session::put('username', $username);
-    return view('form',['name'=> $name]);
+Route::get('bploform', function($user)
+{
+  if (Request::ajax())
+  {
+    $bussId = $user->$bussId;
+    return $bussid;
+  }
+ return view('bploform')->with('bussId',$bussId);
 });
+
 Route::get('/signin_requestor', function () {
     return view('signin_requestor');
 });
@@ -172,10 +184,11 @@ Route::get('/logout', function() {
    }
  });
 
- Route::get('/bploform', function() {
-       return view('/bploform');
-  });
+Route::get('/form_renewal/{buss_id?}', 'JController@form_renewal');
 
+Route::get('/renewal', 'JController@renewal');
+
+Route::get('/bploform', 'JController@bploform');
 
 Route::post('/addnewbuss', 'JController@addnewbuss');
 
@@ -184,3 +197,9 @@ Route::get('/addlineofbuss', 'JController@addlineofbuss');
 Route::post('/addReg', 'JController@addReg');
 
 Route::post('/signinReg', 'JController@signinReg');
+
+Route::get('/checkinputs', 'JController@checkinputs');
+
+Route::get('/ammendments', function () {
+    return view('ammendments');
+});
