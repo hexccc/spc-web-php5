@@ -1,4 +1,10 @@
-
+.bplo_text
+{
+  line-height: 70px;
+  vertical-align: middle;
+  margin-left: 50px;
+  margin: 0 auto;
+}
 .login-box{
   position:relative;
   margin: 10px auto;

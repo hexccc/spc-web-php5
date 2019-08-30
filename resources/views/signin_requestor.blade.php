@@ -5,6 +5,13 @@
 
 <div class="col-md-10 offset-md-1">
 
+
+  <div class="form-row pt-3 pl-5">
+  <h4 class="bplo_text">
+    <img class="mr-2" align='left' src="{{URL::asset('svg/ubilis 1.0.svg')}}" style="height:70px">
+    BPLO ONLINE FORM REGISTRATION</h4>
+  </div>
+
 	<!-- //////BPLO MODALS ALERT -->
 
 <div class="login-box">

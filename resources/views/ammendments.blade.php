@@ -62,7 +62,7 @@
       </div>
     </div>
 
-    <div class="modal fade" id="approved_buss" tabindex="-1" role="dialog" aria-labelledby="approved_buss">
+    <div class="modal fade" id="approved" tabindex="-1" role="dialog" aria-labelledby="approved">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body w-100">
@@ -71,15 +71,15 @@
 
                 <h5 class = "modal-title" align="center">Approved Business</h5>
                 </div>
-                <div class="form-group p-2">
+                <div class=" btn-group-vertical w-100">
 
-                  <button id ="ownership">Change of Ownership</button>
-                  <button id ="busi_name">Change of Business Name</button>
-                  <button id ="busi_add">Change of Business Address</button>
-                  <button id ="owners_add">Change of Owner's Address</button>
-                  <button id ="nature_busi">Change of Nature of Business</button>
-                  <button id ="change_org" >Change of Organization</button>
-                  <button id ="change_emp">Change Number of Employees</button>
+                  <button type="button" id ="ownership" >Change of Ownership</button>
+                  <button type="button" id ="busi_name">Change of Business Name</button>
+                  <button type="button" id ="busi_add">Change of Business Address</button>
+                  <button type="button" id ="owners_add">Change of Owner's Address</button>
+                  <button type="button" id ="nature_busi">Change of Nature of Business</button>
+                  <button type="button" id ="change_org" >Change of Organization</button>
+                  <button type="button" id ="change_emp">Change Number of Employees</button>
 
                 </div>
               </div>
@@ -100,11 +100,8 @@
             <!-- <input type="text" class="form-control" name="ammend[search]" id ="ammend[search]" placeholder="Search Name / Business Name / TIN / BIN">
             <input type="button" class="btn btn-primary btn-md ml-2"  value = "Search" role="button" id="search_busi"> -->
             <!-- <input type="button" class="btn btn-primary btn-md ml-2"  value = "Search" role="button" data-toggle="modal" data-target="#approved_buss"> -->
-
-
-
           </div>
-
+            <input type= "button" id="select" class ="form_control">
           <table class="table table-sm table-striped table-bordered">
             <thead>
               <tr>

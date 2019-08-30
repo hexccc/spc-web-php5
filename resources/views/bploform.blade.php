@@ -7,7 +7,7 @@
 
 
   <div class="modal fade" id="renewal_form" tabindex="-1" aria-labelledby="" aria-hidden="true" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header float-none">
           <h4 id="Renewal">Renewal</h4>
@@ -16,10 +16,6 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="">
-            <p align="center"><b></b></p>
-          </div>
-
           <!-- <div class="">
             <div class="form-check-inline mb-4">
               <label class="">Mode of Payment:
@@ -37,14 +33,10 @@
              </label>
             </div>
           </div> -->
-
-          <table id="" class="table table-sm table-striped table-bordered">
-            <thead>
-              <tr>
-                <th colspan="2" class="w-100 text-align-center">BASIC INFORMATION</th>
-              </tr>
-            </thead>
-
+          <div class="">
+            <p align="left"><b>BASIC INFORMATION</b></p>
+          </div>
+          <table id="" class="table table-sm table-bordered">
               <tr colspan="2">
                 <td>Mode of Payment <span id="modepayment"></span> </td>
                 <td></td>
@@ -67,12 +59,12 @@
               </tr>
             </table>
 
-            <table id="" class="table table-sm table-striped table-bordered">
-            <thead>
-              <tr>
-                <th colspan="2" class="w-100 text-align-center">Name of Taxpayer / Registrant</th>
-              </tr>
-            </thead>
+
+            <div class="">
+              <p align="left"><b>Name of Taxpayer / Registrant</b></p>
+            </div>
+            <table id="" class="table table-sm  table-bordered">
+
               <tr>
                 <td>Name of Taxpayer<span id="taxpayer_name"></span></td>
                 <td>Business Name<span id="busisness_name"></span></td>
@@ -83,12 +75,12 @@
               </tr>
             </table>
 
-        <table id="" class="table table-sm table-striped table-bordered">
-              <thead>
-                <tr>
-                  <th colspan="4" class="w-100 text-align-center">OTHER INFORMATION</th>
-                </tr>
-              </thead>
+
+            <div class="">
+              <p align="left"><b>OTHER INFORMATION</b></p>
+            </div>
+        <table id="" class="table table-sm  table-bordered">
+
               <tr>
                 <td>Business Address<span id="buss_address"></span> </td>
                 <td>Postal Code<span id="buss_postal"></span></td>
@@ -103,12 +95,11 @@
               </tr>
           </table>
 
-          <table id="" class="table table-sm table-striped table-bordered">
-              <thead>
-                <tr>
-                  <th colspan="2" class="w-100 text-align-center">OWNER INFORMATION</th>
-                </tr>
-              </thead>
+          <div class="">
+            <p align="left"><b>OWNER INFORMATION</b></p>
+          </div>
+          <table id="" class="table table-sm table-bordered">
+
               <tr>
                 <td>Owner's Name<span id="owner_name"></span></td>
                 <td>owner's Address<span id="owner_address"></span> </td>
@@ -123,7 +114,7 @@
               </tr>
             </table>
 
-            <table id="" class="table table-sm table-striped table-bordered">
+            <table id="" class="table table-sm table-bordered">
               <tr>
                 <td>No. of Employees Residing<span id="owner_emp"></span> </td>
                 <td>Business Area<span id="owner_area"></span></td>
@@ -134,13 +125,11 @@
               </tr>
             </table>
 
-
-          <table id="lessors" class="table table-sm table-striped table-bordered">
-              <thead>
-                <tr>
-                  <th colspan="2" class="w-100 text-align-center">LESSOR's INFORMATION</th>
-                </tr>
-              </thead>
+            <div class ="" id="lessors">
+            <div class="">
+              <p align="left"><b>LESSOR's INFORMATION</b></p>
+            </div>
+          <table id="" class="table table-sm table-bordered">
               <tr>
                 <td>Lessor's Name<span id="lessor_name"></span></td>
                 <td>Lessor's Address<span id="lessor_address"></span> </td>
@@ -158,14 +147,13 @@
                 <td>Contact No./ Email Address <span id="emerg_contact"></span> </td>
               </tr>
           </table>
+        </div>
 
+          <div class="">
+            <p align="left"><b>Gross Sales/Receipts(For Renewal)</b></p>
+          </div>
+          <table id="" class="table table-sm table-bordered">
 
-          <table id="" class="table table-sm table-striped table-bordered">
-              <thead>
-                <tr>
-                  <th colspan="5" class="w-100 text-align-center">Gross Sales/Receipts(For Renewal)</th>
-                </tr>
-              </thead>
               <tr>
                 <td>Automatic Gross</td>
                 <td> <input type="checkbox" class="form-check-input" id="auto-gross"></td>
@@ -181,12 +169,12 @@
 
             </table>
 
-          <table id="" class="table table-sm table-striped table-bordered">
-              <thead>
-                <tr>
-                  <th colspan="5" class="w-100 text-align-center">BUSINESS ACTIVITY</th>
-                </tr>
-              </thead>
+
+            <div class="">
+              <p align="left"><b>BUSINESS ACTIVITY</b></p>
+            </div>
+          <table id="" class="table table-sm table-bordered">
+
               <tr>
                 <td>Line of Business</td>
                 <td>Code</td>
@@ -200,7 +188,10 @@
             </table>
 
 
-            <!-- <div class="form-row">
+            <div class="">
+              <p align="left"><b>ADDITIONAL LINE OF BUSINESS</b></p>
+            </div>
+            <div class="form-row">
             <div class="form-group col-md-2">
               <label >Line of Business</label>
               <select class="form-control addlinebuss" name="app[buss_line]" id="addline">
@@ -215,7 +206,6 @@
               ?>
               </select>
               </div>
-
 
               <div class="form-group col-md-2">
                 <label for='fname'>Code</label>
@@ -249,32 +239,45 @@
               <input type="text" id="addcap" name="app[capitalization]" class="form-control money">
                <input type="hidden" id="" name="app[ranks]" class="form-control" value="secondary">
             </div>
-            </div> -->
-
+            </div>
+            <div class="form-group col-md-12">
               <table id="addnewline" class="table table-sm table-striped table-bordered">
-              <thead>
-                <tr>
-                  <th colspan="8" class="w-100 text-align-center"> ADDITIONAL LINE OF BUSINESS</th>
-                </tr>
-              </thead>
-              <tr>
+                <thead>
+                  <tr>
+                    <th scope="col">Line of Business</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Sub Category</th>
+                    <th scope="col">Unit's No.</th>
+                    <th scope="col">Essentials</th>
+                    <th scope="col">Non Essentials</th>
+                    <th scope="col">Capitalization</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <!-- <tbody id="addtnline_table"> -->
+                </tbody>
+              </table>
+            </div>
 
+            <div class="form-row float-right mb-2">
+              <button type="button" class="btn btn-primary"  name="button" id ="addlineaddRowRenew">ADD</button>
+            </div>
+
+              <table id="addnewline" class="table table-sm table-bordered">
+              <tr>
                 <th>Line of Business</th>
                 <th>Code</th>
-                <th>Date added</th>
                 <th>Sub Category</th>
+                <th>Unit's No</th>
                 <th>Essential</th>
                 <th>Non Essential</th>
                 <th>Capitalization</th>
                 <!-- <td>Status</td> -->
-
               </tr>
               <tbody id ="add_bussline">
               </tbody>
-
-
           </table>
-          <a class="btn btn-info" href="" >Submit</a>
+          <a class="btn btn-info float-right" href="" >Submit</a>
         </div>
       </div>
     </div>

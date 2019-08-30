@@ -10,7 +10,7 @@ $(document).ready(function () {
       e.stopPropagation();
       return false;
   });
-
+  $('#btn_renewal').prop('disabled', true);
     if(userSession != 0) {
       $('#userid').val(userSession);
 
@@ -250,9 +250,64 @@ $('#btn_renewal').click(function(){
      });
 
 });
+//ADDITIONAL LINE OF BUSINESS
+$('#addlineaddRowRenew').click(function(){
+  	add_line_buss.push({
+  		'busact_addline': $('#addline').val(),
+  		'busact_addcode': $('#addcode').val(),
+  		'busact_addsubcat': $('#addsubcat').val(),
+  		'busact_addcap': $('#addcap').val().replace(/,/g, ''),
+  		'rank': 'secondary'
+  	});
+
+  // console.log(add_line_buss);
+
+    "use strict";
+    var table = document.getElementById("addnewline");
+
+    var row = document.createElement("tr");
+    var td1 = document.createElement("td");
+    var td2 = document.createElement("td");
+    var td3 = document.createElement("td");
+    var td4 = document.createElement("td");
+    var td5 = document.createElement("td");
+    var td6 = document.createElement("td");
+    var td7 = document.createElement("td");
+    var td8 = document.createElement("td");
+
+    td1.innerHTML = document.getElementById("addline").value;
+    td2.innerHTML = document.getElementById("addcode").value;
+    td3.innerHTML = document.getElementById("addsubcat").value;
+    td4.innerHTML = document.getElementById("addunits").value;
+    td5.innerHTML = document.getElementById("addessen").value;
+    td6.innerHTML = document.getElementById("addnonessen").value;
+    td7.innerHTML = document.getElementById("addcap").value;
+    td8.innerHTML = '<a class="btn btn-sm btn-warning" onclick="addlinerowdelete(this)" >Delete</a>';
+
+    row.appendChild(td1);
+    row.appendChild(td2);
+    row.appendChild(td3);
+    row.appendChild(td4);
+    row.appendChild(td5);
+    row.appendChild(td6);
+    row.appendChild(td7);
+    row.appendChild(td8);
+
+    table.children[0].appendChild(row);
+    $('#addline').val('');
+    $('#addcode').val('');
+    $('#addunits').val('');
+    $('#addsubcat').val('');
+    $('#addessen').val('');
+    $('#addnonessen').val('');
+    $('#addcap').val('');
+
+
+});
 
 //DISPLAY BUSSINESS LISTS
 $("#buss_list").on("click keyup",function(){
+  $('#btn_renewal').prop('disabled', false);
       var buss = $(".buss_list option:selected").val();
       $('#buss_id').val(buss);
       $('#userid').val(userSession);
