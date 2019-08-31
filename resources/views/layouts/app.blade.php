@@ -10,6 +10,9 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/login.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="/js/multistep.js"></script>
     <link rel="stylesheet" href="/css/multistep.css">

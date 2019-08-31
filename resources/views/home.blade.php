@@ -7,7 +7,7 @@
 {{-- NEWS --}}
 <div class="container-fluid">
   <div class="row">
-    <div class='col-md-12'>
+    <div data-aos="zoom-in-up" class='col-md-12'>
       <div class="card border-primary mb-3">
         <h3 class="text-white card-title p-2 pl-3 mb-0" style="background:#0072e9;">My City, My Government</h3>
         <div class="card-body text-primary" >
@@ -24,7 +24,7 @@
     {{-- 1st row --}}
     <div class="row">
       <div class="col-lg-3">
-        <div class="card border-primary mb-3">
+        <div data-aos="slide-right" class="card border-primary mb-3">
           <h3 class="text-white card-title p-2 text-center mb-0">Jobs</h3>
           <div class="card-body text-primary">
             <a
@@ -40,7 +40,7 @@
           </div>
         </div>
 
-        <div class="card border-primary mb-3">
+        <div data-aos="slide-right" class="card border-primary mb-3">
             <h3 class="text-white card-title p-2 text-center mb-0">
               Bids and Awards
             </h3>
@@ -56,8 +56,8 @@
             <img class="align-middle" src="{{URL::asset('image/banner.png')}}" style="height:73px">
           </div>
       </div>
-      <div class="col-lg-6">
-        <div class="card border-primary mb-3">
+      <div  class="col-lg-6">
+        <div data-aos="fade-up" class="card border-primary mb-3">
           <h3 class="text-white card-title p-2 text-center mb-0">Sevices</h3>
           <div class="card-body text-primary">
             <button type="button" class="btn btn-outline-info btn-block text-dark" data-toggle="modal" data-target="#bploForm">
@@ -100,7 +100,7 @@
         </div>
       </div>
 
-      <div class="col-lg-3 pb-1">
+      <div data-aos="slide-left" class="col-lg-3 pb-1">
         <div class="card border-primary">
           <h3 class="text-white card-title p-2 text-center mb-0">Hotlines</h3>
           <div class="card-body text-primary col-md-12" >
@@ -146,7 +146,7 @@
 
     {{-- 2nd row --}}
     <div class="row">
-      <div class="col-lg-4">
+      <div data-aos="slide-right" class="col-lg-4">
         <div class="card border-primary mb-3" style="height: 23rem;">
           <h3 class="text-white card-title p-2 text-center mb-0 align-text-bottom">
           Events and Announcements
@@ -158,7 +158,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4">
+      <div data-aos="fade-up" class="col-lg-4">
         <div class="card border-primary mb-3">
           <h3 class="text-white card-title p-2 text-center mb-0">
           Disclosure
@@ -237,7 +237,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div data-aos="slide-left" class="col-lg-4">
         <div class="card border-primary mb-1">
           <h4 class="text-white card-title p-2 text-center mb-0">
             Featured Links
@@ -260,7 +260,7 @@
           </div>
 
         </div>
-        <div class="card border-primary card-body ">
+        <div data-aos="slide-left" class="card border-primary card-body ">
           <img class="align-middle" src="{{URL::asset('image/flag.gif')}}">
           <p class="text-center">Happy National Heroes' Day from The City Government of San Pablo</br> <b style="font-size:1rem;">National Heroes' Day August 26, 2019</b> </br></p>
         </div>
@@ -269,7 +269,7 @@
     {{-- 2nd row end --}}
 
     {{-- 3rd row --}}
-    <div class="row mt-4">
+    <div data-aos="flip-up" class="row mt-4">
       <div class="col-lg-12 mb-4">
         <div class="card border-primary mb-1">
           <h3 class="text-white card-title p-2 text-center mb-0">Videos</h3>
@@ -294,7 +294,7 @@
         </div>
       </div>
     </div>
-    <div class="card border-primary mb-4">
+    <div data-aos="zoom-in" class="card border-primary mb-4">
       <h2 class="text-white card-title border-primary text-center mt-0" >Visitor's Counter:</h2>
       <h3 class="text-center py-2" style="background-color:#48C9B0;border-radius:20px; color:white;">{{ $count }}</h3>
     </div>
@@ -307,5 +307,8 @@
 
   <script src="/js/modal.js"></script>
   <script src="/js/modal-brgy.js"></script>
+  <script>
+  AOS.init();
+  </script>
 @extends('inc.modals')
 @endsection
