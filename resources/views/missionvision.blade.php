@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('title', 'Mission & Vision')
-
+<style media="screen">
+  body{
+    overflow-x: hidden;
+  }
+</style>
   <div class="misvispic">
     <div class="ptext">
        <div class="row d-flex justify-content-around">
@@ -124,7 +128,7 @@
 
 
 <style>
-.misvispic, .pimg2, .pimg3{
+.misvispic{
   position:relative;
   opacity:0.70;
   background-position:center;
@@ -144,15 +148,6 @@
   width:100%;
 }
 
-.pimg2{
-  background-image:url('../image/image2.jpg');
-  min-height:400px;
-}
-
-.pimg3{
-  background-image:url('../img/image3.jpg');
-  min-height:400px;
-}
 
 .section{
   text-align:center;

@@ -271,17 +271,11 @@ The battle of Sta. Isabel Shrine was erected in November 22, 1979 to commemorate
 
     <script>
       $(document).ready(function(){
-
           $("h5").addClass("p-2");
-          // $('#landmarkPic').css('display', 'none')
-          // $('h3').fadeIn();
-          // $("h5").fadeIn('slow');
-          // $('div').find('img').fadeIn('slow');
-          // $('div').delay('slow').find('p').slideDown(3000);
         });
       });
-
     </script>
+
     <script type="text/javascript">
       AOS.init();
     </script>

@@ -131,9 +131,6 @@
         <p style="padding-top:11px;"><iframe class="text-center" style="pointer-events: none;" src="https://freesecure.timeanddate.com/clock/i6qeu6qp/n145/tlph/fs15/fcfff/tct/pct/tt0" frameborder="0" width="279" height="20" allowTransparency="true" disabled></iframe>
         </p>
       </li>
-
     </ul>
-
   </div>
-
 </nav>

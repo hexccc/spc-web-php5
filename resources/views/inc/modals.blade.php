@@ -18,6 +18,53 @@
   </div>
 </div>
 
+
+
+<div class="modal fade logged" id="logged" tabindex="-1" role="dialog" aria-labelledby="logged" >
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header float-none">
+        <h3>Log In</h3>
+				<button class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+        <form id="signinReg" enctype="multipart/form-data">
+        <div class="r-form-group">
+          <input type="text" placeholder="Username" name="user[username]" id="username" required/>
+        </div>
+        <div class="r-form-group">
+          <input type="password" placeholder="Password" name="user[password]" id="password" required/>
+        </div>
+        <div class="r-form-group">
+          <button type="submit" >Log in</button>
+        </div>
+
+        </form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="bploForm" tabindex="-1" aria-labelledby="bploFormlbl" aria-hidden="true" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header float-none">
+          <h4 id="bploFormlbl">Fill Up Forms</h4>
+          <button class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <a class="btn btn-info" href="{{URL::asset('docs/BUSINESS PERMIT APPLICATION FORM.docx')}}" download>Download Business Registration Form</a>
+          <a class="btn btn-info" href="form">Online BPLO Fill Up</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+
 {{-- BARANGGAY MODAL --}}
 <div class="modal fade" id="modalBrgy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">

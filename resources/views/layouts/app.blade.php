@@ -10,12 +10,12 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/login.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="/js/multistep.js"></script>
-    <link rel="stylesheet" href="/css/multistep.css">
+
+
+    {{-- <script src="/js/multistep.js"></script>
+    <link rel="stylesheet" href="/css/multistep.css"> --}}
 
     <script src="/js/app.js"></script>
     <script src="/js/form.js"></script>
@@ -41,8 +41,8 @@
         </div>
       </div>
     </div>
-        @include('inc.footer')
-    </body>
+    @include('inc.footer')
+  </body>
 
     <script type="text/javascript">
       $("div[id^='event']").each(function(){
@@ -74,47 +74,6 @@
 
 
 </html>
-<div class="modal fade" id="bploForm" tabindex="-1" aria-labelledby="bploFormlbl" aria-hidden="true" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header float-none">
-          <h4 id="bploFormlbl">Fill Up Forms</h4>
-          <button class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <a class="btn btn-info" href="{{URL::asset('docs/BUSINESS PERMIT APPLICATION FORM.docx')}}" download>Download Business Registration Form</a>
-          <a class="btn btn-info" href="form">Online BPLO Fill Up</a>
-        </div>
-      </div>
-    </div>
-</div>
+
 
 <!-- //////MODAL BPLO login -->
-<div class="modal fade logged" id="logged" tabindex="-1" role="dialog" aria-labelledby="logged" >
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header float-none">
-        <h3>Log In</h3>
-				<button class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-        <form id="signinReg" enctype="multipart/form-data">
-        <div class="r-form-group">
-          <input type="text" placeholder="Username" name="user[username]" id="username" required/>
-        </div>
-        <div class="r-form-group">
-          <input type="password" placeholder="Password" name="user[password]" id="password" required/>
-        </div>
-        <div class="r-form-group">
-          <button type="submit" >Log in</button>
-        </div>
-
-        </form>
-			</div>
-		</div>
-	</div>
-</div>

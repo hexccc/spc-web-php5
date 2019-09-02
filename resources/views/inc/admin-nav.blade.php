@@ -77,8 +77,9 @@
                 <button type="btn btn-dark" id="sidebarCollapse" class="btn btn-info">
                     <i class="fas fa-align-left" title="Sidebar"></i>
                     <span></span>
+
                 </button>
-                    <a class="btn btn-dark" data-toggle="modal" title="Admin Log in" data-toggle="modal" data-target="#modalLoginForm">Admin Login</a>
+                    <a class="btn btn-dark" data-toggle="modal" title="adminLoginForm" data-toggle="modal" data-target="#adminLoginForm">Admin Login</a>
             </div>
         </nav>
     </div>
@@ -92,8 +93,7 @@
 
 
     {{-- LOGIN MODAL --}}
-    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-      aria-hidden="true">
+    <div class="modal" id="adminLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header text-center">
