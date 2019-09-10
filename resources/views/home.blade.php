@@ -145,6 +145,7 @@
         </div>
       </div>
     </div>
+
     {{-- 1st row end --}}
 
     {{-- 2nd row --}}
@@ -299,7 +300,7 @@
     </div>
     <div data-aos="fade-left" class="card border-primary mb-4">
       <h2 class="text-white card-title border-primary text-center mt-0" >Visitor's Counter:</h2>
-      <h3 class="card-body text-center py-2" style="background-color:#48C9B0;border-radius:20px; color:white;">{{ $count }}</h3>
+      <h3 class="card-body text-center py-2" style="background-color:#48C9B0;border-radius:0px; color:white;">{{ $count }}</h3>
     </div>
     {{-- 3rd row end --}}
 

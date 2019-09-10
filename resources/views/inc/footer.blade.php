@@ -73,9 +73,9 @@
         </ul>
       </div>
       <div class="col-md-3">
-        <div class="card border-primary mb-2">
-            <h2 class="text-white card-title border-primary text-center mt-0" >Member Log in</h2>
-            <a href="signin_requestor" class="btn btn-primary mb-1" style="border-radius:25px";><h4>Log In</h4></a>
+        <div class="card pb-0">
+            <h2 class="text-white card-title border-primary text-center mb-0" >Member Log in</h2>
+            <a href="signin_requestor" class="btn btn-success mb-1" style="border-radius:0px";><h4>Log In</h4></a>
           </div>
         </div>
       </div>

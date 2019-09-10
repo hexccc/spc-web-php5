@@ -143,6 +143,8 @@ Route::post('register', array('uses' => 'Register@store'));
 
 Route::get('getLatestNews', 'new_controller@getAllNewsHeadlines');
 
+Route::post('/saveData', 'testing@save');
+
 
 
 //////////////
@@ -176,6 +178,10 @@ Route::get('/signin_requestor', function () {
     return view('signin_requestor');
 });
 
+Route::get('/signin_requestor_test', function () {
+    return view('signin_requestor_test');
+});
+
 Route::get('/logout', function() {
   Session::forget('username');
   if(!Session::has('username'))
@@ -203,3 +209,7 @@ Route::get('/checkinputs', 'JController@checkinputs');
 Route::get('/ammendments', function () {
     return view('ammendments');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

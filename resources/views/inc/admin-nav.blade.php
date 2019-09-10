@@ -73,13 +73,13 @@
   <div class="col-sm px-0">
     <div id="content">
         <nav class="navbar navbar-light bg-dark">
-            <div class="container-fluid">
+            <div class="container-fluid pl-0">
                 <button type="btn btn-dark" id="sidebarCollapse" class="btn btn-info">
                     <i class="fas fa-align-left" title="Sidebar"></i>
                     <span></span>
 
                 </button>
-                    <a class="btn btn-dark" data-toggle="modal" title="adminLoginForm" data-toggle="modal" data-target="#adminLoginForm">Admin Login</a>
+                    <a class="btn btn-dark" href="signin_requestor">Admin Login</a>
             </div>
         </nav>
     </div>
@@ -97,7 +97,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header text-center">
-            <h4 class="modal-title w-100 font-weight-bold">ADMIN Sign in</h4>
+            <h4 class="modal-title w-100 font-weight-bold pb-0">ADMIN Sign in</h4>
           </div>
           <div class="modal-body mx-3">
             <div class="md-form">
