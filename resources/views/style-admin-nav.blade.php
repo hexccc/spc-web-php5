@@ -36,17 +36,17 @@ min-height: 100vh;
 
 }
 
-a[data-toggle="collapse"] {
+/* a[data-toggle="collapse"] {
    position: relative;
-}
+} */
 
-.dropdown-toggle::after {
+/* .dropdown-toggle::after {
    display: block;
    position: absolute;
    top: 50%;
    right: 20px;
    transform: translateY(-50%);
-}
+} */
 
 @media (max-width: 768px) {
    #sidebar {

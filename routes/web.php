@@ -178,8 +178,8 @@ Route::get('/signin_requestor', function () {
     return view('signin_requestor');
 });
 
-Route::get('/signin_requestor_test', function () {
-    return view('signin_requestor_test');
+Route::get('/admin-login', function () {
+    return view('admin-login');
 });
 
 Route::get('/logout', function() {
