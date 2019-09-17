@@ -52,7 +52,9 @@
           <div class="dropdown-item"><li><a class="text-body btn btn-block" href="departments">Departments</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn btn-block" href="#">Standing Commitees</a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn btn-block" href="#">Ordinances</a></li></div>
-          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="#">ELA</a></li></div>
+          <div class="dropdown-item"><li><a class="text-body btn btn-block" href="{{URL::asset('docs/ELA 2016-2019 (final).docx')}}" target="_blank">
+            ELA
+          </a></li></div>
           <div class="dropdown-item"><li><a class="text-body btn btn-block" href="officemap">Office Vicinity Map</a></li></div>
 
         </ul>

@@ -74,9 +74,9 @@
     <div id="content">
         <nav class="navbar navbar-light bg-dark">
             <div class="container-fluid pl-0">
-                <button type="btn btn-dark" id="sidebarCollapse" class="btn btn-info">
+                {{-- <button type="btn btn-dark" id="sidebarCollapse" class="btn btn-info">
                     <i class="fas fa-align-left" title="Sidebar"></i>
-                    <span></span>
+                    <span></span> --}}
 
                 </button>
                 <a href="/admin-login" type="button" class="btn btn-dark">Sign Out</a>
