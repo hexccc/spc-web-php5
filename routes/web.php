@@ -203,3 +203,8 @@ Route::get('/checkinputs', 'JController@checkinputs');
 Route::get('/ammendments', function () {
     return view('ammendments');
 });
+
+
+Route::get('/multistep', function () {
+    return view('multistep');
+});

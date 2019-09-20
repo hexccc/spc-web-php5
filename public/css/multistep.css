@@ -1,10 +1,124 @@
+.float_button {
+    z-index: 1;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(96, 125, 139);
+    background: rgba(96, 125, 139, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.float_button i {
+
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.float_button:hover {
+    background: rgba(96, 125, 139, 0.9);
+}
+.float_button:hover i {
+    color: #fff;
+    top: 5px;
+}
+.up
+{
+  line-height: 50px;
+  width: 43px;
+  height: 50px;
+  padding: 10px;
+  padding-left: 17px;
+}
+
+
+.float_btn {
+    z-index: 1;
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    background: rgba(96, 125, 139);
+    background: rgba(96, 125, 139, 0.7);
+    width: 100px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    /* border-radius: 35px; */
+      display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.float_btn:hover {
+    background: rgba(96, 125, 139, 0.9);
+}
+.float_btn:hover i {
+    color: #fff;
+    top: 5px;
+}
+.table_renew td
+{
+  width: 50%;
+  border-left: none;
+}
+#edit_bussline,#add_line_col
+{
+    border-radius: 8px;
+}
+/* Extra Things */
+body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
+.as_text
+{
+border:0 solid transparent;
+background-color: transparent;
+cursor:pointer;
+}
+input[type="text"]:read-only {
+  background: white;
+}
+.jumbotron
+{
+  background-color: #f5f5f5;
+}
+
+.btn-group.special {
+  display: flex;
+}
+
+
+.spec .btn {
+  flex: 1;
+  width: 100%;
+}
+
+
 html, body {
 
 }
-.renewal
-{
 
-}
 .fillthis{border-color:#ffcc80;}
 
 .ui-formSlide {

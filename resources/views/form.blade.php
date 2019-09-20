@@ -77,33 +77,6 @@
 						</p></font>
 					</div>
 
-    {{-- second row --}}
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="dateapp">Date Application</label>
-        <input class="form-control" type="date" value="{{date('Y-m-d')}}" id="date_application" name = "new[date_application]">
-      </div>
-      <div class="form-group col-md-6">
-        <label for='tin'>TIN no.
-        </label>
-        <input type="number" class="form-control tin"  name="new[tin]">
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for='dti1'>DTI/SEC/CDA Registration
-        </label>
-        <input type="text" class="form-control" name="new[dti_sec]" class ="ornum" >
-      </div>
-      <div class="form-group col-md-6">
-        <label for="dti2">DTI/SEC/CDA Number
-        </label>
-        <input type="text" class="form-control" name="new[dti_number]">
-      </div>
-    </div>
-
-
-
           <!-- card -->
           <div class="card">
             <ul class="ui-formSlide">
@@ -114,7 +87,7 @@
 
 										<div class="">
 											<p align="center"><b>1.	BASIC INFORMATION </b></p>
-
+                      <input type="hidden" id="created_by" name = "app[created_by]">
 										</div>
 									  {{-- first row --}}
 									    <div class="form-check-inline mb-4">
@@ -202,43 +175,6 @@
 									       </label>
 									      </div>
 									    </div>
-									    <!--
-											NOTE : Ammendments is only for renewal
-
-											<div>
-									      <div class="form-check-inline mb-4">Amendment: &nbsp;
-									        <label class="form-check-label">From:
-									           <input type="radio" class="form-check-input" value="from_single" name="new[amendfrom]">Single
-									        </label>
-									      </div>
-									      <div class="form-check-inline">
-									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="from_partner" name="new[amendfrom]">Partnership
-									       </label>
-									      </div>
-									      <div class="form-check-inline">
-									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="from_corp"name="new[amendfrom]">Corporation
-									       </label>
-									      </div>
-									    </div>
-									    <div>
-									      <div class="form-check-inline mb-4">Amendment: &nbsp;
-									        <label class="form-check-label">To:
-									           <input type="radio" class="form-check-input" value="to_single" name="new[amendto]">Single
-									        </label>
-									      </div>
-									      <div class="form-check-inline">
-									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="to_partner" name="new[amendto]">Partnership
-									       </label>
-									      </div>
-									      <div class="form-check-inline">
-									       <label class="form-check-label">
-									         <input type="radio" class="form-check-input" value="to_corp" name="new[amendto]">Corporation
-									       </label>
-									      </div>
-									    </div> -->
 
 									    <div class="form-check-inline mb-4">Are you enjoying tax incentive from any Government Entity? &nbsp;
 									      <label class="form-check-label">
@@ -297,22 +233,22 @@
 										<!-- NOTE: added input -->
 										<div class="form-group">
 									 	 <label for="address">Name of President/Treasurer of Corporation</label>
-									 	 <input type="text" class="form-control" name="app[tax_president]" >
+									 	 <input type="text" class="form-control" name="app[Taxpayer_buspresident]" >
 									  </div>
 
 										<div class="form-check-inline ">Owner's Gender &nbsp;
 											<label class="form-check-label">
-												 <input type="radio" class="form-check-input" name="app[tax_gender]">Male
+												 <input type="radio" class="form-check-input" name="app[taxpay_owner_gender]">Male
 											</label>
 										</div>
 										<div class="form-check-inline mb-4">
 										 <label class="form-check-label">
-											 <input type="radio" class="form-check-input" name="app[tax_gender]">Female
+											 <input type="radio" class="form-check-input" name="app[taxpay_owner_gender]">Female
 										 </label>
 										 </div>
 										 <div class="form-check-inline mb-4">
 											<label class="form-check-label">
-												<input type="radio" class="form-check-input" name="app[tax_gender]">JP
+												<input type="radio" class="form-check-input" name="app[taxpay_owner_gender]">JP
 											</label>
 											</div>
 												<!-- NOTE: ended here -->
@@ -335,6 +271,7 @@
 									    </p></font>
 									  </div>
 
+
 									  {{-- BUSINESS INFORMATION --}}
 									  <div class="form-row">
 									    <div class="form-group col-md-4">
@@ -345,43 +282,43 @@
 											<!-- NOTE: added field -->
 											<div class="form-group col-md-4">
 												<label>House No./Bldg. No.</label>
-												<input type="number" class="form-control " name="app[buss_houseno]">
+												<input type="number" class="form-control " name="app[houseno]">
 											</div>
 											<div class="form-group col-md-4">
 												<label>Building Name</label>
-												<input type="text" class="form-control " name="app[buss_bldgname]">
+												<input type="text" class="form-control " name="app[bldg_no]">
 											</div>
 										</div>
 
 										<div class="form-row">
 											<div class="form-group col-md-4">
 												<label>Unit No.</label>
-												<input type="number" class="form-control " name="app[buss_unit]">
+												<input type="number" class="form-control " name="app[unit_no]">
 											</div>
 											<div class="form-group col-md-4">
 												<label>Street</label>
-												<input type="text" class="form-control " name="app[buss_street]">
+												<input type="text" class="form-control " name="app[street_no]">
 											</div>
 											<div class="form-group col-md-4">
 												<label>Barangay</label>
-												<input type="text" class="form-control " name="app[buss_barangay]">
+												<input type="text" class="form-control " name="app[brgy]">
 											</div>
 										</div>
 
 										 <div class="form-row">
 											<div class="form-group col-md-4">
 												<label>Subdivision</label>
-												<input type="text" class="form-control " name="app[buss_subdivision]">
+												<input type="text" class="form-control " name="app[subdivision]">
 											</div>
 
 											<div class="form-group col-md-4">
 												<label>City/Municipality </label>
-												<input type="text" class="form-control " name="app[buss_city]" Placeholder = "San Pablo" value= "San Pablo" disabled>
+												<input type="text" class="form-control " name="app[city]" Placeholder = "San Pablo" value= "San Pablo" readonly>
 											</div>
 
 											<div class="form-group col-md-4">
 												<label>Province</label>
-												<input type="text" class="form-control " name="app[buss_province]" placeholder ="Laguna"  value= "Laguna" disabled>
+												<input type="text" class="form-control " name="app[province]" placeholder ="Laguna"  value= "Laguna" readonly>
 											</div>
 										</div>
 
@@ -406,7 +343,7 @@
 									        <input class="form-control mobile" type="tel" name="app[buss_phone]" placeholder="09XX XXX XXXX">
 									    </div>
 									  </div>
-										<hr class="mt-5">
+										<hr class="mt-4">
 										<!-- NOTE: ended here -->
 									{{-- OWNER INFORMATIONS --}}
 									  <label>Owner's Information</label>
@@ -414,15 +351,15 @@
 										<div class="form-row">
 											<div class="form-group col-md-4">
 												<label>Last Name</label>
-												<input type="text" class="form-control"  name="app[owner_lastname]">
+												<input type="text" class="form-control"  name="app[tax_first_name]">
 											</div>
 											<div class="form-group col-md-4">
 												<label>First Name</label>
-												<input type="type" class="form-control " name="app[owner_firstname]">
+												<input type="type" class="form-control " name="app[tax_middle_name]">
 											</div>
 											<div class="form-group col-md-4">
 												<label>Middle Name</label>
-												<input type="text" class="form-control " name="app[owner_middlename]">
+												<input type="text" class="form-control " name="app[tax_last_name]">
 											</div>
 										</div>
 										<!-- NOTE: ended here -->
@@ -436,7 +373,7 @@
 										<!-- NOTE: added field -->
 										<div class="form-group col-md-4">
 											<label>House No./Bldg. No.</label>
-											<input type="number" class="form-control " name="app[owner_houseno]">
+											<input type="number" class="form-control " name="app[owner_housebldgno]">
 										</div>
 										<div class="form-group col-md-4">
 											<label>Building Name</label>
@@ -447,7 +384,7 @@
 									<div class="form-row">
 										<div class="form-group col-md-4">
 											<label>Unit No.</label>
-											<input type="number" class="form-control " name="app[owner_unit]">
+											<input type="number" class="form-control " name="app[owner_unitno]">
 										</div>
 										<div class="form-group col-md-4">
 											<label>Street</label>
@@ -455,24 +392,24 @@
 										</div>
 										<div class="form-group col-md-4">
 											<label>Barangay</label>
-											<input type="text" class="form-control " name="app[owner_barangay]">
+											<input type="text" class="form-control " name="app[owner_brgy]">
 										</div>
 									</div>
 
 									 <div class="form-row">
 										<div class="form-group col-md-4">
 											<label>Subdivision</label>
-											<input type="text" class="form-control " name="app[owner_subdivision]">
+											<input type="text" class="form-control " name="app[owner_sudb]">
 										</div>
 
 										<div class="form-group col-md-4">
 											<label>City/Municipality </label>
-											<input type="text" class="form-control " name="app[owner_city]" Placeholder = "San Pablo" value = "San Pablo" disabled>
+											<input type="text" class="form-control " name="app[owner_city]" Placeholder = "San Pablo" value = "San Pablo" readonly>
 										</div>
 
 										<div class="form-group col-md-4">
 											<label>Province</label>
-											<input type="text" class="form-control " name="app[owner_province]" placeholder ="Laguna" value = "San Pablo" disabled>
+											<input type="text" class="form-control " name="app[owner_province]" placeholder ="Laguna" value = "Laguna" readonly>
 										</div>
 									</div>
 									<!-- NOTE: ended here -->
@@ -498,29 +435,6 @@
 									    </div>
 									  </div>
 
-                    <!-- NOTE: not included in database -->
-									<!-- {{-- IN CASE OF EMERGENCY INFORMATIONS --}}
-									  <div class="form-row">
-									    <div class="form-group col-md-6">
-									      <label>In Case of emergency, provide name of contact person: </label>
-									      <input type="text" class="form-control" name="app[emer_first_name]" placeholder="First Name">
-									    </div>
-									    <div class="form-group col-md-6">
-									      <label>&nbsp;</label>
-									      <input type="text" class="form-control" name="app[emer_Last_name]" placeholder="Last Name">
-									    </div>
-									  </div>
-
-									  <div class="form-row">
-									    <div class="form-group col-md-6">
-									      <label>Telephone/Mobile No.</label>
-									        <input class="form-control tel" type="tel" name="app[emer_contact_no]" placeholder="539-966">
-									    </div>
-									    <div class="form-group col-md-6">
-									      <label>Email Address</label>
-									        <input class="form-control" type="email" name="app[emer_email]" placeholder="Email Address">
-									    </div>
-									  </div> -->
 
 									  <div class="form-row">
 									    <div class="form-group col-md-6">
@@ -551,53 +465,129 @@
 									  </div>
 
                     <div class="form-row">
-                    <div class="form-group col-md-6 mt-2">
-                      <label></label>
-                        <input class="form-control" type="number" name="app[service_vehicle]" placeholder="Unit of Service Vehicle">
+                    <div class="form-group col-md-6 ">
+                        <input class="form-control" type="number" name="app[bus_tots_car]" placeholder="Unit of Service Vehicle">
                       </div>
                     </div>
 
+                    <hr class= "mt-4">
+
+                      <!-- NOTE: not included in database -->
+  									{{-- IN CASE OF EMERGENCY INFORMATIONS --}}
+                    <div class="form-row">
+                      <label>In Case of emergency, provide name of contact person: </label>
+                    </div>
+  									  <div class="form-row">
+  									    <div class="form-group col-md-6">
+                          <label>&nbsp;</label>
+  									      <input type="text" class="form-control" name="app[emergency_first_name]" placeholder="First Name">
+  									    </div>
+  									    <div class="form-group col-md-6">
+  									      <label>&nbsp;</label>
+  									      <input type="text" class="form-control" name="app[emergency_last_name]" placeholder="Last Name">
+  									    </div>
+  									  </div>
+
+  									  <div class="form-row">
+  									    <div class="form-group col-md-6">
+  									      <label>Telephone/Mobile No.</label>
+  									        <input class="form-control tel" type="tel" name="app[emergency_contact_no]" placeholder="539-966">
+  									    </div>
+  									    <div class="form-group col-md-6">
+  									      <label>Email Address</label>
+  									        <input class="form-control" type="email" name="app[emergency_email]" placeholder="Email Address">
+  									    </div>
+  									  </div>
 
 
 									  <div>
 									    <p class="mt-5 mb-4"><font color="red">Note: <b>Fill Up Only if Business Place is Rented</b>
 									    </p></font>
 									  </div>
-
+                    <div class = "form-row">
+                      <label>Lessor's Information</label>
+                    </div>
 									  <div class="form-row">
-
 									    <div class="form-group col-md-4">
-									      <label>Lessor's Full Name</label>
+                        <label ></label>
 									      <input type="text" class="form-control" name="app[lessor_last_name]" placeholder="Last Name">
 									    </div>
-									    <div class="form-group col-md-4 mt-2">
+									    <div class="form-group col-md-4 ">
 									      <label ></label>
 									      <input type="text" class="form-control" name="app[lessor_first_name]" placeholder="First Name">
 									    </div>
-									    <div class="form-group col-md-4 mt-2">
+									    <div class="form-group col-md-4 ">
 									      <label></label>
 									      <input type="text" class="form-control" name="app[lessor_middle_name]" placeholder="Middle Name">
 									    </div>
-									    <div class="form-group col-md-12">
-									      <label>Lessor'Full Adress</label>
-									      <textarea type="text" class="form-control" name="app[lessor_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
-									    </div>
-									  </div>
-									  <div class="form-row">
-									    <div class="form-group col-md-4">
-									      <label>Telephone/Mobile No.</label>
-									        <input class="form-control" type="tel" name="app[lessor_tel_no]" placeholder="539-1234 / 09123456789">
-									    </div>
-									    <div class="form-group col-md-6">
-									      <label>Email Address</label>
-									        <input class="form-control" type="email" name="app[lessor_email]" placeholder="Email Address">
-									    </div>
-									    <div class="form-group col-md-2">
-									      <label>Monthly Rental</label>
-									        <input class="form-control" type="number" name="app[lessor_monthly_rental]" placeholder="">
-									    </div>
 									  </div>
 
+                  <div class="form-row">
+                    <div class="form-group col-md-8">
+                      <label>Lessor'Full Address</label>
+                      <input type="text" class="form-control " name="app[lessor_address]" placeholder="Bdlg#/Street/Brgy/City">
+                      <!-- <textarea type="text" class="form-control" name="app[lessor_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea> -->
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label>Monthly Rental</label>
+                        <input class="form-control money" type="text" name="app[lessor_monthly_rental]" placeholder="">
+                    </div>
+                  </div>
+
+                    <div class="form-row">
+                      <!-- NOTE: added field -->
+                      <!-- <div class="form-group col-md-4">
+                        <label>House No./Bldg. No.</label>
+                        <input type="number" class="form-control " name="app[lessor_houseno]">
+                      </div> -->
+                      <div class="form-group col-md-4">
+                        <label>Building Name</label>
+                        <input type="text" class="form-control " name="app[lessor_bldgno]">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label>Street</label>
+                        <input type="text" class="form-control " name="app[lessor_street]">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label>Barangay</label>
+                        <input type="text" class="form-control " name="app[lessor_brgy]">
+                      </div>
+                      <!-- <div class="form-group col-md-4">
+                        <label>Unit No.</label>
+                        <input type="number" class="form-control " name="app[lessor_unit_no]">
+                      </div> -->
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <label>Subdivision</label>
+                        <input type="text" class="form-control " name="app[lessor_sudb]">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label>City/Municipality </label>
+                        <input type="text" class="form-control " name="app[lessor_city]" Placeholder = "San Pablo" value= "San Pablo" readonly>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label>Province</label>
+                        <input type="text" class="form-control " name="app[lessor_province]" placeholder ="Laguna"  value= "Laguna" readonly>
+                      </div>
+                    </div>
+
+
+									  <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <label>Mobile No.</label>
+                        <input class="form-control mobile" type="tel" name="app[lessor_mobile]" placeholder="09XX XXX XXXX">
+                      </div>
+									    <div class="form-group col-md-4">
+									      <label>Telephone</label>
+									        <input class="form-control tel" type="tel" name="app[lessor_tel_no]" placeholder="539-1234 / 09123456789">
+									    </div>
+									    <div class="form-group col-md-4">
+									      <label>Email Address</label>
+									        <input class="form-control" type="email" name="app[lessor_email]" placeholder="">
+									    </div>
+									  </div>
 
                 </div>
               </li>
@@ -611,7 +601,7 @@
 							    </div>
 							  <div class="form-row mb-3 mt-3">
 							    <div class="form-group col-md-3">
-										<label >Line of Business</label>
+										<label>Line of Business</label>
                     <!-- name="bussactivity[bussactivity_linebuss]"  -->
 										<select class="form-control addlinebuss1" name="app[buss_line]" id="addline1">
 										<option selected value="">Line of Business</option>
@@ -635,14 +625,14 @@
                       <label >Sub Category</label>
                       <input type="text" class="form-control" name="app[sub_category]" placeholder="">
                     </div>
-							    <div class="form-group col-md-2">
-							      <label >No. of Units</label>
-							      <input type="number" class="form-control" name="app[no_units]" placeholder="">
-							    </div>
-							    <div class="form-group col-md-2">
-							      <label >Capitalization</label>
-							      <input type="text" class="form-control money" name="app[capitalization]" placeholder="">
-							    </div>
+  							    <div class="form-group col-md-2">
+  							      <label >No. of Units</label>
+  							      <input type="number" class="form-control" name="app[no_units]" placeholder="">
+  							    </div>
+  							    <div class="form-group col-md-2">
+  							      <label >Capitalization</label>
+  							      <input type="text" class="form-control money" name="app[capitalization]" placeholder="">
+  							    </div>
 
 
 							  </div>
@@ -657,9 +647,9 @@
 									      </div>
 
 									      <div class="form-row">
-												<div class="form-group col-md-2">
+												<div class="form-group col-md-3">
 													<label >Line of Business</label>
-                          <select class="form-control addlinebuss" name="app[buss_line]" id="addline">
+                          <select class="form-control addlinebuss" name="app[buss_line2]" id="addline">
 													<option selected value=" ">Line of Business</option>
 													<?php
 													$linebuss = array("Manufacturers", "Wholesalers, distributors, or dealers", "Retailers", "Food","Contractors","Banks and other financial institutions","Lease","Lessor of real property","Tobacco dealers","Dealers of Liquors","Amusement Places and Devices","Theater and Cinema","Other business");
@@ -673,42 +663,42 @@
 													</div>
 
 
-													<div class="form-group col-md-2">
+													<div class="form-group col-md-3">
 														<label for='fname'>Code</label>
-															<select class="form-control" name="app[buss_line_code]" id="addcode">
+															<select class="form-control" name="app[buss_line_code2]" id="addcode">
 																<option selected value="">Code of Business</option>
 															</select>
 														</div>
 
-												<div class="form-group col-md-2">
+												<div class="form-group col-md-3">
 													<div class="md-form">
 											      <label for="addsubcat">Sub Category</label>
-														<input type="text" id="addsubcat" name="app[sub_category]" class="form-control">
+														<input type="text" id="addsubcat" name="app[sub_category2]" class="form-control">
 													</div>
 												</div>
                         <!-- NOTE: added inputfield no.units -->
 
-                        <div class="form-group col-md-1">
+                        <div class="form-group col-md-3">
                           <label >Unit's No.</label>
-                          <input type="number" id="addunits" class="form-control" name="app[no_units]" placeholder="">
-                        </div>
-
-                        <div class="form-group col-md-2">
-                          <label >Essentials</label>
-                          <input type="number" id="addessen" class="form-control" name="app[essentials]" placeholder="">
-                        </div>
-                        <div class="form-group col-md-2">
-                          <label >Non Essentials</label>
-                          <input type="number" id="addnonessen" class="form-control" name="app[non_essentials]" placeholder="">
-                        </div>
-                        <div class="form-group col-md-1">
-                          <label>Capitalization</label>
-                          <input type="text" id="addcap" name="app[capitalization]" class="form-control money">
-                          <!-- <input type="hidden" id="" name="app[ranks]" class="form-control" value="secondary"> -->
+                          <input type="number" id="addunits" class="form-control" name="app[no_units2]" placeholder="">
                         </div>
                         </div>
 
-
+                        <div class="form-row">
+                          <div class="form-group col-md-3">
+                            <label >Essentials</label>
+                            <input type="text" id="addessen" class="form-control money" name="app[essentials2]" placeholder="">
+                          </div>
+                          <div class="form-group col-md-3">
+                            <label >Non Essentials</label>
+                            <input type="text" id="addnonessen" class="form-control money" name="app[non_essentials2]" placeholder="">
+                          </div>
+                          <div class="form-group col-md-3">
+                            <label>Capitalization</label>
+                            <input type="text" id="addcap" name="app[capitalization2]" class="form-control money">
+                            <!-- <input type="hidden" id="" name="app[ranks]" class="form-control" value="secondary"> -->
+                          </div>
+                        </div>
 
 
 
@@ -775,267 +765,6 @@
   </div>
   </div>
 
-
-  <div class="mt-5">
-    <p align="center"><b>2.	OTHER INFORMATION </b></p>
-  </div>
-  <div>
-    <p class="mb-4"><font color="red">Note:<b> For renewal applications,</b> do not fill up this section unless certain information have changed.
-    </p></font>
-  </div>
-
-  {{-- BUSINESS INFORMATION --}}
-  <div class="form-row">
-    <div class="form-group col-md-12">
-      <label>Business Address</label>
-      <textarea type="text" class="form-control" name="new[bussinfo_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label>Postal Code</label>
-      <input type="number" class="form-control postcode" name="other[bussinfo_postal]">
-    </div>
-    <div class="form-group col-md-6">
-      <label>Email Adress</label>
-      <input type="email" class="form-control" name="other[bussinfo_email]" placeholder="example@email.com">
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label>Telephone</label>
-        <input class="form-control tel" type="tel" name="other[bussinfo_tel]" placeholder="539-966">
-    </div>
-    <div class="form-group col-md-6">
-      <label>Mobile No.</label>
-        <input class="form-control mobile" type="tel" name="other[bussinfo_mobile]" placeholder="09XX XXX XXXX">
-    </div>
-  </div>
-
-{{-- OWNER INFORMATIONS --}}
-  <div class="form-row mt-5">
-    <div class="form-group col-md-12">
-      <label>Owner's Adress</label>
-      <textarea type="text" class="form-control" name="owner[owner_address]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label>Postal Code</label>
-      <input type="number" class="form-control postcode" name="owner[owner_postal]">
-    </div>
-    <div class="form-group col-md-6">
-      <label>Email Adress</label>
-      <input type="email" class="form-control" name="owner[owner_email]" placeholder="example@email.com">
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label>Telephone</label>
-        <input class="form-control tel" type="tel" name="owner[owner_tel]" placeholder="539-966">
-    </div>
-    <div class="form-group col-md-6">
-      <label>Mobile No.</label>
-        <input class="form-control mobile" type="tel" name="owner[owner_mobile]" placeholder="09XX XXX XXXX">
-    </div>
-  </div>
-
-
-{{-- IN CASE OF EMERGENCY INFORMATIONS --}}
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label>In Case of emergency, provide name of contact person: </label>
-      <input type="text" class="form-control" name="other[emergency_fname]" placeholder="First Name">
-    </div>
-    <div class="form-group col-md-6">
-      <label>&nbsp;</label>
-      <input type="text" class="form-control" name="other[emergency_lname]" placeholder="Last Name">
-    </div>
-  </div>
-
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label>Telephone/Mobile No.</label>
-        <input class="form-control tel" type="tel" name="other[emergency_tel]" placeholder="539-966">
-    </div>
-    <div class="form-group col-md-6">
-      <label>Email Address</label>
-        <input class="form-control" type="email" name="other[emergency_email]" placeholder="Email Address">
-    </div>
-  </div>
-
-  <div class="form-row">
-    <div class="form-group col-md-2">
-      <label>Business Area</label>
-        <input class="form-control" type="number" name="other[buss_area]" placeholder="In sq m">
-    </div>
-    <div class="form-group col-md-4">
-      <label>Total No. of Employees in Establishment</label>
-        <input class="form-control" type="number" name="other[totalno_employees]" placeholder="Total Number of Employees">
-    </div>
-
-    <div class="form-group col-md-2 mb-2" >
-      <label style="white-space: nowrap">No. of Employees Residing within</label>
-        <input class="form-control" type="number" name="other[noemployees_lgu]" placeholder="LGU">
-    </div>
-    <div class="form-group col-md-2 mt-2">
-      <label></label>
-        <input class="form-control" type="number" name="other[noemployees_male]" placeholder="Male">
-    </div>
-    <div class="form-group col-md-2 mt-2">
-      <label></label>
-        <input class="form-control" type="number" name="other[noemployees_female]" placeholder="Female">
-    </div>
-  </div>
-
-
-  <div>
-    <p class="mt-5 mb-4"><font color="red">Note: <b>Fill Up Only if Business Place is Rented</b>
-    </p></font>
-  </div>
-
-  <div class="form-row">
-
-    <div class="form-group col-md-4">
-      <label>Lessor's Full Name</label>
-      <input type="text" class="form-control" name="lessor[lessor_lname]" placeholder="Last Name">
-    </div>
-    <div class="form-group col-md-4 mt-2">
-      <label ></label>
-      <input type="text" class="form-control" name="lessor[lessor_fname]" placeholder="First Name">
-    </div>
-    <div class="form-group col-md-4 mt-2">
-      <label></label>
-      <input type="text" class="form-control" name="lessor[lessor_mname]" placeholder="Middle Name">
-    </div>
-    <div class="form-group col-md-12">
-      <label>Lessor'Full Adress</label>
-      <textarea type="text" class="form-control" name="lessor[lessor_fulladdress]" placeholder="Bdlg#/Street/Brgy/City" rows="2"></textarea>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-4">
-      <label>Telephone/Mobile No.</label>
-        <input class="form-control" type="tel" name="lessor[lessor_telephoneno]" placeholder="539-1234 / 09123456789">
-    </div>
-    <div class="form-group col-md-6">
-      <label>Email Address</label>
-        <input class="form-control" type="email" name="lessor[lessor_emailadd]" placeholder="Email Address">
-    </div>
-    <div class="form-group col-md-2">
-      <label>Monthly Rental</label>
-        <input class="form-control" type="number" name="lessor[lessor_monthlyrental]" placeholder="">
-    </div>
-  </div>
-
-    <div class="mt-5">
-      <p align="center"><b>3. BUSINESS ACTIVITY</b></p>
-    </div>
-  <div class="form-row">
-    <div class="form-group col-md-4">
-      <label >Line of Busniness</label>
-      <input type="text" class="form-control" name="bussactivity[bussactivity_linebuss]" placeholder="Name of Business">
-    </div>
-    <div class="form-group col-md-2">
-      <label >No. of Units</label>
-      <input type="number" class="form-control" name="bussactivity[bussact_nounits]" placeholder="">
-    </div>
-    <div class="form-group col-md-2">
-      <label >Capitalization</label>
-      <input type="number" class="form-control" name="bussactivity[bussact_capital]" placeholder="">
-    </div>
-    <div class="form-group col-md-2">
-      <label>Essential</label>
-      <input type="number" class="form-control" name="bussactivity[bussact_essential]" placeholder="">
-    </div>
-    <div class="form-group col-md-2">
-      <label>Non-Essential</label>
-      <input type="number" class="form-control" name="bussactivity[bussact_nonessential]" placeholder="">
-    </div>
-
-  </div>
-
-
-      <div class="mt-5">
-        <p align="center"><b>4. ADDITIONAL LINE OF BUSINESS</b></p>
-      </div>
-
-      <div class="form-row">
-			<div class="form-group col-md-3">
-			  <label for='fname'>Line of Business</label>
-					<select class="form-control" name="new[busact_addline]" id="addline">
-						<option selected value="">Line of Business</option>
-						<?php
-						$linebuss = array("Manufacturers", "Wholesalers","distributors, or dealers", "Retailers", "Food","Contractors","Banks and other financial institutions","Lease","Lessor of real property","Tobacco dealers","Dealers of Liquors","Amusement Places and Devices","Theater and Cinema","Other business");
-						foreach($linebuss as $linebus){
-						?>
-						 <option value="<?php echo strtolower($linebus); ?>"><?php echo $linebus; ?></option>
-						<?php
-						}
-						?>
-					</select>
-				</div>
-
-
-				<div class="form-group col-md-3">
-					<label for='fname'>Code of Business</label>
-						<select class="form-control" name="new[busact_addcode]" id="addcode">
-							<option selected value="">Code of Business</option>
-							<?php
-							$addcode = array("Assemblers", "Re-packers", "Processors", "Brewers", "Distillers", "Rectifiers","Compounders of Liquors","Distilled Spirits","Wines","Bakery","Woodcraft/ Handicraft (Stuffed Toys)","Compounding (Distillers)","Oil Extraction","Food Processing - Ube Making", "Ice Cream Making","Body Builder (Jeep)");
-							// $addcode2 = array("Water Refilling", "Boutique", "Dry Goods", "Ambulant/ Grocery", "Dry Goods/RTW", "Mini-Mart","Cedera","Glassware/ Aluminum","Cell Phone Accessories","Petshop ","Jewelries","Junkshop","Gift Shop","Radio Equipment", "Party Shop","Subdivision/Realty","Flower Shop/ Seedlings","Medical Supplies","Footwear","Relief Goods","Car Accessories","Hardware");
-							foreach($addcode as $addcod){
-							?>
-							 <option value="<?php echo strtolower($addcod); ?>"><?php echo $addcod; ?></option>
-							<?php
-							}
-							?>
-						</select>
-					</div>
-
-			<!-- <div class="form-group col-md-3">
-			 <label for='fname'>Code of Business</label>
-					<select class="form-control" name="new[busact_addcode]" id="addcode">
-						<option selected value="">CODE</option>
-            <option value="Single">Single</option>
-            <option value="Partnership">Partnership</option>
-            <option value="Corporation">Corporation3</option>
-            <option value="Cooperative">Cooperative</option>
-					</select>
-				</div> -->
-
-			<div class="form-group col-md-3">
-				<div class="md-form">
-		      <label for="addsubcat">Sub Category</label>
-					<input type="text" id="addsubcat" name="new[busact_addsubcat]" class="form-control">
-				</div>
-			</div>
-			<div class="form-group col-md-2">
-				<div class="md-form">
-          <label for="addcap">Capitalization</label>
-          <input type="text" id="addcap" name="new[busact_addcap]" class="form-control money">
-				</div>
-			</div>
-
-      <div class="form-group col-md-1">
-        <label for="addcap">Add</label>
-        <!-- <button type="submit" class="btn btn-primary" name="button"  value="ADD">ADD</button> -->
-        <button type="button" class="btn btn-success" name="button" id ="addlineaddRow"  >ADD</button>
-      </div>
-    </div>
-
-
-    <div class="form-group col-md-12">
-      <table id="addnewline" class="table table-sm table-striped table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">Line of Business</th>
-            <th scope="col">Code</th>
-            <th scope="col">Sub Category</th>
-            <th scope="col">Capitalization</th>
-            <th scope="col">Action</th>
-          </tr>
-        </thead>
-        <!-- <tbody id="addtnline_table"> -->
-        </tbody>
-      </table>
-    </div>
 
 
 @endsection

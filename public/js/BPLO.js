@@ -2,11 +2,8 @@ var add_line_buss = [];
 
 
 var global_url = 'http://192.168.100.207:8080';
-
 //var global_url = 'http://81cdf678.ngrok.io';
-
-
-var global_url = 'http://795a28e3.ngrok.io/';
+// var global_url = 'http://795a28e3.ngrok.io/';
 var userSession = sessionStorage.getItem("user_id");
 $(document).ready(function () {
   $('#logged').on('hide.bs.modal', function (e) {
@@ -15,12 +12,14 @@ $(document).ready(function () {
       return false;
   });
 
+    if(userSession != 0) {
+      }
+
 //SUBMIT NEW BUSINESS
 $('#addnewbuss').submit(function(e){
       e.preventDefault();
       // console.log($(this).serializeArray());
       console.log($(this).serializeArray());
-
       var buss_id;
       $.ajax({
         url : global_url + '/api/bplo_api',
@@ -29,7 +28,6 @@ $('#addnewbuss').submit(function(e){
         dataType: 'json',
         data : $(this).serializeArray(),
         success : function(res){
-          console.log(res);
           console.log(add_line_buss);
           // replace(/-/g,'')
 
@@ -37,8 +35,6 @@ $('#addnewbuss').submit(function(e){
             buss_id = res.buss_id;
             for (var i = 0; i < add_line_buss.length; i++) {
               console.log(add_line_buss[i]);
-
-
               $.ajax({
                 url : global_url + '/api/bplo_api',
                 type : 'POST',
@@ -49,30 +45,60 @@ $('#addnewbuss').submit(function(e){
                   'addline[buss_line_code]' : add_line_buss[i].busact_addcode,
                   'addline[sub_category]' : add_line_buss[i].busact_addsubcat,
                   'addline[capitalization]' : add_line_buss[i].busact_addcap.replace(/,/g,''),
-                  'addline[essential]' : 0,
-                  'addline[non_essential]' : 0,
-                  // 'addline[essential]' : add_line_buss[i].busact_addessen
-                  // 'addline[non_essential]' : add_line_buss[i].busact_addnonessen,
+                  'addline[essential]' : add_line_buss[i].bussact_essential.replace(/,/g,''),
+                  'addline[non_essential]' : add_line_buss[i].bussact_nonessential.replace(/,/g,''),
                   'addline[ranks]' : 'secondary',
                   'addline[buss_id]' : buss_id
                 },
                 success : function(res){
-                  console.log(res);
-
                 },
                 error : function(xhr){
                 }
               });
             }
+
+
+            var user ="u.username";
+            $.ajax({
+            url : global_url+'/api/bplo_api/dynamic/',
+            type : 'POST',
+            data : {
+              column_names : user,
+              table_name : 'user u',
+              "where[0]" : "u.id",
+              "pars[0]" : userSession
+            },
+            dataType : 'json',
+            success : function (res) {
+              var content = res.content[0];
+              var uname = content.username;
+              $("#created_by").val(content.username);
+
+              $.ajax({
+              url : global_url+'/api/bplo_api/dynamicUpdate/',
+              type : 'POST',
+              data : {
+                table_name : 'buss_profile',
+                "where[0] ":  "buss_id",
+                "pars[0]" : buss_id,
+                "col_names[created_by]" : uname
+              },
+              dataType : 'json',
+              success : function (res) {
+                  console.log(res);
+              }
+            });
+
+
+            }
+          });
+
             notify(res.msg,'success',500);
           }
-
         },
         error : function(xhr){
           console.log(xhr.responseText);
           notify('Request Not Sent', 'danger',500)
-
-
         }
       });
     });
@@ -82,7 +108,9 @@ $('#addlineaddRow').click(function(){
   		'busact_addline': $('#addline').val(),
   		'busact_addcode': $('#addcode').val(),
   		'busact_addsubcat': $('#addsubcat').val(),
-  		'busact_addcap': $('#addcap').val().replace(/,/g, ''),
+      'busact_addcap': $('#addcap').val().replace(/,/g, ''),
+      'bussact_essential': $('#addessen').val().replace(/,/g, ''),
+  		'bussact_nonessential': $('#addnonessen').val().replace(/,/g, ''),
   		'rank': 'secondary'
   	});
 
@@ -364,9 +392,6 @@ $('#signinReg').submit(function(e){
 
 });
 //end of document ready function
-
-
-
 
 
   function addlinerowdelete(r){

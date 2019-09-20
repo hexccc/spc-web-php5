@@ -18,7 +18,7 @@
     <script src="/js/form.js"></script>
     <script src="/js/BPLO.js"></script>
     <script src="/js/form_renewal.js"></script>
-    <script src="/js/ammendments.js"></script>
+
     <script src="/js/inputmask.js"></script>
     <script src="/js/jquery.bootstrap-growl.js"></script>
 

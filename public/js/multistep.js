@@ -27,8 +27,6 @@ var uiFormSlide = {
       {
         var empty = false;
         $('input[name^="app"]').each(function(app) {
-
-
         if($(this).val().trim()==""){
             empty = true;
             $(this).addClass("fillthis");
@@ -51,7 +49,8 @@ var uiFormSlide = {
         var tax_president = $("input[name$='app[tax_president]']").val();
         var tax_gender = $("input[name$='app[tax_gender]']").val();
 
-        if( dti_sec == '' || tin == '' || dti == '' || buss_specifyentity == '' || cctv_eqp == '' || tax_last_name == '' || tax_first_name == '' || tax_buss_name== '' || tax_franchise== '' || tax_president== '' || tax_gender== '' )
+        if( dti_sec == '' )
+        //|| tin == '' || dti == '' || buss_specifyentity == '' || cctv_eqp == '' || tax_last_name == '' || tax_first_name == '' || tax_buss_name== '' || tax_franchise== '' || tax_president== '' || tax_gender== '' )
         {this.currentStep = 0; this.nextStep = 1;goback();}
         else {this.nextStep = 2;}
      }
@@ -113,7 +112,8 @@ var uiFormSlide = {
         var lessor_email = $("input[name$='app[lessor_email]']").removeClass('fillthis');
         var lessor_monthly_rental = $("input[name$='app[lessor_monthly_rental]']").removeClass('fillthis');
 
-        if(buss_address == '' || buss_houseno == '' || buss_bldgname== '' || buss_unit== '' || buss_street== '' || buss_barangay == '' || buss_subdivision== '' || buss_city== '' || buss_province== '' || buss_phone== '' || owner_lastname== '' || owner_firstname== '' ||  owner_postcode== '' || owner_houseno== '' || owner_bldgname== '' || owner_unit== '' || owner_street== '' || owner_barangay== '' || owner_subdivision== '' || owner_city == '' || owner_province == '' || owner_tel_no == '' || owner_mobile == '')
+        if(buss_address == '')
+        // || buss_houseno == '' || buss_bldgname== '' || buss_unit== '' || buss_street== '' || buss_barangay == '' || buss_subdivision== '' || buss_city== '' || buss_province== '' || buss_phone== '' || owner_lastname== '' || owner_firstname== '' ||  owner_postcode== '' || owner_houseno== '' || owner_bldgname== '' || owner_unit== '' || owner_street== '' || owner_barangay== '' || owner_subdivision== '' || owner_city == '' || owner_province == '' || owner_tel_no == '' || owner_mobile == '')
         {this.currentStep = 1; goback();}
         else {this.nextStep = 3;}
 
