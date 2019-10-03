@@ -9,10 +9,10 @@
 
 {{-- NEWS --}}
 <div class="container-fluid">
-  <div class="row">
+  <div class="row ">
     <div data-aos="fade-left" class='col-md-12'>
-      <div class="card border-primary mb-3">
-        <h3 class="text-white card-title p-2 pl-3 mb-0" style="background:#0072e9;">My City, My Government</h3>
+      <div class="card mb-3 shadow">
+        <h3 class="text-white border-primary card-title p-2 pl-3 mb-0" style="background:#0072e9;">My City, My Government</h3>
         <div class="card-body text-primary" >
           <div class="row" id="news_headlines">
           </div>
@@ -27,8 +27,8 @@
     {{-- 1st row --}}
     <div class="row">
       <div class="col-lg-3">
-        <div data-aos="fade-right" class="card border-primary mb-3">
-          <h3 class="text-white card-title p-2 text-center mb-0">Jobs</h3>
+        <div data-aos="fade-right" class="card mb-3 shadow">
+          <h3 class="text-white card-title border-primary text-center py-2 mb-0">Jobs</h3>
           <div class="card-body text-primary">
             <a
               href="http://csc.gov.ph/career/"
@@ -43,7 +43,7 @@
           </div>
         </div>
 
-        <div data-aos="fade-right" class="card border-primary mb-3">
+        <div data-aos="fade-right" class="card mb-3 shadow">
             <h3 class="text-white card-title p-2 text-center mb-0">
               Bids and Awards
             </h3>
@@ -60,7 +60,7 @@
           </div>
       </div>
       <div  class="col-lg-6">
-        <div data-aos="fade-left" class="card border-primary mb-3">
+        <div data-aos="fade-left" class="card mb-3 shadow">
           <h3 class="text-white card-title p-2 text-center mb-0">Sevices</h3>
           <div class="card-body text-primary">
             <button type="button" class="btn btn-outline-info btn-block text-dark" data-toggle="modal" data-target="#bploForm">
@@ -103,43 +103,43 @@
         </div>
       </div>
 
-      <div data-aos="fade-left" class="col-lg-3 pb-1">
-        <div class="card border-primary">
+      <div data-aos="fade-left" class="col-lg-3 pb-1 ">
+        <div class="card shadow ">
           <h3 class="text-white card-title p-2 text-center mb-0">Hotlines</h3>
           <div class="card-body text-primary col-md-12" >
             <dl class="row text-dark pb-0 mb-0">
-              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/spc-logo.png')}}" class="img-responsive" style="width:16px"></dt>
+              <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/spc-logo.png')}}" style="width:16px"></dt>
               <dd class="col-10 font-weight-bold mb-0">San Pablo Government</dd>&nbsp;
-                <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
+                <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" style="width:16px"></dt>
                 <dd class="col-10 pb-2">Landline 3000-065</dd>&nbsp;
-                <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/spc-logo.png')}}" class="img-responsive" style="width:16px"></dt>
+                <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/spc-logo.png')}}" style="width:16px"></dt>
               <dd class="col-10 font-weight-bold mb-0">San Pablo CDRRMO</dd>&nbsp;
-                <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
-                <dd class="col-10 mb-0">Landline 800-405</dd>&nbsp;
-                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px"></dt>
+                <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" style="width:16px"></dt>
+                <dd class="col-10 mb-0">Landline 8000-405</dd>&nbsp;
+                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/phone.png')}}" style="width:12px"></dt>
                 <dd class="col-10 mb-0">Smart 09089078124</dd>&nbsp;
-                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/phone.png')}}" class="img-responsive" style="width:12px"></dt>
+                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/phone.png')}}" style="width:12px"></dt>
                 <dd class="col-10 pb-2">Globe 09955619456</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/control.png')}}" class="img-responsive" style="width:16px"></dt>
+              <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/control.png')}}" style="width:16px"></dt>
               <dd class="col-10 font-weight-bold mb-0">BARANGAY CONTROL</dd>&nbsp;
-                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
+                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/telephone.png')}}" style="width:16px"></dt>
                 <dd class="col-10 pb-2">5623-086</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/redcross.png')}}" class="img-responsive" style="width:16px"></dt>
+              <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/redcross.png')}}" style="width:16px"></dt>
               <dd class="col-10 font-weight-bold mb-0">RED CROSS SPC Chapter</dd>&nbsp;
-                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
-                <dd class="col-10 pb-2">564-3212</dd>&nbsp;
-                <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/spc-logo.png')}}" class="img-responsive" style="width:16px"></dt>
+                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/telephone.png')}}" style="width:16px"></dt>
+                <dd class="col-10 pb-2">5624-025</dd>&nbsp;
+                <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/spc-logo.png')}}" style="width:16px"></dt>
                 <dd class="col-10 font-weight-bold mb-0">San Pablo Welfare & Development Office</dd>&nbsp;
-                  <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
+                  <dt class="col-1 justify-content-center align-items-center"><img src="{{URL::asset('image/telephone.png')}}" style="width:16px"></dt>
                   <dd class="col-10 pb-2">Landline (049)3000-065</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/bumbero1.png')}}" class="img-responsive" style="width:20px"></dt>
+              <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/bumbero1.png')}}" style="width:20px"></dt>
               <dd class="col-10 font-weight-bold mb-0">Bureau of Fire Protection</dd>&nbsp;
-                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
-                <dd class="col-10 pb-2">5627-654/5210-610</dd>&nbsp;
-              <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/police.png')}}" class="img-responsive" style="width:23px"></dt>
+                <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/telephone.png')}}" style="width:16px"></dt>
+                <dd class="col-10 pb-2">5627-654</dd>&nbsp;
+              <dt class="col-1 justify-content-center align-items-center mb-0"><img src="{{URL::asset('image/police.png')}}" style="width:23px"></dt>
               <dd class="col-10 font-weight-bold mb-0">San Pablo City Police</dd>&nbsp;
-                <dt class="col-1 justify-content-center align-items-right mb-0"><img src="{{URL::asset('image/telephone.png')}}" class="img-responsive" style="width:16px"></dt>
-                <dd class="col-10 mb-0">5626-474 / 5210-610</dd>
+                <dt class="col-1 justify-content-center align-items-right mb-0"><img src="{{URL::asset('image/telephone.png')}}" style="width:16px"></dt>
+                <dd class="col-10 mb-0">5626-474/5210-610</dd>
             </dl>
           </div>
         </div>
@@ -151,7 +151,7 @@
     {{-- 2nd row --}}
     <div class="row">
       <div data-aos="fade-right" class="col-lg-4">
-        <div class="card border-primary mb-3" style="height: 23rem;">
+        <div class="card mb-3 shadow" style="height: 23rem;">
           <h3 class="text-white card-title p-2 text-center mb-0 align-text-bottom">
           Events and Announcements
           </h3>
@@ -163,7 +163,7 @@
       </div>
 
       <div data-aos="fade-left" class="col-lg-4">
-        <div class="card border-primary mb-3">
+        <div class="card shadow mb-3">
           <h3 class="text-white card-title p-2 text-center mb-0">
           Disclosure
           </h3>
@@ -242,7 +242,7 @@
         </div>
       </div>
       <div data-aos="fade-left" class="col-lg-4">
-        <div class="card border-primary mb-1">
+        <div class="card shadow mb-1">
           <h4 class="text-white card-title p-2 text-center mb-0">
             Featured Links
           </h4>
@@ -275,7 +275,7 @@
     {{-- 3rd row --}}
     <div data-aos="fade-right" data-aos-duration="1000" data-aos-duration="2000" class="row mt-4">
       <div class="col-lg-12 mb-4">
-        <div class="card border-primary mb-1">
+        <div class="card shadow mb-1">
           <h3 class="text-white card-title p-2 text-center mb-0">Videos</h3>
           <div class="card-body text-primary">
             <div class="container">
@@ -298,7 +298,7 @@
         </div>
       </div>
     </div>
-    <div data-aos="fade-left" class="card border-primary mb-4">
+    <div data-aos="fade-left" class="card shadow mb-4">
       <h2 class="text-white card-title border-primary text-center mt-0" >Visitor's Counter:</h2>
       <h3 class="card-body text-center py-2" style="background-color:#48C9B0;border-radius:0px; color:white;">{{ $count }}</h3>
     </div>
