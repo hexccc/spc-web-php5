@@ -23,20 +23,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-
-
-
+ 
     {{-- <script src="/js/multistep.js"></script>
     <link rel="stylesheet" href="/css/multistep.css"> --}}
 
     <script src="/js/app.js"></script>
     <script src="/js/form.js"></script>
-    <script src="/js/BPLO.js"></script>
+    <script src="/js/admin.js"></script>
     <script src="/js/testing.js"></script>
     <script src="/js/form_renewal.js"></script>
     <script src="/js/ammendments.js"></script>
     <script src="/js/inputmask.js"></script>
     <script src="/js/jquery.bootstrap-growl.js"></script>
+    <script src="/js/BPLO.js"></script>
+    <script src="/js/jquerydatatables.js"></script>
+    <script src="/js/datatables.js"></script>
+    <script src="/js/jquery.bootstrap-growl.js"></script>
+
 
     
   </head>
