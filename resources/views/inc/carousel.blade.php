@@ -1,5 +1,6 @@
 
-<div id="demo" class="carousel slide" data-ride="carousel">
+<div class="col-lg-10 c-wrapper">
+<div id="demo" class="carousel slide shadow" data-ride="carousel" style="margin-top:110px;">
   <a class="carousel-control-prev" href="#demo" data-slide="prev">
     <span class="carousel-control-prev-icon aria-hidden="true""></span>
   </a>
@@ -19,7 +20,7 @@
   <div class="carousel-inner">
 
     <div class="carousel-item active">
-      <img src="{{URL::asset('image/mayor-bday.png')}}" alt="mayor" height="600" width="100%">
+      <img src="{{URL::asset('image/mayor-bday.png')}}" alt="mayor" height="450" width="100%">
       <div class="carousel-caption">
         <div class="float-right" style="text-align: right;">
           <div class="mx-3 mt-3 ">
@@ -32,7 +33,7 @@
     </div>
 
     <div class="carousel-item">
-      <img src="{{URL::asset('image/csc-banner.png')}}" alt="Sampaloc Lake" height="600" width="100%">
+      <img src="{{URL::asset('image/csc-banner.png')}}" alt="Sampaloc Lake" height="450" width="100%">
       <div class="carousel-caption">
         <div class="float-right" style="text-align: right;">
           <div class="mx-3 mt-3 ">
@@ -45,7 +46,7 @@
     </div>
 
     <div class="carousel-item">
-      <img src="{{URL::asset('image/slake1.jpg')}}" alt="Sampaloc Lake" height="600" width="100%">
+      <img src="{{URL::asset('image/slake1.jpg')}}" alt="Sampaloc Lake" height="450" width="100%">
       <div class="carousel-caption">
         <div class="float-right" style="text-align: right;">
           <div class="mx-3 mt-3 ">
@@ -58,7 +59,7 @@
     </div>
 
     <div class="carousel-item" style="position:relative">
-      <img src="{{URL::asset('image/slake2.jpg')}}" alt="Sampaloc Lake" height="600" width="100%">
+      <img src="{{URL::asset('image/slake2.jpg')}}" alt="Sampaloc Lake" height="450" width="100%">
         <div class="carousel-caption">
           <div class="float-right" style="text-align: right;">
             <div class="mx-3 mt-3">
@@ -71,7 +72,7 @@
     </div>
 
     <div class="carousel-item">
-      <img src="{{URL::asset('image/cathedral_2.jpeg')}}" alt="Sampaloc Lake" height="600" width="100%">
+      <img src="{{URL::asset('image/cathedral_2.jpeg')}}" alt="Sampaloc Lake" height="450" width="100%">
       <div class="carousel-caption">
         <div class="float-right" style="text-align: right;">
           <div class="mx-3 mt-3">
@@ -88,5 +89,16 @@
 </div>
 </div>
 <style media="screen">
+div.c-wrapper{
+    width: 80%; /* for example */
+    margin: auto;
+}
 
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+width: 100%; /* use this, or not */
+margin: auto;
+position: relative;
+margin-top: 60px;
+}
 </style>

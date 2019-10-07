@@ -160,7 +160,43 @@
           </div>
           <a href="#" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#event1">See All Events>></a>
         </div>
+        <div class="card mb-3 shadow">
+          <h3 class="text-white card-title p-2 text-center mb-0 align-text-bottom">
+          Engineerin and Building Form
+          </h3>
+          <div class="card-body text-primary">
+            <a style="font-size:12px;"
+            href="{{URL::asset('docs/4th-qtr-SPP.xls')}}" target="_blank"
+            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true" >
+            LCR Form
+            </a>
+            <a style="font-size:12px;"
+            href="{{URL::asset('docs/4th-qtr-SPP.xls')}}" target="_blank"
+            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true" >
+            BPLS Form
+            </a>
+            <a style="font-size:12px;"
+            href="{{URL::asset('docs/4th-qtr-SPP.xls')}}" target="_blank"
+            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true" >
+            RPT Request
+            </a>
+            <a style="font-size:12px;"
+            href="{{URL::asset('docs/4th-qtr-SPP.xls')}}" target="_blank"
+            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true" >
+            HR Module
+            </a>
+            <a style="font-size:12px;"
+            href="{{URL::asset('docs/4th-qtr-SPP.xls')}}" target="_blank"
+            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true" >
+            EBP System
+            </a>
+          </div>
+          
+        </div>
+
       </div>
+
+      
 
       <div data-aos="fade-left" class="col-lg-4">
         <div class="card shadow mb-3">
@@ -264,7 +300,7 @@
           </div>
 
         </div>
-        <div data-aos="fade-left" class="card border-primary card-body ">
+        <div data-aos="fade-left" class="card shadow card-body ">
           <img class="align-middle" src="{{URL::asset('image/flag.gif')}}">
           <p class="text-center">Happy National Heroes' Day from The City Government of San Pablo</br> <b style="font-size:1rem;">National Heroes' Day August 26, 2019</b> </br></p>
         </div>
