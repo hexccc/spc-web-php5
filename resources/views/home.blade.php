@@ -3,6 +3,12 @@
 @section('content')
 @section('title', 'Home')
 
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#myModal').modal('show');
+  });
+</script>
+
 {{-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> --}}
 
@@ -162,7 +168,7 @@
         </div>
         <div class="card mb-3 shadow">
           <h3 class="text-white card-title p-2 text-center mb-0 align-text-bottom">
-          Engineerin and Building Form
+          Engineering and Building Form
           </h3>
           <div class="card-body text-primary">
             <a style="font-size:12px;"

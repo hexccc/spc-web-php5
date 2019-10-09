@@ -19,6 +19,26 @@
 </div>
 
 
+  
+    <div class="modal logged" id="myModal"  tabindex="-1"role="dialog" data-backdrop="static" data-keyboard="false" >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+              
+              <div class="form-group mt-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odio omnis reprehenderit commodi! Incidunt corrupti voluptatem animi iure optio blanditiis laudantium cum ratione deserunt, voluptatibus debitis aut neque saepe nemo!
+              </div>
+              <div class="form-group mb-0">
+                <button class="btn btn-secondary btn-lg btn-block" class="close" data-dismiss="modal"  aria-label="Close"><span aria-hidden="true">Accept</span>
+                </button>
+              </div>
+      
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
 <div class="modal fade logged" id="logged" tabindex="-1" role="dialog" aria-labelledby="logged" >
 	<div class="modal-dialog" role="document">
