@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
+  
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>San Pablo City | @yield('title')</title>
@@ -30,7 +32,10 @@
     <script src="/js/app.js"></script>
     <script src="/js/form.js"></script>
     <script src="/js/admin.js"></script>
-    <script src="/js/testing.js"></script>
+    <script src="/js/services.js"></script>
+    <script src="/js/eventsandannouncements.js"></script>
+    <script src="/js/holiday.js"></script>
+    {{-- <script src="/js/testing.js"></script> --}}
     <script src="/js/form_renewal.js"></script>
     <script src="/js/ammendments.js"></script>
     <script src="/js/inputmask.js"></script>
@@ -43,10 +48,11 @@
 
     
   </head>
-
+  
   <body>
     @include('inc.admin-nav')
       @yield('admincontent')
+      
     </div>
 
   </div>

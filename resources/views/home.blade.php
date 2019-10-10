@@ -12,11 +12,11 @@
   <div class="row">
     <div data-aos="fade-left" class='col-md-12'>
       <div class="card border-primary mb-3">
-        <h3 class="text-white card-title p-2 pl-3 mb-0" style="background:#0072e9;">My City, My Government</h3>
+        <h3 class="text-white card-title p-2 pl-3 mb-0" style="background:#0072e9;">My City My Government</h3>
         <div class="card-body text-primary" >
           <div class="row" id="news_headlines">
           </div>
-          <a href="#" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#news1">See All News>></a>
+          <a href="#" id = "seeNews" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#">See All News>></a>
         </div>
       </div>
     </div>
@@ -59,50 +59,19 @@
             <img class="align-middle" src="{{URL::asset('image/banner.png')}}" style="height:73px">
           </div>
       </div>
+      {{-- SERVICES START--}}
       <div  class="col-lg-6">
         <div data-aos="fade-left" class="card border-primary mb-3">
           <h3 class="text-white card-title p-2 text-center mb-0">Sevices</h3>
           <div class="card-body text-primary">
-            <button type="button" class="btn btn-outline-info btn-block text-dark" data-toggle="modal" data-target="#bploForm">
-              BPLO Fill Up Forms
-            </button>
-            <a
-              href="https://epaymentportal.landbank.com/index.php?code=VHQxcGVETU5EOWZiZXVIQnRWQ3NodmtCL2dKMG1HRjBsJTJCZ2k5dlIvclcwPQ&fbclid=IwAR1nOclEeFYG6lARtlcj5bKGAK3bRaeAXdihUBF1BdvmHzbdT5uPukxYku4"
-              class="btn btn-outline-info btn-block text-dark" aria-disabled="true" target="_blank">
-              Business Tax Payment
-            </a>
-            <a
-              href="https://epaymentportal.landbank.com/index.php?code=VHQxcGVETU5EOWZiZXVIQnRWQ3NodmtCL2dKMG1HRjBsJTJCZ2k5dlIvclcwPQ&fbclid=IwAR1nOclEeFYG6lARtlcj5bKGAK3bRaeAXdihUBF1BdvmHzbdT5uPukxYku4"
-              class="btn btn-outline-info btn-block text-dark" aria-disabled="true" target="_blank">
-              Franchise Tax Payment
-            </a>
-            <a
-              href="https://epaymentportal.landbank.com/index.php?code=VHQxcGVETU5EOWZiZXVIQnRWQ3NodmtCL2dKMG1HRjBsJTJCZ2k5dlIvclcwPQ&fbclid=IwAR1nOclEeFYG6lARtlcj5bKGAK3bRaeAXdihUBF1BdvmHzbdT5uPukxYku4"
-              class="btn btn-outline-info btn-block text-dark" aria-disabled="true" target="_blank">
-              Real Property Tax Payment
-            </a>
-            <button type="button" class="btn btn-outline-info btn-block text-dark">
-              Market Online Payment
-            </button>
-            <a
-              href="https://www.bir.gov.ph/index.php/registration-requirements/primary-registration/application-for-tin.html"
-              class="btn btn-outline-info btn-block text-dark" aria-disabled="true" target="_blank">
-              Online BIR Registration
-            </a>
-            <a
-              href="https://www.bnrs.dti.gov.ph/web/guest/home"
-              class="btn btn-outline-info btn-block text-dark" aria-disabled="true" target="_blank">
-              Online DTI Business Registration
-            </a>
-            <a
-              href="https://www.passport.gov.ph/"
-              class="btn btn-outline-info btn-block text-dark" aria-disabled="true" target="_blank">
-              Passport Online Application
-            </a>
+          
+            <div id = "gov_services">
+
+            </div>
           </div>
         </div>
       </div>
-
+{{-- SERVICES END--}}
       <div data-aos="fade-left" class="col-lg-3 pb-1">
         <div class="card border-primary">
           <h3 class="text-white card-title p-2 text-center mb-0">Hotlines</h3>
@@ -156,9 +125,13 @@
           Events and Announcements
           </h3>
           <div class="card-body d-flex justify-content-center">
-          <img src="{{URL::asset('image/event3.jpg')}}" alt="Event 1" class="img-responsive" style="width: 100%;height: 100%;" data-toggle="modal" data-target="#event1">
+
+            <div id = "latestEventAndAnnouncement">
+                
+            </div>
+          
           </div>
-          <a href="#" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#event1">See All Events>></a>
+          <a href="#" id ="seeEvents" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="">See All Events>></a>
         </div>
       </div>
 
@@ -266,7 +239,9 @@
         </div>
         <div data-aos="fade-left" class="card border-primary card-body ">
           <img class="align-middle" src="{{URL::asset('image/flag.gif')}}">
-          <p class="text-center">Happy National Heroes' Day from The City Government of San Pablo</br> <b style="font-size:1rem;">National Heroes' Day August 26, 2019</b> </br></p>
+          
+          <div id = "phil_holiday"></div>
+
         </div>
       </div>
     </div>

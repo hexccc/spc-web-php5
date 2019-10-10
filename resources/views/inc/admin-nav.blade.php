@@ -18,13 +18,13 @@
                             <a href="/newseditor">News Editor</a>
                         </li>
                         <li>
-                            <a href="#">Services</a>
+                            <a href="/services">Services</a>
                         </li>
                         <li>
-                            <a href="#">Events and Announcements</a>
+                            <a href="eventsandannouncements">Events and Announcements</a>
                         </li>
                         <li>
-                            <a href="#">Holidays</a>
+                            <a href="/holidays">Holidays</a>
                         </li>
                     </ul>
                 </li>
@@ -79,7 +79,7 @@
                     <span></span> --}}
 
                 </button>
-                <a href="/admin-login" type="button" class="btn btn-dark">Sign Out</a>
+                <a href="/signout"  type="button" class="btn btn-dark">Sign Out</a>
             
             </div>
         </nav>

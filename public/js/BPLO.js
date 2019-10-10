@@ -18,9 +18,8 @@ $(document).ready(function () {
 //SUBMIT NEW BUSINESS
 $('#addnewbuss').submit(function(e){
       e.preventDefault();
-      // console.log($(this).serializeArray());
-      console.log($(this).serializeArray());
-
+    ;
+    
       var buss_id;
       $.ajax({
         url : global_url + '/api/bplo_api',
@@ -29,14 +28,13 @@ $('#addnewbuss').submit(function(e){
         dataType: 'json',
         data : $(this).serializeArray(),
         success : function(res){
-          console.log(res);
-          console.log(add_line_buss);
+       
           // replace(/-/g,'')
 
           if (res.response) {
             buss_id = res.buss_id;
             for (var i = 0; i < add_line_buss.length; i++) {
-              console.log(add_line_buss[i]);
+             
 
 
               $.ajax({
@@ -57,7 +55,7 @@ $('#addnewbuss').submit(function(e){
                   'addline[buss_id]' : buss_id
                 },
                 success : function(res){
-                  console.log(res);
+             
 
                 },
                 error : function(xhr){
@@ -69,7 +67,7 @@ $('#addnewbuss').submit(function(e){
 
         },
         error : function(xhr){
-          console.log(xhr.responseText);
+       
           notify('Request Not Sent', 'danger',500)
 
 
@@ -134,7 +132,7 @@ $('#addlineaddRow').click(function(){
 $('#addReg').submit(function(e){
     e.preventDefault();
 
-     console.log($(this).serialize());
+    
     $.ajax({
       url : global_url+'/api/spc_api/',
       type : 'POST',
@@ -159,7 +157,7 @@ $('#addReg').submit(function(e){
 //lOGIN
 $('#signinReg').submit(function(e){
     e.preventDefault();
-    console.log($(this).serializeArray());
+  
    $.ajax({
      url : global_url+'/api/login_api/',
      type : 'POST',
@@ -170,10 +168,10 @@ $('#signinReg').submit(function(e){
      ,
      success : function(res){
        content = res.content;
-       console.log(res);
+    
       if(res.response == true){
         sessionStorage.setItem("user_id",content.user_id);
-        console.log('123');
+     
         window.location.href = "/bploform";
       }
 
@@ -374,7 +372,7 @@ $('#signinReg').submit(function(e){
    document.getElementById("addnewline").deleteRow(i);
    add_line_buss.splice(i-1,1);
    // delete add_line_buss[i];
-   console.log(i);
+
 }
 
 function notify(msg, type,responseTime) {

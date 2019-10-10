@@ -64,14 +64,14 @@ $(document).ready(function () {
 
               if (res.reponse == true){
                 // sessionStorage.setItem("user_id",content.user_id);
-                console.log("acc");
+           
           }
             notify(res.msg, 'info',500)
         },
 
         error: function(xhr)
         {
-          console.log("error");
+         
         }
 
   });
@@ -232,20 +232,23 @@ $('#btn_renewal').click(function(){
           },
           error: function(xhr)
           {
-            console.log(xhr.responseText);
+       
+            
           }
         });
         }
         else {
         $('#lessors').hide();
-        console.log("gsdf");
+   
+        
       }
     }
     }
     },
        error: function(xhr)
        {
-         console.log("error");
+    
+        
        }
      });
 

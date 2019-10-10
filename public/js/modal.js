@@ -2,15 +2,17 @@
   $("div[id^='event']").each(function(){
 
     var currentModal = $(this);
-
+     
     currentModal.find('.btn-next').click(function(){
       currentModal.modal('hide');
       currentModal.closest("div[id^='event']").nextAll("div[id^='event']").first().modal('show');
+      alert(currentModal[0].id);
     });
 
     currentModal.find('.btn-prev').click(function(){
       currentModal.modal('hide');
       currentModal.closest("div[id^='event']").prevAll("div[id^='event']").first().modal('show');
+      alert(currentModal[0].id);
     });
 
   });
