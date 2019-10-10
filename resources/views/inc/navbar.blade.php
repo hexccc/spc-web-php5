@@ -131,7 +131,7 @@
       
     </ul>
     <div style="width: 25%; margin: auto">
-      <iframe class="justify-content-center" style="pointer-events: none;" src="http://oras.pagasa.dost.gov.ph/time_display/widget.php" frameborder="0" width="190" height="68" allowTransparency="true" scrolling="no" style="text-align: center" disabled></iframe>
+      <iframe class="justify-content-center" style="color:#f9f9f9;" style="pointer-events: none;" src="http://oras.pagasa.dost.gov.ph/time_display/widget.php" frameborder="0" width="190" height="68" allowTransparency="true" scrolling="no" style="text-align: center" disabled></iframe>
     </div>
   </div>
 </nav>
