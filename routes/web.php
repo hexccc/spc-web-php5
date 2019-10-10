@@ -104,10 +104,6 @@ Route::get('/7lakes', function () {
     return view('7lakes');
 });
 
-Route::get('/pylon-admin', function () {
-    return view('pylon-admin');
-});
-
 Route::get('/preloader', function () {
     return view('preloader');
 });
@@ -120,30 +116,10 @@ Route::get('/officemap', function () {
     return view('officemap');
 });
 
-Route::get('/newseditor', function(){
-  return view('newseditor');
-});
-
 Route::get('/our7lakes', function(){
   return view('our7lakes');
 });
 
-
-Route::post('/createNews', 'new_controller@store');
-
-Route::get('/getNews', 'new_controller@index');
-
-Route::post('/getOneNews', 'new_controller@show');
-
-Route::post('/updateOneNews', 'new_controller@update');
-
-Route::post('/deleteOneNews', 'new_controller@destroy');
-
-Route::post('register', array('uses' => 'Register@store'));
-
-Route::get('getLatestNews', 'new_controller@getAllNewsHeadlines');
-
-Route::post('/saveData', 'testing@save');
 
 
 
@@ -178,9 +154,7 @@ Route::get('/signin_requestor', function () {
     return view('signin_requestor');
 });
 
-Route::get('/admin-login', function () {
-    return view('admin-login');
-});
+
 
 Route::get('/logout', function() {
   Session::forget('username');
@@ -189,6 +163,95 @@ Route::get('/logout', function() {
       return view('/bploform');
    }
  });
+
+
+ //ADMIN PANEL ROUTES:
+
+ Route::get('/admin-login', function () {
+    
+    return view('admin-login');
+});
+
+
+// ADMIN (RESTRICTED)
+Route::group(['middleware' => 'users'],function(){
+
+    Route::get('/pylon-admin', function(){
+        return view('pylon-admin');
+    });
+
+    Route::get('/newseditor', function(){
+        return view('newseditor'); 
+    });
+
+    Route::get('/services', function(){
+        return view('services'); 
+    });
+
+    Route::get('/eventsandannouncements', function () {
+    return view('eventsandannouncements');
+    });
+
+    Route::get('/holidays', function () {
+        return view('holidays');
+    });
+});
+
+
+
+   
+//ADMIN END
+//ADMIN ROUTE FUNCTIONS
+//News Editor
+Route::post('/createNews', 'new_controller@store');
+Route::get('/getNews', 'new_controller@index');
+Route::post('/getOneNews', 'new_controller@show');
+Route::post('/updateOneNews', 'new_controller@update');
+Route::post('/deleteOneNews', 'new_controller@destroy');
+//Services
+Route::post('/createService', 'servicesController@store');
+Route::get('/getService', 'servicesController@tbServices');
+Route::post('/getOneService', 'servicesController@show');
+Route::post('/updateOneService', 'servicesController@update');
+Route::post('/deleteOneService', 'servicesController@destroy');
+
+//Events and Announcements
+Route::post('/createEvents', 'EventsandAnnouncementsController@store');
+Route::get('/getEvents', 'EventsandAnnouncementsController@tbEvents');
+Route::post('/deleteOneEvents', 'EventsandAnnouncementsController@destroy');
+Route::post('/getOneEvents', 'EventsandAnnouncementsController@show');
+Route::post('/updateOneEvents', 'EventsandAnnouncementsController@update');
+
+//Holidays
+Route::post('/createHoliday', 'holidayController@store');
+Route::get('/getHolidays', 'holidayController@tbHolidays');
+Route::post('/deleteOneHoliday', 'holidayController@destroy');
+Route::post('/getOneHoliday', 'holidayController@show');
+Route::post('/updateOneHoliday', 'holidayController@update');
+
+// Client side  NEWS, EVENTS, HOLIDAYS, SERVICES
+Route::get('getLatestServices', 'cms_controller@getAllLatestServices');
+Route::get('getHoliday', 'cms_controller@getHoliday');
+Route::get('getEventsAndAnnouncement1', 'cms_controller@getEvents1');
+Route::get('getEventsAndAnnouncement2', 'cms_controller@getEvents2');
+Route::get('getAllEvents', 'cms_controller@getEvents');
+Route::get('getAllNews', 'cms_controller@getNews');
+
+//ADMIN ROUTE FUNCTIONS END
+
+Route::post('/saveData', 'logInOutController@save');
+Route::get('/signout', 'logInOutController@logOut');
+
+
+
+
+
+Route::post('register', array('uses' => 'Register@store'));
+
+Route::get('getLatestNews', 'new_controller@getAllNewsHeadlines');
+
+
+
 
 Route::get('/form_renewal/{buss_id?}', 'JController@form_renewal');
 

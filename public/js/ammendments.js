@@ -42,7 +42,7 @@ $('#busi_add').click(function(){
     type : 'GET',
     dataType : 'json',
     success : function (res) {
-      console.log(res[0]);
+
       if (res[0] != null) {
         $('#ammend_address').val(res[0].address);
         $('#ammend_bussname').val(res[0].buss_name);
@@ -168,19 +168,19 @@ $('#change_emp').click(function(){
             dataType : 'json',
             success : function (res) {
               content = res.content;
-              console.log(res);
+    
               window.location.href = "/ammendments";
 
               if (res.reponse == true){
                 // sessionStorage.setItem("user_id",content.user_id);
-                console.log("acc");
+       
           }
             notify(res.msg, 'info',500)
         },
 
         error: function(xhr)
         {
-          console.log("error");
+      
         }
 
   });
@@ -197,8 +197,7 @@ $('#change_emp').click(function(){
           },
           error: function (res)
           {
-            console.log(res);
-            console.log("aw");
+           
           }
         });
 });
@@ -252,10 +251,10 @@ function ammenddisplay()
         },
         dataType : 'json',
         success : function (res) {
-          console.log(res);
+      
 
            content = res.content;
-           console.log(content);
+  
            if (res.response == true)
            {
            $('#renewal_form').modal('show');
@@ -389,7 +388,7 @@ function ammenddisplay()
 },
         error: function(xhr)
         {
-          console.log("error");
+       
         }
       });
 

@@ -1,5 +1,12 @@
 var datable_news;
 $(document).ready(function() {
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
     datable_news = $('#tb_news').DataTable({
         "ajax": {
             "url": '/getNews',
@@ -19,22 +26,59 @@ $(document).ready(function() {
             "data": "btn"
         }]
     });
-    console.log('Admin JS Here');
+
+
+    $('#seeNews').click(function(e) {
+        e.preventDefault();
+
+        
+        $.ajax({
+            url : '/getAllNews',
+            type : 'GET',
+            dataType : 'json',
+            success : function(res){
+
+            
+            var seeAllNews_html = '';
+
+            for (var i = 0; i < res.length; i++) {
+            //   
+            seeAllNews_html +=                   '<div class="card">'+
+                                '<div class="card-body">'+
+                                '<h5 class = "card-title">'+ res[i].title +'</h5>'+
+                                    '<img src="/image/'+res[i].thumbnail+'" alt="Event 1" class="img-fluid">'+
+                                '</div>'+
+                            '</div>';
+        
+            $('#eventsandannouncements').html(seeAllNews_html);
+            $('#seeAllNews').modal('show');
+            }
+            },
+            error : function(xhr){
+            
+
+            }
+            });
+    });
+
+
+
+    
+  
+
+
+
 
     $('#delete_news_form').submit(function(e) {
         e.preventDefault();
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
+    
         $.ajax({
             url: '/deleteOneNews',
             type: 'POST',
             data: $(this).serialize(),
             dataType: 'json',
             success: function(res) {
-                console.log(res);
+          
                 notif('Success ! Deleting Your Post \n ' + res.msg, 'success');
                 $('#delete_news_form')[0].reset();
                 $('#newsdelete').modal('hide');
@@ -46,13 +90,15 @@ $(document).ready(function() {
                 datable_news.ajax.reload();
             },
             error: function(xhr) {
-                console.log(xhr.responseText);
+         
             }
         });
     });
 
     $('#addNews').submit(function(e) {
         e.preventDefault();
+     
+
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -70,7 +116,7 @@ $(document).ready(function() {
             processData: false,
             dataType: 'json',
             success: function(res) {
-                console.log(res);
+         
 
                 notif('Success ! Uploading Your Post \n ' + res.msg, 'success');
                 $('#addNews')[0].reset();
@@ -83,10 +129,14 @@ $(document).ready(function() {
                 datable_news.ajax.reload();
             },
             error: function() {
-                console.log('Error in Adding News');
+          
             }
         });
     });
+
+
+
+
 
     $('#update_btn_thumb').click(function() {
         $('#update_thumb_input').trigger('click');
@@ -140,7 +190,7 @@ $(document).ready(function() {
             processData: false,
             dataType: 'json',
             success: function(res) {
-                console.log(res);
+             
 
                 notif('Success ! Updating Your Post \n ' + res.msg, 'success');
                 $('#updatenews')[0].reset();
@@ -153,7 +203,7 @@ $(document).ready(function() {
                 datable_news.ajax.reload();
             },
             error: function() {
-                console.log('Error in Adding News');
+           
             }
         });
     });
@@ -187,7 +237,7 @@ function changeAction(id, action) {
 
     switch (action) {
         case 'view':
-            console.log('view');
+    
             $.ajaxSetup({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -202,7 +252,7 @@ function changeAction(id, action) {
                 dataType: 'json',
                 success: function(res) {
                     res = res[0];
-                    console.log(res);
+            
                     $('#view_thumb').attr('src', '/image/' + res.thumbnail);
                     $('#view_video').attr('src', res.video);
                     $('#view_title').val(res.title);
@@ -213,13 +263,13 @@ function changeAction(id, action) {
                     $('#view_created_at').html('Date and Time publish ' + res.created_at);
                 },
                 error: function(xhr) {
-                    console.log(xhr.responseText);
+                 
                 }
             });
             $('#viewnewsmodal').modal('show');
             break;
         case 'update':
-            console.log('update');
+         
             $.ajaxSetup({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -250,13 +300,13 @@ function changeAction(id, action) {
                     $('#update_news_id').val(res.id);
                 },
                 error: function(xhr) {
-                    console.log(xhr.responseText);
+               
                 }
             });
             $('#updatenewsmodal').modal('show');
             break;
         case 'delete':
-            console.log('delete');
+    
             $.ajaxSetup({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -271,12 +321,12 @@ function changeAction(id, action) {
                 dataType: 'json',
                 success: function(res) {
                     res = res[0];
-                    console.log(res);
+             
                     $('#delete_title_news').html('News Title : ' + res.title)
                     $('#delete_id_news').val(id);
                 },
                 error: function(xhr) {
-                    console.log(xhr.responseText);
+    
                 }
             });
             $('#newsdelete').modal('show');
@@ -300,16 +350,16 @@ function notif(msg, type, responseTime) {
 
 function functionName() {
 
-    console.log('clicked');
+ 
     $.ajax({
         url: '/getNews',
         type: 'GET',
         dataType: 'json',
         success: function(res) {
-            console.log(res);
+    
         },
         error: function(xhr) {
-            console.log(xhr.responseText);
+       
         }
     });
 

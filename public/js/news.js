@@ -55,7 +55,7 @@
         // $('#view_created_at').html('Date and Time publish '+ res.created_at);
       },
       error : function(xhr){
-        console.log(xhr.responseText);
+      
       }
     });
 
