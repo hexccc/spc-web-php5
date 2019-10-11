@@ -107,6 +107,7 @@
                       //  <div class="card-body">
                        //   <h5 class = "card-title">{{-- TITLE --}}</h5>
                        //     <img src=""{{-- IMAGE --}} alt="Event 1" class="img-fluid">
+                         // <p>{{--Content--}}</p>
                        // </div>
                     //  </div> 
                       
