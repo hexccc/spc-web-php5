@@ -60,6 +60,28 @@ class cms_controller extends Controller
         return $data;
       }
 
+      public function getForm()
+      {
+        $query = DB::table('engineering_building_form')->get();
+  
+        $data = [];
+        foreach ($query as $r) {
+          $data[] = array(
+            // date('l jS \of F Y h:i:s A',strtotime($r->date_of_death)
+            'id' => $r->id,
+            'title' => $r->title,
+            'link' => $r->link
+            // 'content' => $r->content,
+            // 'thumbnail' => $r->thumbnail,
+            // 'video' => $r->video,
+            // 'created_at' => date("l jS \of F Y h:i:s A",strtotime($r->created_at)),
+            // 'updated_at' => $r->updated_at
+          );
+        }
+  
+        return $data;
+      }
+
       public function getEvents1()
       {
         $query = DB::table('events_announcements')->orderByRaw('id DESC')->limit('1')->get();
@@ -85,4 +107,6 @@ class cms_controller extends Controller
   
         return Response::json($query);
       }
+
+     
 }
