@@ -330,8 +330,9 @@
 
   <script src="/js/modal.js"></script>
   <script src="/js/modal-brgy.js"></script>
-  <script>
+  {{-- <script>
   AOS.init();
-  </script>
+  </script> --}}
 @extends('inc.modals')
+@extends('inc.promptmodal')
 @endsection
