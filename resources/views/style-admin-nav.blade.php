@@ -10,6 +10,14 @@ body{
 
 }
 
+table{
+   width: 100px;
+}
+
+.link{
+   max-width: 100px;
+}
+
 .wrapper {
    display: flex;
    align-items: stretch;
