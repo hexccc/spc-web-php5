@@ -753,4 +753,164 @@
       </div>
     </div>
   </div>
+
+
+
+  {{-- Engineering FORM --}}
+  
+  <div class="modal fade" id="inputEngineeringForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="">Add Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+  
+            <form id="addForm" enctype="multipart/form-data">
+  
+              <div class="form-group">
+                <label for="exampleInputEmail13">Title</label>
+                <input type="text" class="form-control" name="formTitle" id="exampleInputEmail3" aria-describedby="emailHelp" >
+              </div>
+  
+                <div class="file-upload-wrapper">
+                  <label for="input-file-now2">File</label>
+                  <input type="file"  name="formFile" id="input-file-now2" class="file-upload" />
+                </div>
+              
+              
+  
+                    {{--  <input type="hidden" name="created_by" value="sampleID_created_by">
+                    <input type="hidden" name="updated_by" value="sampleID_updated_by">  --}}
+                    <div class="container text-center pt-3">
+                        <button type="submit" id="add_submit_form" class="btn btn-primary">Submit</button>
+                        <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
+                    </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal fade" id="formdelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-top" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="">Delete</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+    <div class="">
+      <p>Are you sure you want to Delete?
+        <span id="delete_title_form"></span>
+      </p>
+    </div>
+  
+                <div class="container text-center">
+  
+                  <form id="delete_engineering_form">
+                    <input type="hidden" name="delete_id" value="" id="delete_id_form">
+                    <button type="submit" class="btn btn-danger" >Yes</button>
+                    <button type="reset" data-dismiss="modal" class="btn btn-primary">No</button>
+                  </form>
+  
+  
+                </div>
+  
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  <div class="modal fade" id="updateformmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mayor_office">Update Form <span id="update_created_at"></span> </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                    <form id="updateform" enctype="multipart/form-data">
+                      <div class="row">
+                        
+                      
+  
+                        <div class="col-12 pt-4">
+                          <div class="form-group ">
+                            <label for="update_title">Title</label>
+                            <input type="text" class="form-control" name="update_form_title" id="update_form_title" aria-describedby="emailHelp" >
+                              </div>
+                        </div>
+                        <div class="col-12 pt-4">
+                          <div class="file-upload-wrapper">
+                            <label for="input-file-now2">File</label>
+                            <input type="file"  name="update_form_file" id="input-file-now2" class="file-upload" />
+                          </div>
+                        </div>
+                        <input type="hidden" name="update_form_id" id="update_form_id" value="">
+  
+                            {{-- <input type="text" name="update_created_by" id="update_created_by" value="sampleID_created_by">
+                            <input type="text" name="update_updated_by" id="update_updated_by" value="sampleID_updated_by"> --}}
+  
+                            <div class="container text-center">
+                                <button type="submit" id="update_submit_form" class="btn btn-primary">Update</button>
+                                    <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
+                            </div>
+                        </div>
+                    </form>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal fade" id="viewformmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mayor_office">View Form <span id="view_created_at"></span> </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                    <form id="viewform" enctype="multipart/form-data">
+                      <div class="row">
+                          
+                          <div class="col-12 pt-4">
+                            <div class="form-group ">
+                              <label for="exampleInputEmail1">Title</label>
+                              <input type="text" class="form-control" name="view_form_title" id="view_form_title"  aria-describedby="emailHelp" readonly >
+                                </div>
+                          </div>
+                          <div class="col-12 pt-4">
+                            <div class="form-group ">
+                              <label for="exampleInputEmail1">Link</label>
+                              <input type="text" class="form-control" name="view_form_link" id="view_form_link"  aria-describedby="emailHelp" readonly >
+                                </div>
+                          </div>
+  
+                            {{-- <input type="hidden" name="created_by" id="view_created_by"  value="admin" readonly>
+                            <input type="hidden" name="updated_by" id="view_updated_by"  value="admin" readonly> --}}
+  
+                            <div class="container text-center">
+                              <button type="reset" data-dismiss="modal" class="btn btn-info" >Close</button>
+                            </div>
+                        </div>
+                    </form>
+  
+        </div>
+      </div>
+    </div>
+  </div>
   

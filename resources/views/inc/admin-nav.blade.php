@@ -26,6 +26,9 @@
                         <li>
                             <a href="/holidays">Holidays</a>
                         </li>
+                        <li>
+                            <a href="/engineeringform">Engineering and Building Form</a>
+                        </li>
                     </ul>
                 </li>
                 <li>

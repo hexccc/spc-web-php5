@@ -195,6 +195,11 @@ Route::group(['middleware' => 'users'],function(){
     Route::get('/holidays', function () {
         return view('holidays');
     });
+
+    Route::get('/engineeringform', function () {
+        return view('engineering_and_building_form');
+    });
+    
 });
 
 
@@ -229,6 +234,13 @@ Route::post('/deleteOneHoliday', 'holidayController@destroy');
 Route::post('/getOneHoliday', 'holidayController@show');
 Route::post('/updateOneHoliday', 'holidayController@update');
 
+//EngineeringForm
+Route::post('/create_form', 'engineeringFormController@store');
+Route::get('/get_form', 'engineeringFormController@tbForms');
+Route::post('/delete_one_form', 'engineeringFormController@destroy');
+Route::post('/get_one_form', 'engineeringFormController@show');
+Route::post('/update_one_form', 'engineeringFormController@update');
+
 // Client side  NEWS, EVENTS, HOLIDAYS, SERVICES
 Route::get('getLatestServices', 'cms_controller@getAllLatestServices');
 Route::get('getHoliday', 'cms_controller@getHoliday');
@@ -236,6 +248,9 @@ Route::get('getEventsAndAnnouncement1', 'cms_controller@getEvents1');
 Route::get('getEventsAndAnnouncement2', 'cms_controller@getEvents2');
 Route::get('getAllEvents', 'cms_controller@getEvents');
 Route::get('getAllNews', 'cms_controller@getNews');
+Route::get('get_engr_form', 'cms_controller@getForm');
+
+
 
 //ADMIN ROUTE FUNCTIONS END
 
