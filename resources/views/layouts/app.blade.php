@@ -31,6 +31,7 @@
     <script src="/js/modal.js"></script>
     {{-- <script src="/js/testing.js"></script> --}}
     <script src="/js/eventsandannouncements.js"></script>
+    <script src="/js/engineering_and_building_forms.js"></script>
     <script src="/js/form_renewal.js"></script>
     <script src="/js/ammendments.js"></script>
     <script src="/js/inputmask.js"></script>

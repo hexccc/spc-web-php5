@@ -148,32 +148,8 @@
           <h3 class="text-white card-title p-2 text-center mb-0 align-text-bottom">
           Engineering and Building Form
           </h3>
-          <div class="card-body text-primary">
-            <a style="font-size:12px;"
-            href="{{URL::asset('docs/4th-qtr-SPP.xls')}}" target="_blank"
-            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true" >
-            LCR Form
-            </a>
-            <a style="font-size:12px;"
-            href="{{URL::asset('docs/4th-qtr-SPP.xls')}}" target="_blank"
-            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true" >
-            BPLS Form
-            </a>
-            <a style="font-size:12px;"
-            href="{{URL::asset('docs/4th-qtr-SPP.xls')}}" target="_blank"
-            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true" >
-            RPT Request
-            </a>
-            <a style="font-size:12px;"
-            href="{{URL::asset('docs/4th-qtr-SPP.xls')}}" target="_blank"
-            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true" >
-            HR Module
-            </a>
-            <a style="font-size:12px;"
-            href="{{URL::asset('docs/4th-qtr-SPP.xls')}}" target="_blank"
-            class="btn btn-outline-info btn-block btn-sm text-dark" aria-disabled="true" >
-            EBP System
-            </a>
+          <div class="card-body text-primary" id = "engr-bldg-form"> 
+             
           </div>
           
         </div>

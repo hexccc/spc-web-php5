@@ -114,6 +114,16 @@ $(document).ready(function() {
                 var seeAllNews_html = '';
     
                 for (var i = 0; i < res.length; i++) {
+
+                    seeAllNews_html += '<div class="card">'+
+                                            '<div class="card-body">'+
+                                            '<h5 class = "card-title">'+res[i].title+'</h5>'+
+                                                '<img src="/image/'+res[i].thumbnail+'" alt="Event 1" class="img-fluid">'+
+                                            '<p>'+res[i].content+'</p>'+
+                                            '</div>'+
+                                        '</div>';
+
+                    
           
             
                 $('#news').html(seeAllNews_html);
