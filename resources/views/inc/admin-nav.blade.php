@@ -1,7 +1,7 @@
 
-<div class="row" id="app">
+<div class="row col-12 p-0 m-0" id="app">
     <div class="sidebar-wrapper">
-      <div class="wrapper col-sm pr-0 ">
+      <div class="wrapper col-sm-2 p-0 ">
 
 
         <!-- Sidebar -->
@@ -73,13 +73,11 @@
     </div>
   </div>
 
-  <div class="col-sm px-0">
+  <div class="col-lg px-0">
     <div id="content">
         <nav class="navbar navbar-light bg-dark">
-            <div class="container-fluid pl-0">
-                {{-- <button type="btn btn-dark" id="sidebarCollapse" class="btn btn-info">
-                    <i class="fas fa-align-left" title="Sidebar"></i>
-                    <span></span> --}}
+            <div class="container-fluid p-0">
+            
 
                 </button>
                 <a href="/signout"  type="button" class="btn btn-dark">Sign Out</a>

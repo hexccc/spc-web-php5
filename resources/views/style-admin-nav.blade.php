@@ -9,13 +9,19 @@ body{
     align-items: stretch;
 
 }
-
-table{
-   width: 100px;
+.container-fluid{
+   margin:0px;
+   padding: 0px;
 }
-
-.link{
-   max-width: 100px;
+td {
+  
+   max-width: 50px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+th{
+   width: 120px;
 }
 
 .wrapper {
@@ -24,8 +30,8 @@ table{
 }
 
 #sidebar {
-   min-width: 250px;
-   max-width: 250px;
+   min-width: 200px;
+   max-width: 200px;
 min-height: 100vh;
 
 }
@@ -34,12 +40,12 @@ min-height: 100vh;
 }
 
 #sidebar.active {
-   margin-left: -250px;
+   margin-left: -200px;
 }
 
 #sidebar {
-   min-width: 250px;
-   max-width: 250px;
+   min-width: 200px;
+   max-width: 200px;
 
 
 }
@@ -58,7 +64,7 @@ min-height: 100vh;
 
 @media (max-width: 768px) {
    #sidebar {
-       margin-left: -250px;
+       margin-left: -200px;
    }
    #sidebar.active {
        margin-left: 0;

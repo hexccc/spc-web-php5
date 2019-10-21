@@ -4,9 +4,9 @@
 @section('admincontent')
 
 
-<div class="container-fluid">
-<div class="container p-5">
-<div class="row">
+<div class="col container-fluid p-0">
+<div class="container py-5">
+
   <div class="container">
     <button href="#" class="btn btn-success text-right font-weight-bold p-2  align-baseline align-text-bottom" data-toggle="modal" data-target="#inputService">Add Service</button>
   </div>
@@ -18,9 +18,9 @@
                   <th>ID</th>
                   <th>Title</th>
                   <th>Link</th>
-                  <th>Created_at</th>
-                  <th>Updated_at</th>
-                  <th>Action</th>
+                  <th >Created_at</th>
+                  <th >Updated_at</th>
+                  <th >Action</th>
               </tr>
           </thead>
           <tbody>
@@ -40,7 +40,7 @@
 </div>
 </div>
 </div>
-</div>
+
 @include('inc.admin-modal')
 @include('inc.modals')
 @stop

@@ -148,7 +148,16 @@ $(document).ready(function() {
             "data": "updated_at"
         }, {
             "data": "btn"
-        }]
+        }],
+        scrollX: true,
+        columnDefs: [
+            {
+                render: function(data, type, full, meta) {
+                    return `<td>` + data + `</td>`
+                },
+                targets: 2
+            }
+        ]
     });
 
 });
