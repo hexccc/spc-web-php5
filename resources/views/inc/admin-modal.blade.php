@@ -190,9 +190,9 @@
   
               <div class="form-group">
                 <label for="exampleInputEmail13">Link</label>
-                <div class="row">
-                <p class="text-secondary col-2">http://www.</p>
-                <input type="text" class="form-control col-10" name="serviceLink" id="exampleInputEmail3" aria-describedby="emailHelp" >
+                
+                
+                <input type="text" class="form-control" name="serviceLink" id="exampleInputEmail3" aria-describedby="emailHelp" >
               </div>
               </div>
               

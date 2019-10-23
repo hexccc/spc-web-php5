@@ -14,10 +14,10 @@ class cms_controller extends Controller
     public function getHoliday()
     {
 
-      $datemonth = date("F");
-      $dateday = date("j");
-
-      $data1 = DB::table('holidays')->where('month',$datemonth)->where('day',$dateday)->get();
+      // $datemonth = date("F");
+      // $dateday = date("j");
+      // ->where('month',$datemonth)->where('day',$dateday)
+      $data1 = DB::table('holidays')->get();
 
       // $data = [];
       // foreach ($query as $r) {

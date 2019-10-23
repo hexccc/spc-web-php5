@@ -18,7 +18,9 @@ $(document).ready(function() {
           
            console.log(res);
            
-            holiday_html += '<p class = "text-center" id = "holidaytitle">'+res[0].greetings+'</br><b style = "font-size:1rem;">'+res[0].title+' '+res[0].month+' '+res[0].day+' '+ new Date().getFullYear()+'</b></p>';
+            holiday_html += '<h5 class = "text-center font-weight-bold" id = "holidaytitle">'+res[0].greetings+
+            '</br></h5><i class="text-center mt-2" style="font-size:1rem;" >'+res[0].title+' '+res[0].month+' '+res[0].day+' '+ 
+            new Date().getFullYear()+'</i>';
           
        
           $('#phil_holiday').html(holiday_html);

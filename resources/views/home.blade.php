@@ -7,10 +7,10 @@
   $(document).ready(function() {
     $('#myModal').modal('show');
   });
-</script>
+</script> --}}
 
 {{-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> --}}
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 {{-- NEWS --}}
@@ -146,9 +146,9 @@
         </div>
         <div class="card mb-3 shadow">
           <h3 class="text-white card-title p-2 text-center mb-0 align-text-bottom">
-          Engineering and Building Form
+          Downloadable Form
           </h3>
-          <div class="card-body text-primary" id = "engr-bldg-form"> 
+          <div class="card-body text-primary p-0" id = "engr-bldg-form"> 
              
           </div>
           
@@ -260,10 +260,10 @@
           </div>
 
         </div>
-        <div data-aos="fade-left" class="card shadow card-body ">
+        <div class="card shadow card-body ">
           <img class="align-middle" src="{{URL::asset('image/flag.gif')}}">
           
-          <div id = "phil_holiday"></div>
+          <div class="text-center" id = "phil_holiday"></div>
 
         </div>
       </div>
@@ -271,7 +271,7 @@
     {{-- 2nd row end --}}
 
     {{-- 3rd row --}}
-    <div data-aos="fade-right" data-aos-duration="1000" data-aos-duration="2000" class="row mt-4">
+    <div class="row mt-4">
       <div class="col-lg-12 mb-4">
         <div class="card shadow mb-1">
           <h3 class="text-white card-title p-2 text-center mb-0">Videos</h3>
@@ -296,7 +296,7 @@
         </div>
       </div>
     </div>
-    <div data-aos="fade-left" class="card shadow mb-4">
+    <div  class="card shadow mb-4">
       <h2 class="text-white card-title border-primary text-center mt-0" >Visitor's Counter:</h2>
       <h3 class="card-body text-center py-2" style="background-color:#48C9B0;border-radius:0px; color:white;">{{ $count }}</h3>
     </div>
