@@ -131,7 +131,9 @@
       
     </ul>
     <div style="width: 25%; margin: auto">
-      <iframe class="justify-content-center" style="color:#f9f9f9;" style="pointer-events: none;" src="http://oras.pagasa.dost.gov.ph/time_display/widget.php" frameborder="0" width="190" height="68" allowTransparency="true" scrolling="no" style="text-align: center" disabled></iframe>
+      <p style="padding-top:11px;"><iframe class="text-center" style="pointer-events: none;" src="https://freesecure.timeanddate.com/clock/i6qeu6qp/n145/tlph/fs15/fcfff/tct/pct/tt0" frameborder="0" width="279" height="20" allowTransparency="true" disabled></iframe>
+      </p>
+      {{-- <iframe class="justify-content-center" style="color:#f9f9f9;" style="pointer-events: none;" src="http://oras.pagasa.dost.gov.ph/time_display/widget.php" frameborder="0" width="190" height="68" allowTransparency="true" scrolling="no" style="text-align: center" disabled></iframe> --}}
     </div>
   </div>
 </nav>
