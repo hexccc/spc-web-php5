@@ -24,19 +24,23 @@ class logInOutController extends Controller
                                 ->where('password',$input['password'] )
                                 ->where('email',$input['username'])
                                 ->get();
-          $userdata = array();
-          if($users)
+    
+
+                     
+          if(count($users) > 0)
           {
             foreach($users as $k)
               {
-                $userdata['name'] = $k->name;
-                $userdata['status'] = $k->status;
+               $name = $k->name;
+               $stats= $k->status;
               }
-              $request->session()->put('name',$userdata['name']);
-              $request->session()->put('status',$userdata['status']);
-            return Response::json($users);
+
+        
+              $request->session()->put('name',    $name);
+              $request->session()->put('status',   $stats);
+              return Response::json($users);
           }
-          
+          return Response::json('invalid');
           
           
       }

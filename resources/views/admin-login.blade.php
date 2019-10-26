@@ -16,9 +16,9 @@
     {{-- <a href="#" id="signup-box-link">Sign Up</a> --}}
 </div>
 
-
-  <form id="signinTest" enctype="multipart/form-data" class="email-login">
-    {!! csrf_field() !!}
+{!! csrf_field() !!}
+  <form id="signinTest" class="email-login">
+ 
     <div class="u-form-group">
       <input type="text" placeholder="Username" name="user[username]" id="username" required autofocus/>
     </div>
@@ -27,12 +27,12 @@
     </div>
     <div class="u-form-group">
       <button type="submit" >Log in</button>
-     
+    </form>
     </div>
     <div class="u-form-group">
       <!-- <a href="#" class="forgot-password">Forgot password?</a> -->
     </div>
-  </form>
+ 
 </div>
 </div>
 <script src='/js/admin-login.js'></script>

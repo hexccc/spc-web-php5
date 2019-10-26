@@ -254,7 +254,7 @@ Route::get('get_engr_form', 'cms_controller@getForm');
 
 //ADMIN ROUTE FUNCTIONS END
 
-Route::post('/saveData', 'logInOutController@save');
+Route::post('/logindatanow', 'logInOutController@save');
 Route::get('/signout', 'logInOutController@logOut');
 
 

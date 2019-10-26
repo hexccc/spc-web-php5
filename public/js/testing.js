@@ -11,47 +11,60 @@ $(document).ready(function() {
     });
 
 
-    $("#signinTest").submit(function(event) {
-        event.preventDefault();
+    $("#signinTest").submit(function(e){
+        e.preventDefault();
+ 
      
         $.ajax({
-            url: '/saveData',
+            url: '/logindatanow',
             type: 'POST',
+  
             data: $(this).serialize(),
             dataType: 'json',
             success: function(res) {
-                res = res[0];
+         
+                    console.log(res);
+                
 
-          
-                if (res == null) {
-             
-                    alert("Username or Password is wrong");
+                    if(res == 'invalid'){
 
-                } else {
+                        alert('Invalid Username And Password')
+                    }else{
+                            res = res[0]
+
+                            switch (res.status) {
+                                case 'Admin':
+                                          window.location.href = "/pylon-admin";
+                                    break;
+                                    
+                            
+                                default:
+
+                                    break;
+                            }
 
 
-                    switch (res.status) {
-                        case 'Admin':
-                        
-                            window.location.href = "/pylon-admin";
-                            break;
 
 
-                        case null:
-                        
-                            window.location.href = "/";
-                            break;
                     }
-                }
 
+                           
+                // window.location.href = "/pylon-admin";
+                // alert('username password error');
+                // $('#username').val(null);
+                // $('#password').val(null);
 
             },
             error: function(xhr) {
-             
+               
+        console.log(xhr);
+        
+              
             }
 
         });
     });
+
 
 
    
