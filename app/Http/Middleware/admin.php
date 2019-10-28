@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class users
+class admin
 {
     /**
      * Handle an incoming request.
@@ -21,9 +21,11 @@ class users
         }
         elseif($request->session()->get('status') === 0)
         {
-          
+           
         }
-       
+        else{
+            return redirect('/pylon-admin');
+           }
         return $next($request);
     }
 }

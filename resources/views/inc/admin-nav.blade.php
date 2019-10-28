@@ -17,14 +17,15 @@
                         <li>
                             <a href="/newseditor">News Editor</a>
                         </li>
-                        <li>
-                            <a href="/services">Services</a>
-                        </li>
+                        
                         <li>
                             <a href="eventsandannouncements">Events and Announcements</a>
                         </li>
                         <li>
                             <a href="/holidays">Holidays</a>
+                        </li>
+                        <li>
+                            <a href="/services">Services</a>
                         </li>
                         <li>
                             <a href="/engineeringform">Downloadable Forms</a>

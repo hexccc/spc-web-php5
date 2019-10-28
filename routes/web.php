@@ -175,30 +175,38 @@ Route::get('/logout', function() {
 
 // ADMIN (RESTRICTED)
 Route::group(['middleware' => 'users'],function(){
+    
+   
+        Route::get('/pylon-admin', function(){
+            return view('pylon-admin');
+        });
+    
+        Route::get('/newseditor', function(){
+            return view('newseditor'); 
+        });
+    
+        Route::get('/eventsandannouncements', function () {
+        return view('eventsandannouncements');
+        });
+    
+        Route::get('/holidays', function () {
+            return view('holidays');
+        });
+    
 
-    Route::get('/pylon-admin', function(){
-        return view('pylon-admin');
+    Route::group(['middleware' => 'admin'],function(){
+        Route::get('/services', function(){
+            return view('services'); 
+        });
+    
+        Route::get('/engineeringform', function () {
+            return view('engineering_and_building_form');
+        });
+    
+
     });
 
-    Route::get('/newseditor', function(){
-        return view('newseditor'); 
-    });
-
-    Route::get('/services', function(){
-        return view('services'); 
-    });
-
-    Route::get('/eventsandannouncements', function () {
-    return view('eventsandannouncements');
-    });
-
-    Route::get('/holidays', function () {
-        return view('holidays');
-    });
-
-    Route::get('/engineeringform', function () {
-        return view('engineering_and_building_form');
-    });
+   
     
 });
 

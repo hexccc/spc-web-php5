@@ -33,14 +33,14 @@ $(document).ready(function() {
                             res = res[0]
 
                             switch (res.status) {
-                                case 'Admin':
+                                case '0':
                                           window.location.href = "/pylon-admin";
                                     break;
+                                    case '1':
+                                        window.location.href = "/pylon-admin";
+                                  break;
                                     
-                            
-                                default:
-
-                                    break;
+                               
                             }
 
 
