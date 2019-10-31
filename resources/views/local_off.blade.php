@@ -106,6 +106,20 @@
               <p class="text-center"><b>City Councilor</b></p>
             </div>
           </div>
+          <div class="col-md-6 pb-2">
+            <div class="card border-primary card-body ">
+              <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/aristonamante.PNG')}}" style="height:100%; width:200px;">
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Ariston A. Amante</h5>
+              <p class="text-center"><b>ABC, President</b></p>
+            </div>
+          </div>
+          <div class="col-md-6 pb-2">
+            <div class="card border-primary card-body ">
+              <img class="img-fluid rounded mx-auto d-block" src="{{URL::asset('image/capuchino.PNG')}}" style="height:100%; width:200px;">
+              <h5 class="mt-0 font-weight-bold text-center" style="color:3490DC;">Hon. Liberty Pamela E. Capuchino</h5>
+              <p class="text-center"><b>SK Federation President</b></p>
+            </div>
+          </div>
 
 
       </div>
