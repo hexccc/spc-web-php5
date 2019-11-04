@@ -23,7 +23,7 @@
       <div class="col-md-8 mt-2">
         <ul class="float-right">
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Mayor's Office
                 </h3>
@@ -42,7 +42,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0"">
                 <h3 class="text-white card-title p-2 mb-0">
                   City Administrator’s Office
                 </h3>
@@ -62,7 +62,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0"">
                 <h3 class="text-white card-title p-2 mb-0">
                   Accounting Office
                 </h3>
@@ -77,7 +77,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Agriculture Office
                 </h3>
@@ -91,7 +91,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0"">
                 <h3 class="text-white card-title p-2 mb-0">
                   Assesor Office
                 </h3>
@@ -105,7 +105,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Budget Office
                 </h3>
@@ -119,7 +119,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Cooperative Office
                 </h3>
@@ -133,7 +133,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Environment and Natural Resources Office
                 </h3>
@@ -147,7 +147,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Engineering Office
                 </h3>
@@ -161,7 +161,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   General Services Office
                 </h3>
@@ -175,7 +175,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Human Resource Management Office
                 </h3>
@@ -189,7 +189,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Legal Office
                 </h3>
@@ -203,7 +203,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Local Civil Registar
                 </h3>
@@ -217,7 +217,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Planning and Development Office
                 </h3>
@@ -231,7 +231,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Population and Nutrition
                 </h3>
@@ -245,7 +245,7 @@
                 </div>
               </div>
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Social Welfare and Development Office
                 </h3>
@@ -260,7 +260,7 @@
               </div>
 
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Tourism Office
                 </h3>
@@ -275,7 +275,7 @@
               </div>
 
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Treasurers Office
                 </h3>
@@ -290,7 +290,7 @@
               </div>
 
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Veterinarian Office
                 </h3>
@@ -305,7 +305,7 @@
               </div>
 
 
-              <div class="card border-primary mb-3">
+              <div class="card shadow card-body mb-3 p-0">
                 <h3 class="text-white card-title p-2 mb-0">
                   Vice Mayor Office
                 </h3>

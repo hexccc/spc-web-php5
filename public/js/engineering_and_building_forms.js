@@ -21,9 +21,9 @@ $(document).ready(function() {
           var form_html = '';
           for (var i = 0; i < res.length; i++) {
             // res[i]
-            form_html += '<a style="font-size:16px; fontweight:bold; border-radius:0px;"'+
+            form_html += '<a style="font-size:16px; fontweight:bold; border-radius:50px;"'+
                             'href="/docs/'+res[i].link+'" target="_blank"'+
-                            'class="btn btn-outline-success text-dark btn-block btn-sm my-1" aria-disabled="true" >'+res[i].title+
+                            'class="btn btn-outline-success text-dark btn-block btn-sm my-2" aria-disabled="true" >'+res[i].title+
                             '</a>';
           }
           // console.log(news_html);

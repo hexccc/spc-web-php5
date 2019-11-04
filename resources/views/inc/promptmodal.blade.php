@@ -1,11 +1,11 @@
 
-    <div class="modal logged" id="myModal"  tabindex="-1"role="dialog" data-backdrop="static" data-keyboard="false" >
+    <div class="modal logged" id="terms_and_conditions"  tabindex="-1"role="dialog" data-backdrop="static" data-keyboard="false" >
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             
             <div class="modal-body">
               
-              <div class="form-group mt-0">
+              <div class="form-group mt-0 text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odio omnis reprehenderit commodi! Incidunt corrupti voluptatem animi iure optio blanditiis laudantium cum ratione deserunt, voluptatibus debitis aut neque saepe nemo!
               </div>
               <div class="form-group mb-0">

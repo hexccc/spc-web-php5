@@ -5,7 +5,7 @@
 
 <script type="text/javascript">
   $(document).ready(function() {
-    $('#myModal').modal('show');
+    $('#terms_and_conditions').modal('show');
   });
 </script> 
 
@@ -148,7 +148,7 @@
           <h3 class="text-white card-title p-2 text-center mb-0 align-text-bottom">
           Downloadable Form
           </h3>
-          <div class="card-body text-primary p-0" id = "engr-bldg-form"> 
+          <div class="card-body text-primary p-2" id = "engr-bldg-form"> 
              
           </div>
           
@@ -260,7 +260,7 @@
           </div>
 
         </div>
-        <div class="card shadow card-body ">
+        <div class="card shadow card-body">
           <img class="align-middle" src="{{URL::asset('image/flag.gif')}}">
           
           <div class="text-center" id = "phil_holiday"></div>
@@ -306,9 +306,7 @@
 
   <script src="/js/modal.js"></script>
   <script src="/js/modal-brgy.js"></script>
-  {{-- <script>
-  AOS.init();
-  </script> --}}
+
 @extends('inc.modals')
 @extends('inc.promptmodal')
 @endsection
