@@ -1,6 +1,6 @@
 
 <div class="col-lg-10 c-wrapper">
-<div id="demo" class="carousel slide shadow" data-ride="carousel" style="margin-top:110px;">
+<div id="demo" class="carousel slide shadow" data-ride="carousel" style="margin-top:110px;border-radius:25px;">
   <a class="carousel-control-prev" href="#demo" data-slide="prev">
     <span class="carousel-control-prev-icon aria-hidden="true""></span>
   </a>

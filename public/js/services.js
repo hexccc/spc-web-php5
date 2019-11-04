@@ -21,10 +21,12 @@ $(document).ready(function() {
           var services_html = '';
           for (var i = 0; i < res.length; i++) {
             // res[i]
-            services_html += '<a href = "'+ res[i].link+'" class="btn btn-outline-info btn-block text-dark" aria-disabled="true" target="_blank">'+res[i].title +'</a>';
+            services_html += '<a href = "'+ res[i].link+'"style="border-radius:25px;" class="btn btn-outline-info btn-block text-dark" aria-disabled="true" target="_blank" >'+res[i].title +'</a>';
           }
+
           // console.log(news_html);
           $('#gov_services').html(services_html);
+          $('.btn',).css('border-radius', '25px');
         },
         error : function(xhr){
 

@@ -3,20 +3,27 @@
 @section('content')
 @section('title', 'Home')
 
-<script type="text/javascript">
+{{-- <script type="text/javascript">
   $(document).ready(function() {
     $('#terms_and_conditions').modal('show');
   });
-</script> 
+</script>  --}}
 
 {{-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
 {{-- NEWS --}}
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.card',).css('border-radius', '25px');
+    $('.card-title',).css('border-radius', '25px');
+    $('.btn',).css('border-radius', '25px');
+  });
+</script>
 <div class="container-fluid">
   <div class="row ">
-    <div data-aos="fade-left" class='col-md-12'>
+    <div class='col-md-12'>
 
       <div class="card mb-3 shadow">
         <h3 class="text-white border-primary card-title p-2 pl-3 mb-0" style="background:#0072e9;">My City, My Government</h3>
@@ -296,10 +303,15 @@
         </div>
       </div>
     </div>
-    <div  class="card shadow mb-4">
-      <h2 class="text-white card-title border-primary text-center mt-0" >Visitor's Counter:</h2>
-      <h3 class="card-body text-center py-2" style="background-color:#48C9B0;border-radius:0px; color:white;">{{ $count }}</h3>
+
+    <div class="row col-2">
+    <div class=" card shadow mb-1" style="background-color:#48C9B0;">
+      <h4 class="text-white card-title p-2 text-center mb-0">
+        Visitor's Counter
+      </h4>
+      <h4 class="card-body text-center py-2" style="background-color:#48C9B0;border-radius:40px; color:white;">{{ $count }}</h3>
     </div>
+  </div>
     {{-- 3rd row end --}}
 
   </div>

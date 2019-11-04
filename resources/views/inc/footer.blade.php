@@ -75,7 +75,7 @@
       <div class="col-md-3">
         <div class="card pb-0">
             <h2 class="text-white card-title border-primary text-center mb-0" >Member Log in</h2>
-            <a href="signin_requestor" class="btn btn-success mb-1" style="border-radius:0px";><h4>Log In</h4></a>
+            <a href="signin_requestor" class="btn btn-outline-success text-dark btn-block btn-sm my-2" aria-disabled="true"  style="border-radius:25px";><h4>Log In</h4></a>
           </div>
         </div>
       </div>
