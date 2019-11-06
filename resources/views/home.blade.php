@@ -17,7 +17,11 @@
 <script type="text/javascript">
   $(document).ready(function() {
     $('.card',).css('border-radius', '25px');
+    // $('.card',).css('border-color', '#7BBFFF');
+    // $('.card',).css('border-width', '2px');
+
     $('.card-title',).css('border-radius', '25px');
+    $('.card-title',).css('border-width', '5px');
     $('.btn',).css('border-radius', '25px');
   });
 </script>
@@ -43,7 +47,7 @@
     <div class="row">
       <div class="col-lg-3">
         <div data-aos="fade-right" class="card mb-3 shadow">
-          <h3 class="text-white card-title border-primary text-center py-2 mb-0">Jobs</h3>
+          <h3 class="text-white card-title border-primary text-center py-2 px-2 mb-0">Jobs</h3>
           <div class="card-body text-primary">
             <a
               href="http://csc.gov.ph/career/"

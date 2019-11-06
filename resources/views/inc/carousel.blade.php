@@ -100,4 +100,13 @@ margin: auto;
 position: relative;
 margin-top: 60px;
 }
+
+h5{
+  color: white;
+  text-shadow: 4px 4px 10px #000000;
+}
+p{
+  color: white;
+  text-shadow: 4px 4px 10px #000000;
+}
 </style>
