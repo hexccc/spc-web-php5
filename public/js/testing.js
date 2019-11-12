@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 
     $("#signinTest").submit(function(e){
-        e.preventDefault();
+        e.prevent0Default();
  
      
         $.ajax({
@@ -34,16 +34,13 @@ $(document).ready(function() {
 
                             switch (res.status) {
                                 case '0':
-                                          window.location.href = "/pylon-admin";
+                                        window.location.href = "/pylon-admin";
                                     break;
                                     case '1':
                                         window.location.href = "/pylon-admin";
                                   break;
                                     
-                               
                             }
-
-
 
 
                     }
@@ -57,7 +54,7 @@ $(document).ready(function() {
             },
             error: function(xhr) {
                
-        console.log(xhr);
+         console.log(xhr);
         
               
             }
