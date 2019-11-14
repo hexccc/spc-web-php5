@@ -11,18 +11,16 @@ $(document).ready(function() {
     });
 
 
-    $("#signinTest").submit(function(e){
-        e.prevent0Default();
- 
+    $("#signinTest").on('submit', function(e){
+        e.preventDefault();
+        console.log('login')
      
         $.ajax({
             url: '/logindatanow',
-            type: 'POST',
-  
+            method: 'POST',
             data: $(this).serialize(),
             dataType: 'json',
             success: function(res) {
-         
                     console.log(res);
                 
 

@@ -7,7 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>San Pablo City | @yield('title')</title>
     {{-- <link rel="icon" href={!! asset('image/spc_small.png')!!}/> --}}
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    {{-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> --}}
+    <script src="/js/jquery-1.11.0.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>

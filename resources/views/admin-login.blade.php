@@ -26,7 +26,7 @@
       <input type="password" placeholder="Password" name="user[password]" id="password" required/>
     </div>
     <div class="u-form-group">
-      <button type="submit" >Log in</button>
+      <button type="submit" id="signin">Log in</button>
     </form>
     </div>
     <div class="u-form-group">
@@ -35,7 +35,7 @@
  
 </div>
 </div>
-<script src='/js/admin-login.js'></script>
+
 
 
 
