@@ -23,7 +23,7 @@ $(document).ready(function() {
 
              var latest_events_html = '';
            
-            latest_events_html += '<img src= "/image/'+res[0].thumbnail+'" alt = "event1" class = "img-responsive" style = "width:100%; height: 100%;" data-toggle="modal" data-target = "#event1">';
+            latest_events_html += '<img src= "/image/'+res[0].thumbnail+'" alt = "event1" class = "img-responsive" style = "width:230px; height: 100%;" data-toggle="modal" data-target = "#event1">';
             
        
             $('#latestEventAndAnnouncement').html(latest_events_html);

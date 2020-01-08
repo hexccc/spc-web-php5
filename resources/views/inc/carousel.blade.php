@@ -19,8 +19,8 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
 
-    {{-- <div class="carousel-item active">
-      <img src="{{URL::asset('image/vic-bday.jpg')}}" alt="mayor" height="450vh" width="100%">
+    <div class="carousel-item active">
+      <img src="{{URL::asset('image/25cocofest.png')}}" alt="mayor" height="450" width="100%">
       <div class="carousel-caption">
         <div class="float-right" style="text-align: right;">
           <div class="mx-3 mt-3 ">
@@ -29,9 +29,9 @@
         </div>
         <div class="mask rgba-purple-slight"></div>
       </div>
-    </div> --}}
-
-    <div class="carousel-item active">
+    </div>
+    
+    <div class="carousel-item">
       <img src="{{URL::asset('image/csc-banner.png')}}" alt="Sampaloc Lake" height="450" width="100%">
       <div class="carousel-caption">
         <div class="float-right" style="text-align: right;">
