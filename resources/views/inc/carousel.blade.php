@@ -12,14 +12,14 @@
     <li data-target="#demo" data-slide-to="0" class="active"></li>
     <li data-target="#demo" data-slide-to="1"></li>
     <li data-target="#demo" data-slide-to="2"></li>
-    <li data-target="#demo" data-slide-to="3"></li>
-    <li data-target="#demo" data-slide-to="4"></li>
+   <li data-target="#demo" data-slide-to="3"></li>
+    {{-- <li data-target="#demo" data-slide-to="4"></li> --}}
   </ul>
 
   <!-- The slideshow -->
   <div class="carousel-inner">
 
-    <div class="carousel-item active">
+    {{-- <div class="carousel-item active">
       <img src="{{URL::asset('image/relief drive.png')}}" alt="mayor" height="450" width="100%">
       <div class="carousel-caption">
         <div class="float-right" style="text-align: right;">
@@ -41,10 +41,10 @@
         </div>
         <div class="mask rgba-purple-slight"></div>
       </div>
-    </div>
+    </div> --}}
     
-    <div class="carousel-item">
-      <img src="{{URL::asset('image/csc-banner.png')}}" alt="Sampaloc Lake" height="450" width="100%">
+    <div class="carousel-item active">
+      <img src="{{URL::asset('image/csc-banner.png')}}" height="450" width="100%">
       <div class="carousel-caption">
         <div class="float-right" style="text-align: right;">
           <div class="mx-3 mt-3 ">
