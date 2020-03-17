@@ -8,12 +8,13 @@
       success : function(res){
         // console.log(res);
         var news_html = '';
-        for (var i = 0; i < res.length; i++) {
+        for (var i = 0; i <4; i++) {
           // res[i]
           news_html += '<div class="col-sm-3">'+
             '<img class="align-middle img-thumbnail rounded" onclick="viewNews('+res[i].id+')" src="/image/'+res[i].thumbnail+'" >'+
               '<p>'+res[i].subtitle+'</p>'+
             '</div>';
+         
         }
         // console.log(news_html);
         $('#news_headlines').html(news_html);
@@ -28,9 +29,11 @@
     $('#newCli_thumbnail').attr('src','#noImage');
     $('#newCli_content').html('');
     $('#showClientNews').modal('show');
+    
     $.ajaxSetup({
       headers: {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      
       }
     });
     $.ajax({
@@ -46,6 +49,7 @@
         $('#newCli_title').html(res.title);
         $('#newCli_thumbnail').attr('src','/image/'+res.thumbnail);
         $('#newCli_content').html(res.content) ;
+ 
         // $('#view_video').attr('src',res.video);
         // $('#view_title').val(res.title);
         // $('#view_subtitle').val(res.subtitle);

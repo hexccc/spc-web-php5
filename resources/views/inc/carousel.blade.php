@@ -44,7 +44,7 @@
     </div> --}}
     
     <div class="carousel-item active">
-      <img src="{{URL::asset('image/csc-banner.png')}}" height="450" width="100%">
+      <img src="{{URL::asset('image/doh_stayathome.png')}}" height="450" width="100%">
       <div class="carousel-caption">
         <div class="float-right" style="text-align: right;">
           <div class="mx-3 mt-3 ">

@@ -20,9 +20,8 @@ class new_controller extends Controller
       $draw = $request->get('draw');
       $start = $request->get('start');
       $length = $request->get('length');
-
-      $query = DB::table('news_table')->get();
-
+      $query = DB::table('news_table')->orderBy('id', 'DESC')->get();
+      
       $data = [];
       foreach ($query as $r) {
         $data[] = array(
@@ -43,8 +42,8 @@ class new_controller extends Controller
                 "recordsFiltered" => $query->count(),
                 "data" => $data
             );
-
-
+            
+            
       return $result;
     }
 
@@ -116,8 +115,8 @@ class new_controller extends Controller
     public function show(Request $request)
     {
         $id = $request->input('news_id');
-
-        $get_news = DB::table('news_table')->where('id',$id)->get();
+        $get_news = DB::table('news_table')->sortByDesc($id)->where('id',$id)->get();
+       
 
         return Response::json($get_news);
     }

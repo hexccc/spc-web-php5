@@ -120,7 +120,9 @@ Route::get('/our7lakes', function(){
   return view('our7lakes');
 });
 
-
+Route::get('/MissionPanel', function(){
+  return view('MissionPanel');
+});
 
 
 //////////////
@@ -192,9 +194,7 @@ Route::group(['middleware' => 'users'],function(){
         Route::get('/holidays', function () {
             return view('holidays');
         });
-    
 
-    Route::group(['middleware' => 'admin'],function(){
         Route::get('/services', function(){
             return view('services'); 
         });
@@ -202,6 +202,16 @@ Route::group(['middleware' => 'users'],function(){
         Route::get('/engineeringform', function () {
             return view('engineering_and_building_form');
         });
+    
+
+    Route::group(['middleware' => 'admin'],function(){
+        // Route::get('/services', function(){
+        //     return view('services'); 
+        // });
+    
+        // Route::get('/engineeringform', function () {
+        //     return view('engineering_and_building_form');
+        // });
     
 
     });
@@ -292,6 +302,12 @@ Route::post('/signinReg', 'JController@signinReg');
 
 Route::get('/checkinputs', 'JController@checkinputs');
 
+Route::get('/getmission', 'MissionController@show');
+
+Route::post('/updatemission', 'MissionController@update');
+
+
+
 Route::get('/ammendments', function () {
     return view('ammendments');
 });
@@ -299,3 +315,4 @@ Route::get('/ammendments', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+

@@ -9,8 +9,11 @@
     <div class="ptext">
        <div class="row d-flex justify-content-around">
           <span class="col-4 border">
-            MISSION <p style="font-size:11;letter-spacing:2px;text-align:justify;">To uplift the quality of the life of San Pablenos through effective and efficeient delivery of
-             public service in partnership with the private.</p>
+            MISSION
+           <p style="font-size:11;letter-spacing:2px;text-align:justify;">
+             To uplift the quality of the life of San Pablenos through effective and efficeient delivery of
+             public service in partnership with the private.
+           </p>
           </span>
           <span class="col-4 border">
             VISION <p style="font-size:11;letter-spacing:2px;text-align:justify;">San Pablo, the City of Seven lakes-premier tourist destination,

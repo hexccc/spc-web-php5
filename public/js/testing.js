@@ -1,5 +1,3 @@
-
-
 var datatable_events;
 $(document).ready(function() {
 
@@ -13,7 +11,7 @@ $(document).ready(function() {
 
     $("#signinTest").on('submit', function(e){
         e.preventDefault();
-        console.log('login')
+       
      
         $.ajax({
             url: '/logindatanow',
@@ -36,19 +34,14 @@ $(document).ready(function() {
                                     break;
                                     case '1':
                                         window.location.href = "/pylon-admin";
+                                        case '2':
+                                        window.location.href = "/pylon-admin";
                                   break;
                                     
                             }
 
 
                     }
-
-                           
-                // window.location.href = "/pylon-admin";
-                // alert('username password error');
-                // $('#username').val(null);
-                // $('#password').val(null);
-
             },
             error: function(xhr) {
                
@@ -59,16 +52,6 @@ $(document).ready(function() {
 
         });
     });
-
-
-
-   
-
-
-   
-
-    
-
 
 
 

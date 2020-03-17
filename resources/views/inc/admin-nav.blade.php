@@ -36,7 +36,7 @@
                     <a href="#missionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Mission and Vision</a>
                     <ul class="collapse list-unstyled" id="missionSubmenu">
                         <li>
-                            <a href="#">Mission</a>
+                            <a href="/MissionPanel">Mission</a>
                         </li>
                         <li>
                             <a href="#">VIsion</a>
