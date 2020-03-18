@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "chart.js": "^2.9.3",
     "inputmask": "^4.0.8",
     "spinkit": "^1.2.5"
   }

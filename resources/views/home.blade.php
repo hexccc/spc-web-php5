@@ -3,14 +3,56 @@
 @section('content')
 @section('title', 'Home')
 
+
 {{-- <script type="text/javascript">
   $(document).ready(function() {
     $('#terms_and_conditions').modal('show');
   });
 </script>  --}}
 
-{{-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+{{-- BARCHART --}}
+
+
+<script src="/chart.js/dist/Chart.bundle.min.js"></script>
+
+<canvas id="myChart" style="max-width: 400px;"></canvas>
+<script>
+  var ctx = document.getElementById("myChart").getContext('2d');
+  var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+  labels: ["Confirmed Cases", "Deaths", "Recovered"],
+  datasets: [{
+  label: 'Daily COVID-19 Cases in Philippines',
+  data: [12, 19, 3],
+  backgroundColor: [
+  'rgba(54, 162, 235, 0.2)',
+  'rgba(255, 99, 132, 0.2)',
+  'rgba(75, 192, 192, 0.2)',
+  ],
+  borderColor: [
+  'rgba(54, 162, 235, 1)',
+  'rgba(255,99,132,1)',
+  'rgba(75, 192, 192, 1)',
+
+  ],
+  borderWidth: 1
+  }]
+  },
+  options: {
+  scales: {
+  yAxes: [{
+  ticks: {
+  beginAtZero: true
+  }
+  }]
+  }
+  }
+  });
+</script>
+
+
+
 
 {{-- NEWS --}}
 
@@ -25,7 +67,55 @@
     $('.btn',).css('border-radius', '25px');
   });
 </script>
+
 <div class="container-fluid">
+  <div class="row ">
+    <div class='col-md-12'>
+
+      <div class="card mb-3 shadow">
+        <h3 class="text-white border-primary card-title p-2 pl-3 mb-0" style="background:#0072e9;">COVID-19 Live Data</h3>
+
+        <div class="card-body text-primary" >
+          <div class="row" id="">
+           
+              <div class="col-md-6">
+                <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Confirmed Cases</th>
+                    <th scope="col">Deaths</th>
+                    <th scope="col">Recovered</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>1</td>
+                    <td>1</td>
+                    
+                  </tr>
+                
+                    
+                
+                </tbody>
+                </table>
+             
+            </div>
+
+            <div class="col-md-6">
+              
+              <canvas id="myChart"></canvas>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="row ">
     <div class='col-md-12'>
 
@@ -35,7 +125,7 @@
         <div class="card-body text-primary" >
           <div class="row" id="news_headlines">
           </div>
-          <a href="#" id = "seeNews" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#">See All News>></a>
+          <a href="#" id = "" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#">See All News>></a>
         </div>
       </div>
     </div>

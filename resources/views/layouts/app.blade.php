@@ -15,6 +15,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/chart.js/dist/Chart.min.js">
     <script src="{!!url('/js/jquery.min.js')!!}"></script>
 
 
