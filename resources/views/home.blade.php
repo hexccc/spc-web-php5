@@ -39,9 +39,9 @@
         <h3 class="text-white border-primary card-title p-2 pl-3 mb-0" style="background:#0072e9;">COVID-19 Live Data</h3>
 
         <div class="card-body text-primary" >
-          <div class="row" id="">
+          <div class="d-flex justify-content-center" id="">
            
-              <div class="col-md-6">
+              {{-- <div class="col-md-6">
                 <table class="table">
                 <thead>
                   <tr>
@@ -64,16 +64,16 @@
                 </tbody>
                 </table>
              
+            </div> --}}
+
+            
+
+
+              <div class="text-center">
+              <canvas id="myChart" style="min-width: 600px;"></canvas>
+              </div>
             </div>
 
-            <div class="col-md-6">
-
-
-              
-              <canvas id="myChart" style="max-width: 400px;"></canvas>
-            </div>
-
-          </div>
           
         </div>
       </div>
@@ -403,10 +403,19 @@
     
 
 
-        
-        senddata(res[39].cases, res[39].deaths , res[39].recovered);
+
+var i;
+for (i = 0; i < res.length; i++) { 
 
 
+  if(res[i].country == 'Philippines'){
+
+  console.log(res[i]);
+     senddata(res[i].cases, res[i].deaths , res[i].recovered);
+
+  }
+
+}
 
 
       },
