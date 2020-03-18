@@ -13,43 +13,6 @@
 {{-- BARCHART --}}
 
 
-<script src="/chart.js/dist/Chart.bundle.min.js"></script>
-
-<canvas id="myChart" style="max-width: 400px;"></canvas>
-<script>
-  var ctx = document.getElementById("myChart").getContext('2d');
-  var myChart = new Chart(ctx, {
-  type: 'bar',
-  data: {
-  labels: ["Confirmed Cases", "Deaths", "Recovered"],
-  datasets: [{
-  label: 'Daily COVID-19 Cases in Philippines',
-  data: [12, 19, 3],
-  backgroundColor: [
-  'rgba(54, 162, 235, 0.2)',
-  'rgba(255, 99, 132, 0.2)',
-  'rgba(75, 192, 192, 0.2)',
-  ],
-  borderColor: [
-  'rgba(54, 162, 235, 1)',
-  'rgba(255,99,132,1)',
-  'rgba(75, 192, 192, 1)',
-
-  ],
-  borderWidth: 1
-  }]
-  },
-  options: {
-  scales: {
-  yAxes: [{
-  ticks: {
-  beginAtZero: true
-  }
-  }]
-  }
-  }
-  });
-</script>
 
 
 
@@ -104,8 +67,10 @@
             </div>
 
             <div class="col-md-6">
+
+
               
-              <canvas id="myChart"></canvas>
+              <canvas id="myChart" style="max-width: 400px;"></canvas>
             </div>
 
           </div>
@@ -397,6 +362,122 @@
         </div>
       </div>
     </div>
+
+
+    <script src="/chart.js/dist/Chart.bundle.min.js"></script>
+ 
+    <script src="/js/jq.js"></script>
+
+
+<script>
+
+
+
+
+ 
+
+  $(document).ready(function(){
+    
+
+    
+ 
+
+
+
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      
+      }
+    });
+
+
+    
+    
+    $.ajax({
+      url : "https://coronavirus-19-api.herokuapp.com/countries",
+      type : 'GET',
+      async: false,
+      success : function(res){
+   
+    
+
+
+        
+        senddata(res[39].cases, res[39].deaths , res[39].recovered);
+
+
+
+
+      },
+      error : function(xhr){
+
+console.log(xhr)
+      }
+    });
+
+
+
+
+
+
+
+
+
+  });
+
+function senddata(cases, deaths , recovered){
+
+
+
+  var ctx = document.getElementById("myChart").getContext('2d');
+  var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+  labels: ["Confirmed Cases:"+ cases, "Deaths: " +deaths, "Recovered :" + recovered],
+  datasets: [{
+  label: 'COVID-19 Cases in Philippines',
+  data: [cases, deaths, recovered],
+  backgroundColor: [
+  'rgba(54, 162, 235, 0.2)',
+  'rgba(255, 99, 132, 0.2)',
+  'rgba(75, 192, 192, 0.2)',
+  ],
+  borderColor: [
+  'rgba(54, 162, 235, 1)',
+  'rgba(255,99,132,1)',
+  'rgba(75, 192, 192, 1)',
+
+  ],
+  borderWidth: 1
+  }]
+  },
+  options: {
+  scales: {
+  yAxes: [{
+  ticks: {
+  beginAtZero: true
+  }
+  }]
+  }
+  }
+  });
+
+
+
+
+}
+
+
+
+
+
+
+
+
+</script>
+
+
 
     <div class="row col-2">
     <div class=" card shadow mb-1" style="background-color:#48C9B0;">
