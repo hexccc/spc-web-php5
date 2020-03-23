@@ -90,7 +90,7 @@
         <div class="card-body text-primary" >
           <div class="row" id="news_headlines">
           </div>
-          <a href="#" id = "" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#">See All News>></a>
+          <a href="#" id = "" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#seeAllNews">See All News>></a>
         </div>
       </div>
     </div>

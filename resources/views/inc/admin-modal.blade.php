@@ -1,3 +1,89 @@
+{-- ADMIN PANEL --}}
+<div class="modal fade" id="updatenewsmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mayor_office">Update News  <span id="update_created_at"></span> </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                  <form id="updatenews" enctype="multipart/form-data">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="row">
+                          <div class=" text-center col-12">
+                            <img src="image/20190701055237_thumb.jpg" id="update_thumb"  width="100%" height="100%" alt="No Image thumbnail found in the database">
+                            <input type="file" style="display:none;" name="update_thumbnail" id="update_thumb_input" value="">
+                          </div>
+
+                          <div class="text-center col-12 pt-3">
+                            <button type="button" id="update_btn_thumb" class="btn btn-primary" name="button">
+                              <i class="fas fa-upload"></i>
+                              Upload New Thumbnail
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="row">
+                          <div class=" text-center col-12">
+                              <iframe id="update_yt_frame" width="100%" style="min-height: 42vh;"  src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+
+                        <div class="text-center col-12 pt-3">
+                            <div class="row">
+                              <div class="col-4">
+                                <button type="button" id="update_paste_btn" name="button" class="btn btn-danger">
+                                  <i class="fas fa-paste"></i>
+                                  &nbsp; Paste
+                                </button>
+                              </div>
+                              <div class="col-8">
+                                <input type="text" class="form-control" name="update_news_video" id="update_news_video" value="" readonly>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 text-center">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 pt-4">
+                        <div class="form-group ">
+                          <label for="exampleInputEmail1">Title</label>
+                          <input type="text" class="form-control" name="update_news_title" id="update_news_title" aria-describedby="emailHelp" >
+                            </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Sub Title</label>
+                          <input type="text" class="form-control" name="update_sub_title" id="update_subtitle" >
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Content</label>
+                          <textarea class="form-control" name="update_content" id="update_content"  rows="8" cols="80"></textarea>
+                        </div>
+                      </div>
+                      <input type="hidden" name="update_news_id" id="update_news_id" value="">
+                          <input type="hidden" name="update_created_by" id="update_created_by" value="sampleID_created_by">
+                          <input type="hidden" name="update_updated_by" id="update_updated_by" value="sampleID_updated_by">
+                          <div class="container text-center">
+                              <button type="submit" id="update_submit_news" class="btn btn-primary">Update</button>
+                                  <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
+                          </div>
+                      </div>
+                  </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 {{-- EVENTS AND ANNOUCEMENTS --}}
 <div class="modal fade" id="inputEventsAndAnnouncements" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">

@@ -71,7 +71,7 @@ $(document).ready(function() {
 
     $('#delete_news_form').submit(function(e) {
         e.preventDefault();
-    
+     
         $.ajax({
             url: '/deleteOneNews',
             type: 'POST',
@@ -284,26 +284,29 @@ function changeAction(id, action) {
                 dataType: 'json',
                 success: function(res) {
                     res = res[0];
+                    console.log(res.title);
+                    $('#updatenewsmodal').modal('show');
                     // $('#update_thumb_input').val(res.thumbnail);
                     $('#update_created_at').html(' : Publish Date ' + res.created_at);
                     $('#update_thumb').attr('src', 'image/' + res.thumbnail);
                     $('#update_yt_frame').attr('src', res.video);
                     $('#update_news_video').val(res.video);
                     $('#update_video').attr('src', 'videos/' + res.video);
-                    var iframe = document.getElementById('update_yt_frame');
-                    iframe.src = iframe.src;
-                    $('#update_title').val(res.title);
+                 
+                    $('#update_news_title').val(res.title);
                     $('#update_subtitle').val(res.subtitle);
                     $('#update_content').val(res.content);
                     $('#update_created_by').val(res.created_by);
                     $('#update_updated_by').val(res.updated_by);
                     $('#update_news_id').val(res.id);
+
+             
                 },
                 error: function(xhr) {
                
                 }
             });
-            $('#updatenewsmodal').modal('show');
+  
             break;
         case 'delete':
     

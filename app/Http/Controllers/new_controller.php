@@ -115,7 +115,7 @@ class new_controller extends Controller
     public function show(Request $request)
     {
         $id = $request->input('news_id');
-        $get_news = DB::table('news_table')->sortByDesc($id)->where('id',$id)->get();
+        $get_news = DB::table('news_table')->where('id',$id)->get();
        
 
         return Response::json($get_news);
@@ -145,17 +145,19 @@ class new_controller extends Controller
       if ($thumbnail_name == null) {
         // Uplaod Text Only
         $id = $request->input('update_news_id');
-        $title = $request->input('update_title');
+        $title = $request->input('update_news_title');
         $sub_title = $request->input('update_sub_title');
         $content = $request->input('update_content');
-        $new_video_name = $request->input('update_news_video');
+
+
+       
         // $created_by = $request->input('created_by');
         $date = date('Y-m-d h:i:s', time());
         $data = array(
           'title' => $title,
           'subtitle' => $sub_title,
           'content' => $content,
-          'video' => $new_video_name,
+   
           'updated_by' => 'admin',
           'updated_at' => $date
         );
@@ -210,7 +212,7 @@ class new_controller extends Controller
       $id = $request->input('delete_id');
 
       $check = DB::table('news_table')->where('id', $id)->delete();
-      $arr = array('msg' => 'Something goes to wrong. Please try again lator', 'status' => false);
+      $arr = array('msg' => 'Something goes wrong. Please try again lator', 'status' => false);
       if($check){
       $arr = array('msg' => 'Successfully News Deleted', 'status' => true);
       }
