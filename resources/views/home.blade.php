@@ -90,7 +90,7 @@
         <div class="card-body text-primary" >
           <div class="row" id="news_headlines">
           </div>
-          <a href="#" id = "" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#seeAllNews">See All News>></a>
+          <a href="#" id = "seeNews" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="#seeAllNews">See All News>></a>
         </div>
       </div>
     </div>
@@ -196,7 +196,7 @@
 
     {{-- 2nd row --}}
     <div class="row">
-      <div data-aos="fade-right" class="col-lg-4">
+      <div class="col-lg-4">
         <div class="card mb-3 shadow" style="height: 23rem;">
           <h3 class="text-white card-title p-2 text-center mb-0 align-text-bottom">
           Events and Announcements
@@ -208,7 +208,7 @@
             </div>
           
           </div>
-          <a href="#" id ="seeEvents" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="">See All Events>></a>
+          {{-- <a href="#" id ="seeEvents" class="text-right font-weight-bold font-italic p-2 text-primary align-baseline align-text-bottom" data-toggle="modal" data-target="">See All Events>></a> --}}
         </div>
         <div class="card mb-3 shadow">
           <h3 class="text-white card-title p-2 text-center mb-0 align-text-bottom">
@@ -379,8 +379,6 @@
   $(document).ready(function(){
     
 
-    
- 
 
 
 
@@ -392,16 +390,12 @@
     });
 
 
-    
-    
     $.ajax({
       url : "https://coronavirus-19-api.herokuapp.com/countries",
       type : 'GET',
       async: false,
       success : function(res){
    
-    
-
 
 
 var i;
@@ -412,27 +406,14 @@ for (i = 0; i < res.length; i++) {
 
   console.log(res[i]);
      senddata(res[i].cases, res[i].deaths , res[i].recovered);
-
   }
-
 }
-
-
       },
       error : function(xhr){
 
 console.log(xhr)
       }
     });
-
-
-
-
-
-
-
-
-
   });
 
 function senddata(cases, deaths , recovered){

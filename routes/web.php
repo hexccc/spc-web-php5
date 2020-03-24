@@ -265,7 +265,7 @@ Route::get('getHoliday', 'cms_controller@getHoliday');
 Route::get('getEventsAndAnnouncement1', 'cms_controller@getEvents1');
 Route::get('getEventsAndAnnouncement2', 'cms_controller@getEvents2');
 Route::get('getAllEvents', 'cms_controller@getEvents');
-Route::get('getAllNews', 'cms_controller@getNews');
+Route::get('getAllNews', 'cms_controller@getAllNews');
 Route::get('get_engr_form', 'cms_controller@getForm');
 
 

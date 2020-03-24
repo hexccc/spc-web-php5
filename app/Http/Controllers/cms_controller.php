@@ -108,5 +108,12 @@ class cms_controller extends Controller
         return Response::json($query);
       }
 
+        public function getAllNews()
+      {
+        $query = DB::table('news_table')->orderByRaw('id DESC')->get();
+  
+        return Response::json($query);
+      }
+
      
 }

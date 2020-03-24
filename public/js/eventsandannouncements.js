@@ -53,8 +53,8 @@ $(document).ready(function() {
                 '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
                 '</div><div class="modal-body" class="fancybox">'+
                 '<img src="/image/'+res[i].thumbnail+'" alt="Event 1" class="img-fluid">'+
-                '<div class="float-right"><button type="button" class="btn btn-outline-info text-dark btn-prev">Prev</button>'+
-                '<button type="button" class="btn btn-outline-info text-dark btn-next">Next</button>'+
+                // '<div class="float-right"><button type="button" class="btn btn-outline-info text-dark btn-prev">Prev</button>'+
+                // '<button type="button" class="btn btn-outline-info text-dark btn-next">Next</button>'+
                 '</div></div></div> </div> </div>';
                 
                 }
@@ -110,25 +110,29 @@ $(document).ready(function() {
                 dataType : 'json',
                 success : function(res){
     
+                console.log(res);
                 
-                var seeAllNews_html = '';
+                var seeAllNews_html = '<div class="row">';
     
                 for (var i = 0; i < res.length; i++) {
 
-                    seeAllNews_html += '<div class="card">'+
-                                            '<div class="card-body">'+
-                                            '<h5 class = "card-title">'+res[i].title+'</h5>'+
-                                                '<img src="/image/'+res[i].thumbnail+'" alt="Event 1" class="img-fluid">'+
-                                            '<p>'+res[i].content+'</p>'+
-                                            '</div>'+
-                                        '</div>';
+                    seeAllNews_html += '<div class="col-12 card text-center p-0 my-2 shadow bg-white rounded" >'+
+                        '<h5 class="text-white card-header bg-primary">' + 
+                        res[i].title + '</h5>' +
+                        '<div class="card-body">'+
+                        '<img src="/image/'+res[i].thumbnail+'" alt="Event 1" class="img-fluid">'+
+                        '<h6 class="text-left">'+res[i].subtitle+'</h6>'+
+                        '</div>'+
+                        '</div>';
 
                     
           
-            
-                $('#news').html(seeAllNews_html);
-                $('#seeAllNews').modal('show');
                 }
+
+                    seeAllNews_html += '</div>';
+                    $('#newssss').html(seeAllNews_html);
+                $('#seeAllNews').modal('show');
+            
                 },
                 error : function(xhr){
                 
