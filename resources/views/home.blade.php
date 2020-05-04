@@ -332,7 +332,7 @@
 
         </div>
         <div class="card shadow card-body">
-          <img class="align-middle" src="{{URL::asset('image/flag.gif')}}">
+          <img class="align-middle" src="{{URL::asset('image/80th.png')}}">
           
           <div class="text-center" id = "phil_holiday"></div>
 
