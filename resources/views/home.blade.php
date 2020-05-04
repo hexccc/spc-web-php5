@@ -231,9 +231,9 @@
           </h3>
           <div class="card-body text-primary">
             <a style="font-size:12px;"
-            href="{{URL::asset('report of bayanihan grant.pdf')}}" target="_blank"
+            href="{{URL::asset('docs/reportgrant.pdf')}}" target="_blank"
             class="btn btn-outline-success btn-block btn-sm text-dark" aria-disabled="true" ><b>
-            REPORT OF BAYANIHAN SPC AS OF 04/30/2020</b>
+            REPORT OF BAYANIHAN GRANT SPC AS OF 04/30/2020</b>
             </a>
             <a style="font-size:12px;"
             href="{{URL::asset('docs/4th-qtr-SPP.xls')}}" target="_blank"
