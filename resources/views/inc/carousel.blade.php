@@ -19,8 +19,8 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
 
-    {{-- <div class="carousel-item active">
-      <img src="{{URL::asset('image/relief drive.png')}}" alt="mayor" height="450" width="100%">
+    <div class="carousel-item active">
+      <img src="{{URL::asset('image/bahaymuna.png')}}" alt="mayor" height="450" width="100%">
       <div class="carousel-caption">
         <div class="float-right" style="text-align: right;">
           <div class="mx-3 mt-3 ">
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="carousel-item">
+    {{-- <div class="carousel-item">
       <img src="{{URL::asset('image/25cocofest.png')}}" alt="mayor" height="450" width="100%">
       <div class="carousel-caption">
         <div class="float-right" style="text-align: right;">
@@ -43,7 +43,7 @@
       </div>
     </div> --}}
     
-    <div class="carousel-item active">
+    <div class="carousel-item">
       <img src="{{URL::asset('image/doh_stayathome.png')}}" height="450" width="100%">
       <div class="carousel-caption">
         <div class="float-right" style="text-align: right;">

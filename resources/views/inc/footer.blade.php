@@ -98,7 +98,7 @@
       <div class="p-2">
       <p class="align-middle"style="font-size: 10px; ">
         Developed by:</br>
-        &emsp;Hendrixson Cordez:</br>
+        &emsp;Hendrixson Cordez</br>
         &emsp;Renzo Dimasapit</p>
       </div>
     </div>
