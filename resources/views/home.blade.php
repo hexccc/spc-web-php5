@@ -1,4 +1,5 @@
-@include('inc.carousel')
+
+@include('inc.loader-style')
 @extends('layouts.app')
 @section('content')
 @section('title', 'Home')
@@ -12,8 +13,7 @@
 
 {{-- BARCHART --}}
 
-
-
+  
 
 
 
@@ -352,8 +352,11 @@
                 <div class="col-lg-3" style="margin-bottom: 20px;">
                   <iframe height="250px" width="100%" src="https://www.youtube.com/embed/Xja8v82gweA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="col-lg-3" style="margin-bottom: 20px;">
+                {{-- <div class="col-lg-3" style="margin-bottom: 20px;">
                   <iframe class="pb-3" width="100%" height="250px" src="https://www.youtube.com/embed/4M7GjCzUb40" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div> --}}
+                <div class="col-lg-3" style="margin-bottom: 20px;">
+                  <iframe class="pb-3" width="100%" height="250px" src="https://www.youtube.com/embed/tYpXizr3ZcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="col-lg-3" style="margin-bottom: 20px;">
                   <iframe class="pb-3" width="100%" height="250px" src="https://www.youtube.com/embed/HCj17hZM4vo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

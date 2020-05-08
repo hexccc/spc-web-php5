@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-      {{-- <script>
-          $(document).ready(function(){
-         alert('dasdasd');
-       });
-       </script> --}}
+      
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>San Pablo City | @yield('title')</title>
@@ -17,13 +13,14 @@
     <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/chart.js/dist/Chart.min.js">
     <script src="{!!url('/js/jquery.min.js')!!}"></script>
+    
 
 
 
 
     {{-- <script src="/js/multistep.js"></script>
     <link rel="stylesheet" href="/css/multistep.css"> --}}
-
+    <script src="/js/global.js"></script>
     <script src="/js/app.js"></script>
     <script src="/js/form.js"></script>
     <script src="/js/BPLO.js"></script>
@@ -44,11 +41,28 @@
  
 
   <body>
+    {{-- LOADERRs --}}
+    <div class="preloader">
+      
+        <div class="bar bar2"></div>
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar1"></div>
+        <div class="spinner"></div>
+
+           <div class="preloader__img">
+              <img src="{{URL::asset('image/spc.png')}}" alt="" id = "plspc">
+          </div>
+
+    </div>
+
+    <div id="wrapper" class = "webContent" style='display:none'>
     <script type="text/javascript" src="{{URL::asset('js/news.js')}}"> </script>
     
     
     <div>
       @include('inc.navbar')
+      @include('inc.carousel')
       <div class="container-fluid pt-4">
         <div class="row">
           <div class="col-lg-12">
@@ -58,7 +72,14 @@
       </div>
     </div>
     @include('inc.footer')
+  
+  </div>
   </body>
+
+
+
+
+
 
     <script type="text/javascript">
       $("div[id^='event']").each(function(){
