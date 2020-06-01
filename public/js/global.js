@@ -15,3 +15,10 @@ $(window).on('load', function () {
     // }, 500);//1000
     $(".webContent").show();
 });
+
+$.ajaxSetup({
+    headers: {
+      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    
+    }
+  });

@@ -14,7 +14,7 @@ $(document).ready(function() {
 
         $.ajax({
         url : '/getEventsAndAnnouncement1',
-        type : 'GET',
+        type : 'POST',
         dataType : 'json',
         success : function(res){
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
         $.ajax({
             url : '/getEventsAndAnnouncement2',
-            type : 'GET',
+            type : 'POST',
             dataType : 'json',
             success : function(res){
 
@@ -248,6 +248,7 @@ $(document).ready(function() {
 
     datatable_events = $('#tb_events').DataTable({
         "ajax": {
+            "method":"POST",
             "url": '/getEvents',
             dataSrc: 'data'
         },

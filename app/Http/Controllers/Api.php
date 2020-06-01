@@ -24,8 +24,8 @@ class Api extends Controller
             $nestedData["thumbnail"] = $k->thumbnail;
             $data[] = $nestedData;
         }
-        $sendData["data"] = $data;
-        return Response::json($sendData);
+        $sendData["data"]=$data;    
+        return Response::json($data);
     }
 
     public function getService(){

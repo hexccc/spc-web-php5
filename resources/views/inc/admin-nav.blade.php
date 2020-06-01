@@ -7,7 +7,7 @@
         <!-- Sidebar -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3><a href="pylon-admin">Admin Panel</a></h3>
+            <h3><a href="pylon-admin">{{ Session::get('full_name')}}</a></h3>
             </div>
             <ul class="list-unstyled components">
 

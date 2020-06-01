@@ -184,10 +184,10 @@ Route::get('/logout', function() {
 
  //ADMIN PANEL ROUTES:
 
- Route::get('/admin-login', function () {
+//  Route::get('/admin-login', function () {
     
-    return view('admin-login');
-});
+//     return view('admin-login');
+// });
 
 
 // ADMIN (RESTRICTED)
@@ -241,27 +241,27 @@ Route::group(['middleware' => 'users'],function(){
 //ADMIN ROUTE FUNCTIONS
 //News Editor
 Route::post('/createNews', 'new_controller@store');
-Route::get('/getNews', 'new_controller@index');
+Route::post('/getNews', 'new_controller@index');
 Route::post('/getOneNews', 'new_controller@show');
 Route::post('/updateOneNews', 'new_controller@update');
 Route::post('/deleteOneNews', 'new_controller@destroy');
 //Services
 Route::post('/createService', 'servicesController@store');
-Route::get('/getService', 'servicesController@tbServices');
+Route::post('/getService', 'servicesController@tbServices');
 Route::post('/getOneService', 'servicesController@show');
 Route::post('/updateOneService', 'servicesController@update');
 Route::post('/deleteOneService', 'servicesController@destroy');
 
 //Events and Announcements
 Route::post('/createEvents', 'EventsandAnnouncementsController@store');
-Route::get('/getEvents', 'EventsandAnnouncementsController@tbEvents');
+Route::post('/getEvents', 'EventsandAnnouncementsController@tbEvents');
 Route::post('/deleteOneEvents', 'EventsandAnnouncementsController@destroy');
 Route::post('/getOneEvents', 'EventsandAnnouncementsController@show');
 Route::post('/updateOneEvents', 'EventsandAnnouncementsController@update');
 
 //Holidays
 Route::post('/createHoliday', 'holidayController@store');
-Route::get('/getHolidays', 'holidayController@tbHolidays');
+Route::post('/getHolidays', 'holidayController@tbHolidays');
 Route::post('/deleteOneHoliday', 'holidayController@destroy');
 Route::post('/getOneHoliday', 'holidayController@show');
 Route::post('/updateOneHoliday', 'holidayController@update');

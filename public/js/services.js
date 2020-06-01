@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     $.ajax({
         url : '/getLatestServices',
-        type : 'GET',
+        type : 'POST',
         dataType : 'json',
         success : function(res){
           var services_html = '';
@@ -135,6 +135,7 @@ $(document).ready(function() {
 
     datatable_service = $('#tb_services').DataTable({
         "ajax": {
+            "method": "POST",
             "url": '/getService',
             dataSrc: 'data'
         },

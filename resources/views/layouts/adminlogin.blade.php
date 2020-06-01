@@ -35,7 +35,7 @@
     <script src="/js/app.js"></script>
     <script src="/js/form.js"></script>
     <script src="/js/BPLO.js"></script>
-    <script src="/js/testing.js"></script>
+    <script src="/js/admin-login.js"></script>
     <script src="/js/form_renewal.js"></script>
     <script src="/js/ammendments.js"></script>
     <script src="/js/inputmask.js"></script>
