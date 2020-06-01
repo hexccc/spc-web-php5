@@ -222,7 +222,6 @@ Route::group(['middleware' => 'users'],function(){
 
 
 
-   
 //ADMIN END
 //ADMIN ROUTE FUNCTIONS
 //News Editor

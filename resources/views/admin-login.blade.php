@@ -20,10 +20,10 @@
   <form id="signinTest" class="email-login">
     
     <div style="height:30px;" class="form-group d-flex justify-content-center">
-      <input class="form-control my-2" type="text" placeholder="Username" name="user[username]" id="username" required autofocus/>
+      <input class="form-control my-2" type="text" placeholder="Username" name="username" id="username" required autofocus/>
     </div>
     <div style="height:30px;" class="form-group d-flex justify-content-center"">
-      <input  class="form-control my-4" type="password" placeholder="Password" name="user[password]" id="password" required/>
+      <input  class="form-control my-4" type="password" placeholder="Password" name="password" id="password" required/>
     </div>
     <div  class="form-group d-flex justify-content-center">
       <button class="btn btn-info btn-block btn-lg my-5" type="submit" id="signin">Log in</button>

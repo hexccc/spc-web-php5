@@ -24,3 +24,11 @@ Route::post('/postNews_android', 'android_controller@store');
 Route::get('/getNews_android', 'android_controller@index');
 
 Route::get('/getNews', 'CountCtrl@getNews');
+
+
+Route::get('/getNews', 'Api@getNews');
+Route::get('/getService', 'Api@tbServices');
+Route::get('/getEvents', 'Api@tbEvents');
+Route::get('/getHolidays', 'Api@tbHolidays');
+Route::get('/get_form', 'Api@tbForms');
+Route::get('getHoliday', 'Api@getHoliday');
