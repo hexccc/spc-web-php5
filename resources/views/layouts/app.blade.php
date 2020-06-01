@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/css/multistep.css"> --}}
     <script src="/js/global.js"></script>
     <script src="/js/app.js"></script>
-    <script src="/js/form.js"></script>
+    {{-- <script src="/js/form.js"></script> --}}
     <script src="/js/BPLO.js"></script>
     <script src="/js/services.js"></script>
     <script src="/js/holiday.js"></script>
@@ -62,7 +62,7 @@
     
     <div>
       @include('inc.navbar')
-      @include('inc.carousel')
+    
       <div class="container-fluid pt-4">
         <div class="row">
           <div class="col-lg-12">

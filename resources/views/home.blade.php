@@ -2,8 +2,8 @@
 @include('inc.loader-style')
 @extends('layouts.app')
 @section('content')
-@section('title', 'Home')
-
+@section('title', 'Home') 
+@include('inc.carousel')
 
 {{-- <script type="text/javascript">
   $(document).ready(function() {
@@ -14,8 +14,6 @@
 {{-- BARCHART --}}
 
   
-
-
 
 {{-- NEWS --}}
 
@@ -39,53 +37,68 @@
         <h3 class="text-white border-primary card-title p-2 pl-3 mb-0" style="background:#0072e9;">COVID-19 Live Data</h3>
 
         <div class="card-body text-primary" >
-          <div class="d-flex justify-content-center" id="">
-           
-              {{-- <div class="col-md-6">
-                <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Confirmed Cases</th>
-                    <th scope="col">Deaths</th>
-                    <th scope="col">Recovered</th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>1</td>
-                    <td>1</td>
-                    
-                  </tr>
-                
-                    
-                
-                </tbody>
-                </table>
-             
-            </div> --}}
-
-            
-
-
-              <div class="text-center">
-              <canvas id="myChart" style="min-width: 600px;"></canvas>
+          <div class="row">
+            <div class="col-5">
+              <div class=" id="">
+                  <div class="text-center">
+                    <canvas id="myChart" style="min-width: 500px;"></canvas>
+                  </div>
               </div>
             </div>
-
+            <div class="col-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <h3 class="card-title text-center py-2">San Pablo Covid Data</h3>
+                
+              <table class="table table-striped table-hover table-bordered">
+                <tbody>
+                  <tr>
+                    <th>Active Cases</th>
+                    <td>143</th>
+                  </tr>
+                
+                  <tr>
+                    <th scope="row">Recoveries</th>
+                    <td>1243</td>
+                    
+                  </tr>
+                  <tr>
+                    <th scope="row">Deaths</th>
+                    <td>1243</td>
+                    
+                  </tr>
+                  <tr>
+                    <th scope="row">Total Cases</th>
+                    <td>1243</td>  
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+          </div>
           
         </div>
       </div>
     </div>
   </div>
 
-
+  {{-- CAROUSEL NEWS --}}
+  
   <div class="row ">
     <div class='col-md-12'>
 
       <div class="card mb-3 shadow">
-        <h3 class="text-white border-primary card-title p-2 pl-3 mb-0" style="background:#0072e9;">My City, My Government</h3>
+        <h3 class="text-white border-primary card-title p-2 pl-3 mb-0" style="background:#0072e9;">My City, News and Update</h3>
 
         <div class="card-body text-primary" >
           <div class="row" id="news_headlines">
@@ -95,6 +108,68 @@
       </div>
     </div>
   </div>
+
+  {{-- --------------------------- --}}
+  <div class="container text-center my-3">
+    <h2 class="font-weight-light">Bootstrap 4 - Multi Item Carousel</h2>
+    <div class="row mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="http://placehold.it/380?text=1">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="http://placehold.it/380?text=2">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="http://placehold.it/380?text=3">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="http://placehold.it/380?text=4">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="http://placehold.it/380?text=5">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="http://placehold.it/380?text=6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <h5 class="mt-2">Advances one slide at a time</h5>
+</div>
 
 
 
@@ -378,17 +453,8 @@
 
 
 <script>
-
-
-
-
- 
-
   $(document).ready(function(){
     
-
-
-
 
     $.ajaxSetup({
       headers: {
@@ -397,14 +463,12 @@
       }
     });
 
-
     $.ajax({
       url : "https://coronavirus-19-api.herokuapp.com/countries",
       type : 'GET',
       async: false,
       success : function(res){
    
-
 
 var i;
 for (i = 0; i < res.length; i++) { 
@@ -490,6 +554,11 @@ function senddata(cases, deaths , recovered){
 
   <script src="/js/modal.js"></script>
   <script src="/js/modal-brgy.js"></script>
+
+
+  
+
+ 
 
 @extends('inc.modals')
 @extends('inc.promptmodal')
