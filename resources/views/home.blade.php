@@ -539,7 +539,7 @@ function senddata(cases, deaths , recovered){
 </script>
 
 
-
+{{-- 
     <div class="row col-2">
     <div class=" card shadow mb-1" style="background-color:#48C9B0;">
       <h4 class="text-white card-title p-2 text-center mb-0">
@@ -547,7 +547,7 @@ function senddata(cases, deaths , recovered){
       </h4>
       <h4 class="card-body text-center py-2" style="background-color:#48C9B0;border-radius:40px; color:white;">{{ $count }}</h3>
     </div>
-  </div>
+  </div> --}}
     {{-- 3rd row end --}}
 
   </div>

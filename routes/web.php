@@ -11,127 +11,142 @@
 |
 */
 
+Route::get('/{name?}', function ($name = 'home') {
 
-Route::get('/', 'CountCtrl@countVisit');
+    return view($name,['js_name' =>$name.'.js']);
 
-// Route::get('/form', function () {
-//     return view('form');
+});
+
+///////////////////////////////////////////////////////////////////////////////////////////
+//get count  
+// Route::get('/', 'CountCtrl@countVisit');
+
+
+
+
+// // Route::get('/form', function () {
+// //     return view('form');
+// // });
+
+
+
+
+// Route::get('/gov', function () {
+//     return view('gov');
 // });
 
-Route::get('/gov', function () {
-    return view('gov');
-});
+// Route::get('/economy', function () {
+//     return view('economy');
+// });
 
-Route::get('/economy', function () {
-    return view('economy');
-});
+// Route::get('/barangay', 'GetBrgyLs@viewToWeb');
 
-Route::get('/barangay', 'GetBrgyLs@viewToWeb');
+// Route::get('/tourism', function () {
+//     return view('tourism');
+// });
 
-Route::get('/tourism', function () {
-    return view('tourism');
-});
+// Route::get('/gallery', function () {
+//     return view('gallery');
+// });
 
-Route::get('/gallery', function () {
-    return view('gallery');
-});
+// Route::get('/history', function () {
+//     return view('history');
+// });
 
-Route::get('/history', function () {
-    return view('history');
-});
+// Route::get('/location', function () {
+//     return view('location');
+// });
 
-Route::get('/location', function () {
-    return view('location');
-});
+// Route::get('/local_off', function () {
+//     return view('local_off');
+// });
 
-Route::get('/local_off', function () {
-    return view('local_off');
-});
+// Route::get('/departments', function () {
+//     return view('departments');
+// });
 
-Route::get('/departments', function () {
-    return view('departments');
-});
+// Route::get('/modals', function () {
+//     return view('modals');
+// });
 
-Route::get('/modals', function () {
-    return view('modals');
-});
+// Route::get('/modal_district', function () {
+//     return view('modal_district');
+// });
 
-Route::get('/modal_district', function () {
-    return view('modal_district');
-});
+// Route::get('/sanpablenos', function () {
+//     return view('sanpablenos');
+// });
 
-Route::get('/sanpablenos', function () {
-    return view('sanpablenos');
-});
+// Route::get('/hymn', function () {
+//     return view('hymn');
+// });
 
-Route::get('/hymn', function () {
-    return view('hymn');
-});
+// Route::get('/ela', function () {
+//     return view('ela');
+// });
 
-Route::get('/ela', function () {
-    return view('ela');
-});
+// Route::get('/cultural_properties', function () {
+//     return view('cultural_properties');
+// });
 
-Route::get('/cultural_properties', function () {
-    return view('cultural_properties');
-});
+// Route::get('/officemap', function () {
+//     return view('officemap');
+// });
 
-Route::get('/officemap', function () {
-    return view('officemap');
-});
+// Route::get('/ordinances', function () {
+//     return view('ordinances');
+// });
 
-Route::get('/ordinances', function () {
-    return view('ordinances');
-});
+// Route::get('/org_chart', function () {
+//     return view('org_chart');
+// });
 
-Route::get('/org_chart', function () {
-    return view('org_chart');
-});
+// Route::get('/mission', function () {
+//     return view('mission');
+// });
 
-Route::get('/mission', function () {
-    return view('mission');
-});
+// Route::get('/missionvision', function () {
+//     return view('missionvision');
+// });
 
-Route::get('/missionvision', function () {
-    return view('missionvision');
-});
+// Route::get('/calendar', function () {
+//     return view('calendar');
+// });
 
-Route::get('/calendar', function () {
-    return view('calendar');
-});
+// Route::get('/7lakes', function () {
+//     return view('7lakes');
+// });
 
-Route::get('/7lakes', function () {
-    return view('7lakes');
-});
+// Route::get('/preloader', function () {
+//     return view('preloader');
+// });
 
-Route::get('/preloader', function () {
-    return view('preloader');
-});
+// Route::get('/style-admin-nav', function () {
+//     return view('style-admin-nav');
+// });
 
-Route::get('/style-admin-nav', function () {
-    return view('style-admin-nav');
-});
+// Route::get('/officemap', function () {
+//     return view('officemap');
+// });
 
-Route::get('/officemap', function () {
-    return view('officemap');
-});
+// Route::get('/our7lakes', function(){
+//   return view('our7lakes');
+// });
 
-Route::get('/our7lakes', function(){
-  return view('our7lakes');
-});
-
-Route::get('/MissionPanel', function(){
-  return view('MissionPanel');
-});
+// Route::get('/MissionPanel', function(){
+//   return view('MissionPanel');
+// });
 
 
-//////////////
-///BPLO Routes
+// //////////////
+// ///BPLO Routes
 
-Route::get('/form', function(){
-  return view('form');
-});
+// Route::get('/form', function(){
+//   return view('form');
+// });
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////
 // Route::get('/form_renewal/{user?}', function($user){
 //     // Session::get("username")
 //     // Session::put('username', $username);
