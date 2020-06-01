@@ -34,10 +34,11 @@
     <script src="/js/form.js"></script>
 
     <script src="/js/admin.js"></script>
-    <script src="/js/services.js"></script>
+  <script src = "js/{{$jspage}}"></script>
+    {{-- <script src="/js/services.js"></script>
     <script src="/js/eventsandannouncements.js"></script>
     <script src="/js/holiday.js"></script>
-    <script src="/js/engineering_and_building_forms.js"></script>
+    <script src="/js/engineering_and_building_forms.js"></script> --}}
     {{-- <script src="/js/testing.js"></script> --}}
 
     <script src="/js/form_renewal.js"></script>
