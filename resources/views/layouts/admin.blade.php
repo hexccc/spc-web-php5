@@ -34,7 +34,7 @@
     <script src="/js/form.js"></script>
 
     <script src="/js/admin.js"></script>
-  <script src = "js/{{$jspage}}"></script>
+    <script src = "js/{{$jspage}}"></script>
     {{-- <script src="/js/services.js"></script>
     <script src="/js/eventsandannouncements.js"></script>
     <script src="/js/holiday.js"></script>
