@@ -273,6 +273,12 @@ Route::post('/delete_one_form', 'engineeringFormController@destroy');
 Route::post('/get_one_form', 'engineeringFormController@show');
 Route::post('/update_one_form', 'engineeringFormController@update');
 
+//Covid data
+Route::post('/createCovid', 'spc_covid_data@store');
+Route::get('getCovid','spc_covid_data@tbForms');
+Route::post('/get_one_covid', 'engineeringFormController@show');
+Route::post('/update_one_covid', 'engineeringFormController@update');
+
 // Client side  NEWS, EVENTS, HOLIDAYS, SERVICES
 Route::get('getLatestServices', 'cms_controller@getAllLatestServices');
 Route::get('getHoliday', 'cms_controller@getHoliday');
@@ -281,6 +287,7 @@ Route::get('getEventsAndAnnouncement2', 'cms_controller@getEvents2');
 Route::get('getAllEvents', 'cms_controller@getEvents');
 Route::get('getAllNews', 'cms_controller@getAllNews');
 Route::get('get_engr_form', 'cms_controller@getForm');
+
 
 
 
