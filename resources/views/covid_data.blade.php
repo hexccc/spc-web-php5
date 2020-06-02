@@ -18,6 +18,7 @@
                   <th>Active Case</th>
                   <th>Recoveries</th>
                   <th>Death</th>
+                  <th>Total Cases</th>
                   <th>Publish Date</th>
                   <th>Action</th>
               </tr>
@@ -30,6 +31,7 @@
                 <th>Active Case</th>
                 <th>Recoveries</th>
                 <th>Death</th>
+                <th>Total Cases</th>
                 <th>Publish Date</th>
                 <th>Action</th>
               </tr>

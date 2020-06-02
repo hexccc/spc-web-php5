@@ -268,14 +268,14 @@ Route::post('/updateOneHoliday', 'holidayController@update');
 
 //EngineeringForm
 Route::post('/create_form', 'engineeringFormController@store');
-Route::get('/get_form', 'engineeringFormController@tbForms');
+Route::post('/get_form', 'engineeringFormController@tbForms');
 Route::post('/delete_one_form', 'engineeringFormController@destroy');
 Route::post('/get_one_form', 'engineeringFormController@show');
 Route::post('/update_one_form', 'engineeringFormController@update');
 
 //Covid data
 Route::post('/createCovid', 'spc_covid_data@store');
-Route::get('getCovid','spc_covid_data@tbForms');
+Route::post('getCovid','spc_covid_data@tbCovid');
 Route::post('/get_one_covid', 'engineeringFormController@show');
 Route::post('/update_one_covid', 'engineeringFormController@update');
 

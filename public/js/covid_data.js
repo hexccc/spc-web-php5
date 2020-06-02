@@ -6,7 +6,7 @@ $(Document).ready(function(){
         }
     });
 
-$('#tb_news').DataTable({
+$('#covid_data_table').DataTable({
         "ajax": {
             "method": "POST",
             "url": '/getCovid',
@@ -19,7 +19,9 @@ $('#tb_news').DataTable({
         }, {
             "data": "death"
         }, {
-            "data": "publish date"
+            "data": "total_cases"
+        },{
+            "data": "publish_date"
         }, {
             "data": "btn"
         }]

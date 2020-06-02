@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\URL;
 use Response;
 
-class engineeringFormController extends Controller
+class spc_covid_data extends Controller
 {
     public function tbCovid(Request $request)
     {
@@ -21,14 +21,13 @@ class engineeringFormController extends Controller
       foreach ($query as $r) {
         $data[] = array(
   
-          'title' => $r->active_cases,
-          'link' => $r->recoveries,
-          'created_at' => $r->deaths,
-          'updated_at' => $r->total_cases,
-          'updated_at' => $r->date,
-          'btn' => $r->btn='<button class="btn btn-success" onclick="formaction('.$r->id.',\'view\')"> <i class="fas fa-search"></i> </button>'.
-                           '&nbsp; <button class="btn btn-primary" onclick="formaction('.$r->id.',\'update\')"> <i class="fas fa-edit"></i> </button>'.
-                           '&nbsp; <button class="btn btn-danger" onclick="formaction('.$r->id.',\'delete\')"> <i class="fas fa-trash"></i> </button>'
+          'active' => $r->active_cases,
+          'recoveries' => $r->recoveries,
+          'death' => $r->deaths,
+          'total_cases' => $r->total_cases,
+          'publish_date' => $r->date,
+          'btn' => $r->btn='&nbsp; <button class="btn btn-primary" onclick="formaction('.$r->id.',\'update\')"> <i class="fas fa-edit"></i> </button>'
+                        
         );
       }
       $result = array(
