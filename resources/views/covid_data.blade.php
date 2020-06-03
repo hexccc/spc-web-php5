@@ -8,7 +8,7 @@
 <div class="container p-5">
 <div class="row">
   <div class="container">
-    <button href="#" class="btn btn-success text-right font-weight-bold p-2  align-baseline align-text-bottom" data-toggle="modal" data-target="#inputnews">Today's Case</button>
+    <button href="#" class="btn btn-success text-right font-weight-bold p-2  align-baseline align-text-bottom" data-toggle="modal" data-target="#coviddata">Today's Case</button>
   </div>
 
 <div class="container card py-4">

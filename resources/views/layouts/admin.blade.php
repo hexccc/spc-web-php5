@@ -33,8 +33,7 @@
     <script src="/js/app.js"></script>
     <script src="/js/form.js"></script>
     <script src="/js/global.js"></script>
-    {{-- <script src="/js/newseditor.js"></script> --}}
-    <script src = "/js/{{$js_name}}"></script>
+
     {{-- <script src="/js/services.js"></script>
     <script src="/js/eventsandannouncements.js"></script>
     <script src="/js/holiday.js"></script>
@@ -62,6 +61,8 @@
 
   </div>
 
+      {{-- <script src="/js/newseditor.js"></script> --}}
+      <script src = "/js/{{$js_name}}"></script>
 
 
   </body>

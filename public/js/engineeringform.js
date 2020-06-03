@@ -13,26 +13,26 @@ $(document).ready(function() {
         }
     });
 
-    $.ajax({
-        url : '/get_engr_form',
-        type : 'GET',
-        dataType : 'json',
-        success : function(res){
-          var form_html = '';
-          for (var i = 0; i < res.length; i++) {
-            // res[i]
-            form_html += '<a style="font-size:16px; fontweight:bold; border-radius:50px;"'+
-                            'href="/docs/'+res[i].link+'" target="_blank"'+
-                            'class="btn btn-outline-success text-dark btn-block btn-sm my-2" aria-disabled="true" >'+res[i].title+
-                            '</a>';
-          }
-          // console.log(news_html);
-          $('#engr-bldg-form').html(form_html);
-        },
-        error : function(xhr){
+    // $.ajax({
+    //     url : '/get_engr_form',
+    //     type : 'GET',
+    //     dataType : 'json',
+    //     success : function(res){
+    //       var form_html = '';
+    //       for (var i = 0; i < res.length; i++) {
+    //         // res[i]
+    //         form_html += '<a style="font-size:16px; fontweight:bold; border-radius:50px;"'+
+    //                         'href="/docs/'+res[i].link+'" target="_blank"'+
+    //                         'class="btn btn-outline-success text-dark btn-block btn-sm my-2" aria-disabled="true" >'+res[i].title+
+    //                         '</a>';
+    //       }
+    //       // console.log(news_html);
+    //       $('#engr-bldg-form').html(form_html);
+    //     },
+    //     error : function(xhr){
 
-        }
-      });
+    //     }
+    //   });
 
 
 
@@ -136,6 +136,7 @@ $(document).ready(function() {
 
     datatable_form = $('#tb_engr_form').DataTable({
         "ajax": {
+            "method": "POST",
             "url": '/get_form',
             dataSrc: 'data'
         },

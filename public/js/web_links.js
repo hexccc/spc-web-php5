@@ -6,26 +6,20 @@ $(Document).ready(function(){
         }
     });
 
-    covidTable();
+    web_links();
 });
 
-function covidTable(){
-    $('#covid_data_table').DataTable({
+function web_links(){
+    $('#web_links').DataTable({
         "ajax": {
             "method": "POST",
-            "url": '/getCovid',
+            "url": '/getWebLink',
             dataSrc: 'data'
         },
         "columns": [{
-            "data": "active"
+            "data": "name"
         }, {
-            "data": "recoveries"
-        }, {
-            "data": "death"
-        }, {
-            "data": "total_cases"
-        },{
-            "data": "publish_date"
+            "data": "link"
         }, {
             "data": "btn"
         }]
@@ -34,41 +28,41 @@ function covidTable(){
 }
 
 
-$("#addCovid").submit(function(e){
+$("#addWebLink").submit(function(e){
     e.preventDefault();
    $.ajax({
        type: "POST",
-       url: "/addCovid",
+       url: "/addWebLink",
        data: $(this).serialize(),
        dataType: "json",
        success: function (res) {
-        $("#coviddata").modal("hide");
-        $("#covid_data_table").dataTable().fnDestroy()
-        covidTable();
+        $("#weblink").modal("hide");
+        $("#web_links").dataTable().fnDestroy()
+        web_links();
        }
    });
 
 });
 
 
-$("#updateCovid").submit(function(e){
+$("#update_web_link").submit(function(e){
    
     e.preventDefault();
     console.log($(this).serialize());
     $.ajax({
         type: "POST",
-        url: "/update_one_covid",
+        url: "/update_one_link",
         data: $(this).serialize(),
         dataType: "json",
         success: function (res) {
-            $("#updatecoviddata").modal("hide");
-            $("#covid_data_table").dataTable().fnDestroy()
-        covidTable();
+            $("#updateweblink").modal("hide");
+            $("#web_links").dataTable().fnDestroy()
+            web_links();
         }
     });
 });
 
-function covidAction(id, action) {
+function webAction(id, action) {
         
     switch (action) {
         case 'view':
@@ -107,7 +101,7 @@ function covidAction(id, action) {
             });
 
             $.ajax({
-                url: '/get_one_covid',
+                url: '/get_one_link',
                 type: 'POST',
                 data: {'id': id},
                 dataType: 'json',
@@ -115,17 +109,15 @@ function covidAction(id, action) {
                     res = res[0];
                
                 
-                    $('#update_active_case').val(res.active_cases);
-                    $('#update_recoveries').val(res.recoveries);
-                    $('#update_death').val(res.deaths);
-                    $('#update_total_cases').val(res.total_cases);
-                    $("#update_covid_id").val(id);
+                    $('#update_spc_web_name').val(res.name);
+                    $('#update_spc_web_link').val(res.link);
+                    $("#update_web_id").val(id);
                 },
                 error: function(xhr) {
                     console.log(xhr);
                 }
             });
-            $('#updatecoviddata').modal('show');
+            $('#updateweblink').modal('show');
             break;
         case 'delete':
            

@@ -274,10 +274,15 @@ Route::post('/get_one_form', 'engineeringFormController@show');
 Route::post('/update_one_form', 'engineeringFormController@update');
 
 //Covid data
-Route::post('/createCovid', 'spc_covid_data@store');
+Route::post('/addCovid', 'spc_covid_data@store');
 Route::post('getCovid','spc_covid_data@tbCovid');
-Route::post('/get_one_covid', 'engineeringFormController@show');
-Route::post('/update_one_covid', 'engineeringFormController@update');
+Route::post('/get_one_covid', 'spc_covid_data@show');
+Route::post('/update_one_covid', 'spc_covid_data@update');
+//Web links
+Route::post('/addWebLink', 'spc_web_link@store');
+Route::post('getWebLink','spc_web_link@webLinks');
+Route::post('/get_one_link', 'spc_web_link@show');
+Route::post('/update_one_link', 'spc_web_link@update');
 
 // Client side  NEWS, EVENTS, HOLIDAYS, SERVICES
 Route::get('getLatestServices', 'cms_controller@getAllLatestServices');

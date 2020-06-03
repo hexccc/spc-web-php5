@@ -34,7 +34,7 @@
                             <a href="/covid_data">SPC Covid Data</a>
                         </li>
                         <li>
-                            <a href="/covid_links">Covid 19 links</a>
+                            <a href="/web_links">Covid 19 links</a>
                         </li>
                     </ul>
                 </li>

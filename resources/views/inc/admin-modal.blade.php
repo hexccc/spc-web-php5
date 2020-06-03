@@ -1002,4 +1002,276 @@
       </div>
     </div>
   </div>
+
+
+
+  {{-- //COVID DATA  --}}
+
+  <div class="modal fade" id="coviddata" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="">Today's Covid Data</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+  
+            <form id="addCovid" enctype="multipart/form-data">
+  
+               <div class="row">
+                 <div class="col-md-6">
+                   <div class="form-group">
+                     <label for="">Active Case:</label>
+                     <input type="number" class = "form-control" id = "active_case" name = "active_case" required>
+                   </div>
+                 </div>
+                 <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Number of Recoveries:</label>
+                    <input type="number" class = "form-control" id = "recoveries" name = "recoveries" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Number of Death:</label>
+                    <input type="number" class = "form-control" id = "death" name = "death" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Total Case:</label>
+                    <input type="number" class = "form-control" id = "total_cases" name = "total_cases" required>
+                  </div>
+                </div>
+
+               </div>
+  
+                    {{--  <input type="hidden" name="created_by" value="sampleID_created_by">
+                    <input type="hidden" name="updated_by" value="sampleID_updated_by">  --}}
+                    <div class="container text-center pt-3">
+                        <button type="submit" id="add_submit_events" class="btn btn-primary">Submit</button>
+                        <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
+                    </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal fade" id="eventsdelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-top" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="">Delete</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+    <div class="">
+      <p>Are you sure you want to Delete?
+        <span id="delete_title_events"></span>
+      </p>
+    </div>
+  
+                <div class="container text-center">
+  
+                  <form id="delete_events_form">
+                    <input type="hidden" name="delete_id" value="" id="delete_id_events">
+                    <button type="submit" class="btn btn-danger" >Yes</button>
+                    <button type="reset" data-dismiss="modal" class="btn btn-primary">No</button>
+                  </form>
+  
+  
+                </div>
+  
+    </div>
+  </div>
+  </div>
+  </div>
+  
+
+  
+  <div class="modal fade" id="updatecoviddata" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mayor_office">Update Covid Data  <span id="update_created_at"></span> </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                <form id="updateCovid">
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="">Active Case:</label>
+                            <input type="number" class = "form-control" id = "update_active_case" name = "update_active_case" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                         <div class="form-group">
+                           <label for="">Number of Recoveries:</label>
+                           <input type="number" class = "form-control" id = "update_recoveries" name = "update_recoveries" required>
+                         </div>
+                       </div>
+                       <div class="col-md-6">
+                         <div class="form-group">
+                           <label for="">Number of Death:</label>
+                           <input type="number" class = "form-control" id = "update_death" name = "update_death" required>
+                         </div>
+                       </div>
+                       <div class="col-md-6">
+                         <div class="form-group">
+                           <label for="">Total Case:</label>
+                           <input type="number" class = "form-control" id = "update_total_cases" name = "update_total_cases" required>
+                         </div>
+                       </div>
+
+                        <input type="hidden" name="update_covid_id" id="update_covid_id" value="">
+  
+                            {{-- <input type="text" name="update_created_by" id="update_created_by" value="sampleID_created_by">
+                            <input type="text" name="update_updated_by" id="update_updated_by" value="sampleID_updated_by"> --}}
+  
+                            <div class="container text-center">
+                                <button type="submit" class="btn btn-primary">Update</button>
+                                    <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
+                            </div>
+                        </div>
+                </form>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  {{--WEB LINKS DATA  --}}
+
+  <div class="modal fade" id="weblink" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="">Add Web Link</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+  
+            <form id="addWebLink" enctype="multipart/form-data">
+  
+               <div class="row">
+                 <div class="col-md-6">
+                   <div class="form-group">
+                     <label for="">Name:</label>
+                     <input type="text" class = "form-control" id = "spc_web_name" name = "spc_web_name" required>
+                   </div>
+                 </div>
+                 <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Link:</label>
+                    <input type="text" class = "form-control" id = "spc_web_link" name = "spc_web_link" required>
+                  </div>
+                </div>
+                
+
+               </div>
+  
+                    {{--  <input type="hidden" name="created_by" value="sampleID_created_by">
+                    <input type="hidden" name="updated_by" value="sampleID_updated_by">  --}}
+                    <div class="container text-center pt-3">
+                        <button type="submit" id="add_submit_events" class="btn btn-primary">Submit</button>
+                        <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
+                    </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal fade" id="eventsdelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-top" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="">Delete</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+    <div class="">
+      <p>Are you sure you want to Delete?
+        <span id="delete_title_events"></span>
+      </p>
+    </div>
+  
+                <div class="container text-center">
+  
+                  <form id="delete_events_form">
+                    <input type="hidden" name="delete_id" value="" id="delete_id_events">
+                    <button type="submit" class="btn btn-danger" >Yes</button>
+                    <button type="reset" data-dismiss="modal" class="btn btn-primary">No</button>
+                  </form>
+  
+  
+                </div>
+  
+    </div>
+  </div>
+  </div>
+  </div>
+  
+
+  
+  <div class="modal fade" id="updateweblink" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mayor_office">Update Web Link Data  <span id="update_created_at"></span> </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                <form id="update_web_link">
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="">Name:</label>
+                        <input type="text" class = "form-control" id = "update_spc_web_name" name = "update_spc_web_name" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                     <div class="form-group">
+                       <label for="">Link:</label>
+                       <input type="text" class = "form-control" id = "update_spc_web_link" name = "update_spc_web_link" required>
+                     </div>
+                   </div>
+                   
+
+                        <input type="hidden" name="update_web_id" id="update_web_id" value="">
+  
+                            {{-- <input type="text" name="update_created_by" id="update_created_by" value="sampleID_created_by">
+                            <input type="text" name="update_updated_by" id="update_updated_by" value="sampleID_updated_by"> --}}
+  
+                            <div class="container text-center">
+                                <button type="submit" class="btn btn-primary">Update</button>
+                                    <button type="reset" data-dismiss="modal" class="btn btn-danger" >Clear All</button>
+                            </div>
+                        </div>
+                </form>
+  
+        </div>
+      </div>
+    </div>
+  </div>
   

@@ -7,26 +7,23 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\URL;
 use Response;
 
-class spc_covid_data extends Controller
+class spc_web_link extends Controller
 {
-    public function tbCovid(Request $request)
+    public function webLinks(Request $request)
     {
       $draw = $request->get('draw');
       $start = $request->get('start');
       $length = $request->get('length');
   
-      $query = DB::table('spc_covid_count')->get();
+      $query = DB::table('spc_web_links')->get();
   
       $data = [];
       foreach ($query as $r) {
         $data[] = array(
   
-          'active' => $r->active_cases,
-          'recoveries' => $r->recoveries,
-          'death' => $r->deaths,
-          'total_cases' => $r->total_cases,
-          'publish_date' => $r->date,
-          'btn' => $r->btn='&nbsp; <button class="btn btn-primary" onclick="covidAction('.$r->id.',\'update\')"> <i class="fas fa-edit"></i> </button>'
+          'name' => $r->name,
+          'link' => $r->link,
+          'btn' => $r->btn='&nbsp; <button class="btn btn-primary" onclick="webAction('.$r->id.',\'update\')"> <i class="fas fa-edit"></i> </button>'
                         
         );
       }
@@ -46,7 +43,7 @@ class spc_covid_data extends Controller
       {
           $id = $request->input('id');
   
-          $getForm = DB::table('spc_covid_count')->where('id',$id)->get();
+          $getForm = DB::table('spc_web_links')->where('id',$id)->get();
   
           return Response::json($getForm);
       }
@@ -58,15 +55,13 @@ class spc_covid_data extends Controller
         $date = date("F j Y");
       
         $data = array(
-          'active_cases' => $request->input("active_case"),
-          'recoveries' => $request->input("recoveries"),
-          'deaths' => $request->input("death"),
-          'total_cases' => $request->input("total_cases"),
+          'name' => $request->input("spc_web_name"),
+          'link' => $request->input("spc_web_link"),
           'date' => $date,
         );
         
 
-        $check = DB::table('spc_covid_count')->insert($data);
+        $check = DB::table('spc_web_links')->insert($data);
 
         $arr = array('msg' => 'Something goes to wrong. Please try again later', 'status' => false);
         if($check){
@@ -85,15 +80,13 @@ class spc_covid_data extends Controller
       public function update(Request $request)
       {
        
-        $id = $request->input("update_covid_id");
+        $id = $request->input("update_web_id");
         $data = array(
-          'active_cases' => $request->input("update_active_case"),
-          'recoveries' => $request->input("update_recoveries"),
-          'deaths' => $request->input("update_death"),
-          'total_cases' => $request->input("update_total_cases"),
+          'name' => $request->input("update_spc_web_name"),
+          'link' => $request->input("update_spc_web_link"),
         );
   
-          $check = DB::table('spc_covid_count')->where('id', $id)->update($data);
+          $check = DB::table('spc_web_links')->where('id', $id)->update($data);
           $arr = array('msg' => 'Something goes to wrong. Please try again later', 'status' => false);
           if($check){
           $arr = array('msg' => 'Successfully News Posted', 'status' => true);
